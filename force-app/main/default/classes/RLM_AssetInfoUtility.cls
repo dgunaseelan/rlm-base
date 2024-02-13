@@ -9,7 +9,7 @@ public class RLM_AssetInfoUtility {
         List<Asset> assetsToUpdate = new List<Asset>();
 
         for(CreateAssetOrderDtlEvent assetDetailEvent: assetDetailEvents){
-            OrderItem oi = [SELECT Id, ServiceDate, EndDate, OrderAction.Type,
+            OrderItem oi = [SELECT Id, ServiceDate, EndDate, OrderAction.Type, ProductSellingModel.SellingModelType, 
                                     ProductSellingModel.PricingTermUnit, Product2.Name
                             FROM OrderItem
                             WHERE Id =: assetDetailEvent.OrderItemId].get(0);
@@ -21,11 +21,20 @@ public class RLM_AssetInfoUtility {
 
                 assetToUpdate.Id = assetDetailEvent.AssetId;
 
-                if(oi.ProductSellingModel.PricingTermUnit == 'Months'){
+                if(oi.ProductSellingModel.PricingTermUnit == 'Months' && oi.ProductSellingModel.SellingModelType == 'TermDefined'){
                     assetToUpdate.RenewalTerm = oi.ServiceDate.monthsBetween(oi.EndDate);
-                    assetToUpdate.RenewalTermUnit = oi.ProductSellingModel.PricingTermUnit;
-                }else{
+                    assetToUpdate.RenewalTermUnit = 'Months';
+                }else if(oi.ProductSellingModel.PricingTermUnit == 'Annual' && oi.ProductSellingModel.SellingModelType == 'TermDefined'){
                     assetToUpdate.RenewalTerm = ((oi.ServiceDate.monthsBetween(oi.EndDate))/12);
+                    assetToUpdate.RenewalTermUnit = 'Annual';
+                }else if(oi.ProductSellingModel.PricingTermUnit == 'Months' && oi.ProductSellingModel.SellingModelType == 'Evergreen'){
+                    assetToUpdate.RenewalTerm = 12;
+                    assetToUpdate.RenewalTermUnit = 'Months';
+                }else if(oi.ProductSellingModel.PricingTermUnit == 'Annual' && oi.ProductSellingModel.SellingModelType == 'Evergreen'){
+                    assetToUpdate.RenewalTerm = 1;
+                    assetToUpdate.RenewalTermUnit = 'Annual';
+                }else{
+                    assetToUpdate.RenewalTerm = 1;
                     assetToUpdate.RenewalTermUnit = 'Annual';
                 }
                     
