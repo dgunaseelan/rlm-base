@@ -23,4 +23,7 @@
     <layoutAssignments>
         <layout>QuoteLineItem-RLM Quote Line Item Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-RLM Order Layout</layout>
+    </layoutAssignments>
 </Profile>

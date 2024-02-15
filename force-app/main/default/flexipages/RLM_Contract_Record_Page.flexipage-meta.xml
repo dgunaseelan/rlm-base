@@ -4,12 +4,41 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Activate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Edit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Delete</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Clone</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>FeedItem.ContentPost</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>ChangeOwnerOne</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>ChangeRecordType</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>PrintableView</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>collapsed</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsConfiguration</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsInNative</name>
@@ -49,29 +78,6 @@
         <mode>Replace</mode>
         <name>subheader</name>
         <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>relatedListComponentOverride</name>
-                    <value>NONE</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>rowsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>force:relatedListContainer</componentName>
-                <identifier>force_relatedListContainer</identifier>
-            </componentInstance>
-        </itemInstances>
-        <mode>Replace</mode>
-        <name>relatedTabContent</name>
-        <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
@@ -458,7 +464,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>horizontalAlignment</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
@@ -476,7 +482,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>horizontalAlignment</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
@@ -494,7 +500,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>horizontalAlignment</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
@@ -512,7 +518,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>horizontalAlignment</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
@@ -530,7 +536,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>horizontalAlignment</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
@@ -542,6 +548,29 @@
         </itemInstances>
         <mode>Replace</mode>
         <name>detailTabContent</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>ADVGRID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListContainer</componentName>
+                <identifier>force_relatedListContainer</identifier>
+            </componentInstance>
+        </itemInstances>
+        <mode>Replace</mode>
+        <name>relatedTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -559,8 +588,66 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>displayFields</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Asset.Name</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentQuantity</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentMrr</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.LifecycleStartDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.LifecycleEndDate</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>enableSidepanel</name>
                     <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sidepanelDetailFields</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Asset.Name</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentAmount</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentLifecycleEndDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentMrr</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentQuantity</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.TotalLifecycleAmount</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.LifecycleStartDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.LifecycleEndDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.RenewalTerm</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.RenewalTermUnit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.PricingSource</value>
+                        </valueListItems>
+                    </valueList>
                 </componentInstanceProperties>
                 <componentName>runtime_revenue_foundation:transactionLineTable</componentName>
                 <identifier>runtime_revenue_foundation_transactionLineTable</identifier>
@@ -579,20 +666,6 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>relatedTabContent</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Standard.Tab.relatedLists</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>relatedListsTab</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
                     <value>detailTabContent</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -601,6 +674,24 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>detailTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>active</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>relatedTabContent</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.relatedLists</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>relatedListsTab</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
