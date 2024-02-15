@@ -1,0 +1,45 @@
+Code,DisplayValue,Errors,Id,IsDefault,Name,PicklistId,Sequence,Value
+L5-20,L5-20,,0v6al0000000G9dAAE,false,L5-20,0v5al0000000K3aAAE,,L5-20
+C13toC14,C13 to C14,,0v6al0000000G9eAAE,true,C13 to C14,0v5al0000000K3aAAE,,C13 to C14
+3ft,3',,0v6al0000000G9fAAE,true,ThreeFeet,0v5al0000000K3ZAAU,,3
+5ft,5',,0v6al0000000G9gAAE,false,FiveFeet,0v5al0000000K3ZAAU,,5
+8ft,8',,0v6al0000000G9hAAE,false,EightFeet,0v5al0000000K3ZAAU,,8
+C19toC20,C19 to C20,,0v6al0000000G9iAAE,false,C19 to C20,0v5al0000000K3aAAE,,C19 to C20
+12ft,12',,0v6al0000000G9jAAE,false,TwelveFeet,0v5al0000000K3ZAAU,,12
+AL2,Amazon Linux 2,,0v6al0000000G9kAAE,true,Amazon Linux 2,0v5al0000000K3bAAE,1,Amazon Linux 2
+4,4,,0v6al0000000G9lAAE,false,Four,0v5al0000000K3dAAE,2,4
+6,6,,0v6al0000000G9mAAE,false,Six,0v5al0000000K3dAAE,3,6
+8,8,,0v6al0000000G9nAAE,true,Eight,0v5al0000000K3dAAE,4,8
+Flex,Flex,,0v6al0000000G9oAAE,true,Flex,0v5al0000000K3cAAE,1,Flex
+Pre-Prod,Pre-Prod,,0v6al0000000G9pAAE,false,Pre-Prod,0v5al0000000K3cAAE,3,Pre-Prod
+Gov,Gov,,0v6al0000000G9qAAE,false,Gov,0v5al0000000K3cAAE,2,Gov
+REL,Redhat Enterprise Linux,,0v6al0000000G9rAAE,false,Redhat Enterprise Linux,0v5al0000000K3bAAE,2,Redhat Enterprise Linux
+2,2,,0v6al0000000G9sAAE,false,Two,0v5al0000000K3dAAE,1,2
+Prod,Prod,,0v6al0000000G9tAAE,false,Prod,0v5al0000000K3cAAE,4,Prod
+Onsite,Onsite,,0v6al0000000G9uAAE,true,Onsite,0v5al0000000K3eAAE,1,Onsite
+2.0GHz,2.0GHz,,0v6al0000000G9vAAE,false,2.0GHz,0v5al0000000K3iAAE,3,2.0GHz
+1.7GHz,1.7GHz,,0v6al0000000G9wAAE,false,1.7GHz,0v5al0000000K3iAAE,2,1.7GHz
+Performance_Optimized_with_Sparing,Performance_Optimized_with_Sparing,,0v6al0000000G9xAAE,false,Performance_Optimized_with_Sparing,0v5al0000000K3gAAE,2,Performance_Optimized_with_Sparing
+Security,Security,,0v6al0000000G9yAAE,true,Security,0v5al0000000K3fAAE,1,Security
+2.1GHz,2.1GHz,,0v6al0000000G9zAAE,false,2.1GHz,0v5al0000000K3iAAE,4,2.1GHz
+8GB,8GB,,0v6al0000000GA0AAM,true,8GB,0v5al0000000K3lAAE,1,8GB
+32GB,32GB,,0v6al0000000GA1AAM,false,32GB,0v5al0000000K3lAAE,3,32GB
+Basic,Basic,,0v6al0000000GA2AAM,false,Basic,0v5al0000000K3jAAE,2,Basic
+Value,Value,,0v6al0000000GA3AAM,false,Value,0v5al0000000K3fAAE,3,Value
+Custom,Custom,,0v6al0000000GA4AAM,false,Custom,0v5al0000000K3fAAE,4,Custom
+16GB,16GB,,0v6al0000000GA5AAM,false,16GB,0v5al0000000K3lAAE,2,16GB
+Memory_Mirroring,Memory_Mirroring,,0v6al0000000GA6AAM,false,Memory_Mirroring,0v5al0000000K3gAAE,3,Memory_Mirroring
+SFP,SFP,,0v6al0000000GA7AAM,false,SFP,0v5al0000000K3kAAE,2,SFP
+Evergreen,Evergreen,,0v6al0000000GA8AAM,true,Evergreen,0v5al0000000K3hAAE,1,Evergreen
+TermBased,TermBased,,0v6al0000000GA9AAM,false,TermBased,0v5al0000000K3hAAE,2,TermBased
+3.2GHz,3.2GHz,,0v6al0000000GAAAA2,true,3.2GHz,0v5al0000000K3iAAE,1,3.2GHz
+Performance,Performance,,0v6al0000000GABAA2,false,Performance,0v5al0000000K3fAAE,2,Performance
+Extended_Care,Extended_Care,,0v6al0000000GACAA2,true,Extended_Care,0v5al0000000K3jAAE,1,Extended_Care
+Remote,Remote,,0v6al0000000GADAA2,false,Remote,0v5al0000000K3eAAE,2,Remote
+Performance_Optimized,Performance_Optimized,,0v6al0000000GAEAA2,true,Performance_Optimized,0v5al0000000K3gAAE,1,Performance_Optimized
+1TB,1TB,,0v6al0000000GAFAA2,true,1TB,0v5al0000000K3mAAE,1,1TB
+8TB,8TB,,0v6al0000000GAGAA2,false,8TB,0v5al0000000K3mAAE,3,8TB
+Direct_Attach,Direct_Attach,,0v6al0000000GAHAA2,true,Direct_Attach,0v5al0000000K3kAAE,1,Direct_Attach
+Offshore,Offshore,,0v6al0000000GAIAA2,false,Offshore,0v5al0000000K3eAAE,3,Offshore
+8TB_Self_Encrypting,8TB_Self_Encrypting,,0v6al0000000GAJAA2,false,8TB_Self_Encrypting,0v5al0000000K3mAAE,4,8TB_Self_Encrypting
+4TB,4TB,,0v6al0000000GAKAA2,false,4TB,0v5al0000000K3mAAE,2,4TB

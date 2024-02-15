@@ -1,0 +1,3 @@
+AdjustmentMethod,Errors,Id,IsActive,Name,Pricebook2Id,ScheduleType
+Range,,84Xal00000018d4EAA,true,Standard Attribute Based Adjustment,01sal000000LKpRAAW,Attribute
+Range,,84Xal00000018d3EAA,true,Standard Bundle Based Adjustment,01sal000000LKpRAAW,Bundle

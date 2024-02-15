@@ -1,0 +1,15 @@
+DataType,Description,Errors,Id,Name,Status
+Text,,,0v5al0000000K3ZAAU,Length,Active
+Text,,,0v5al0000000K3aAAE,Connector Type,Active
+Text,,,0v5al0000000K3bAAE,Operating System,Active
+Text,,,0v5al0000000K3cAAE,API Type,Active
+Number,,,0v5al0000000K3dAAE,Base Core Count,Active
+Text,,,0v5al0000000K3eAAE,Resource_Location,Active
+Text,,,0v5al0000000K3fAAE,Server Configuration,Active
+Text,,,0v5al0000000K3gAAE,Memory_Config,Active
+Text,,,0v5al0000000K3hAAE,SubscriptionType,Active
+Text,,,0v5al0000000K3iAAE,Processor_Frequency,Active
+Text,,,0v5al0000000K3jAAE,Engineering_Options,Active
+Text,,,0v5al0000000K3kAAE,NIC_Type,Active
+Text,,,0v5al0000000K3lAAE,Memory,Active
+Text,,,0v5al0000000K3mAAE,HDD_Storage,Active
