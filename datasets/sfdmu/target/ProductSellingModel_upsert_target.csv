@@ -1,0 +1,6 @@
+Id,Name,PricingTerm,PricingTermUnit,SellingModelType,Status
+0jPal000000034LEAQ,Term Annual,1,Annual,TermDefined,Active
+0jPal000000034MEAQ,One-Time,,,OneTime,Active
+0jPal000000034NEAQ,Term Monthly,1,Months,TermDefined,Active
+0jPal000000034OEAQ,Evergreen Monthly,1,Months,Evergreen,Active
+0jPal000000034PEAQ,Evergreen Annual,1,Annual,Evergreen,Draft

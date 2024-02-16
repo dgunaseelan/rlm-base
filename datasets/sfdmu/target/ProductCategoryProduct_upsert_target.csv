@@ -1,0 +1,50 @@
+$$Product.Name$ProductCategory.Name$Catalog.Name,Catalog.Name,CatalogId,Id,Product.Name,ProductCategory.$$Name$ParentCategory.Name,ProductCategoryId,ProductId
+Subscription;Subscription;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3JGAQ,Subscription,Subscription,0ZGal0000001ALgGAM,01tal000000XG1BAAW
+Intel Xeon E5-2609 v4 1.7GHz;Processor;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3KGAQ,Intel Xeon E5-2609 v4 1.7GHz,Processor,0ZGal0000001ALeGAM,01tal000000XG1CAAW
+PowerSwerve R750 Rack Server;Server;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3LGAQ,PowerSwerve R750 Rack Server,Server,0ZGal0000001ALiGAM,01tal000000XG1DAAW
+16GB RDIMM;Memory;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3MGAQ,16GB RDIMM,Memory,0ZGal0000001ALcGAM,01tal000000XG1EAAW
+8TB 7.2k RPM NLSAS;Hard Drive;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3NGAQ,8TB 7.2k RPM NLSAS,Hard Drive,0ZGal0000001ALfGAM,01tal000000XG1FAAW
+8TB 7.2k RPM Self-Encrypting NLSAS;Hard Drive;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3OGAQ,8TB 7.2k RPM Self-Encrypting NLSAS,Hard Drive,0ZGal0000001ALfGAM,01tal000000XG1GAAW
+Intel X710 Dual Port 10Gb SFP;Network Adapter;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3PGAQ,Intel X710 Dual Port 10Gb SFP,Network Adapter,0ZGal0000001ALdGAM,01tal000000XG1HAAW
+QuantumBit Services Project;Services;Services,Services,0ZSal0000001Av1GAE,0ZRal0000000x3QGAQ,QuantumBit Services Project,Services,0ZGal0000001ALhGAM,01tal000000XG1IAAW
+Configured Power Cable;Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3SGAQ,Configured Power Cable,Accessories,0ZGal0000001ALXGA2,01tal000000XG1KAAW
+QuantumBit Starter;Bundle;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3TGAQ,QuantumBit Starter,Bundle,0ZGal0000001ALWGA2,01tal000000XG1LAAW
+Intel Xeon E5-2660 v4 2.0GHz;Processor;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3UGAQ,Intel Xeon E5-2660 v4 2.0GHz,Processor,0ZGal0000001ALeGAM,01tal000000XG1MAAW
+Intel Xeon E5-2667 v4 3.2GHz;Processor;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3VGAQ,Intel Xeon E5-2667 v4 3.2GHz,Processor,0ZGal0000001ALeGAM,01tal000000XG1NAAW
+Intel Xeon E5-2683 v4 2.1GHz;Processor;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3WGAQ,Intel Xeon E5-2683 v4 2.1GHz,Processor,0ZGal0000001ALeGAM,01tal000000XG1OAAW
+32GB RDIMM;Memory;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3XGAQ,32GB RDIMM,Memory,0ZGal0000001ALcGAM,01tal000000XG1PAAW
+1TB 7.2k RPM NLSAS;Hard Drive;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3YGAQ,1TB 7.2k RPM NLSAS,Hard Drive,0ZGal0000001ALfGAM,01tal000000XG1QAAW
+Additional API;API;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3ZGAQ,Additional API,API,0ZGal0000001ALVGA2,01tal000000XG1RAAW
+QuantumBit Complete Solution;Bundle;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3aGAA,QuantumBit Complete Solution,Bundle,0ZGal0000001ALWGA2,01tal000000XG1SAAW
+4TB 7.2k RPM NLSAS;Hard Drive;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3bGAA,4TB 7.2k RPM NLSAS,Hard Drive,0ZGal0000001ALfGAM,01tal000000XG1TAAW
+8GB RDIMM;Memory;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3cGAA,8GB RDIMM,Memory,0ZGal0000001ALcGAM,01tal000000XG1UAAW
+Intel X710 Dual Port 10Gb Direct Attach;Network Adapter;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3dGAA,Intel X710 Dual Port 10Gb Direct Attach,Network Adapter,0ZGal0000001ALdGAM,01tal000000XG1VAAW
+C13 to C14 Power Cable 3';Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3eGAA,C13 to C14 Power Cable 3',Accessories,0ZGal0000001ALXGA2,01tal000000XG1WAAW
+C13 to C14 Power Cable 5';Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3fGAA,C13 to C14 Power Cable 5',Accessories,0ZGal0000001ALXGA2,01tal000000XG1XAAW
+C19 to C20 Power Cable 3';Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3gGAA,C19 to C20 Power Cable 3',Accessories,0ZGal0000001ALXGA2,01tal000000XG1YAAW
+C19 to C20 Power Cable 5';Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3hGAA,C19 to C20 Power Cable 5',Accessories,0ZGal0000001ALXGA2,01tal000000XG1ZAAW
+L5-20 Input Power Cable 12';Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3iGAA,L5-20 Input Power Cable 12',Accessories,0ZGal0000001ALXGA2,01tal000000XG1aAAG
+L5-20 Input Power Cable 8';Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3jGAA,L5-20 Input Power Cable 8',Accessories,0ZGal0000001ALXGA2,01tal000000XG1bAAG
+Gold Hardware Maintenance;Hardware Maintenance;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3kGAA,Gold Hardware Maintenance,Hardware Maintenance,0ZGal0000001ALbGAM,01tal000000XG1cAAG
+Gold Hardware Maintenance;Maintenance;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3lGAA,Gold Hardware Maintenance,Maintenance,0ZGal0000001ALaGAM,01tal000000XG1cAAG
+Silver Hardware Maintenance;Hardware Maintenance;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3mGAA,Silver Hardware Maintenance,Hardware Maintenance,0ZGal0000001ALbGAM,01tal000000XG1dAAG
+Silver Hardware Maintenance;Maintenance;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3nGAA,Silver Hardware Maintenance,Maintenance,0ZGal0000001ALaGAM,01tal000000XG1dAAG
+Additional Automation QB Credits;API;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3oGAA,Additional Automation QB Credits,API,0ZGal0000001ALVGA2,01tal000000XG1eAAG
+Additional API Prod;API;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3pGAA,Additional API Prod,API,0ZGal0000001ALVGA2,01tal000000XG1fAAG
+Additional API Pre-Prod;API;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3qGAA,Additional API Pre-Prod,API,0ZGal0000001ALVGA2,01tal000000XG1gAAG
+Additional API Gov;API;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3rGAA,Additional API Gov,API,0ZGal0000001ALVGA2,01tal000000XG1hAAG
+Additional API Flex (100M);API;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3sGAA,Additional API Flex (100M),API,0ZGal0000001ALVGA2,01tal000000XG1iAAG
+Additional QB DataGraph (500M);API;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3tGAA,Additional QB DataGraph (500M),API,0ZGal0000001ALVGA2,01tal000000XG1jAAG
+API Access Requests (AEH);API;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x3uGAA,API Access Requests (AEH),API,0ZGal0000001ALVGA2,01tal000000XG1kAAG
+Cable Management Rings (Qty 10);Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3vGAA,Cable Management Rings (Qty 10),Accessories,0ZGal0000001ALXGA2,01tal000000XG1lAAG
+"Vertical Cable Organizer, 8 Cable Rings;Accessories;Hardware",Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3wGAA,"Vertical Cable Organizer, 8 Cable Rings",Accessories,0ZGal0000001ALXGA2,01tal000000XG1mAAG
+Cable Containment Brackets;Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3xGAA,Cable Containment Brackets,Accessories,0ZGal0000001ALXGA2,01tal000000XG1nAAG
+QuantumShell 6U 600mmx870mm;Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3yGAA,QuantumShell 6U 600mmx870mm,Accessories,0ZGal0000001ALXGA2,01tal000000XG1oAAG
+QuantumShell 8U 600mmx1070mm;Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x3zGAA,QuantumShell 8U 600mmx1070mm,Accessories,0ZGal0000001ALXGA2,01tal000000XG1pAAG
+QuantumShell 10U 600mmx1200mm;Accessories;Hardware,Hardware,0ZSal0000001Av0GAE,0ZRal0000000x40GAA,QuantumShell 10U 600mmx1200mm,Accessories,0ZGal0000001ALXGA2,01tal000000XG1qAAG
+QuantumBit Enterprise;Bundle;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x41GAA,QuantumBit Enterprise,Bundle,0ZGal0000001ALWGA2,01tal000000XG1rAAG
+QuantumBit Business Critical;Bundle;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x42GAA,QuantumBit Business Critical,Bundle,0ZGal0000001ALWGA2,01tal000000XG1sAAG
+QuantumBit Fundamentals Training;Training;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x43GAA,QuantumBit Fundamentals Training,Training,0ZGal0000001ALZGA2,01tal000000XG1tAAG
+QuantumBit Essentials Training;Training;Software,Software,0ZSal0000001AuzGAE,0ZRal0000000x44GAA,QuantumBit Essentials Training,Training,0ZGal0000001ALZGA2,01tal000000XG1uAAG
+Professional Services Daily Rate;Services;Services,Services,0ZSal0000001Av1GAE,0ZRal0000000x45GAA,Professional Services Daily Rate,Services,0ZGal0000001ALhGAM,01tal000000XG1vAAG
+Professional Services Scope of Work;Services;Services,Services,0ZSal0000001Av1GAE,0ZRal0000000x46GAA,Professional Services Scope of Work,Services,0ZGal0000001ALhGAM,01tal000000XG1wAAG

@@ -1,0 +1,4 @@
+$$Name$Pricebook2.Name,AdjustmentMethod,Id,IsActive,Name,Pricebook2.Name,Pricebook2Id,ScheduleType
+Standard Bundle Based Adjustment;Standard Price Book,Range,84Xal0000001T81EAE,true,Standard Bundle Based Adjustment,Standard Price Book,01sal000000MSqTAAW,Bundle
+Standard Attribute Based Adjustment;Standard Price Book,Range,84Xal0000001T82EAE,true,Standard Attribute Based Adjustment,Standard Price Book,01sal000000MSqTAAW,Attribute
+Standard Price Adjustment Tier;Standard Price Book,Range,84Xal0000001T83EAE,false,Standard Price Adjustment Tier,Standard Price Book,01sal000000MSqTAAW,Volume

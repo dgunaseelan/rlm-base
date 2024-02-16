@@ -89,9 +89,9 @@
             "excluded": false
         },
         {
-            "query": "SELECT Code, ParentProductId, ProductComponentGroupId, ChildProductId, ProductRelationshipTypeId, IsQuantityEditable, IsDefaultComponent, MaxQuantity, MinQuantity, DoesBundlePriceIncludeChild, Quantity, QuantityScaleMethod, IsComponentRequired, Sequence, ParentSellingModelId, ChildSellingModelId, ParentProductRole, ChildProductRole FROM ProductRelatedComponent",
+            "query": "SELECT Name, Code, ParentProductId, ProductComponentGroupId, ChildProductId, ProductRelationshipTypeId, IsQuantityEditable, IsDefaultComponent, MaxQuantity, MinQuantity, DoesBundlePriceIncludeChild, Quantity, QuantityScaleMethod, IsComponentRequired, Sequence, ParentSellingModelId, ChildSellingModelId, ParentProductRole, ChildProductRole FROM ProductRelatedComponent",
             "operation": "Upsert",
-            "externalId": "ParentProduct.Name;ProductComponentGroup.Name;ChildProduct.Name,ProductRelationshipType.Name",
+            "externalId": "Name;ParentProduct.Name;ProductComponentGroup.Name;ChildProduct.Name,ProductRelationshipType.Name",
             "excluded": false
         },
         {
