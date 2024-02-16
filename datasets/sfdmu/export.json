@@ -142,9 +142,9 @@
             "excluded": false
         },
         {
-            "query": "SELECT AdjustmentType, AdjustmentValue, EffectiveFrom, EffectiveTo, Name, PriceAdjustmentScheduleId, ProductId, ParentProductId, RootBundleId, ProductSellingModelId, ParentSellingModelId, PricingTerm, PricingTermUnit, RootProductSellingModelId, ScheduleType, SellingModelType FROM BundleBasedAdjustment",
+            "query": "SELECT AdjustmentType, AdjustmentValue, EffectiveFrom, EffectiveTo, Name, PriceAdjustmentScheduleId, ProductId, ParentProductId, RootBundleId, ProductSellingModelId, ParentProductSellingModelId, PricingTerm, PricingTermUnit, RootProductSellingModelId, ScheduleType, SellingModelType FROM BundleBasedAdjustment",
             "operation": "Upsert",
-            "externalId": "Name, PriceAdjustmentSchedule.Name;Product.Name;ParentProduct.Name;RootBundle.Name;ProductSellingModel.Name;ParentSellingModel.Name;RootProductSellingModel.Name",
+            "externalId": "Name;PriceAdjustmentSchedule.Name;Product.Name;ParentProduct.Name;RootBundle.Name;ProductSellingModel.Name;ParentProductSellingModel.Name;RootProductSellingModel.Name",
             "excluded": false
         }
     ],

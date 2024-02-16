@@ -1,6 +1,0 @@
-Id,Name,PricingTerm,PricingTermUnit,SellingModelType,Status
-0jP3y000000KynTEAS,Evergreen Monthly,1,Months,Evergreen,Active
-0jP3y000000KynYEAS,Term Annual,1,Annual,TermDefined,Active
-0jP3y000000KynOEAS,Term Monthly,1,Months,TermDefined,Active
-0jP3y000000KyndEAC,Evergreen Annual,1,Annual,Evergreen,Draft
-0jP3y000000KynJEAS,One-Time,,,OneTime,Active
