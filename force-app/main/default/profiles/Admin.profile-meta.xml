@@ -21,7 +21,7 @@
         <layout>Product2-RLM Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ProductCatalog-RLM Product Layout</layout>
+        <layout>ProductCatalog-RLM Catalog Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>QuoteLineItem-RLM Quote Line Item Layout</layout>
