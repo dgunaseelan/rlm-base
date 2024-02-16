@@ -1,0 +1,11 @@
+ChildSellingModelId,DoesBundlePriceIncludeChild,Errors,Id,IsComponentRequired,IsDefaultComponent,IsQuantityEditable,MaxQuantity,MinQuantity,ProductComponentGroupId,ProductRelationshipTypeId,Quantity,QuantityScaleMethod,Sequence
+,false,,0dSam0000000a57EAA,true,true,true,,,0y7am00000000PtAAI,0yoam0000000c8XAAQ,10,,20
+,false,,0dSam0000000a59EAA,true,true,true,,,0y7am00000000PtAAI,0yoam0000000c8XAAQ,1,,10
+,false,,0dSam0000000a5AEAQ,false,false,true,,,0y7am00000000PtAAI,0yoam0000000c8XAAQ,5,,40
+,false,,0dSam0000000a5BEAQ,false,false,false,,,0y7am00000000PuAAI,0yoam0000000c8XAAQ,1,Proportional,20
+,false,,0dSam0000000a5CEAQ,false,true,false,,,0y7am00000000PuAAI,0yoam0000000c8XAAQ,1,Proportional,10
+,false,,0dSam0000000a5DEAQ,false,false,true,,,0y7am00000000PtAAI,0yoam0000000c8XAAQ,5,,30
+,false,,0dSam0000000a5EEAQ,false,true,true,,,0y7am00000000PvAAI,0yoam0000000c8XAAQ,250,,10
+,false,,0dSam0000000a5FEAQ,false,false,true,,,0y7am00000000PtAAI,0yoam0000000c8XAAQ,5,,50
+,false,,0dSam0000000a5GEAQ,false,false,true,,,0y7am00000000PtAAI,0yoam0000000c8XAAQ,25,,60
+,false,,0dSam0000000a5IEAQ,false,false,true,,,0y7am00000000PtAAI,0yoam0000000c8XAAQ,100,,70

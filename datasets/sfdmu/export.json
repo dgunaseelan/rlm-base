@@ -61,9 +61,9 @@
             "externalId": "Name"
         },
         {
-            "query": "SELECT ProductCategoryId, ProductId, CatalogId,CurrencyIsoCode FROM ProductCategoryProduct",
+            "query": "SELECT Name, ProductCategoryId, ProductId, CatalogId,CurrencyIsoCode FROM ProductCategoryProduct",
             "operation": "Upsert",
-            "externalId": "Product.Name;ProductCategory.Name;Catalog.Name",
+            "externalId": "Name",
             "excluded": false
         },
         {
@@ -72,9 +72,9 @@
             "externalId": "Name"
         },  
         {
-            "query": "SELECT IsDefault, Product2Id,ProductSellingModelId, ProrationPolicyId FROM ProductSellingModelOption",
+            "query": "SELECT Name, IsDefault, Product2Id,ProductSellingModelId, ProrationPolicyId FROM ProductSellingModelOption",
             "operation": "Upsert",
-            "externalId": "Product2.Name;ProductSellingModel.Name;ProrationPolicy.Name"
+            "externalId": "Name;Product2.Name;ProductSellingModel.Name"
         },
         {
             "query": "SELECT Name, Code, ParentProductId, Sequence, MinBundleComponents, MaxBundleComponents, Description, CurrencyIsoCode FROM ProductComponentGroup",
@@ -89,9 +89,9 @@
             "excluded": false
         },
         {
-            "query": "SELECT Name, Code, ParentProductId, ProductComponentGroupId, ChildProductId, ProductRelationshipTypeId, IsQuantityEditable, IsDefaultComponent, MaxQuantity, MinQuantity, DoesBundlePriceIncludeChild, Quantity, QuantityScaleMethod, IsComponentRequired, Sequence, ParentSellingModelId, ChildSellingModelId, ParentProductRole, ChildProductRole FROM ProductRelatedComponent",
+            "query": "SELECT Name, ParentProductId, ProductComponentGroupId, ChildProductId, ProductRelationshipTypeId, IsQuantityEditable, IsDefaultComponent, MaxQuantity, MinQuantity, DoesBundlePriceIncludeChild, Quantity, QuantityScaleMethod, IsComponentRequired, Sequence, ParentSellingModelId, ChildSellingModelId, ParentProductRole, ChildProductRole FROM ProductRelatedComponent",
             "operation": "Upsert",
-            "externalId": "Name;ParentProduct.Name;ProductComponentGroup.Name;ChildProduct.Name,ProductRelationshipType.Name",
+            "externalId": "ChildProduct.Name;ParentProduct.Name;ProductComponentGroup.Name;ProductRelationshipType.Name",
             "excluded": false
         },
         {
@@ -110,7 +110,7 @@
             
             "query": "SELECT Name, IsActive, AdjustmentMethod, Pricebook2Id, ScheduleType FROM PriceAdjustmentSchedule",
             "operation": "Upsert",
-            "externalId": "Name;Pricebook2.Name",
+            "externalId": "Name",
             "excluded": false
         },
         {
@@ -131,20 +131,20 @@
             
             "query": "SELECT Name, AttributeBasedAdjRuleId, AttributeDefinitionId, BooleanValue, DateValue, DateTimeValue, DoubleValue, IntegerValue, Operator, ProductId, StringValue FROM AttributeAdjustmentCondition",
             "operation": "Upsert",
-            "externalId": "Name;AttributeBasedAdjRule.Name;AttributeDefinition.Name;Product.Name",
+            "externalId": "Name",
             "excluded": false
         },
         {
             
             "query": "SELECT Name, AdjustmentType, AdjustmentValue, AttributeAdjConditionsHash, AttributeBasedAdjRuleId, EffectiveFrom, EffectiveTo, PriceAdjustmentScheduleId, PricingTerm, PricingTermUnit, ProductId, ProductSellingModelId, ScheduleType, SellingModelType FROM AttributeBasedAdjustment",
             "operation": "Upsert",
-            "externalId": "Name;AttributeBasedAdjRule.Name;PriceAdjustmentSchedule.Name;Product.Name;ProductSellingModel.Name",
+            "externalId": "Name",
             "excluded": false
         },
         {
             "query": "SELECT AdjustmentType, AdjustmentValue, EffectiveFrom, EffectiveTo, Name, PriceAdjustmentScheduleId, ProductId, ParentProductId, RootBundleId, ProductSellingModelId, ParentProductSellingModelId, PricingTerm, PricingTermUnit, RootProductSellingModelId, ScheduleType, SellingModelType FROM BundleBasedAdjustment",
             "operation": "Upsert",
-            "externalId": "Name;PriceAdjustmentSchedule.Name;Product.Name;ParentProduct.Name;RootBundle.Name;ProductSellingModel.Name;ParentProductSellingModel.Name;RootProductSellingModel.Name",
+            "externalId": "Name",
             "excluded": false
         }
     ],
