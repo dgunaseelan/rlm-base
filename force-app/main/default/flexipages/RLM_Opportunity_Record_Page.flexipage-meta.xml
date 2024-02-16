@@ -599,6 +599,28 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>buttonLabel</name>
+                    <value>Calculate Price</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contextDefinition</name>
+                    <value>ProductDiscoveryContext__stdctx</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contextMapping</name>
+                    <value>ProductDiscoveryMapping</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>pricingProcedure</name>
+                    <value>QualificationProcedure</value>
+                </componentInstanceProperties>
+                <componentName>runtime_industries_pricing:genericPricingAction</componentName>
+                <identifier>runtime_industries_pricing_genericPricingAction</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
                     <value>ADVGRID</value>
                 </componentInstanceProperties>

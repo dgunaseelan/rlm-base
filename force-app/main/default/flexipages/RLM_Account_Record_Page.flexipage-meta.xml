@@ -191,16 +191,6 @@
                 <identifier>RecordNumberOfEmployeesField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.AnnualRevenue</fieldItem>
-                <identifier>RecordAnnualRevenueField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-339cc1ea-682a-4d35-a7b5-7a7988d00184</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -243,6 +233,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Website</fieldItem>
                 <identifier>RecordWebsiteField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.AnnualRevenue</fieldItem>
+                <identifier>RecordAnnualRevenueField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-a3206394-7674-49ce-a505-26501e792ccb</name>
@@ -563,6 +563,27 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>graphName</name>
+                    <value>rlm_Asset_Hierarchy</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                </componentInstanceProperties>
+                <componentName>runtime_industries_arcgraph:arcGraph</componentName>
+                <identifier>runtime_industries_arcgraph_arcGraph</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-49696e59-a6bb-4300-81a9-14f8d13e111d</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>active</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>body</name>
                     <value>detailTabContent</value>
                 </componentInstanceProperties>
@@ -578,7 +599,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>active</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>body</name>
@@ -606,6 +627,20 @@
                 <identifier>newsTab</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-49696e59-a6bb-4300-81a9-14f8d13e111d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.contracts</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab</identifier>
+            </componentInstance>
+        </itemInstances>
         <mode>Replace</mode>
         <name>maintabs</name>
         <type>Facet</type>
@@ -619,20 +654,6 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tabset</componentName>
                 <identifier>flexipage_tabset</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>graphName</name>
-                    <value>rlm_Asset_Hierarchy</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Asset Hierarchy</value>
-                </componentInstanceProperties>
-                <componentName>runtime_industries_arcgraph:arcGraph</componentName>
-                <identifier>runtime_industries_arcgraph_arcGraph</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>

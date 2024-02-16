@@ -349,10 +349,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <name>Facet-cadea52e-d0da-4fe4-9fd9-89d2e52c8635</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -614,6 +610,10 @@
         <mode>Replace</mode>
         <name>main</name>
         <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>Facet-cadea52e-d0da-4fe4-9fd9-89d2e52c8635</name>
+        <type>Facet</type>
     </flexiPageRegions>
     <masterLabel>RLM Product Record Page</masterLabel>
     <parentFlexiPage>runtime_industries_epc__EpcProduct2_rec_L</parentFlexiPage>
