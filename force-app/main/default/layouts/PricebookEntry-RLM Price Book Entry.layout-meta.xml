@@ -22,10 +22,6 @@
                 <behavior>Required</behavior>
                 <field>UnitPrice</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CurrencyIsoCode</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
