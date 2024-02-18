@@ -2,8 +2,14 @@
   "orgName": "Salesforce Revenue Lifecycle Management",
   "country": "US",
   "edition": "Enterprise",
-  "features": ["OrderSaveLogicEnabled","CoreCPQ"],
+  "features": ["EnableSetPasswordInApi","OrderSaveLogicEnabled","CoreCPQ"],
   "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
     "orderSettings":{
       "enableOrders": true,
       "enableEnhancedCommerceOrders": true,
