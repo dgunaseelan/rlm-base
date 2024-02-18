@@ -1,0 +1,2 @@
+AdjustmentType,AdjustmentValue,EffectiveFrom,EffectiveTo,Errors,Id,ParentProductId,ParentProductSellingModelId,PriceAdjustmentScheduleId,ProductId,ProductSellingModelId,RootBundleId,RootProductSellingModelId
+Percentage,5,2024-02-01T20:00:00.000+0000,,,15Tam000000ol3lEAA,01tam000000ZjDvAAK,0jPam00000004y5EAA,84Xam0000001yRxEAI,01tam000000ZjDmAAK,0jPam00000004y5EAA,01tam000000ZjDvAAK,0jPam00000004y5EAA

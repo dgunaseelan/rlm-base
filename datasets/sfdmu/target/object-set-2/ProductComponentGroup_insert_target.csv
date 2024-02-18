@@ -1,0 +1,13 @@
+Code,Description,Errors,Id,MaxBundleComponents,MinBundleComponents,Name,ParentProductId,Sequence
+,,,0y7am00000002WTAAY,1,1,Maintenance,01tam000000ZjDjAAK,
+,,,0y7am00000002WUAAY,1,1,Training,01tam000000ZjDjAAK,
+,,,0y7am00000002WVAAY,,,Software,01tam000000ZjDvAAK,10
+,,,0y7am00000002WWAAY,,,Training,01tam000000ZjDvAAK,20
+,,,0y7am00000002WXAAY,,,Services,01tam000000ZjDvAAK,30
+,,,0y7am00000002WYAAY,1,1,Memory Capacity,01tam000000ZjDbAAK,2
+,,,0y7am00000002WZAAY,1,1,Hard Drive,01tam000000ZjDbAAK,3
+,,,0y7am00000002WaAAI,1,1,Processor,01tam000000ZjDbAAK,1
+Solution_Architecture,,,0y7am00000002WbAAI,,,Solution_Architecture,01tam000000ZjDgAAK,3
+Project_Management,,,0y7am00000002WcAAI,,,Project_Management,01tam000000ZjDgAAK,2
+,,,0y7am00000002WdAAI,1,1,Network Adapter,01tam000000ZjDbAAK,4
+Engineering_Resources,,,0y7am00000002WeAAI,,,Engineering_Resources,01tam000000ZjDgAAK,1

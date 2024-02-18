@@ -1,0 +1,20 @@
+Code,DataType,DefaultValue,Description,DeveloperName,Errors,Id,IsActive,Label,Name,PicklistId
+,Picklist,,,Length,,0tjam0000000PCvAAM,true,Length,Length,0v5am0000000X0nAAE
+,Picklist,,,Connector_Type,,0tjam0000000PCwAAM,true,Connector Type,Connector Type,0v5am0000000X0oAAE
+,Picklist,4,,Base_Core_Count,,0tjam0000000PCxAAM,true,Base Core Count,Base Core Count,0v5am0000000X0rAAE
+,Picklist,Flex,,API_Type,,0tjam0000000PCyAAM,true,API Type,API_Type,0v5am0000000X0qAAE
+,Picklist,Amazon Linux 2,,Operating_System,,0tjam0000000PCzAAM,true,Operating System,Operating System,0v5am0000000X0pAAE
+,Picklist,Security,,Server_Configuration,,0tjam0000000PD0AAM,true,Server_Configuration,Server_Configuration,0v5am0000000X0tAAE
+,Picklist,Onsite,,Resource_Location,,0tjam0000000PD1AAM,true,Resource_Location,Resource_Location,0v5am0000000X0sAAE
+,Picklist,Direct_Attach,,NIC_Type,,0tjam0000000PD2AAM,true,NIC_Type,NIC_Type,0v5am0000000X0yAAE
+,Picklist,3.2GHz,,Processor_Frequency,,0tjam0000000PD3AAM,true,Processor_Frequency,Processor_Frequency,0v5am0000000X0wAAE
+,Number,1000,,Flows,,0tjam0000000PD4AAM,true,Flows,Flows,
+,Picklist,,,SubscriptionType,,0tjam0000000PD5AAM,true,SubscriptionType,SubscriptionType,0v5am0000000X0vAAE
+,Text,,,SampleTextDefinition,,0tjam0000000PD6AAM,false,SampleTextDefinition,SampleTextDefinition,
+,Number,60,,Messages_Million,,0tjam0000000PD7AAM,true,Messages (Million),Messages (Million),
+,Number,0,,Data_Throughput_TB,,0tjam0000000PD8AAM,true,Data Throughput (TB),Data Throughput (TB),
+,Text,,,Notes_and_Assumptions,,0tjam0000000PD9AAM,true,Notes_and_Assumptions,Notes_and_Assumptions,
+,Picklist,Extended_Care,,Engineering_Options,,0tjam0000000PDAAA2,true,Engineering_Options,Engineering_Options,0v5am0000000X0xAAE
+,Picklist,Performance_Optimized,,Memory_Config,,0tjam0000000PDBAA2,true,Memory_Config,Memory_Config,0v5am0000000X0uAAE
+,Picklist,8GB,,Memory_Capacity,,0tjam0000000PDCAA2,true,Memory_Capacity,Memory_Capacity,0v5am0000000X0zAAE
+,Picklist,1TB,,HDD_Storage,,0tjam0000000PDDAA2,true,HDD_Storage,HDD_Storage,0v5am0000000X10AAE

@@ -204,12 +204,6 @@
         <fields>TotalPrice</fields>
         <relatedList>RelatedOrderItemList</relatedList>
     </relatedLists>
-    <relatedLists>
-        <fields>RTEL.NAME</fields>
-        <fields>RTEL.ERROR_MESSAGE</fields>
-        <fields>RTEL.RELATED_RECORD</fields>
-        <relatedList>RevenueTransactionErrorLogs</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>

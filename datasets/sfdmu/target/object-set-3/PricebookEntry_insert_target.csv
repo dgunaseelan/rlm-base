@@ -1,0 +1,92 @@
+Errors,IsActive,Pricebook2Id,Product2Id,ProductSellingModelId,UnitPrice
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjDZAA0,0jPam00000004y7EAA,39
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjDZAA0,0jPam00000004y5EAA,29
+,true,01sam000000O4C9AAK,01tam000000ZjDZAA0,0jPam00000004y7EAA,39
+,true,01sam000000O4C9AAK,01tam000000ZjDZAA0,0jPam00000004y5EAA,29
+,true,01sam000000O4C9AAK,01tam000000ZjDaAAK,0jPam00000004y9EAA,1499
+,true,01sam000000O4C9AAK,01tam000000ZjDbAAK,0jPam00000004y9EAA,3899
+,true,01sam000000O4C9AAK,01tam000000ZjDcAAK,0jPam00000004y9EAA,599
+,true,01sam000000O4C9AAK,01tam000000ZjDdAAK,0jPam00000004y9EAA,999
+,true,01sam000000O4C9AAK,01tam000000ZjDeAAK,0jPam00000004y9EAA,1199
+,true,01sam000000O4C9AAK,01tam000000ZjDfAAK,0jPam00000004y9EAA,1599
+,true,01sam000000O4C9AAK,01tam000000ZjDgAAK,0jPam00000004y9EAA,0
+,true,01sam000000O4C9AAK,01tam000000ZjDhAAK,0jPam00000004y9EAA,300
+,true,01sam000000O4C9AAK,01tam000000ZjDiAAK,0jPam00000004y9EAA,249
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjDjAAK,0jPam00000004y9EAA,0
+,true,01sam000000O4C9AAK,01tam000000ZjDjAAK,0jPam00000004y9EAA,0
+,true,01sam000000O4C9AAK,01tam000000ZjDkAAK,0jPam00000004y9EAA,1699
+,true,01sam000000O4C9AAK,01tam000000ZjDlAAK,0jPam00000004y9EAA,2499
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjDmAAK,0jPam00000004y5EAA,1000
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjDmAAK,0jPam00000004y6EAA,120000
+,true,01sam000000O4C9AAK,01tam000000ZjDmAAK,0jPam00000004y5EAA,1000
+,true,01sam000000O4C9AAK,01tam000000ZjDmAAK,0jPam00000004y6EAA,120000
+,true,01sam000000O4C9AAK,01tam000000ZjDnAAK,0jPam00000004y9EAA,1399
+,true,01sam000000O4C9AAK,01tam000000ZjDoAAK,0jPam00000004y9EAA,889
+,true,01sam000000O4C9AAK,01tam000000ZjDpAAK,0jPam00000004y9EAA,499
+,true,01sam000000O4C9AAK,01tam000000ZjDqAAK,0jPam00000004y9EAA,350
+,true,01sam000000O4C9AAK,01tam000000ZjDrAAK,0jPam00000004y9EAA,300
+,true,01sam000000O4C9AAK,01tam000000ZjDsAAK,0jPam00000004y9EAA,300
+,true,01sam000000O4C9AAK,01tam000000ZjDtAAK,0jPam00000004y9EAA,300
+,true,01sam000000O4C9AAK,01tam000000ZjDuAAK,0jPam00000004y5EAA,4500
+,true,01sam000000O4C9AAK,01tam000000ZjDuAAK,0jPam00000004y7EAA,5000
+,true,01sam000000O4C9AAK,01tam000000ZjDuAAK,0jPam00000004y6EAA,48000
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjDvAAK,0jPam00000004y9EAA,0
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjDvAAK,0jPam00000004y6EAA,0
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjDvAAK,0jPam00000004y5EAA,0
+,true,01sam000000O4C9AAK,01tam000000ZjDvAAK,0jPam00000004y9EAA,0
+,true,01sam000000O4C9AAK,01tam000000ZjDvAAK,0jPam00000004y5EAA,0
+,true,01sam000000O4C9AAK,01tam000000ZjDvAAK,0jPam00000004y6EAA,0
+,true,01sam000000O4C9AAK,01tam000000ZjDwAAK,0jPam00000004y9EAA,799
+,true,01sam000000O4C9AAK,01tam000000ZjDxAAK,0jPam00000004y9EAA,399
+,true,01sam000000O4C9AAK,01tam000000ZjDyAAK,0jPam00000004y9EAA,1599
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjE8AAK,0jPam00000004y9EAA,250
+,true,01sam000000O4C9AAK,01tam000000ZjE8AAK,0jPam00000004y9EAA,250
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEHAA0,0jPam00000004y6EAA,30000
+,true,01sam000000O4C9AAK,01tam000000ZjEHAA0,0jPam00000004y6EAA,30000
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEMAA0,0jPam00000004y6EAA,25000
+,true,01sam000000O4C9AAK,01tam000000ZjEMAA0,0jPam00000004y6EAA,25000
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEOAA0,0jPam00000004y7EAA,1500
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEOAA0,0jPam00000004y5EAA,2000
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEOAA0,0jPam00000004y6EAA,24000
+,true,01sam000000O4C9AAK,01tam000000ZjEOAA0,0jPam00000004y7EAA,1500
+,true,01sam000000O4C9AAK,01tam000000ZjEOAA0,0jPam00000004y5EAA,2000
+,true,01sam000000O4C9AAK,01tam000000ZjEOAA0,0jPam00000004y6EAA,24000
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEQAA0,0jPam00000004y5EAA,3500
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEQAA0,0jPam00000004y6EAA,41250
+,true,01sam000000O4C9AAK,01tam000000ZjEQAA0,0jPam00000004y5EAA,3500
+,true,01sam000000O4C9AAK,01tam000000ZjEQAA0,0jPam00000004y6EAA,41250
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjESAA0,0jPam00000004y7EAA,3000
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjESAA0,0jPam00000004y5EAA,3200
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjESAA0,0jPam00000004y6EAA,38000
+,true,01sam000000O4C9AAK,01tam000000ZjESAA0,0jPam00000004y7EAA,3000
+,true,01sam000000O4C9AAK,01tam000000ZjESAA0,0jPam00000004y5EAA,3200
+,true,01sam000000O4C9AAK,01tam000000ZjESAA0,0jPam00000004y6EAA,38000
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjETAA0,0jPam00000004y5EAA,2.5
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjETAA0,0jPam00000004y6EAA,25
+,true,01sam000000O4C9AAK,01tam000000ZjETAA0,0jPam00000004y5EAA,2.5
+,true,01sam000000O4C9AAK,01tam000000ZjETAA0,0jPam00000004y6EAA,25
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEUAA0,0jPam00000004y6EAA,3240
+,true,01sam000000O4C9AAK,01tam000000ZjEUAA0,0jPam00000004y6EAA,3240
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEVAA0,0jPam00000004y6EAA,3240
+,true,01sam000000O4C9AAK,01tam000000ZjEVAA0,0jPam00000004y6EAA,3240
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEWAA0,0jPam00000004y6EAA,1450
+,true,01sam000000O4C9AAK,01tam000000ZjEWAA0,0jPam00000004y6EAA,1450
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEXAA0,0jPam00000004y6EAA,450
+,true,01sam000000O4C9AAK,01tam000000ZjEXAA0,0jPam00000004y6EAA,450
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEZAA0,0jPam00000004y6EAA,25000
+,true,01sam000000O4C9AAK,01tam000000ZjEZAA0,0jPam00000004y6EAA,25000
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEaAAK,0jPam00000004y7EAA,5
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEaAAK,0jPam00000004y5EAA,5
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEaAAK,0jPam00000004y6EAA,45
+,true,01sam000000O4C9AAK,01tam000000ZjEaAAK,0jPam00000004y5EAA,5
+,true,01sam000000O4C9AAK,01tam000000ZjEaAAK,0jPam00000004y7EAA,5
+,true,01sam000000O4C9AAK,01tam000000ZjEaAAK,0jPam00000004y6EAA,45
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEpAAK,0jPam00000004y9EAA,6500
+,true,01sam000000O4C9AAK,01tam000000ZjEpAAK,0jPam00000004y9EAA,6500
+"Before creating this custom price, create a standard price with the same selling model and currency.",true,01sam000000O4aLAAS,01tam000000ZjEqAAK,0jPam00000004y9EAA,8500
+,true,01sam000000O4C9AAK,01tam000000ZjEqAAK,0jPam00000004y9EAA,8500
+,true,01sam000000O4C9AAK,01tam000000ZjEsAAK,0jPam00000004y9EAA,250
+,true,01sam000000O4C9AAK,01tam000000ZjEwAAK,0jPam00000004y9EAA,25000
+,true,01sam000000O4C9AAK,01tam000000ZjEyAAK,0jPam00000004y9EAA,350
+,true,01sam000000O4C9AAK,01tam000000ZjEzAAK,0jPam00000004y9EAA,500
+,true,01sam000000O4C9AAK,01tam000000ZjF0AAK,0jPam00000004y9EAA,300

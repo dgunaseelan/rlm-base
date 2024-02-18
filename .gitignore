@@ -60,3 +60,4 @@ temp_folder
 **/.eslintrc.json
 sfdmu/logs
 package-lock.json
+datasets/sfdmu/reports
