@@ -5,26 +5,23 @@
         {
             "objects": [
                 {
-                    "query": "SELECT Name,CatalogType,Code,Description FROM ProductCatalog",
+                    "query": "SELECT Name, CatalogType, Code, Description FROM ProductCatalog",
                     "operation": "Upsert",
                     "externalId": "Name",
                     "excluded": false
                 },
                 {
-                    "query": "SELECT Name,CatalogId,Code,Description, ParentCategoryId, SortOrder FROM ProductCategory",
+                    "query": "SELECT Name, CatalogId, Code, Description, ParentCategoryId, SortOrder FROM ProductCategory",
                     "operation": "Upsert",
-                    "externalId": "Name;ParentCategory.Name",
+                    "externalId": "Name;Catalog.Name;ParentCategory.Name",
                     "excluded": false
                 },
                 {
                     "query": "SELECT Name, Status, PricingTerm, PricingTermUnit, SellingModelType FROM ProductSellingModel",
                     "operation": "Upsert",
-                    "externalId": "Name"
-                }
-            ]
-        },
-        {
-            "objects": [
+                    "externalId": "Name;SellingModelType",
+                    "excluded": false
+                },
                 {
                     "query": "SELECT Name, Code FROM AttributeCategory",
                     "operation": "Upsert",
@@ -100,9 +97,9 @@
                     "excluded": false
                 },
                 {
-                    "query": "SELECT Name, IsActive FROM Pricebook2",
+                    "query": "SELECT Name, IsActive, IsStandard FROM Pricebook2",
                     "operation": "Upsert",
-                    "externalId": "Name",
+                    "externalId": "Name;IsStandard",
                     "excluded": false
                 },
                 {
@@ -145,11 +142,7 @@
                     "operation": "Upsert",
                     "externalId": "Name",
                     "excluded": false
-                }
-            ]
-        },
-        {
-            "objects" : [
+                },
                 {
                     "query": "SELECT Name, IsActive, Pricebook2Id, Product2Id, ProductSellingModelId, UnitPrice, CurrencyIsoCode FROM PricebookEntry",
                     "operation": "Upsert",

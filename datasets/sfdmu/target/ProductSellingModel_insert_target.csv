@@ -1,6 +1,0 @@
-Errors,Id,Name,PricingTerm,PricingTermUnit,SellingModelType,Status
-,0jPam00000004y5EAA,Evergreen Monthly,1,Months,Evergreen,Active
-,0jPam00000004y6EAA,Term Annual,1,Annual,TermDefined,Active
-,0jPam00000004y7EAA,Term Monthly,1,Months,TermDefined,Active
-,0jPam00000004y8EAA,Evergreen Annual,1,Annual,Evergreen,Draft
-,0jPam00000004y9EAA,One-Time,,,OneTime,Active

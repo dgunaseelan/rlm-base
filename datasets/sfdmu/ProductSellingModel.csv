@@ -1,6 +1,6 @@
-Id,Name,PricingTerm,PricingTermUnit,SellingModelType,Status
-0jPal00000001P7EAI,Evergreen Monthly,1,Months,Evergreen,Active
-0jPal00000001P8EAI,Term Annual,1,Annual,TermDefined,Active
-0jPal00000001P9EAI,Term Monthly,1,Months,TermDefined,Active
-0jPal00000001PAEAY,Evergreen Annual,1,Annual,Evergreen,Draft
-0jPal00000001PBEAY,One-Time,,,OneTime,Active
+$$Name$SellingModelType,Id,Name,PricingTerm,PricingTermUnit,SellingModelType,Status
+Evergreen Monthly;Evergreen,0jPa500000003ynEAA,Evergreen Monthly,1,Months,Evergreen,Active
+Term Annual;TermDefined,0jPa500000003yoEAA,Term Annual,1,Annual,TermDefined,Active
+Term Monthly;TermDefined,0jPa500000003ypEAA,Term Monthly,1,Months,TermDefined,Active
+Evergreen Annual;Evergreen,0jPa500000003yqEAA,Evergreen Annual,1,Annual,Evergreen,Draft
+One-Time;OneTime,0jPa500000003yrEAA,One-Time,,,OneTime,Active

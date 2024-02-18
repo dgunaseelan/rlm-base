@@ -1,0 +1,3 @@
+ChildSellingModelId,DoesBundlePriceIncludeChild,Errors,Id,IsComponentRequired,IsDefaultComponent,IsQuantityEditable,MaxQuantity,MinQuantity,ProductComponentGroupId,ProductRelationshipTypeId,Quantity,QuantityScaleMethod,Sequence
+,false,,0dSam0000000inaEAA,false,false,true,,,0y7am00000002Y7AAI,0yoam0000000mO1AAI,1,,10
+,false,,0dSam0000000infEAA,false,false,true,,,0y7am00000002Y7AAI,0yoam0000000mO1AAI,10,,20
