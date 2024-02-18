@@ -745,7 +745,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>graphName</name>
-                    <value>Quote_ARC</value>
+                    <value>RLM_Quote_ARC</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
