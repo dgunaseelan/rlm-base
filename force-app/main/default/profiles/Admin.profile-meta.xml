@@ -15,13 +15,22 @@
         <layout>Asset-RLM Asset Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>AttributePicklist-RLM Attribute Picklist Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Contract-RLM Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PricebookEntry-RLM Price Book Entry</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Product2-RLM Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ProductCatalog-RLM Catalog Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quote-RLM Quote Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>QuoteLineItem-RLM Quote Line Item Layout</layout>
