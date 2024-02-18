@@ -8,12 +8,14 @@
                     "query": "SELECT Name, CatalogType, Code, Description FROM ProductCatalog",
                     "operation": "Upsert",
                     "externalId": "Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
                     "query": "SELECT Name, CatalogId, Code, Description, ParentCategoryId, SortOrder FROM ProductCategory",
                     "operation": "Upsert",
                     "externalId": "Name;Catalog.Name;ParentCategory.Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
@@ -26,28 +28,33 @@
                     "query": "SELECT Name, Code FROM AttributeCategory",
                     "operation": "Upsert",
                     "externalId": "Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
                     "query": "SELECT Name, Description, DataType, Status  FROM AttributePicklist",
                     "operation": "Upsert",
-                    "externalId": "Name"
+                    "externalId": "Name",
+                    "deleteOldData": true
                 },
                 {
                     "query": "SELECT Name, IsDefault, DisplayValue, PicklistId, Sequence, Value, DisplayValue, Code  FROM AttributePicklistValue",
                     "operation": "Upsert",
-                    "externalId": "Name;Picklist.Name"
+                    "externalId": "Name;Picklist.Name",
+                    "deleteOldData": true
                 },
                 {
                     "query": "SELECT Name, DeveloperName, DataType, IsActive, DefaultValue, Description, Required, Code, Label, PicklistId FROM AttributeDefinition",
                     "operation": "Upsert",
                     "externalId": "Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
                     "query": "SELECT AttributeCategoryId, AttributeDefinitionId FROM AttributeCategoryAttribute",
                     "operation": "Upsert",
                     "externalId": "AttributeCategory.Name;AttributeDefinition.Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
@@ -60,6 +67,7 @@
                     "query": "SELECT Name, ProductClassificationId, AttributeDefinitionId, AttributeCategoryId, AttributeNameOverride, Status, DefaultValue, DisplayType, IsPriceImpacting, IsReadOnly, IsRequired, MaximumCharacterCount, MaximumValue, MinimumCharacterCount, MinimumValue, Sequence FROM ProductClassificationAttr",
                     "operation": "Upsert",
                     "externalId": "ProductClassification.Name;AttributeDefinition.Name;AttributeCategory.Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
@@ -71,17 +79,20 @@
                     "query": "SELECT ProductCategoryId, ProductId, CatalogId,CurrencyIsoCode FROM ProductCategoryProduct",
                     "operation": "Upsert",
                     "externalId": "ProductCategory.Name;Product.Name;Catalog.Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },  
                 {
-                    "query": "SELECT IsDefault, Product2Id,ProductSellingModelId, ProrationPolicyId FROM ProductSellingModelOption",
+                    "query": "SELECT IsDefault, Product2Id, ProductSellingModelId, ProrationPolicyId FROM ProductSellingModelOption",
                     "operation": "Upsert",
-                    "externalId": "Product2.Name;ProductSellingModel.Name"
+                    "externalId": "Product2.Name;ProductSellingModel.Name",
+                    "deleteOldData": true
                 },
                 {
                     "query": "SELECT Name, Code, ParentProductId, Sequence, MinBundleComponents, MaxBundleComponents, Description, CurrencyIsoCode FROM ProductComponentGroup",
                     "operation": "Upsert",
                     "externalId": "Name;ParentProduct.Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
@@ -94,6 +105,7 @@
                     "query": "SELECT Name, ParentProductId, ProductComponentGroupId, ChildProductId, ProductRelationshipTypeId, IsQuantityEditable, IsDefaultComponent, MaxQuantity, MinQuantity, DoesBundlePriceIncludeChild, Quantity, QuantityScaleMethod, IsComponentRequired, Sequence, ParentSellingModelId, ChildSellingModelId, ParentProductRole, ChildProductRole FROM ProductRelatedComponent",
                     "operation": "Upsert",
                     "externalId": "ChildProduct.Name;ParentProduct.Name;ProductComponentGroup.Name;ProductRelationshipType.Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
@@ -107,6 +119,7 @@
                     "query": "SELECT Name, IsActive, AdjustmentMethod, EffectiveFrom, EffectiveTo, Pricebook2Id, ScheduleType FROM PriceAdjustmentSchedule",
                     "operation": "Upsert",
                     "externalId": "Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
@@ -114,6 +127,7 @@
                     "query": "SELECT Name, IsActive, LowerBound, PriceAdjustmentScheduleId, Product2Id, ProductSellingModelId, ScheduleType, SellingModelType, TierType, TierValue, UpperBound FROM PriceAdjustmentTier",
                     "operation": "Upsert",
                     "externalId": "Name;PriceAdjustmentSchedule.Name;Product2.Name;ProductSellingModel.Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
@@ -121,6 +135,7 @@
                     "query": "SELECT Name FROM AttributeBasedAdjRule",
                     "operation": "Upsert",
                     "externalId": "Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
@@ -135,12 +150,14 @@
                     "query": "SELECT Name, AdjustmentType, AdjustmentValue, AttributeAdjConditionsHash, AttributeBasedAdjRuleId, EffectiveFrom, EffectiveTo, PriceAdjustmentScheduleId, PricingTerm, PricingTermUnit, ProductId, ProductSellingModelId, ScheduleType, SellingModelType FROM AttributeBasedAdjustment",
                     "operation": "Upsert",
                     "externalId": "Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
                     "query": "SELECT AdjustmentType, AdjustmentValue, EffectiveFrom, EffectiveTo, Name, PriceAdjustmentScheduleId, ProductId, ParentProductId, RootBundleId, ProductSellingModelId, ParentProductSellingModelId, PricingTerm, PricingTermUnit, RootProductSellingModelId, ScheduleType, SellingModelType FROM BundleBasedAdjustment",
                     "operation": "Upsert",
                     "externalId": "Name",
+                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
