@@ -9,7 +9,7 @@
         <isGroupByField>false</isGroupByField>
         <isRequired>false</isRequired>
         <operator>Equals</operator>
-        <sequence>1</sequence>
+        <sequence>2</sequence>
         <usage>INPUT</usage>
     </decisionTableParameters>
     <decisionTableParameters>
@@ -25,7 +25,7 @@
         <isGroupByField>false</isGroupByField>
         <isRequired>false</isRequired>
         <operator>Equals</operator>
-        <sequence>2</sequence>
+        <sequence>3</sequence>
         <usage>INPUT</usage>
     </decisionTableParameters>
     <decisionTableParameters>
@@ -34,12 +34,12 @@
         <isGroupByField>false</isGroupByField>
         <isRequired>true</isRequired>
         <operator>Equals</operator>
-        <sequence>3</sequence>
+        <sequence>1</sequence>
         <usage>INPUT</usage>
     </decisionTableParameters>
     <doesConsiderNullValue>false</doesConsiderNullValue>
     <filterResultBy>OutputOrder</filterResultBy>
-    <setupName>ProductQualificationDT</setupName>
+    <setupName>RLM_ProductQualification</setupName>
     <sourceObject>ProductQualification</sourceObject>
     <status>Active</status>
     <usageType>ProductQualification</usageType>
