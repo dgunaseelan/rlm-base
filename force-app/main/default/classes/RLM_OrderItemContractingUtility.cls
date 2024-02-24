@@ -2,10 +2,12 @@ public class RLM_OrderItemContractingUtility {
     
     @InvocableMethod (label='Calculate Contract Info' description='Returns an Contract End Date based on last Order Item')
     public static List<OrderInfoResults> calculateOrderInfoForContract(List<Id> inputOrderIds){
+        if(inputOrderIds.isEmpty()) {
+            return new List<OrderInfoResults>();
+        }
         Id oId = inputOrderIds.get(0);
 
-        Order o = [SELECT Id, EffectiveDate FROM Order WHERE Id =: oId].get(0);
-       
+        Order o = [SELECT Id, EffectiveDate FROM Order WHERE Id =: oId];
 
         List<OrderInfoResults> results = new List<OrderInfoResults>();
 
@@ -21,12 +23,12 @@ public class RLM_OrderItemContractingUtility {
             List<OrderItem> sortedOrderItems = [SELECT Id, ServiceDate, EndDate 
                                             FROM OrderItem 
                                             WHERE (EndDate != null AND OrderId =: oId) 
-                                            ORDER BY EndDate DESC];
+                                            ORDER BY EndDate DESC LIMIT 1];
 
-            if(sortedOrderItems.size() > 0){
-                result.outEndDate = sortedOrderItems.get(0).EndDate;
-                result.outContractTerm = o.EffectiveDate.monthsBetween(sortedOrderItems.get(0).EndDate);
-                if (sortedOrderItems.get(0).EndDate.day() > o.EffectiveDate.day()) result.outContractTerm++;
+            if(!sortedOrderItems.isEmpty()){
+                result.outEndDate = sortedOrderItems[0].EndDate;
+                result.outContractTerm = o.EffectiveDate.monthsBetween(sortedOrderItems[0].EndDate);
+                if (sortedOrderItems[0].EndDate.day() > o.EffectiveDate.day()) result.outContractTerm++;
             }
         }else {
             result.outEndDate = null;
