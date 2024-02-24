@@ -1,69 +1,74 @@
-public class RLM_OrderItemContractingUtility {
-    
-    @InvocableMethod (label='Calculate Contract Info' description='Returns an Contract End Date based on last Order Item')
+public class RLM_OrderItemContractingUtility{
+    @InvocableMethod(label = 'Calculate Contract Info'description = 'Returns an Contract End Date based on last Order Item')
     public static List<OrderInfoResults> calculateOrderInfoForContract(List<Id> inputOrderIds){
-        if(inputOrderIds.isEmpty()) {
+        if (inputOrderIds.isEmpty()){
             return new List<OrderInfoResults>();
         }
         Id oId = inputOrderIds.get(0);
 
-        Order o = [SELECT Id, EffectiveDate FROM Order WHERE Id =: oId];
+        Order o = [SELECT Id, EffectiveDate
+                   FROM Order
+                   WHERE Id = :oId];
 
         List<OrderInfoResults> results = new List<OrderInfoResults>();
 
         OrderInfoResults result = new OrderInfoResults();
 
         List<OrderItem> subOrderItems = [SELECT Id, ProductSellingModel.SellingModelType
-                                            FROM OrderItem 
-                                            WHERE (ProductSellingModel.SellingModelType != 'One Time' AND OrderId =: oId)];
+                                         FROM OrderItem
+                                         WHERE (ProductSellingModel.SellingModelType != 'One Time' AND OrderId = :oId)];
 
         result.subscriptionItemCount = subOrderItems.size();
 
-        if(subOrderItems.size() > 0){
-            List<OrderItem> sortedOrderItems = [SELECT Id, ServiceDate, EndDate 
-                                            FROM OrderItem 
-                                            WHERE (EndDate != null AND OrderId =: oId) 
-                                            ORDER BY EndDate DESC LIMIT 1];
+        if (subOrderItems.size() > 0){
+            List<OrderItem> sortedOrderItems = [SELECT Id, ServiceDate, EndDate
+                                                FROM OrderItem
+                                                WHERE (EndDate != null AND OrderId = :oId)
+                                                ORDER BY EndDate DESC
+                                                LIMIT 1];
 
-            if(!sortedOrderItems.isEmpty()){
+            if (!sortedOrderItems.isEmpty()){
                 result.outEndDate = sortedOrderItems[0].EndDate;
                 result.outContractTerm = o.EffectiveDate.monthsBetween(sortedOrderItems[0].EndDate);
-                if (sortedOrderItems[0].EndDate.day() > o.EffectiveDate.day()) result.outContractTerm++;
+                if (sortedOrderItems[0].EndDate.day() > o.EffectiveDate.day())
+                    result.outContractTerm++;
             }
-        }else {
+        } else{
             result.outEndDate = null;
             result.outContractTerm = 1;
         }
 
-        result.addOrderActionCount = [SELECT Id, OrderId, Type FROM OrderAction WHERE (Type = 'Add' AND OrderId =: oId)].size();
-        
-        result.amendOrderActionCount = [SELECT Id, OrderId, Type FROM OrderAction WHERE (Type = 'Amend' AND OrderId =: oId)].size();
+        result.addOrderActionCount = [SELECT Id, OrderId, Type
+                                      FROM OrderAction
+                                      WHERE (Type = 'Add' AND OrderId = :oId)].size();
 
-        result.renewOrderActionCount = [SELECT Id, OrderId, Type FROM OrderAction WHERE (Type = 'Renew' AND OrderId =: oId)].size();
+        result.amendOrderActionCount = [SELECT Id, OrderId, Type
+                                        FROM OrderAction
+                                        WHERE (Type = 'Amend' AND OrderId = :oId)].size();
+
+        result.renewOrderActionCount = [SELECT Id, OrderId, Type
+                                        FROM OrderAction
+                                        WHERE (Type = 'Renew' AND OrderId = :oId)].size();
 
         results.add(result);
-        
-        return results;
 
+        return results;
     }
 
     public class OrderInfoResults{
-        @InvocableVariable 
+        @InvocableVariable
         public Date outEndDate;
-
-        @InvocableVariable 
+        @InvocableVariable
         public Integer outContractTerm;
-
         @InvocableVariable
         public Integer subscriptionItemCount;
-
-        @InvocableVariable 
+        @InvocableVariable
         public Integer addOrderActionCount;
-
-        @InvocableVariable 
+        @InvocableVariable
         public Integer amendOrderActionCount;
-
-        @InvocableVariable 
+        @InvocableVariable
         public Integer renewOrderActionCount;
+
     }
+
 }
