@@ -30,8 +30,9 @@ public class RLM_OrderItemContractingUtility{
             if (!sortedOrderItems.isEmpty()){
                 result.outEndDate = sortedOrderItems[0].EndDate;
                 result.outContractTerm = o.EffectiveDate.monthsBetween(sortedOrderItems[0].EndDate);
-                if (sortedOrderItems[0].EndDate.day() > o.EffectiveDate.day())
+                if (sortedOrderItems[0].EndDate.day() > o.EffectiveDate.day()){
                     result.outContractTerm++;
+                }
             }
         } else{
             result.outEndDate = null;
