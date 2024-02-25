@@ -1,62 +1,78 @@
-public class RLM_OrderItemContractingUtility{
-    @InvocableMethod(label = 'Calculate Contract Info'description = 'Returns an Contract End Date based on last Order Item')
-    public static List<OrderInfoResults> calculateOrderInfoForContract(List<Id> inputOrderIds){
-        if (inputOrderIds.isEmpty()){
-            return new List<OrderInfoResults>();
-        }
-        Id oId = inputOrderIds.get(0);
+public class RLM_OrderItemContractingUtility {
 
-        Order o = [SELECT Id, EffectiveDate
-                   FROM Order
-                   WHERE Id = :oId];
-
+    @InvocableMethod(label = 'Calculate Contract Info' description = 'Returns Contract End Date based on last Order Item')
+    public static List<OrderInfoResults> calculateOrderInfoForContract(List<Id> inputOrderIds) {
         List<OrderInfoResults> results = new List<OrderInfoResults>();
-
-        OrderInfoResults result = new OrderInfoResults();
-
-        List<OrderItem> subOrderItems = [SELECT Id, ProductSellingModel.SellingModelType
-                                         FROM OrderItem
-                                         WHERE (ProductSellingModel.SellingModelType != 'One Time' AND OrderId = :oId)];
-
-        result.subscriptionItemCount = subOrderItems.size();
-
-        if (subOrderItems.size() > 0){
-            List<OrderItem> sortedOrderItems = [SELECT Id, ServiceDate, EndDate
-                                                FROM OrderItem
-                                                WHERE (EndDate != null AND OrderId = :oId)
-                                                ORDER BY EndDate DESC
-                                                LIMIT 1];
-
-            if (!sortedOrderItems.isEmpty()){
-                result.outEndDate = sortedOrderItems[0].EndDate;
-                result.outContractTerm = o.EffectiveDate.monthsBetween(sortedOrderItems[0].EndDate);
-                if (sortedOrderItems[0].EndDate.day() > o.EffectiveDate.day()){
-                    result.outContractTerm++;
-                }
-            }
-        } else{
-            result.outEndDate = null;
-            result.outContractTerm = 1;
+        if (inputOrderIds.isEmpty()) {
+            return results;
         }
 
-        result.addOrderActionCount = [SELECT Id, OrderId, Type
-                                      FROM OrderAction
-                                      WHERE (Type = 'Add' AND OrderId = :oId)].size();
+        // Check field-level security before executing queries
+        Boolean isOrderAccessible = Schema.sObjectType.Order.fields.EffectiveDate.isAccessible();
+        Boolean isOrderItemAccessible = Schema.sObjectType.OrderItem.fields.ServiceDate.isAccessible() && Schema.sObjectType.OrderItem.fields.EndDate.isAccessible();
+        Boolean isOrderActionAccessible = Schema.sObjectType.OrderAction.fields.Type.isAccessible();
+        
+        if (!isOrderAccessible || !isOrderItemAccessible || !isOrderActionAccessible) {
+            System.debug('User does not have access to required fields on Order, OrderItem, or OrderAction objects.');
+            return results;
+        }
 
-        result.amendOrderActionCount = [SELECT Id, OrderId, Type
-                                        FROM OrderAction
-                                        WHERE (Type = 'Amend' AND OrderId = :oId)].size();
+        Map<Id, Order> ordersMap = new Map<Id, Order>([
+            SELECT Id, EffectiveDate,
+                (SELECT Id, ServiceDate, EndDate, ProductSellingModel.SellingModelType
+                 FROM OrderItems
+                 WHERE ProductSellingModel.SellingModelType != 'One Time' AND EndDate != null
+                 ORDER BY EndDate DESC LIMIT 1),
+                (SELECT Id, Type FROM OrderActions WHERE Type IN ('Add', 'Amend', 'Renew'))
+            FROM Order
+            WHERE Id IN :inputOrderIds
+        ]);
 
-        result.renewOrderActionCount = [SELECT Id, OrderId, Type
-                                        FROM OrderAction
-                                        WHERE (Type = 'Renew' AND OrderId = :oId)].size();
-
-        results.add(result);
+        for (Order o : ordersMap.values()) {
+            OrderInfoResults result = new OrderInfoResults();
+            processOrderItems(o, result);
+            countOrderActions(o, result);
+            results.add(result);
+        }
 
         return results;
     }
 
-    public class OrderInfoResults{
+    private static void processOrderItems(Order o, OrderInfoResults result) {
+        result.subscriptionItemCount = o.OrderItems.size();
+        if (!o.OrderItems.isEmpty()) {
+            OrderItem lastItem = o.OrderItems[0];
+            result.outEndDate = lastItem.EndDate;
+            result.outContractTerm = o.EffectiveDate.monthsBetween(lastItem.EndDate);
+            if (lastItem.EndDate.day() > o.EffectiveDate.day()) {
+                result.outContractTerm++;
+            }
+        } else {
+            result.outEndDate = null;
+            result.outContractTerm = 1;
+        }
+    }
+
+    private static void countOrderActions(Order o, OrderInfoResults result) {
+        result.addOrderActionCount = 0;
+        result.amendOrderActionCount = 0;
+        result.renewOrderActionCount = 0;
+        for (OrderAction action : o.OrderActions) {
+            switch on action.Type {
+                when 'Add' {
+                    result.addOrderActionCount++;
+                }
+                when 'Amend' {
+                    result.amendOrderActionCount++;
+                }
+                when 'Renew' {
+                    result.renewOrderActionCount++;
+                }
+            }
+        }
+    }
+
+    public class OrderInfoResults {
         @InvocableVariable
         public Date outEndDate;
         @InvocableVariable
@@ -69,7 +85,5 @@ public class RLM_OrderItemContractingUtility{
         public Integer amendOrderActionCount;
         @InvocableVariable
         public Integer renewOrderActionCount;
-
     }
-
 }
