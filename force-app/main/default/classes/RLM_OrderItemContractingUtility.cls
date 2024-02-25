@@ -1,4 +1,4 @@
-public class RLM_OrderItemContractingUtility {
+public with sharing class RLM_OrderItemContractingUtility {
 
     @InvocableMethod(label = 'Calculate Contract Info' description = 'Returns Contract End Date based on last Order Item')
     public static List<OrderInfoResults> calculateOrderInfoForContract(List<Id> inputOrderIds) {

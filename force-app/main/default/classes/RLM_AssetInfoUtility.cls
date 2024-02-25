@@ -1,72 +1,84 @@
-public class RLM_AssetInfoUtility{
+public with sharing class RLM_AssetInfoUtility{
     @InvocableMethod(label = 'Calculate Asset Info'description = 'Returns Asset Renewal Info')
     public static void calculateAssetRenewInfo(List<CreateAssetOrderEvent> assetOrderCreationEvents){
         if (assetOrderCreationEvents.isEmpty()){
             return;
         }
+
         CreateAssetOrderEvent assetOrderCreationEvent = assetOrderCreationEvents.get(0);
-        List<CreateAssetOrderDtlEvent> assetDetailEvents = assetOrderCreationEvent.AssetDetails;
-
-        // Prepare a set to collect all OrderItemIds and AssetIds
-        Set<Id> orderItemIds = new Set<Id>();
-        Set<Id> assetIds = new Set<Id>();
-        for (CreateAssetOrderDtlEvent event : assetDetailEvents){
-            orderItemIds.add(event.OrderItemId);
-            assetIds.add(event.AssetId);
-        }
-
-        // Fetch all related OrderItems outside the loop
-        Map<Id, OrderItem> orderItemsMap = new Map<Id, OrderItem>([SELECT Id, ServiceDate, EndDate, OrderAction.Type, ProductSellingModel.SellingModelType, ProductSellingModel.PricingTermUnit, Product2.Name
-                                                                   FROM OrderItem
-                                                                   WHERE Id IN:orderItemIds]);
-
-        // Fetch all related AssetContractRelationships outside the loop
-        Map<Id, AssetContractRelationship> acrMap = new Map<Id, AssetContractRelationship>([SELECT Id, AssetId, Contract.ContractTerm
-                                                                                            FROM AssetContractRelationship
-                                                                                            WHERE AssetId IN:assetIds]);
+        Map<Id, OrderItem> orderItemsMap = fetchOrderItems(assetOrderCreationEvent.AssetDetails);
+        Map<Id, AssetContractRelationship> acrMap = fetchAssetContractRelationships(assetOrderCreationEvent.AssetDetails);
 
         List<Asset> assetsToUpdate = new List<Asset>();
 
-        for (CreateAssetOrderDtlEvent assetDetailEvent : assetDetailEvents){
-            OrderItem oi = orderItemsMap.get(assetDetailEvent.OrderItemId);
-            system.debug('Processing Order Item ' + oi.Id + ' for Product ' + oi.Product2.Name);
-
-            Asset assetToUpdate = new Asset();
-            assetToUpdate.Id = assetDetailEvent.AssetId;
-
-            if (oi.OrderAction.Type == 'Add'){
-                // Simplified logic for setting RenewalTerm and RenewalTermUnit based on conditions
-                if (oi.ProductSellingModel.SellingModelType == 'TermDefined'){
-                    Integer monthsBetween = oi.ServiceDate.monthsBetween(oi.EndDate);
-                    if (oi.EndDate.day() > oi.ServiceDate.day()){
-                        monthsBetween++;
-                    }
-                    assetToUpdate.RenewalTerm = Integer.valueOf(oi.ProductSellingModel.PricingTermUnit == 'Months' ? monthsBetween : monthsBetween / 12);
-                    assetToUpdate.RenewalTermUnit = oi.ProductSellingModel.PricingTermUnit;
-                } else if (oi.ProductSellingModel.SellingModelType == 'Evergreen'){
-                    assetToUpdate.RenewalTerm = oi.ProductSellingModel.PricingTermUnit == 'Months' ? 12 : 1;
-                    assetToUpdate.RenewalTermUnit = oi.ProductSellingModel.PricingTermUnit;
-                } else{
-                    assetToUpdate.RenewalTerm = 1;
-                    assetToUpdate.RenewalTermUnit = 'Annual';
-                }
-
-                assetToUpdate.PricingSource = 'LastTransaction';
-            } else{
-                AssetContractRelationship acr = acrMap.get(assetDetailEvent.AssetId);
-                if (acr != null){
-                    assetToUpdate.RenewalTermUnit = 'Months';
-                    assetToUpdate.RenewalTerm = acr.Contract.ContractTerm;
-                    assetToUpdate.RenewalTerm = 12;
-                    assetToUpdate.PricingSource = 'PriceBookListPrice';
-                }
-            }
-
-            assetsToUpdate.add(assetToUpdate);
+        for (CreateAssetOrderDtlEvent assetDetailEvent : assetOrderCreationEvent.AssetDetails){
+            assetsToUpdate.add(processAssetDetailEvent(assetDetailEvent, orderItemsMap, acrMap));
         }
 
         if (!assetsToUpdate.isEmpty()){
-            upsert assetsToUpdate;
+            // Check CRUD permissions before upsert operation
+            if (Schema.sObjectType.Asset.isCreateable() && Schema.sObjectType.Asset.isUpdateable()){
+                upsert assetsToUpdate;
+            }
+        }
+    }
+
+    private static Map<Id, OrderItem> fetchOrderItems(List<CreateAssetOrderDtlEvent> assetDetailEvents){
+        Set<Id> orderItemIds = new Set<Id>();
+        for (CreateAssetOrderDtlEvent event : assetDetailEvents){
+            orderItemIds.add(event.OrderItemId);
+        }
+
+        return new Map<Id, OrderItem>([SELECT Id, ServiceDate, EndDate, OrderAction.Type, ProductSellingModel.SellingModelType, ProductSellingModel.PricingTermUnit, Product2.Name
+                                       FROM OrderItem
+                                       WHERE Id IN:orderItemIds]);
+    }
+
+    private static Map<Id, AssetContractRelationship> fetchAssetContractRelationships(List<CreateAssetOrderDtlEvent> assetDetailEvents){
+        Set<Id> assetIds = new Set<Id>();
+        for (CreateAssetOrderDtlEvent event : assetDetailEvents){
+            assetIds.add(event.AssetId);
+        }
+
+        return new Map<Id, AssetContractRelationship>([SELECT Id, AssetId, Contract.ContractTerm
+                                                       FROM AssetContractRelationship
+                                                       WHERE AssetId IN:assetIds]);
+    }
+
+    private static Asset processAssetDetailEvent(CreateAssetOrderDtlEvent assetDetailEvent, Map<Id, OrderItem> orderItemsMap, Map<Id, AssetContractRelationship> acrMap){
+        OrderItem oi = orderItemsMap.get(assetDetailEvent.OrderItemId);
+        Asset assetToUpdate = new Asset();
+        assetToUpdate.Id = assetDetailEvent.AssetId;
+
+        if (oi.OrderAction.Type == 'Add'){
+            setRenewalInfoForNewAsset(oi, assetToUpdate);
+        } else{
+            updateRenewalInfoForExistingAsset(acrMap.get(assetDetailEvent.AssetId), assetToUpdate);
+        }
+
+        return assetToUpdate;
+    }
+
+    private static void setRenewalInfoForNewAsset(OrderItem oi, Asset assetToUpdate){
+        if (oi.ProductSellingModel.SellingModelType == 'TermDefined'){
+            Integer monthsBetween = oi.ServiceDate.monthsBetween(oi.EndDate) + ((oi.EndDate.day() > oi.ServiceDate.day()) ? 1 : 0);
+            assetToUpdate.RenewalTerm = (oi.ProductSellingModel.PricingTermUnit == 'Months') ? monthsBetween : monthsBetween / 12;
+            assetToUpdate.RenewalTermUnit = oi.ProductSellingModel.PricingTermUnit;
+        } else if (oi.ProductSellingModel.SellingModelType == 'Evergreen'){
+            assetToUpdate.RenewalTerm = (oi.ProductSellingModel.PricingTermUnit == 'Months') ? 12 : 1;
+            assetToUpdate.RenewalTermUnit = oi.ProductSellingModel.PricingTermUnit;
+        } else{
+            assetToUpdate.RenewalTerm = 1;
+            assetToUpdate.RenewalTermUnit = 'Annual';
+        }
+        assetToUpdate.PricingSource = 'LastTransaction';
+    }
+
+    private static void updateRenewalInfoForExistingAsset(AssetContractRelationship acr, Asset assetToUpdate){
+        if (acr != null){
+            assetToUpdate.RenewalTermUnit = 'Months';
+            assetToUpdate.RenewalTerm = acr.Contract.ContractTerm;
+            assetToUpdate.PricingSource = 'PriceBookListPrice';
         }
     }
 
