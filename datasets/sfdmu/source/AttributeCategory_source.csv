@@ -1,14 +1,14 @@
 Code,Id,Name
-Cables,0v3a500000002ppAAA,Cables
-TS,0v3a500000002pqAAA,Tech Specs
-OS,0v3a500000002prAAA,Operating System
-APISpec,0v3a500000002psAAA,API Specification
-Processor,0v3a500000002ptAAA,Processor
-Network_Adapter,0v3a500000002puAAA,Network_Adapter
-Server,0v3a500000002pvAAA,Server
-Engineering_Resources,0v3a500000002pwAAA,Engineering_Resources
-QB,0v3a500000002pxAAA,QuantumBit
-SubscriptionType,0v3a500000002pyAAA,SubscriptionType
-Professional_Services_Bundle,0v3a500000002pzAAA,Professional_Services_Bundle
-Memory,0v3a500000002q0AAA,Memory
-Hard_Drive,0v3a500000002q1AAA,Hard_Drive
+APISpec,0v3ao000000090HAAQ,API Specification
+OS,0v3ao000000090IAAQ,Operating System
+TS,0v3ao000000090JAAQ,Tech Specs
+Server,0v3ao000000090KAAQ,Server
+Processor,0v3ao000000090LAAQ,Processor
+Network_Adapter,0v3ao000000090MAAQ,Network_Adapter
+Hard_Drive,0v3ao000000090NAAQ,Hard_Drive
+Memory,0v3ao000000090OAAQ,Memory
+QB,0v3ao000000090PAAQ,QuantumBit
+SubscriptionType,0v3ao000000090QAAQ,SubscriptionType
+Professional_Services_Bundle,0v3ao000000090RAAQ,Professional_Services_Bundle
+Engineering_Resources,0v3ao000000090SAAQ,Engineering_Resources
+Cables,0v3ao000000090UAAQ,Cables

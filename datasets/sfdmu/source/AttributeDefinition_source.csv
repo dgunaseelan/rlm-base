@@ -1,20 +1,20 @@
 Code,DataType,DefaultValue,Description,DeveloperName,Id,IsActive,Label,Name,Picklist.Name,PicklistId
-,Picklist,,,Length,0tja50000000HnFAAU,true,Length,Length,Length,0v5a50000000NZJAA2
-,Picklist,,,Connector_Type,0tja50000000HnGAAU,true,Connector Type,Connector Type,Connector Type,0v5a50000000NZKAA2
-,Picklist,4,,Base_Core_Count,0tja50000000HnHAAU,true,Base Core Count,Base Core Count,Base Core Count,0v5a50000000NZNAA2
-,Picklist,Flex,,API_Type,0tja50000000HnIAAU,true,API Type,API_Type,API Type,0v5a50000000NZMAA2
-,Picklist,Amazon Linux 2,,Operating_System,0tja50000000HnJAAU,true,Operating System,Operating System,Operating System,0v5a50000000NZLAA2
-,Picklist,Security,,Server_Configuration,0tja50000000HnKAAU,true,Server_Configuration,Server_Configuration,Server Configuration,0v5a50000000NZPAA2
-,Picklist,Onsite,,Resource_Location,0tja50000000HnLAAU,true,Resource_Location,Resource_Location,Resource_Location,0v5a50000000NZOAA2
-,Picklist,Direct_Attach,,NIC_Type,0tja50000000HnMAAU,true,NIC_Type,NIC_Type,NIC_Type,0v5a50000000NZUAA2
-,Picklist,3.2GHz,,Processor_Frequency,0tja50000000HnNAAU,true,Processor_Frequency,Processor_Frequency,Processor_Frequency,0v5a50000000NZSAA2
-,Number,1000,,Flows,0tja50000000HnOAAU,true,Flows,Flows,,
-,Picklist,,,SubscriptionType,0tja50000000HnPAAU,true,SubscriptionType,SubscriptionType,SubscriptionType,0v5a50000000NZRAA2
-,Text,,,SampleTextDefinition,0tja50000000HnQAAU,false,SampleTextDefinition,SampleTextDefinition,,
-,Number,60,,Messages_Million,0tja50000000HnRAAU,true,Messages (Million),Messages (Million),,
-,Number,0,,Data_Throughput_TB,0tja50000000HnSAAU,true,Data Throughput (TB),Data Throughput (TB),,
-,Text,,,Notes_and_Assumptions,0tja50000000HnTAAU,true,Notes_and_Assumptions,Notes_and_Assumptions,,
-,Picklist,Extended_Care,,Engineering_Options,0tja50000000HnUAAU,true,Engineering_Options,Engineering_Options,Engineering_Options,0v5a50000000NZTAA2
-,Picklist,Performance_Optimized,,Memory_Config,0tja50000000HnVAAU,true,Memory_Config,Memory_Config,Memory_Config,0v5a50000000NZQAA2
-,Picklist,8GB,,Memory_Capacity,0tja50000000HnWAAU,true,Memory_Capacity,Memory_Capacity,Memory,0v5a50000000NZVAA2
-,Picklist,1TB,,HDD_Storage,0tja50000000HnXAAU,true,HDD_Storage,HDD_Storage,HDD_Storage,0v5a50000000NZWAA2
+,Picklist,,,Length1,0tjao00000013VXAAY,true,Length,Length,Length,0v5ao0000001H0dAAE
+,Picklist,,,Connector_Type1,0tjao00000013VYAAY,true,Connector Type,Connector Type,Connector Type,0v5ao0000001H0eAAE
+,Picklist,4,,Base_Core_Count1,0tjao00000013VZAAY,true,Base Core Count,Base Core Count,Base Core Count,0v5ao0000001H0fAAE
+,Picklist,Flex,,API_Type1,0tjao00000013VaAAI,true,API Type,API_Type,API Type,0v5ao0000001H0gAAE
+,Picklist,Amazon Linux 2,,Operating_System1,0tjao00000013VbAAI,true,Operating System,Operating System,Operating System,0v5ao0000001H0hAAE
+,Picklist,Security,,Server_Configuration1,0tjao00000013VcAAI,true,Server_Configuration,Server_Configuration,Server Configuration,0v5ao0000001H0iAAE
+,Picklist,Onsite,,Resource_Location1,0tjao00000013VdAAI,true,Resource_Location,Resource_Location,Resource_Location,0v5ao0000001H0jAAE
+,Picklist,Direct_Attach,,NIC_Type1,0tjao00000013VeAAI,true,NIC_Type,NIC_Type,NIC_Type,0v5ao0000001H0kAAE
+,Picklist,3.2GHz,,Processor_Frequency1,0tjao00000013VfAAI,true,Processor_Frequency,Processor_Frequency,Processor_Frequency,0v5ao0000001H0lAAE
+,Picklist,,,SubscriptionType1,0tjao00000013VgAAI,true,SubscriptionType,SubscriptionType,SubscriptionType,0v5ao0000001H0mAAE
+,Picklist,Extended_Care,,Engineering_Options1,0tjao00000013VhAAI,true,Engineering_Options,Engineering_Options,Engineering_Options,0v5ao0000001H0nAAE
+,Picklist,Performance_Optimized,,Memory_Config1,0tjao00000013ViAAI,true,Memory_Config,Memory_Config,Memory_Config,0v5ao0000001H0oAAE
+,Picklist,8GB,,Memory_Capacity1,0tjao00000013VjAAI,true,Memory_Capacity,Memory_Capacity,Memory,0v5ao0000001H0pAAE
+,Picklist,1TB,,HDD_Storage1,0tjao00000013VkAAI,true,HDD_Storage,HDD_Storage,HDD_Storage,0v5ao0000001H0qAAE
+,Number,1000,,Flows1,0tjao00000013VpAAI,true,Flows,Flows,,
+,Number,60,,Messages_Million1,0tjao00000013VqAAI,true,Messages (Million),Messages (Million),,
+,Number,0,,Data_Throughput_TB1,0tjao00000013VrAAI,true,Data Throughput (TB),Data Throughput (TB),,
+,Text,,,Notes_and_Assumptions1,0tjao00000013VsAAI,true,Notes_and_Assumptions,Notes_and_Assumptions,,
+,Text,,,SampleTextDefinition1,0tjao00000013VuAAI,false,SampleTextDefinition,SampleTextDefinition,,

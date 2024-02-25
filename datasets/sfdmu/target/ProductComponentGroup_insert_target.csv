@@ -1,0 +1,13 @@
+Code,Description,Errors,Id,MaxBundleComponents,MinBundleComponents,Name,ParentProductId,Sequence
+,,,0y7al00000008DhAAI,1,1,Maintenance,01tal000000Vw1UAAS,
+,,,0y7al00000008DiAAI,1,1,Training,01tal000000Vw1UAAS,
+,,,0y7al00000008DjAAI,,,Software,01tal000000Vw1hAAC,10
+,,,0y7al00000008DkAAI,,,Training,01tal000000Vw1hAAC,20
+,,,0y7al00000008DlAAI,,,Services,01tal000000Vw1hAAC,30
+,,,0y7al00000008DmAAI,1,1,Memory Capacity,01tal000000Vw1LAAS,2
+,,,0y7al00000008DnAAI,1,1,Hard Drive,01tal000000Vw1LAAS,3
+,,,0y7al00000008DoAAI,1,1,Processor,01tal000000Vw1LAAS,1
+Solution_Architecture,,,0y7al00000008DpAAI,,,Solution_Architecture,01tal000000Vw1QAAS,3
+Project_Management,,,0y7al00000008DqAAI,,,Project_Management,01tal000000Vw1QAAS,2
+,,,0y7al00000008DrAAI,1,1,Network Adapter,01tal000000Vw1LAAS,4
+Engineering_Resources,,,0y7al00000008DsAAI,,,Engineering_Resources,01tal000000Vw1QAAS,1

@@ -1,15 +1,15 @@
 $$Name$Catalog.Name$ParentCategory.Name,Catalog.Name,CatalogId,Code,Description,Id,Name,ParentCategory.$$Name$Catalog.Name$ParentCategory.Name,ParentCategoryId,SortOrder
-API;Software,Software,0ZSa50000000pc2GAA,,,0ZGa50000000oEXGAY,API,,,20
-Bundle;Software,Software,0ZSa50000000pc2GAA,,,0ZGa50000000oEYGAY,Bundle,,,10
-Accessories;Hardware,Hardware,0ZSa50000000pc1GAA,,,0ZGa50000000oEZGAY,Accessories,,,
-Licenses;Software,Software,0ZSa50000000pc2GAA,,,0ZGa50000000oEaGAI,Licenses,,,30
-Training;Software,Software,0ZSa50000000pc2GAA,,,0ZGa50000000oEbGAI,Training,,,40
-Maintenance;Software,Software,0ZSa50000000pc2GAA,,,0ZGa50000000oEcGAI,Maintenance,,,50
-Hardware Maintenance;Hardware,Hardware,0ZSa50000000pc1GAA,,,0ZGa50000000oEdGAI,Hardware Maintenance,,,
-Memory;Hardware,Hardware,0ZSa50000000pc1GAA,,,0ZGa50000000oEeGAI,Memory,,,
-Network Adapter;Hardware,Hardware,0ZSa50000000pc1GAA,,,0ZGa50000000oEfGAI,Network Adapter,,,
-Processor;Hardware,Hardware,0ZSa50000000pc1GAA,,,0ZGa50000000oEgGAI,Processor,,,
-Hard Drive;Hardware,Hardware,0ZSa50000000pc1GAA,,,0ZGa50000000oEhGAI,Hard Drive,,,
-Subscription;Software,Software,0ZSa50000000pc2GAA,,,0ZGa50000000oEiGAI,Subscription,,,100
-Services;Services,Services,0ZSa50000000pc3GAA,,,0ZGa50000000oEjGAI,Services,,,
-Server;Hardware,Hardware,0ZSa50000000pc1GAA,,,0ZGa50000000oEkGAI,Server,,,
+API;Software,Software,0ZSao0000002RYoGAM,,,0ZGao0000002RvbGAE,API,,,20
+Bundle;Software,Software,0ZSao0000002RYoGAM,,,0ZGao0000002RvcGAE,Bundle,,,10
+Accessories;Hardware,Hardware,0ZSao0000002RYqGAM,,,0ZGao0000002RvdGAE,Accessories,,,
+Licenses;Software,Software,0ZSao0000002RYoGAM,,,0ZGao0000002RveGAE,Licenses,,,30
+Training;Software,Software,0ZSao0000002RYoGAM,,,0ZGao0000002RvfGAE,Training,,,40
+Maintenance;Software,Software,0ZSao0000002RYoGAM,,,0ZGao0000002RvgGAE,Maintenance,,,50
+Hardware Maintenance;Hardware,Hardware,0ZSao0000002RYqGAM,,,0ZGao0000002RvhGAE,Hardware Maintenance,,,
+Memory;Hardware,Hardware,0ZSao0000002RYqGAM,,,0ZGao0000002RviGAE,Memory,,,
+Network Adapter;Hardware,Hardware,0ZSao0000002RYqGAM,,,0ZGao0000002RvjGAE,Network Adapter,,,
+Processor;Hardware,Hardware,0ZSao0000002RYqGAM,,,0ZGao0000002RvkGAE,Processor,,,
+Hard Drive;Hardware,Hardware,0ZSao0000002RYqGAM,,,0ZGao0000002RvlGAE,Hard Drive,,,
+Subscription;Software,Software,0ZSao0000002RYoGAM,,,0ZGao0000002RvmGAE,Subscription,,,100
+Services;Services,Services,0ZSao0000002RYsGAM,,,0ZGao0000002RvnGAE,Services,,,
+Server;Hardware,Hardware,0ZSao0000002RYqGAM,,,0ZGao0000002RvoGAE,Server,,,

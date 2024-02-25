@@ -1,50 +1,50 @@
 $$ProductCategory.Name$Product.Name$Catalog.Name,Catalog.Name,CatalogId,Id,Product.Name,ProductCategory.$$Name$Catalog.Name$ParentCategory.Name,ProductCategoryId,ProductId
-API;Additional API Gov;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tULGAY,Additional API Gov,API;Software,0ZGa50000000oEXGAY,01ta5000000A6jQAAS
-API;Additional API Pre-Prod;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUMGAY,Additional API Pre-Prod,API;Software,0ZGa50000000oEXGAY,01ta5000000A6jPAAS
-API;Additional API Prod;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUNGAY,Additional API Prod,API;Software,0ZGa50000000oEXGAY,01ta5000000A6jOAAS
-API;API Access Requests (AEH);Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUOGAY,API Access Requests (AEH),API;Software,0ZGa50000000oEXGAY,01ta5000000A6jUAAS
-API;Additional API Flex (100M);Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUPGAY,Additional API Flex (100M),API;Software,0ZGa50000000oEXGAY,01ta5000000A6jRAAS
-API;Additional Automation QB Credits;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUQGAY,Additional Automation QB Credits,API;Software,0ZGa50000000oEXGAY,01ta5000000A6jNAAS
-API;Additional QB DataGraph (500M);Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tURGAY,Additional QB DataGraph (500M),API;Software,0ZGa50000000oEXGAY,01ta5000000A6jTAAS
-Hardware Maintenance;Gold Hardware Maintenance;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUSGAY,Gold Hardware Maintenance,Hardware Maintenance;Hardware,0ZGa50000000oEdGAI,01ta5000000A6jBAAS
-Hardware Maintenance;Silver Hardware Maintenance;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUTGAY,Silver Hardware Maintenance,Hardware Maintenance;Hardware,0ZGa50000000oEdGAI,01ta5000000A6jGAAS
-Bundle;QuantumBit Enterprise;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUUGAY,QuantumBit Enterprise,Bundle;Software,0ZGa50000000oEYGAY,01ta5000000A6jgAAC
-Bundle;QuantumBit Business Critical;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUVGAY,QuantumBit Business Critical,Bundle;Software,0ZGa50000000oEYGAY,01ta5000000A6jhAAC
-Accessories;L5-20 Input Power Cable 8';Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUWGAY,L5-20 Input Power Cable 8',Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6j7AAC
-Accessories;L5-20 Input Power Cable 12';Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUXGAY,L5-20 Input Power Cable 12',Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6j6AAC
-Accessories;Cable Management Rings (Qty 10);Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUYGAY,Cable Management Rings (Qty 10),Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6jaAAC
-Accessories;C19 to C20 Power Cable 5';Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUZGAY,C19 to C20 Power Cable 5',Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6j5AAC
-Accessories;C19 to C20 Power Cable 3';Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUaGAI,C19 to C20 Power Cable 3',Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6j4AAC
-Accessories;C13 to C14 Power Cable 5';Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUbGAI,C13 to C14 Power Cable 5',Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6j3AAC
-Accessories;C13 to C14 Power Cable 3';Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUcGAI,C13 to C14 Power Cable 3',Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6j2AAC
-Accessories;Cable Containment Brackets;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUdGAI,Cable Containment Brackets,Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6jcAAC
-"Accessories;Vertical Cable Organizer, 8 Cable Rings;Hardware",Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUeGAI,"Vertical Cable Organizer, 8 Cable Rings",Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6jbAAC
-Accessories;QuantumShell 10U 600mmx1200mm;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUfGAI,QuantumShell 10U 600mmx1200mm,Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6jfAAC
-Accessories;QuantumShell 8U 600mmx1070mm;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUgGAI,QuantumShell 8U 600mmx1070mm,Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6jeAAC
-Accessories;QuantumShell 6U 600mmx870mm;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUhGAI,QuantumShell 6U 600mmx870mm,Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6jdAAC
-Maintenance;Gold Hardware Maintenance;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUiGAI,Gold Hardware Maintenance,Maintenance;Software,0ZGa50000000oEcGAI,01ta5000000A6jBAAS
-Bundle;QuantumBit Starter;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUjGAI,QuantumBit Starter,Bundle;Software,0ZGa50000000oEYGAY,01ta5000000A6idAAC
-Maintenance;Silver Hardware Maintenance;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUkGAI,Silver Hardware Maintenance,Maintenance;Software,0ZGa50000000oEcGAI,01ta5000000A6jGAAS
-Training;QuantumBit Essentials Training;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUlGAI,QuantumBit Essentials Training,Training;Software,0ZGa50000000oEbGAI,01ta5000000A6jkAAC
-Training;QuantumBit Fundamentals Training;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUmGAI,QuantumBit Fundamentals Training,Training;Software,0ZGa50000000oEbGAI,01ta5000000A6jjAAC
-API;Additional API;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUnGAI,Additional API,API;Software,0ZGa50000000oEXGAY,01ta5000000A6ioAAC
-Bundle;QuantumBit Complete Solution;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUoGAI,QuantumBit Complete Solution,Bundle;Software,0ZGa50000000oEYGAY,01ta5000000A6ipAAC
-Network Adapter;Intel X710 Dual Port 10Gb Direct Attach;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUpGAI,Intel X710 Dual Port 10Gb Direct Attach,Network Adapter;Hardware,0ZGa50000000oEfGAI,01ta5000000A6isAAC
-Network Adapter;Intel X710 Dual Port 10Gb SFP;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUqGAI,Intel X710 Dual Port 10Gb SFP,Network Adapter;Hardware,0ZGa50000000oEfGAI,01ta5000000A6iZAAS
-Hard Drive;1TB 7.2k RPM NLSAS;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUrGAI,1TB 7.2k RPM NLSAS,Hard Drive;Hardware,0ZGa50000000oEhGAI,01ta5000000A6ijAAC
-Hard Drive;4TB 7.2k RPM NLSAS;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUsGAI,4TB 7.2k RPM NLSAS,Hard Drive;Hardware,0ZGa50000000oEhGAI,01ta5000000A6iqAAC
-Hard Drive;8TB 7.2k RPM NLSAS;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUtGAI,8TB 7.2k RPM NLSAS,Hard Drive;Hardware,0ZGa50000000oEhGAI,01ta5000000A6iXAAS
-Hard Drive;8TB 7.2k RPM Self-Encrypting NLSAS;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUuGAI,8TB 7.2k RPM Self-Encrypting NLSAS,Hard Drive;Hardware,0ZGa50000000oEhGAI,01ta5000000A6iYAAS
-Services;QuantumBit Services Project;Services,Services,0ZSa50000000pc3GAA,0ZRa50000000tUvGAI,QuantumBit Services Project,Services;Services,0ZGa50000000oEjGAI,01ta5000000A6iaAAC
-Accessories;Configured Power Cable;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tUwGAI,Configured Power Cable,Accessories;Hardware,0ZGa50000000oEZGAY,01ta5000000A6icAAC
-Services;Professional Services Daily Rate;Services,Services,0ZSa50000000pc3GAA,0ZRa50000000tUxGAI,Professional Services Daily Rate,Services;Services,0ZGa50000000oEjGAI,01ta5000000A6jmAAC
-Subscription;Subscription;Software,Software,0ZSa50000000pc2GAA,0ZRa50000000tUyGAI,Subscription,Subscription;Software,0ZGa50000000oEiGAI,01ta5000000A6iTAAS
-Services;Professional Services Scope of Work;Services,Services,0ZSa50000000pc3GAA,0ZRa50000000tUzGAI,Professional Services Scope of Work,Services;Services,0ZGa50000000oEjGAI,01ta5000000A6jqAAC
-Memory;32GB RDIMM;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tV0GAI,32GB RDIMM,Memory;Hardware,0ZGa50000000oEeGAI,01ta5000000A6iiAAC
-Memory;8GB RDIMM;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tV1GAI,8GB RDIMM,Memory;Hardware,0ZGa50000000oEeGAI,01ta5000000A6irAAC
-Memory;16GB RDIMM;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tV2GAI,16GB RDIMM,Memory;Hardware,0ZGa50000000oEeGAI,01ta5000000A6iWAAS
-Server;PowerSwerve R750 Rack Server;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tV3GAI,PowerSwerve R750 Rack Server,Server;Hardware,0ZGa50000000oEkGAI,01ta5000000A6iVAAS
-Processor;Intel Xeon E5-2683 v4 2.1GHz;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tV4GAI,Intel Xeon E5-2683 v4 2.1GHz,Processor;Hardware,0ZGa50000000oEgGAI,01ta5000000A6ihAAC
-Processor;Intel Xeon E5-2667 v4 3.2GHz;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tV5GAI,Intel Xeon E5-2667 v4 3.2GHz,Processor;Hardware,0ZGa50000000oEgGAI,01ta5000000A6ifAAC
-Processor;Intel Xeon E5-2660 v4 2.0GHz;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tV6GAI,Intel Xeon E5-2660 v4 2.0GHz,Processor;Hardware,0ZGa50000000oEgGAI,01ta5000000A6ieAAC
-Processor;Intel Xeon E5-2609 v4 1.7GHz;Hardware,Hardware,0ZSa50000000pc1GAA,0ZRa50000000tV7GAI,Intel Xeon E5-2609 v4 1.7GHz,Processor;Hardware,0ZGa50000000oEgGAI,01ta5000000A6iUAAS
+Subscription;Subscription;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SBWGA2,Subscription,Subscription;Software,0ZGao0000002RvmGAE,01tao000000iPxBAAU
+Processor;Intel Xeon E5-2609 v4 1.7GHz;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SBYGA2,Intel Xeon E5-2609 v4 1.7GHz,Processor;Hardware,0ZGao0000002RvkGAE,01tao000000iPxCAAU
+Server;PowerSwerve R750 Rack Server;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SBaGAM,PowerSwerve R750 Rack Server,Server;Hardware,0ZGao0000002RvoGAE,01tao000000iPxDAAU
+Memory;16GB RDIMM;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SBcGAM,16GB RDIMM,Memory;Hardware,0ZGao0000002RviGAE,01tao000000iPxEAAU
+Hard Drive;8TB 7.2k RPM NLSAS;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SBeGAM,8TB 7.2k RPM NLSAS,Hard Drive;Hardware,0ZGao0000002RvlGAE,01tao000000iPxFAAU
+Hard Drive;8TB 7.2k RPM Self-Encrypting NLSAS;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SBgGAM,8TB 7.2k RPM Self-Encrypting NLSAS,Hard Drive;Hardware,0ZGao0000002RvlGAE,01tao000000iPxGAAU
+Network Adapter;Intel X710 Dual Port 10Gb SFP;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SBiGAM,Intel X710 Dual Port 10Gb SFP,Network Adapter;Hardware,0ZGao0000002RvjGAE,01tao000000iPxHAAU
+Services;QuantumBit Services Project;Services,Services,0ZSao0000002RYsGAM,0ZRao0000002SBkGAM,QuantumBit Services Project,Services;Services,0ZGao0000002RvnGAE,01tao000000iPxIAAU
+Accessories;Configured Power Cable;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SBmGAM,Configured Power Cable,Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxJAAU
+Bundle;QuantumBit Starter;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SBoGAM,QuantumBit Starter,Bundle;Software,0ZGao0000002RvcGAE,01tao000000iPxKAAU
+Processor;Intel Xeon E5-2660 v4 2.0GHz;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SBqGAM,Intel Xeon E5-2660 v4 2.0GHz,Processor;Hardware,0ZGao0000002RvkGAE,01tao000000iPxLAAU
+Processor;Intel Xeon E5-2667 v4 3.2GHz;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SBsGAM,Intel Xeon E5-2667 v4 3.2GHz,Processor;Hardware,0ZGao0000002RvkGAE,01tao000000iPxMAAU
+Processor;Intel Xeon E5-2683 v4 2.1GHz;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SBuGAM,Intel Xeon E5-2683 v4 2.1GHz,Processor;Hardware,0ZGao0000002RvkGAE,01tao000000iPxNAAU
+Memory;32GB RDIMM;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SBwGAM,32GB RDIMM,Memory;Hardware,0ZGao0000002RviGAE,01tao000000iPxOAAU
+Hard Drive;1TB 7.2k RPM NLSAS;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SByGAM,1TB 7.2k RPM NLSAS,Hard Drive;Hardware,0ZGao0000002RvlGAE,01tao000000iPxPAAU
+API;Additional API;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SC0GAM,Additional API,API;Software,0ZGao0000002RvbGAE,01tao000000iPxQAAU
+Bundle;QuantumBit Complete Solution;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SC2GAM,QuantumBit Complete Solution,Bundle;Software,0ZGao0000002RvcGAE,01tao000000iPxRAAU
+Hard Drive;4TB 7.2k RPM NLSAS;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SC4GAM,4TB 7.2k RPM NLSAS,Hard Drive;Hardware,0ZGao0000002RvlGAE,01tao000000iPxSAAU
+Memory;8GB RDIMM;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SC6GAM,8GB RDIMM,Memory;Hardware,0ZGao0000002RviGAE,01tao000000iPxTAAU
+Network Adapter;Intel X710 Dual Port 10Gb Direct Attach;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SC8GAM,Intel X710 Dual Port 10Gb Direct Attach,Network Adapter;Hardware,0ZGao0000002RvjGAE,01tao000000iPxUAAU
+Accessories;C13 to C14 Power Cable 3';Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCAGA2,C13 to C14 Power Cable 3',Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxVAAU
+Accessories;C13 to C14 Power Cable 5';Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCCGA2,C13 to C14 Power Cable 5',Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxWAAU
+Accessories;C19 to C20 Power Cable 3';Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCEGA2,C19 to C20 Power Cable 3',Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxXAAU
+Accessories;C19 to C20 Power Cable 5';Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCGGA2,C19 to C20 Power Cable 5',Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxYAAU
+Accessories;L5-20 Input Power Cable 12';Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCIGA2,L5-20 Input Power Cable 12',Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxZAAU
+Accessories;L5-20 Input Power Cable 8';Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCKGA2,L5-20 Input Power Cable 8',Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxaAAE
+Hardware Maintenance;Gold Hardware Maintenance;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCNGA2,Gold Hardware Maintenance,Hardware Maintenance;Hardware,0ZGao0000002RvhGAE,01tao000000iPxbAAE
+Maintenance;Gold Hardware Maintenance;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCOGA2,Gold Hardware Maintenance,Maintenance;Software,0ZGao0000002RvgGAE,01tao000000iPxbAAE
+Hardware Maintenance;Silver Hardware Maintenance;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCRGA2,Silver Hardware Maintenance,Hardware Maintenance;Hardware,0ZGao0000002RvhGAE,01tao000000iPxcAAE
+Maintenance;Silver Hardware Maintenance;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCSGA2,Silver Hardware Maintenance,Maintenance;Software,0ZGao0000002RvgGAE,01tao000000iPxcAAE
+API;Additional Automation QB Credits;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCUGA2,Additional Automation QB Credits,API;Software,0ZGao0000002RvbGAE,01tao000000iPxdAAE
+API;Additional API Prod;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCWGA2,Additional API Prod,API;Software,0ZGao0000002RvbGAE,01tao000000iPxeAAE
+API;Additional API Pre-Prod;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCYGA2,Additional API Pre-Prod,API;Software,0ZGao0000002RvbGAE,01tao000000iPxfAAE
+API;Additional API Gov;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCaGAM,Additional API Gov,API;Software,0ZGao0000002RvbGAE,01tao000000iPxgAAE
+API;Additional API Flex (100M);Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCcGAM,Additional API Flex (100M),API;Software,0ZGao0000002RvbGAE,01tao000000iPxhAAE
+API;Additional QB DataGraph (500M);Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCeGAM,Additional QB DataGraph (500M),API;Software,0ZGao0000002RvbGAE,01tao000000iPxiAAE
+API;API Access Requests (AEH);Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCgGAM,API Access Requests (AEH),API;Software,0ZGao0000002RvbGAE,01tao000000iPxjAAE
+Accessories;Cable Management Rings (Qty 10);Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCiGAM,Cable Management Rings (Qty 10),Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxkAAE
+"Accessories;Vertical Cable Organizer, 8 Cable Rings;Hardware",Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCkGAM,"Vertical Cable Organizer, 8 Cable Rings",Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxlAAE
+Accessories;Cable Containment Brackets;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCmGAM,Cable Containment Brackets,Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxmAAE
+Accessories;QuantumShell 6U 600mmx870mm;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCoGAM,QuantumShell 6U 600mmx870mm,Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxnAAE
+Accessories;QuantumShell 8U 600mmx1070mm;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCqGAM,QuantumShell 8U 600mmx1070mm,Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxoAAE
+Accessories;QuantumShell 10U 600mmx1200mm;Hardware,Hardware,0ZSao0000002RYqGAM,0ZRao0000002SCsGAM,QuantumShell 10U 600mmx1200mm,Accessories;Hardware,0ZGao0000002RvdGAE,01tao000000iPxpAAE
+Bundle;QuantumBit Enterprise;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCuGAM,QuantumBit Enterprise,Bundle;Software,0ZGao0000002RvcGAE,01tao000000iPxqAAE
+Bundle;QuantumBit Business Critical;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCwGAM,QuantumBit Business Critical,Bundle;Software,0ZGao0000002RvcGAE,01tao000000iPxrAAE
+Training;QuantumBit Fundamentals Training;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SCyGAM,QuantumBit Fundamentals Training,Training;Software,0ZGao0000002RvfGAE,01tao000000iPxsAAE
+Training;QuantumBit Essentials Training;Software,Software,0ZSao0000002RYoGAM,0ZRao0000002SD0GAM,QuantumBit Essentials Training,Training;Software,0ZGao0000002RvfGAE,01tao000000iPxtAAE
+Services;Professional Services Daily Rate;Services,Services,0ZSao0000002RYsGAM,0ZRao0000002SD2GAM,Professional Services Daily Rate,Services;Services,0ZGao0000002RvnGAE,01tao000000iPxuAAE
+Services;Professional Services Scope of Work;Services,Services,0ZSao0000002RYsGAM,0ZRao0000002SD4GAM,Professional Services Scope of Work,Services;Services,0ZGao0000002RvnGAE,01tao000000iPxvAAE

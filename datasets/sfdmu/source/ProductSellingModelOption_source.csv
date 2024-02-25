@@ -1,65 +1,67 @@
 $$Product2.Name$ProductSellingModel.Name,Id,IsDefault,Product2.Name,Product2Id,ProductSellingModel.$$Name$SellingModelType,ProductSellingModelId,ProrationPolicy.Name,ProrationPolicyId
-Silver Hardware Maintenance;Term Annual,0iOa50000000421EAA,true,Silver Hardware Maintenance,01ta5000000A6jGAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-QuantumBit Fundamentals Training;One-Time,0iOa50000000422EAA,true,QuantumBit Fundamentals Training,01ta5000000A6jjAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-C13 to C14 Power Cable 3';One-Time,0iOa50000000423EAA,true,C13 to C14 Power Cable 3',01ta5000000A6j2AAC,One-Time;OneTime,0jPa500000003yrEAA,,
-QuantumBit Essentials Training;One-Time,0iOa50000000424EAA,true,QuantumBit Essentials Training,01ta5000000A6jkAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Additional API Flex (100M);Term Annual,0iOa50000000425EAA,true,Additional API Flex (100M),01ta5000000A6jRAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional API Gov;Term Annual,0iOa50000000426EAA,true,Additional API Gov,01ta5000000A6jQAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional API Pre-Prod;Term Annual,0iOa50000000427EAA,true,Additional API Pre-Prod,01ta5000000A6jPAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional API Prod;Term Annual,0iOa50000000428EAA,true,Additional API Prod,01ta5000000A6jOAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional Automation QB Credits;Term Annual,0iOa50000000429EAA,false,Additional Automation QB Credits,01ta5000000A6jNAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional QB DataGraph (500M);Term Annual,0iOa5000000042AEAQ,true,Additional QB DataGraph (500M),01ta5000000A6jTAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-API Access Requests (AEH);Term Annual,0iOa5000000042BEAQ,false,API Access Requests (AEH),01ta5000000A6jUAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional Flows - QB Starter;Term Annual,0iOa5000000042CEAQ,false,Additional Flows - QB Starter,01ta5000000A6jIAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional Messages - QB Starter;Term Annual,0iOa5000000042DEAQ,false,Additional Messages - QB Starter,01ta5000000A6jKAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional Data Throughput (TB);Term Annual,0iOa5000000042EEAQ,false,Additional Data Throughput (TB),01ta5000000A6jMAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-QB API Management Solution;Term Annual,0iOa5000000042FEAQ,false,QB API Management Solution,01ta5000000A6igAAC,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-QuantumBit Starter;One-Time,0iOa5000000042GEAQ,true,QuantumBit Starter,01ta5000000A6idAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Gold Hardware Maintenance;Term Annual,0iOa5000000042HEAQ,true,Gold Hardware Maintenance,01ta5000000A6jBAAS,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional API;Term Annual,0iOa5000000042IEAQ,false,Additional API,01ta5000000A6ioAAC,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-QuantumBit Complete Solution;Term Annual,0iOa5000000042JEAQ,true,QuantumBit Complete Solution,01ta5000000A6ipAAC,Term Annual;TermDefined,0jPa500000003yoEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional API;Term Monthly,0iOa5000000042KEAQ,true,Additional API,01ta5000000A6ioAAC,Term Monthly;TermDefined,0jPa500000003ypEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional API;Evergreen Monthly,0iOa5000000042LEAQ,false,Additional API,01ta5000000A6ioAAC,Evergreen Monthly;Evergreen,0jPa500000003ynEAA,Default Proration Policy,0mua5000000054XAAQ
-16GB RDIMM;One-Time,0iOa5000000042MEAQ,true,16GB RDIMM,01ta5000000A6iWAAS,One-Time;OneTime,0jPa500000003yrEAA,,
-4TB 7.2k RPM NLSAS;One-Time,0iOa5000000042NEAQ,true,4TB 7.2k RPM NLSAS,01ta5000000A6iqAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-8TB 7.2k RPM NLSAS;One-Time,0iOa5000000042OEAQ,true,8TB 7.2k RPM NLSAS,01ta5000000A6iXAAS,One-Time;OneTime,0jPa500000003yrEAA,,
-8TB 7.2k RPM Self-Encrypting NLSAS;One-Time,0iOa5000000042PEAQ,true,8TB 7.2k RPM Self-Encrypting NLSAS,01ta5000000A6iYAAS,One-Time;OneTime,0jPa500000003yrEAA,,
-QuantumBit Services Project;One-Time,0iOa5000000042QEAQ,true,QuantumBit Services Project,01ta5000000A6iaAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Module Extension Engineer;One-Time,0iOa5000000042REAQ,true,Module Extension Engineer,01ta5000000A6ilAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Program Director;One-Time,0iOa5000000042SEAQ,true,Program Director,01ta5000000A6jsAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Intel Xeon E5-2660 v4 2.0GHz;One-Time,0iOa5000000042TEAQ,true,Intel Xeon E5-2660 v4 2.0GHz,01ta5000000A6ieAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Quality Assurance Engineer;One-Time,0iOa5000000042UEAQ,true,Quality Assurance Engineer,01ta5000000A6imAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Intel X710 Dual Port 10Gb Direct Attach;One-Time,0iOa5000000042VEAQ,true,Intel X710 Dual Port 10Gb Direct Attach,01ta5000000A6isAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Implementation Engineer;One-Time,0iOa5000000042WEAQ,true,Implementation Engineer,01ta5000000A6ibAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Intel Xeon E5-2683 v4 2.1GHz;One-Time,0iOa5000000042XEAQ,true,Intel Xeon E5-2683 v4 2.1GHz,01ta5000000A6ihAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Data Normalization Expert;One-Time,0iOa5000000042YEAQ,true,Data Normalization Expert,01ta5000000A6inAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Intel Xeon E5-2609 v4 1.7GHz;One-Time,0iOa5000000042ZEAQ,true,Intel Xeon E5-2609 v4 1.7GHz,01ta5000000A6iUAAS,One-Time;OneTime,0jPa500000003yrEAA,,
-PowerSwerve R750 Rack Server;One-Time,0iOa5000000042aEAA,true,PowerSwerve R750 Rack Server,01ta5000000A6iVAAS,One-Time;OneTime,0jPa500000003yrEAA,,
-8GB RDIMM;One-Time,0iOa5000000042bEAA,true,8GB RDIMM,01ta5000000A6irAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-32GB RDIMM;One-Time,0iOa5000000042cEAA,true,32GB RDIMM,01ta5000000A6iiAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-1TB 7.2k RPM NLSAS;One-Time,0iOa5000000042dEAA,true,1TB 7.2k RPM NLSAS,01ta5000000A6ijAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Intel X710 Dual Port 10Gb SFP;One-Time,0iOa5000000042eEAA,true,Intel X710 Dual Port 10Gb SFP,01ta5000000A6iZAAS,One-Time;OneTime,0jPa500000003yrEAA,,
-Integration Specialist Engineer;One-Time,0iOa5000000042fEAA,true,Integration Specialist Engineer,01ta5000000A6ikAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Solutions Architect;One-Time,0iOa5000000042gEAA,true,Solutions Architect,01ta5000000A6jtAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Configured Power Cable;One-Time,0iOa5000000042hEAA,true,Configured Power Cable,01ta5000000A6icAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Subscription;Evergreen Monthly,0iOa5000000042iEAA,true,Subscription,01ta5000000A6iTAAS,Evergreen Monthly;Evergreen,0jPa500000003ynEAA,Default Proration Policy,0mua5000000054XAAQ
-Professional Services Daily Rate;One-Time,0iOa5000000042jEAA,true,Professional Services Daily Rate,01ta5000000A6jmAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Professional Services Scope of Work;One-Time,0iOa5000000042kEAA,true,Professional Services Scope of Work,01ta5000000A6jqAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Subscription;Term Monthly,0iOa5000000042lEAA,false,Subscription,01ta5000000A6iTAAS,Term Monthly;TermDefined,0jPa500000003ypEAA,Default Proration Policy,0mua5000000054XAAQ
-Intel Xeon E5-2667 v4 3.2GHz;One-Time,0iOa5000000042mEAA,true,Intel Xeon E5-2667 v4 3.2GHz,01ta5000000A6ifAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Project Manager;One-Time,0iOa5000000042nEAA,true,Project Manager,01ta5000000A6juAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-QB API Management Solution;Evergreen Monthly,0iOa5000000042oEAA,false,QB API Management Solution,01ta5000000A6igAAC,Evergreen Monthly;Evergreen,0jPa500000003ynEAA,Default Proration Policy,0mua5000000054XAAQ
-QuantumBit Complete Solution;Evergreen Monthly,0iOa5000000042pEAA,false,QuantumBit Complete Solution,01ta5000000A6ipAAC,Evergreen Monthly;Evergreen,0jPa500000003ynEAA,Default Proration Policy,0mua5000000054XAAQ
-API Access Requests (AEH);Term Monthly,0iOa5000000042qEAA,true,API Access Requests (AEH),01ta5000000A6jUAAS,Term Monthly;TermDefined,0jPa500000003ypEAA,Default Proration Policy,0mua5000000054XAAQ
-QuantumBit Complete Solution;One-Time,0iOa5000000042rEAA,false,QuantumBit Complete Solution,01ta5000000A6ipAAC,One-Time;OneTime,0jPa500000003yrEAA,,
-Additional Messages - QB Starter;Evergreen Monthly,0iOa5000000042tEAA,false,Additional Messages - QB Starter,01ta5000000A6jKAAS,Evergreen Monthly;Evergreen,0jPa500000003ynEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional Data Throughput (TB);Evergreen Monthly,0iOa5000000042uEAA,false,Additional Data Throughput (TB),01ta5000000A6jMAAS,Evergreen Monthly;Evergreen,0jPa500000003ynEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional Flows - QB Starter;Evergreen Monthly,0iOa5000000042vEAA,false,Additional Flows - QB Starter,01ta5000000A6jIAAS,Evergreen Monthly;Evergreen,0jPa500000003ynEAA,Default Proration Policy,0mua5000000054XAAQ
-API Access Requests (AEH);Evergreen Monthly,0iOa5000000042wEAA,false,API Access Requests (AEH),01ta5000000A6jUAAS,Evergreen Monthly;Evergreen,0jPa500000003ynEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional Automation QB Credits;Evergreen Monthly,0iOa5000000042xEAA,false,Additional Automation QB Credits,01ta5000000A6jNAAS,Evergreen Monthly;Evergreen,0jPa500000003ynEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional Flows - QB Starter;Term Monthly,0iOa5000000042yEAA,true,Additional Flows - QB Starter,01ta5000000A6jIAAS,Term Monthly;TermDefined,0jPa500000003ypEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional Data Throughput (TB);Term Monthly,0iOa5000000042zEAA,true,Additional Data Throughput (TB),01ta5000000A6jMAAS,Term Monthly;TermDefined,0jPa500000003ypEAA,Default Proration Policy,0mua5000000054XAAQ
-QB API Management Solution;Term Monthly,0iOa5000000043dEAA,true,QB API Management Solution,01ta5000000A6igAAC,Term Monthly;TermDefined,0jPa500000003ypEAA,Default Proration Policy,0mua5000000054XAAQ
-QuantumBit Complete Solution;Term Monthly,0iOa5000000045FEAQ,false,QuantumBit Complete Solution,01ta5000000A6ipAAC,Term Monthly;TermDefined,0jPa500000003ypEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional Messages - QB Starter;Term Monthly,0iOa5000000046rEAA,true,Additional Messages - QB Starter,01ta5000000A6jKAAS,Term Monthly;TermDefined,0jPa500000003ypEAA,Default Proration Policy,0mua5000000054XAAQ
-Additional Automation QB Credits;Term Monthly,0iOa5000000048TEAQ,true,Additional Automation QB Credits,01ta5000000A6jNAAS,Term Monthly;TermDefined,0jPa500000003ypEAA,Default Proration Policy,0mua5000000054XAAQ
+Silver Hardware Maintenance;Term Annual,0iOao0000000CcHEAU,true,Silver Hardware Maintenance,01tao000000iPxcAAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+QuantumBit Fundamentals Training;One-Time,0iOao0000000CcIEAU,true,QuantumBit Fundamentals Training,01tao000000iPxsAAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+C13 to C14 Power Cable 3';One-Time,0iOao0000000CcJEAU,true,C13 to C14 Power Cable 3',01tao000000iPxVAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+QuantumBit Essentials Training;One-Time,0iOao0000000CcKEAU,true,QuantumBit Essentials Training,01tao000000iPxtAAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+Additional API Flex (100M);Term Annual,0iOao0000000CcLEAU,true,Additional API Flex (100M),01tao000000iPxhAAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional API Gov;Term Annual,0iOao0000000CcMEAU,true,Additional API Gov,01tao000000iPxgAAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional API Pre-Prod;Term Annual,0iOao0000000CcNEAU,true,Additional API Pre-Prod,01tao000000iPxfAAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional API Prod;Term Annual,0iOao0000000CcOEAU,true,Additional API Prod,01tao000000iPxeAAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional Automation QB Credits;Term Annual,0iOao0000000CcPEAU,false,Additional Automation QB Credits,01tao000000iPxdAAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional QB DataGraph (500M);Term Annual,0iOao0000000CcQEAU,true,Additional QB DataGraph (500M),01tao000000iPxiAAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+API Access Requests (AEH);Term Annual,0iOao0000000CcREAU,false,API Access Requests (AEH),01tao000000iPxjAAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional Flows - QB Starter;Term Annual,0iOao0000000CcSEAU,false,Additional Flows - QB Starter,01tao000000iPy5AAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional Messages - QB Starter;Term Annual,0iOao0000000CcTEAU,false,Additional Messages - QB Starter,01tao000000iPy6AAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional Data Throughput (TB);Term Annual,0iOao0000000CcUEAU,false,Additional Data Throughput (TB),01tao000000iPy7AAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+QB API Management Solution;Term Annual,0iOao0000000CcVEAU,false,QB API Management Solution,01tao000000iPy4AAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+QuantumBit Starter;One-Time,0iOao0000000CcWEAU,true,QuantumBit Starter,01tao000000iPxKAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+Gold Hardware Maintenance;Term Annual,0iOao0000000CcXEAU,true,Gold Hardware Maintenance,01tao000000iPxbAAE,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional API;Term Annual,0iOao0000000CcYEAU,false,Additional API,01tao000000iPxQAAU,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+QuantumBit Complete Solution;Term Annual,0iOao0000000CcZEAU,true,QuantumBit Complete Solution,01tao000000iPxRAAU,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional API;Term Monthly,0iOao0000000CcaEAE,true,Additional API,01tao000000iPxQAAU,Term Monthly;TermDefined,0jPao00000009jHEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional API;Evergreen Monthly,0iOao0000000CcbEAE,false,Additional API,01tao000000iPxQAAU,Evergreen Monthly;Evergreen,0jPao00000009jIEAQ,Default Proration Policy,0muao0000000CM9AAM
+16GB RDIMM;One-Time,0iOao0000000CccEAE,true,16GB RDIMM,01tao000000iPxEAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+4TB 7.2k RPM NLSAS;One-Time,0iOao0000000CcdEAE,true,4TB 7.2k RPM NLSAS,01tao000000iPxSAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+8TB 7.2k RPM NLSAS;One-Time,0iOao0000000CceEAE,true,8TB 7.2k RPM NLSAS,01tao000000iPxFAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+8TB 7.2k RPM Self-Encrypting NLSAS;One-Time,0iOao0000000CcfEAE,true,8TB 7.2k RPM Self-Encrypting NLSAS,01tao000000iPxGAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+QuantumBit Services Project;One-Time,0iOao0000000CcgEAE,true,QuantumBit Services Project,01tao000000iPxIAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+Module Extension Engineer;One-Time,0iOao0000000CchEAE,true,Module Extension Engineer,01tao000000iPxyAAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+Program Director;One-Time,0iOao0000000CciEAE,true,Program Director,01tao000000iPy1AAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+Intel Xeon E5-2660 v4 2.0GHz;One-Time,0iOao0000000CcjEAE,true,Intel Xeon E5-2660 v4 2.0GHz,01tao000000iPxLAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+Quality Assurance Engineer;One-Time,0iOao0000000CckEAE,true,Quality Assurance Engineer,01tao000000iPxzAAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+Intel X710 Dual Port 10Gb Direct Attach;One-Time,0iOao0000000CclEAE,true,Intel X710 Dual Port 10Gb Direct Attach,01tao000000iPxUAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+Implementation Engineer;One-Time,0iOao0000000CcmEAE,true,Implementation Engineer,01tao000000iPxwAAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+Intel Xeon E5-2683 v4 2.1GHz;One-Time,0iOao0000000CcnEAE,true,Intel Xeon E5-2683 v4 2.1GHz,01tao000000iPxNAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+Data Normalization Expert;One-Time,0iOao0000000CcoEAE,true,Data Normalization Expert,01tao000000iPy0AAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+Intel Xeon E5-2609 v4 1.7GHz;One-Time,0iOao0000000CcpEAE,true,Intel Xeon E5-2609 v4 1.7GHz,01tao000000iPxCAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+PowerSwerve R750 Rack Server;One-Time,0iOao0000000CcqEAE,true,PowerSwerve R750 Rack Server,01tao000000iPxDAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+8GB RDIMM;One-Time,0iOao0000000CcrEAE,true,8GB RDIMM,01tao000000iPxTAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+32GB RDIMM;One-Time,0iOao0000000CcsEAE,true,32GB RDIMM,01tao000000iPxOAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+1TB 7.2k RPM NLSAS;One-Time,0iOao0000000CctEAE,true,1TB 7.2k RPM NLSAS,01tao000000iPxPAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+Intel X710 Dual Port 10Gb SFP;One-Time,0iOao0000000CcuEAE,true,Intel X710 Dual Port 10Gb SFP,01tao000000iPxHAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+Integration Specialist Engineer;One-Time,0iOao0000000CcvEAE,true,Integration Specialist Engineer,01tao000000iPxxAAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+Solutions Architect;One-Time,0iOao0000000CcwEAE,true,Solutions Architect,01tao000000iPy2AAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+Configured Power Cable;One-Time,0iOao0000000CcxEAE,true,Configured Power Cable,01tao000000iPxJAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+Subscription;Evergreen Monthly,0iOao0000000CcyEAE,true,Subscription,01tao000000iPxBAAU,Evergreen Monthly;Evergreen,0jPao00000009jIEAQ,Default Proration Policy,0muao0000000CM9AAM
+Professional Services Daily Rate;One-Time,0iOao0000000CczEAE,true,Professional Services Daily Rate,01tao000000iPxuAAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+Professional Services Scope of Work;One-Time,0iOao0000000Cd0EAE,true,Professional Services Scope of Work,01tao000000iPxvAAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+Subscription;Term Monthly,0iOao0000000Cd1EAE,false,Subscription,01tao000000iPxBAAU,Term Monthly;TermDefined,0jPao00000009jHEAQ,Default Proration Policy,0muao0000000CM9AAM
+Intel Xeon E5-2667 v4 3.2GHz;One-Time,0iOao0000000Cd2EAE,true,Intel Xeon E5-2667 v4 3.2GHz,01tao000000iPxMAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+Project Manager;One-Time,0iOao0000000Cd3EAE,true,Project Manager,01tao000000iPy3AAE,One-Time;OneTime,0jPao00000009jGEAQ,,
+QB API Management Solution;Evergreen Monthly,0iOao0000000Cd4EAE,false,QB API Management Solution,01tao000000iPy4AAE,Evergreen Monthly;Evergreen,0jPao00000009jIEAQ,Default Proration Policy,0muao0000000CM9AAM
+QuantumBit Complete Solution;Evergreen Monthly,0iOao0000000Cd5EAE,false,QuantumBit Complete Solution,01tao000000iPxRAAU,Evergreen Monthly;Evergreen,0jPao00000009jIEAQ,Default Proration Policy,0muao0000000CM9AAM
+API Access Requests (AEH);Term Monthly,0iOao0000000Cd6EAE,true,API Access Requests (AEH),01tao000000iPxjAAE,Term Monthly;TermDefined,0jPao00000009jHEAQ,Default Proration Policy,0muao0000000CM9AAM
+QuantumBit Complete Solution;One-Time,0iOao0000000Cd7EAE,false,QuantumBit Complete Solution,01tao000000iPxRAAU,One-Time;OneTime,0jPao00000009jGEAQ,,
+Additional Messages - QB Starter;Evergreen Monthly,0iOao0000000Cd9EAE,false,Additional Messages - QB Starter,01tao000000iPy6AAE,Evergreen Monthly;Evergreen,0jPao00000009jIEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional Data Throughput (TB);Evergreen Monthly,0iOao0000000CdAEAU,false,Additional Data Throughput (TB),01tao000000iPy7AAE,Evergreen Monthly;Evergreen,0jPao00000009jIEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional Flows - QB Starter;Evergreen Monthly,0iOao0000000CdBEAU,false,Additional Flows - QB Starter,01tao000000iPy5AAE,Evergreen Monthly;Evergreen,0jPao00000009jIEAQ,Default Proration Policy,0muao0000000CM9AAM
+API Access Requests (AEH);Evergreen Monthly,0iOao0000000CdCEAU,false,API Access Requests (AEH),01tao000000iPxjAAE,Evergreen Monthly;Evergreen,0jPao00000009jIEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional Automation QB Credits;Evergreen Monthly,0iOao0000000CdDEAU,false,Additional Automation QB Credits,01tao000000iPxdAAE,Evergreen Monthly;Evergreen,0jPao00000009jIEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional Flows - QB Starter;Term Monthly,0iOao0000000CdEEAU,true,Additional Flows - QB Starter,01tao000000iPy5AAE,Term Monthly;TermDefined,0jPao00000009jHEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional Data Throughput (TB);Term Monthly,0iOao0000000CdFEAU,true,Additional Data Throughput (TB),01tao000000iPy7AAE,Term Monthly;TermDefined,0jPao00000009jHEAQ,Default Proration Policy,0muao0000000CM9AAM
+QB API Management Solution;Term Monthly,0iOao0000000CdGEAU,true,QB API Management Solution,01tao000000iPy4AAE,Term Monthly;TermDefined,0jPao00000009jHEAQ,Default Proration Policy,0muao0000000CM9AAM
+QuantumBit Complete Solution;Term Monthly,0iOao0000000CdHEAU,false,QuantumBit Complete Solution,01tao000000iPxRAAU,Term Monthly;TermDefined,0jPao00000009jHEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional Messages - QB Starter;Term Monthly,0iOao0000000CdIEAU,true,Additional Messages - QB Starter,01tao000000iPy6AAE,Term Monthly;TermDefined,0jPao00000009jHEAQ,Default Proration Policy,0muao0000000CM9AAM
+Additional Automation QB Credits;Term Monthly,0iOao0000000CdJEAU,true,Additional Automation QB Credits,01tao000000iPxdAAE,Term Monthly;TermDefined,0jPao00000009jHEAQ,Default Proration Policy,0muao0000000CM9AAM
+Subscription;Term Annual,0iOao0000000Ch7EAE,false,Subscription,01tao000000iPxBAAU,Term Annual;TermDefined,0jPao00000009jFEAQ,Default Proration Policy,0muao0000000CM9AAM
+Subscription;Evergreen Annual,0iOao0000000CijEAE,false,Subscription,01tao000000iPxBAAU,Evergreen Annual;Evergreen,0jPao00000009jJEAQ,Default Proration Policy,0muao0000000CM9AAM

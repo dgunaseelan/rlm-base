@@ -1,15 +1,15 @@
 DataType,Description,Id,Name,Status
-Text,,0v5a50000000NZJAA2,Length,Active
-Text,,0v5a50000000NZKAA2,Connector Type,Active
-Text,,0v5a50000000NZLAA2,Operating System,Active
-Text,,0v5a50000000NZMAA2,API Type,Active
-Number,,0v5a50000000NZNAA2,Base Core Count,Active
-Text,,0v5a50000000NZOAA2,Resource_Location,Active
-Text,,0v5a50000000NZPAA2,Server Configuration,Active
-Text,,0v5a50000000NZQAA2,Memory_Config,Active
-Text,,0v5a50000000NZRAA2,SubscriptionType,Active
-Text,,0v5a50000000NZSAA2,Processor_Frequency,Active
-Text,,0v5a50000000NZTAA2,Engineering_Options,Active
-Text,,0v5a50000000NZUAA2,NIC_Type,Active
-Text,,0v5a50000000NZVAA2,Memory,Active
-Text,,0v5a50000000NZWAA2,HDD_Storage,Active
+Text,,0v5ao0000001H0dAAE,Length,Active
+Text,,0v5ao0000001H0eAAE,Connector Type,Active
+Number,,0v5ao0000001H0fAAE,Base Core Count,Active
+Text,,0v5ao0000001H0gAAE,API Type,Active
+Text,,0v5ao0000001H0hAAE,Operating System,Active
+Text,,0v5ao0000001H0iAAE,Server Configuration,Active
+Text,,0v5ao0000001H0jAAE,Resource_Location,Active
+Text,,0v5ao0000001H0kAAE,NIC_Type,Active
+Text,,0v5ao0000001H0lAAE,Processor_Frequency,Active
+Text,,0v5ao0000001H0mAAE,SubscriptionType,Active
+Text,,0v5ao0000001H0nAAE,Engineering_Options,Active
+Text,,0v5ao0000001H0oAAE,Memory_Config,Active
+Text,,0v5ao0000001H0pAAE,Memory,Active
+Text,,0v5ao0000001H0qAAE,HDD_Storage,Active

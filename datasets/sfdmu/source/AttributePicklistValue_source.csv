@@ -1,45 +1,45 @@
 $$Name$Picklist.Name,Code,DisplayValue,Id,IsDefault,Name,Picklist.Name,PicklistId,Sequence,Value
-L5-20;Connector Type,L5-20,L5-20,0v6a50000000HnFAAU,false,L5-20,Connector Type,0v5a50000000NZKAA2,,L5-20
-C13 to C14;Connector Type,C13toC14,C13 to C14,0v6a50000000HnGAAU,true,C13 to C14,Connector Type,0v5a50000000NZKAA2,,C13 to C14
-ThreeFeet;Length,3ft,3',0v6a50000000HnHAAU,true,ThreeFeet,Length,0v5a50000000NZJAA2,,3
-FiveFeet;Length,5ft,5',0v6a50000000HnIAAU,false,FiveFeet,Length,0v5a50000000NZJAA2,,5
-EightFeet;Length,8ft,8',0v6a50000000HnJAAU,false,EightFeet,Length,0v5a50000000NZJAA2,,8
-C19 to C20;Connector Type,C19toC20,C19 to C20,0v6a50000000HnKAAU,false,C19 to C20,Connector Type,0v5a50000000NZKAA2,,C19 to C20
-TwelveFeet;Length,12ft,12',0v6a50000000HnLAAU,false,TwelveFeet,Length,0v5a50000000NZJAA2,,12
-Amazon Linux 2;Operating System,AL2,Amazon Linux 2,0v6a50000000HnMAAU,true,Amazon Linux 2,Operating System,0v5a50000000NZLAA2,1,Amazon Linux 2
-Four;Base Core Count,4,4,0v6a50000000HnNAAU,false,Four,Base Core Count,0v5a50000000NZNAA2,2,4
-Six;Base Core Count,6,6,0v6a50000000HnOAAU,false,Six,Base Core Count,0v5a50000000NZNAA2,3,6
-Eight;Base Core Count,8,8,0v6a50000000HnPAAU,true,Eight,Base Core Count,0v5a50000000NZNAA2,4,8
-Flex;API Type,Flex,Flex,0v6a50000000HnQAAU,true,Flex,API Type,0v5a50000000NZMAA2,1,Flex
-Pre-Prod;API Type,Pre-Prod,Pre-Prod,0v6a50000000HnRAAU,false,Pre-Prod,API Type,0v5a50000000NZMAA2,3,Pre-Prod
-Gov;API Type,Gov,Gov,0v6a50000000HnSAAU,false,Gov,API Type,0v5a50000000NZMAA2,2,Gov
-Redhat Enterprise Linux;Operating System,REL,Redhat Enterprise Linux,0v6a50000000HnTAAU,false,Redhat Enterprise Linux,Operating System,0v5a50000000NZLAA2,2,Redhat Enterprise Linux
-Two;Base Core Count,2,2,0v6a50000000HnUAAU,false,Two,Base Core Count,0v5a50000000NZNAA2,1,2
-Prod;API Type,Prod,Prod,0v6a50000000HnVAAU,false,Prod,API Type,0v5a50000000NZMAA2,4,Prod
-Onsite;Resource_Location,Onsite,Onsite,0v6a50000000HnWAAU,true,Onsite,Resource_Location,0v5a50000000NZOAA2,1,Onsite
-2.0GHz;Processor_Frequency,2.0GHz,2.0GHz,0v6a50000000HnXAAU,false,2.0GHz,Processor_Frequency,0v5a50000000NZSAA2,3,2.0GHz
-1.7GHz;Processor_Frequency,1.7GHz,1.7GHz,0v6a50000000HnYAAU,false,1.7GHz,Processor_Frequency,0v5a50000000NZSAA2,2,1.7GHz
-Performance_Optimized_with_Sparing;Memory_Config,Performance_Optimized_with_Sparing,Performance_Optimized_with_Sparing,0v6a50000000HnZAAU,false,Performance_Optimized_with_Sparing,Memory_Config,0v5a50000000NZQAA2,2,Performance_Optimized_with_Sparing
-Security;Server Configuration,Security,Security,0v6a50000000HnaAAE,true,Security,Server Configuration,0v5a50000000NZPAA2,1,Security
-2.1GHz;Processor_Frequency,2.1GHz,2.1GHz,0v6a50000000HnbAAE,false,2.1GHz,Processor_Frequency,0v5a50000000NZSAA2,4,2.1GHz
-8GB;Memory,8GB,8GB,0v6a50000000HncAAE,true,8GB,Memory,0v5a50000000NZVAA2,1,8GB
-32GB;Memory,32GB,32GB,0v6a50000000HndAAE,false,32GB,Memory,0v5a50000000NZVAA2,3,32GB
-Basic;Engineering_Options,Basic,Basic,0v6a50000000HneAAE,false,Basic,Engineering_Options,0v5a50000000NZTAA2,2,Basic
-Value;Server Configuration,Value,Value,0v6a50000000HnfAAE,false,Value,Server Configuration,0v5a50000000NZPAA2,3,Value
-Custom;Server Configuration,Custom,Custom,0v6a50000000HngAAE,false,Custom,Server Configuration,0v5a50000000NZPAA2,4,Custom
-16GB;Memory,16GB,16GB,0v6a50000000HnhAAE,false,16GB,Memory,0v5a50000000NZVAA2,2,16GB
-Memory_Mirroring;Memory_Config,Memory_Mirroring,Memory_Mirroring,0v6a50000000HniAAE,false,Memory_Mirroring,Memory_Config,0v5a50000000NZQAA2,3,Memory_Mirroring
-SFP;NIC_Type,SFP,SFP,0v6a50000000HnjAAE,false,SFP,NIC_Type,0v5a50000000NZUAA2,2,SFP
-Evergreen;SubscriptionType,Evergreen,Evergreen,0v6a50000000HnkAAE,true,Evergreen,SubscriptionType,0v5a50000000NZRAA2,1,Evergreen
-TermBased;SubscriptionType,TermBased,TermBased,0v6a50000000HnlAAE,false,TermBased,SubscriptionType,0v5a50000000NZRAA2,2,TermBased
-3.2GHz;Processor_Frequency,3.2GHz,3.2GHz,0v6a50000000HnmAAE,true,3.2GHz,Processor_Frequency,0v5a50000000NZSAA2,1,3.2GHz
-Performance;Server Configuration,Performance,Performance,0v6a50000000HnnAAE,false,Performance,Server Configuration,0v5a50000000NZPAA2,2,Performance
-Extended_Care;Engineering_Options,Extended_Care,Extended_Care,0v6a50000000HnoAAE,true,Extended_Care,Engineering_Options,0v5a50000000NZTAA2,1,Extended_Care
-Remote;Resource_Location,Remote,Remote,0v6a50000000HnpAAE,false,Remote,Resource_Location,0v5a50000000NZOAA2,2,Remote
-Performance_Optimized;Memory_Config,Performance_Optimized,Performance_Optimized,0v6a50000000HnqAAE,true,Performance_Optimized,Memory_Config,0v5a50000000NZQAA2,1,Performance_Optimized
-1TB;HDD_Storage,1TB,1TB,0v6a50000000HnrAAE,true,1TB,HDD_Storage,0v5a50000000NZWAA2,1,1TB
-8TB;HDD_Storage,8TB,8TB,0v6a50000000HnsAAE,false,8TB,HDD_Storage,0v5a50000000NZWAA2,3,8TB
-Direct_Attach;NIC_Type,Direct_Attach,Direct_Attach,0v6a50000000HntAAE,true,Direct_Attach,NIC_Type,0v5a50000000NZUAA2,1,Direct_Attach
-Offshore;Resource_Location,Offshore,Offshore,0v6a50000000HnuAAE,false,Offshore,Resource_Location,0v5a50000000NZOAA2,3,Offshore
-8TB_Self_Encrypting;HDD_Storage,8TB_Self_Encrypting,8TB_Self_Encrypting,0v6a50000000HnvAAE,false,8TB_Self_Encrypting,HDD_Storage,0v5a50000000NZWAA2,4,8TB_Self_Encrypting
-4TB;HDD_Storage,4TB,4TB,0v6a50000000HnwAAE,false,4TB,HDD_Storage,0v5a50000000NZWAA2,2,4TB
+L5-20;Connector Type,L5-20,L5-20,0v6ao00000015hVAAQ,false,L5-20,Connector Type,0v5ao0000001H0eAAE,,L5-20
+C13 to C14;Connector Type,C13toC14,C13 to C14,0v6ao00000015hWAAQ,true,C13 to C14,Connector Type,0v5ao0000001H0eAAE,,C13 to C14
+ThreeFeet;Length,3ft,3',0v6ao00000015hXAAQ,true,ThreeFeet,Length,0v5ao0000001H0dAAE,,3
+FiveFeet;Length,5ft,5',0v6ao00000015hYAAQ,false,FiveFeet,Length,0v5ao0000001H0dAAE,,5
+EightFeet;Length,8ft,8',0v6ao00000015hZAAQ,false,EightFeet,Length,0v5ao0000001H0dAAE,,8
+C19 to C20;Connector Type,C19toC20,C19 to C20,0v6ao00000015haAAA,false,C19 to C20,Connector Type,0v5ao0000001H0eAAE,,C19 to C20
+TwelveFeet;Length,12ft,12',0v6ao00000015hbAAA,false,TwelveFeet,Length,0v5ao0000001H0dAAE,,12
+Amazon Linux 2;Operating System,AL2,Amazon Linux 2,0v6ao00000015hcAAA,true,Amazon Linux 2,Operating System,0v5ao0000001H0hAAE,1,Amazon Linux 2
+Four;Base Core Count,4,4,0v6ao00000015hdAAA,false,Four,Base Core Count,0v5ao0000001H0fAAE,2,4
+Six;Base Core Count,6,6,0v6ao00000015heAAA,false,Six,Base Core Count,0v5ao0000001H0fAAE,3,6
+Eight;Base Core Count,8,8,0v6ao00000015hfAAA,true,Eight,Base Core Count,0v5ao0000001H0fAAE,4,8
+Flex;API Type,Flex,Flex,0v6ao00000015hgAAA,true,Flex,API Type,0v5ao0000001H0gAAE,1,Flex
+Pre-Prod;API Type,Pre-Prod,Pre-Prod,0v6ao00000015hhAAA,false,Pre-Prod,API Type,0v5ao0000001H0gAAE,3,Pre-Prod
+Gov;API Type,Gov,Gov,0v6ao00000015hiAAA,false,Gov,API Type,0v5ao0000001H0gAAE,2,Gov
+Redhat Enterprise Linux;Operating System,REL,Redhat Enterprise Linux,0v6ao00000015hjAAA,false,Redhat Enterprise Linux,Operating System,0v5ao0000001H0hAAE,2,Redhat Enterprise Linux
+Two;Base Core Count,2,2,0v6ao00000015hkAAA,false,Two,Base Core Count,0v5ao0000001H0fAAE,1,2
+Prod;API Type,Prod,Prod,0v6ao00000015hlAAA,false,Prod,API Type,0v5ao0000001H0gAAE,4,Prod
+Onsite;Resource_Location,Onsite,Onsite,0v6ao00000015hmAAA,true,Onsite,Resource_Location,0v5ao0000001H0jAAE,1,Onsite
+2.0GHz;Processor_Frequency,2.0GHz,2.0GHz,0v6ao00000015hnAAA,false,2.0GHz,Processor_Frequency,0v5ao0000001H0lAAE,3,2.0GHz
+1.7GHz;Processor_Frequency,1.7GHz,1.7GHz,0v6ao00000015hoAAA,false,1.7GHz,Processor_Frequency,0v5ao0000001H0lAAE,2,1.7GHz
+Performance_Optimized_with_Sparing;Memory_Config,Performance_Optimized_with_Sparing,Performance_Optimized_with_Sparing,0v6ao00000015hpAAA,false,Performance_Optimized_with_Sparing,Memory_Config,0v5ao0000001H0oAAE,2,Performance_Optimized_with_Sparing
+Security;Server Configuration,Security,Security,0v6ao00000015hqAAA,true,Security,Server Configuration,0v5ao0000001H0iAAE,1,Security
+2.1GHz;Processor_Frequency,2.1GHz,2.1GHz,0v6ao00000015hrAAA,false,2.1GHz,Processor_Frequency,0v5ao0000001H0lAAE,4,2.1GHz
+8GB;Memory,8GB,8GB,0v6ao00000015hsAAA,true,8GB,Memory,0v5ao0000001H0pAAE,1,8GB
+32GB;Memory,32GB,32GB,0v6ao00000015htAAA,false,32GB,Memory,0v5ao0000001H0pAAE,3,32GB
+Basic;Engineering_Options,Basic,Basic,0v6ao00000015huAAA,false,Basic,Engineering_Options,0v5ao0000001H0nAAE,2,Basic
+Value;Server Configuration,Value,Value,0v6ao00000015hvAAA,false,Value,Server Configuration,0v5ao0000001H0iAAE,3,Value
+Custom;Server Configuration,Custom,Custom,0v6ao00000015hwAAA,false,Custom,Server Configuration,0v5ao0000001H0iAAE,4,Custom
+16GB;Memory,16GB,16GB,0v6ao00000015hxAAA,false,16GB,Memory,0v5ao0000001H0pAAE,2,16GB
+Memory_Mirroring;Memory_Config,Memory_Mirroring,Memory_Mirroring,0v6ao00000015hyAAA,false,Memory_Mirroring,Memory_Config,0v5ao0000001H0oAAE,3,Memory_Mirroring
+SFP;NIC_Type,SFP,SFP,0v6ao00000015hzAAA,false,SFP,NIC_Type,0v5ao0000001H0kAAE,2,SFP
+Evergreen;SubscriptionType,Evergreen,Evergreen,0v6ao00000015i0AAA,true,Evergreen,SubscriptionType,0v5ao0000001H0mAAE,1,Evergreen
+TermBased;SubscriptionType,TermBased,TermBased,0v6ao00000015i1AAA,false,TermBased,SubscriptionType,0v5ao0000001H0mAAE,2,TermBased
+3.2GHz;Processor_Frequency,3.2GHz,3.2GHz,0v6ao00000015i2AAA,true,3.2GHz,Processor_Frequency,0v5ao0000001H0lAAE,1,3.2GHz
+Performance;Server Configuration,Performance,Performance,0v6ao00000015i3AAA,false,Performance,Server Configuration,0v5ao0000001H0iAAE,2,Performance
+Extended_Care;Engineering_Options,Extended_Care,Extended_Care,0v6ao00000015i4AAA,true,Extended_Care,Engineering_Options,0v5ao0000001H0nAAE,1,Extended_Care
+Remote;Resource_Location,Remote,Remote,0v6ao00000015i5AAA,false,Remote,Resource_Location,0v5ao0000001H0jAAE,2,Remote
+Performance_Optimized;Memory_Config,Performance_Optimized,Performance_Optimized,0v6ao00000015i6AAA,true,Performance_Optimized,Memory_Config,0v5ao0000001H0oAAE,1,Performance_Optimized
+1TB;HDD_Storage,1TB,1TB,0v6ao00000015i7AAA,true,1TB,HDD_Storage,0v5ao0000001H0qAAE,1,1TB
+8TB;HDD_Storage,8TB,8TB,0v6ao00000015i8AAA,false,8TB,HDD_Storage,0v5ao0000001H0qAAE,3,8TB
+Direct_Attach;NIC_Type,Direct_Attach,Direct_Attach,0v6ao00000015i9AAA,true,Direct_Attach,NIC_Type,0v5ao0000001H0kAAE,1,Direct_Attach
+Offshore;Resource_Location,Offshore,Offshore,0v6ao00000015iAAAQ,false,Offshore,Resource_Location,0v5ao0000001H0jAAE,3,Offshore
+8TB_Self_Encrypting;HDD_Storage,8TB_Self_Encrypting,8TB_Self_Encrypting,0v6ao00000015iBAAQ,false,8TB_Self_Encrypting,HDD_Storage,0v5ao0000001H0qAAE,4,8TB_Self_Encrypting
+4TB;HDD_Storage,4TB,4TB,0v6ao00000015iCAAQ,false,4TB,HDD_Storage,0v5ao0000001H0qAAE,2,4TB

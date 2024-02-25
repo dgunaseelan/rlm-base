@@ -1,13 +1,13 @@
 $$Name$ParentProduct.Name,Code,Description,Id,MaxBundleComponents,MinBundleComponents,Name,ParentProduct.Name,ParentProductId,Sequence
-Maintenance;QuantumBit Starter,,,0y7a500000002rRAAQ,1,1,Maintenance,QuantumBit Starter,01ta5000000A6idAAC,
-Training;QuantumBit Starter,,,0y7a500000002rSAAQ,1,1,Training,QuantumBit Starter,01ta5000000A6idAAC,
-Software;QuantumBit Complete Solution,,,0y7a500000002rTAAQ,,,Software,QuantumBit Complete Solution,01ta5000000A6ipAAC,10
-Training;QuantumBit Complete Solution,,,0y7a500000002rUAAQ,,,Training,QuantumBit Complete Solution,01ta5000000A6ipAAC,20
-Services;QuantumBit Complete Solution,,,0y7a500000002rVAAQ,,,Services,QuantumBit Complete Solution,01ta5000000A6ipAAC,30
-Memory Capacity;PowerSwerve R750 Rack Server,,,0y7a500000002rWAAQ,1,1,Memory Capacity,PowerSwerve R750 Rack Server,01ta5000000A6iVAAS,2
-Hard Drive;PowerSwerve R750 Rack Server,,,0y7a500000002rXAAQ,1,1,Hard Drive,PowerSwerve R750 Rack Server,01ta5000000A6iVAAS,3
-Processor;PowerSwerve R750 Rack Server,,,0y7a500000002rYAAQ,1,1,Processor,PowerSwerve R750 Rack Server,01ta5000000A6iVAAS,1
-Solution_Architecture;QuantumBit Services Project,Solution_Architecture,,0y7a500000002rZAAQ,,,Solution_Architecture,QuantumBit Services Project,01ta5000000A6iaAAC,3
-Project_Management;QuantumBit Services Project,Project_Management,,0y7a500000002raAAA,,,Project_Management,QuantumBit Services Project,01ta5000000A6iaAAC,2
-Network Adapter;PowerSwerve R750 Rack Server,,,0y7a500000002rbAAA,1,1,Network Adapter,PowerSwerve R750 Rack Server,01ta5000000A6iVAAS,4
-Engineering_Resources;QuantumBit Services Project,Engineering_Resources,,0y7a500000002rcAAA,,,Engineering_Resources,QuantumBit Services Project,01ta5000000A6iaAAC,1
+Maintenance;QuantumBit Starter,,,0y7ao00000008U1AAI,1,1,Maintenance,QuantumBit Starter,01tao000000iPxKAAU,
+Training;QuantumBit Starter,,,0y7ao00000008U2AAI,1,1,Training,QuantumBit Starter,01tao000000iPxKAAU,
+Software;QuantumBit Complete Solution,,,0y7ao00000008U3AAI,,,Software,QuantumBit Complete Solution,01tao000000iPxRAAU,10
+Training;QuantumBit Complete Solution,,,0y7ao00000008U4AAI,,,Training,QuantumBit Complete Solution,01tao000000iPxRAAU,20
+Services;QuantumBit Complete Solution,,,0y7ao00000008U5AAI,,,Services,QuantumBit Complete Solution,01tao000000iPxRAAU,30
+Memory Capacity;PowerSwerve R750 Rack Server,,,0y7ao00000008U6AAI,1,1,Memory Capacity,PowerSwerve R750 Rack Server,01tao000000iPxDAAU,2
+Hard Drive;PowerSwerve R750 Rack Server,,,0y7ao00000008U7AAI,1,1,Hard Drive,PowerSwerve R750 Rack Server,01tao000000iPxDAAU,3
+Processor;PowerSwerve R750 Rack Server,,,0y7ao00000008U8AAI,1,1,Processor,PowerSwerve R750 Rack Server,01tao000000iPxDAAU,1
+Solution_Architecture;QuantumBit Services Project,Solution_Architecture,,0y7ao00000008U9AAI,,,Solution_Architecture,QuantumBit Services Project,01tao000000iPxIAAU,3
+Project_Management;QuantumBit Services Project,Project_Management,,0y7ao00000008UAAAY,,,Project_Management,QuantumBit Services Project,01tao000000iPxIAAU,2
+Network Adapter;PowerSwerve R750 Rack Server,,,0y7ao00000008UBAAY,1,1,Network Adapter,PowerSwerve R750 Rack Server,01tao000000iPxDAAU,4
+Engineering_Resources;QuantumBit Services Project,Engineering_Resources,,0y7ao00000008UCAAY,,,Engineering_Resources,QuantumBit Services Project,01tao000000iPxIAAU,1
