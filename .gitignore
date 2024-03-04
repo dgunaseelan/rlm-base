@@ -61,3 +61,5 @@ temp_folder
 sfdmu/logs
 package-lock.json
 datasets/sfdmu/reports
+datasets/sfdmu/source
+datasets/sfdmu/target

@@ -1,15 +1,15 @@
-DataType,Description,Id,Name,Status
-Text,,0v5ao0000001H0dAAE,Length,Active
-Text,,0v5ao0000001H0eAAE,Connector Type,Active
-Number,,0v5ao0000001H0fAAE,Base Core Count,Active
-Text,,0v5ao0000001H0gAAE,API Type,Active
-Text,,0v5ao0000001H0hAAE,Operating System,Active
-Text,,0v5ao0000001H0iAAE,Server Configuration,Active
-Text,,0v5ao0000001H0jAAE,Resource_Location,Active
-Text,,0v5ao0000001H0kAAE,NIC_Type,Active
-Text,,0v5ao0000001H0lAAE,Processor_Frequency,Active
-Text,,0v5ao0000001H0mAAE,SubscriptionType,Active
-Text,,0v5ao0000001H0nAAE,Engineering_Options,Active
-Text,,0v5ao0000001H0oAAE,Memory_Config,Active
-Text,,0v5ao0000001H0pAAE,Memory,Active
-Text,,0v5ao0000001H0qAAE,HDD_Storage,Active
+DataType,Description,Id,Name,Status,Code
+Text,,0v5al0000001MT7AAM,Length,Active,Length
+Text,,0v5al0000001MT8AAM,Connector Type,Active,Connector_Type
+Number,,0v5al0000001MT9AAM,Base Core Count,Active,Base_Core_Count
+Text,,0v5al0000001MTAAA2,API Type,Active,API_Type
+Text,,0v5al0000001MTBAA2,Operating System,Active,Operating_System
+Text,,0v5al0000001MTCAA2,Server Configuration,Active,Server_Configuration
+Text,,0v5al0000001MTDAA2,Resource_Location,Active,Resource_Location
+Text,,0v5al0000001MTEAA2,NIC_Type,Active,NIC_Type
+Text,,0v5al0000001MTFAA2,Processor_Frequency,Active,Processor_Frequency
+Text,,0v5al0000001MTGAA2,SubscriptionType,Active,SubscriptionType
+Text,,0v5al0000001MTHAA2,Engineering_Options,Active,Engineering_Options
+Text,,0v5al0000001MTIAA2,Memory_Config,Active,Memory_Config
+Text,,0v5al0000001MTJAA2,Memory,Active,Memory
+Text,,0v5al0000001MTKAA2,HDD_Storage,Active,HDD_Storage

@@ -32,13 +32,13 @@
                     "excluded": false
                 },
                 {
-                    "query": "SELECT Name, Description, DataType, Status  FROM AttributePicklist",
+                    "query": "SELECT Name, Code, Description, DataType, Status FROM AttributePicklist",
                     "operation": "Upsert",
                     "externalId": "Name",
                     "deleteOldData": true
                 },
                 {
-                    "query": "SELECT Name, IsDefault, DisplayValue, PicklistId, Sequence, Value, DisplayValue, Code  FROM AttributePicklistValue",
+                    "query": "SELECT Name, Code, IsDefault, DisplayValue, PicklistId, Sequence, Value, DisplayValue  FROM AttributePicklistValue",
                     "operation": "Upsert",
                     "externalId": "Name;Picklist.Name",
                     "deleteOldData": true
