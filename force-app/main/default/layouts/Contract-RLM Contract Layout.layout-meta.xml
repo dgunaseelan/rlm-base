@@ -213,6 +213,10 @@
         <fields>ORDERS.TOTAL_AMOUNT</fields>
         <relatedList>RelatedOrderList</relatedList>
     </relatedLists>
+<relatedLists>
+        <fields>Name</fields>
+        <relatedList>AppUsageAssignment</relatedList>
+    </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
