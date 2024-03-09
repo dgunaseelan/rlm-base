@@ -10,6 +10,14 @@
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
     },
+    "userEngagementSettings": {
+      "enableShowSalesforceUserAssist": false
+    },
+    "userManagementSettings": {
+      "enableEnhancedProfileMgmt": true,
+      "enableEnhancedPermsetMgmt": true,
+      "enableNewProfileUI": true
+    },
     "orderSettings":{
       "enableOrders": true,
       "enableEnhancedCommerceOrders": true,
