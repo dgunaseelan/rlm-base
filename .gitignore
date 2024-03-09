@@ -63,3 +63,12 @@ package-lock.json
 datasets/sfdmu/reports
 datasets/sfdmu/source
 datasets/sfdmu/target
+
+# QBranch
+.cci
+.qbrix
+qbrix_local
+playwright*
+cumulusci.yml
+orgs/dev_preview.json
+orgs/dev.json
