@@ -67,8 +67,8 @@ datasets/sfdmu/target
 # QBranch
 .cci
 .qbrix
+browser
 qbrix_local
 playwright*
 cumulusci.yml
-orgs/dev_preview.json
-orgs/dev.json
+orgs
