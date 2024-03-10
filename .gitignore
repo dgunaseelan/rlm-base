@@ -73,9 +73,6 @@ playwright*
 #cci
 .cci
 .github
-cumulusci.yml
-orgs
-robot
 
 #dev
 scripts/permsets.txt

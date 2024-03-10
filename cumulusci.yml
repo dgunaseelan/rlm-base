@@ -1,0 +1,29 @@
+minimum_cumulusci_version: '3.84.3'
+project:
+    name: rlm-base
+    package:
+        name: rlm-base
+        api_version: '60.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/rlm-base/tests
+            options:
+                outputdir: robot/rlm-base/results
+
+    robot_testdoc:
+        options:
+            path: robot/rlm-base/tests
+            output: robot/rlm-base/doc/rlm-base_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
+    
+    extend_stdctx:
+        description: Extend Standard Context Definition
+        class_path: tasks.extend_stdctx.ExtendStandardContext
