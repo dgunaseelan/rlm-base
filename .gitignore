@@ -72,3 +72,5 @@ qbrix_local
 playwright*
 cumulusci.yml
 orgs
+.github
+robot
