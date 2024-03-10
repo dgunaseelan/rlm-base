@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Revenue Lifecycle Management Permission Sets</description>
+    <description>Revenue Lifecycle Management Base Permission Sets</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>RLM Base Permissions</label>
     <permissionSets>force__CorePricingAdmin</permissionSets>
@@ -20,5 +20,9 @@
     <permissionSets>force__RevLifecycleManagementProductImportApi</permissionSets>
     <permissionSets>force__RevLifecycleManagementQuotePricesTaxes</permissionSets>
     <permissionSets>force__RevLifecycleManagementTaxConfiguration</permissionSets>
+    <permissionSets>force__CLMAdminUser</permissionSets>
+    <permissionSets>force__ClauseDesigner</permissionSets>
+    <permissionSets>force__DocGenDesigner</permissionSets>
+    <permissionSets>force__OmniStudioAdmin</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>
