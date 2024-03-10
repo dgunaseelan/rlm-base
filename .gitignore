@@ -65,12 +65,18 @@ datasets/sfdmu/source
 datasets/sfdmu/target
 
 # QBranch
-.cci
 .qbrix
-browser
 qbrix_local
+browser
 playwright*
+
+#cci
+.cci
+.github
 cumulusci.yml
 orgs
-.github
 robot
+
+#dev
+scripts/permsets.txt
+scripts/psl.csv
