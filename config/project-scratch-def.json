@@ -41,6 +41,15 @@
     },
     "productConfiguratorSettings": {
       "enableProductConfigurator": true
+    },
+    "securitySettings": {
+      "enableAdminLoginAsAnyUser": true,
+      "sessionSettings": {
+        "forceRelogin": false
+      }
+    },
+    "languageSettings": {
+      "enableTranslationWorkbench": true
     }
   }
 }
