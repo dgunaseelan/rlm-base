@@ -10,15 +10,6 @@ class ExtendStandardContext(SFDXBaseTask):
         }
     }
 
-    def __init__(self):
-        self.keychain = None
-        self.env = None
-        self.access_token = None
-        self.instance_url = None
-        self.context_id = None
-        self.sales_transaction_mapping_id = None
-        super().__init__()
-
     def _init_options(self, kwargs):
         super()._init_options(kwargs)
         self.env = self._get_env()
@@ -33,19 +24,15 @@ class ExtendStandardContext(SFDXBaseTask):
 
     def _prep_runtime(self):
         self._load_keychain()
-        self.access_token = self.options.get("access_token") or self.org_config.access_token
-        self.instance_url = self.options.get("instance_url") or self.org_config.instance_url
+        self.access_token = self.options.get("access_token", self.org_config.access_token)
+        self.instance_url = self.options.get("instance_url", self.org_config.instance_url)
 
     def _run_task(self):
         self._prep_runtime()
         self._extend_context_definition()
 
     def _extend_context_definition(self):
-        url = f"{self.instance_url}/services/data/v{self.project_config.project__package__api_version}/connect/context-definitions"
-        headers = {
-            "Authorization": f"Bearer {self.access_token}",
-            "Content-Type": "application/json",
-        }
+        url, headers = self._build_url_and_headers("connect/context-definitions")
         payload = {
             "name": "RLM_SalesTransactionContext",
             "description": "Extension of Standard Sales Transaction Context",
@@ -53,68 +40,63 @@ class ExtendStandardContext(SFDXBaseTask):
             "baseReference": "SalesTransactionContext__stdctx",
             "startDate": "2024-01-01T00:00:00.000Z"
         }
-        response = requests.post(url, headers=headers, json=payload)
-        if response.ok:
-            response_json = response.json()
-            context_id = response_json.get('contextDefinitionId')
-            if context_id:
-                self.logger.info(f"Context ID: {context_id}")
-                self.context_id = context_id
+        response = self._make_request("post", url, headers=headers, json=payload)
+        if response:
+            self.context_id = response.get('contextDefinitionId')
+            if self.context_id:
+                self.logger.info(f"Context ID: {self.context_id}")
                 self._process_context_id()
 
     def _process_context_id(self):
-        url = f"{self.instance_url}/services/data/v{self.project_config.project__package__api_version}/connect/context-definitions/{self.context_id}"
-        headers = {
-            "Authorization": f"Bearer {self.access_token}",
-            "Content-Type": "application/json",
-        }
-        response = requests.get(url, headers=headers)
-        if response.ok:
-            response_json = response.json()
-            version_list = response_json.get('contextDefinitionVersionList', [])
+        url, headers = self._build_url_and_headers(f"connect/context-definitions/{self.context_id}")
+        response = self._make_request("get", url, headers=headers)
+        if response:
+            version_list = response.get('contextDefinitionVersionList', [])
             if version_list:
-                context_mappings = version_list[0].get('contextMappings', [])
-                sales_transaction_mapping_id = next(
-                    (m['contextMappingId'] for m in context_mappings if m.get("name") == "SalesTransaction"),
-                    None
-                )
-                if sales_transaction_mapping_id:
-                    self.sales_transaction_mapping_id = sales_transaction_mapping_id
-                    self.logger.info(f"Sales Transaction Context Mapping ID: {sales_transaction_mapping_id}")
-                    self._update_context_mappings()
+                self._process_version_list(version_list)
+
+    def _process_version_list(self, version_list):
+        context_mappings = version_list[0].get('contextMappings', [])
+        for mapping in context_mappings:
+            if mapping.get("name") == "SalesTransaction":
+                self.sales_transaction_mapping_id = mapping['contextMappingId']
+                self.logger.info(f"Sales Transaction Context Mapping ID: {self.sales_transaction_mapping_id}")
+                self._update_context_mappings()
+                break
 
     def _update_context_mappings(self):
-        url = f"{self.instance_url}/services/data/v{self.project_config.project__package__api_version}/connect/context-definitions/{self.context_id}/context-mappings"
-        headers = {
-            "Authorization": f"Bearer {self.access_token}",
-            "Content-Type": "application/json",
-        }
+        url, headers = self._build_url_and_headers(f"connect/context-definitions/{self.context_id}/context-mappings")
         payload = {
-            "contextMappings": [
-                {
-                    "contextMappingId": self.sales_transaction_mapping_id,
-                    "isDefault": "true",
-                    "name": "SalesTransaction"
-                }
-            ]
+            "contextMappings": [{"contextMappingId": self.sales_transaction_mapping_id, "isDefault": "true", "name": "SalesTransaction"}]
         }
-        response = requests.patch(url, headers=headers, json=payload)
-        if response.ok:
-            self._activate_context_id()
+        self._make_request("patch", url, headers=headers, json=payload)
+        self._activate_context_id()
 
     def _activate_context_id(self):
-        url = f"{self.instance_url}/services/data/v{self.project_config.project__package__api_version}/connect/context-definitions/{self.context_id}"
+        url, headers = self._build_url_and_headers(f"connect/context-definitions/{self.context_id}")
+        payload = {"isActive": "true"}
+        self._make_request("patch", url, headers=headers, json=payload)
+
+    def _build_url_and_headers(self, endpoint):
+        url = f"{self.instance_url}/services/data/v{self.project_config.project__package__api_version}/{endpoint}"
         headers = {
             "Authorization": f"Bearer {self.access_token}",
             "Content-Type": "application/json",
         }
-        payload = {"isActive": "true"}
-        requests.patch(url, headers=headers, json=payload)
+        return url, headers
+
+    def _make_request(self, method, url, **kwargs):
+        response = requests.request(method, url, **kwargs)
+        if response.ok:
+            return response.json()
+        else:
+            self.logger.error(f"Failed {method.upper()} request to {url}: {response.text}")
+            return None
 
     @abstractmethod
     def get_keychain_class(self):
-        return None
+        pass
 
     @abstractmethod
     def get_keychain_key(self):
-        return None
+        pass
