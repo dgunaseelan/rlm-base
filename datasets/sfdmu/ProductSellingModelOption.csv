@@ -7,18 +7,18 @@ Additional API Flex (100M);Term Annual,0iOal00000001U1EAI,true,Additional API Fl
 Additional API Gov;Term Annual,0iOal00000001U2EAI,true,Additional API Gov,01tal000000Vw2IAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
 Additional API Pre-Prod;Term Annual,0iOal00000001U3EAI,true,Additional API Pre-Prod,01tal000000Vw2HAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
 Additional API Prod;Term Annual,0iOal00000001U4EAI,true,Additional API Prod,01tal000000Vw2GAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
-Additional Automation QB Credits;Term Annual,0iOal00000001U5EAI,false,Additional Automation QB Credits,01tal000000Vw2FAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
+Additional Automation QB Credits;Term Annual,0iOal00000001U5EAI,true,Additional Automation QB Credits,01tal000000Vw2FAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
 Additional QB DataGraph (500M);Term Annual,0iOal00000001U6EAI,true,Additional QB DataGraph (500M),01tal000000Vw2LAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
-API Access Requests (AEH);Term Annual,0iOal00000001U7EAI,false,API Access Requests (AEH),01tal000000Vw2MAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
-Additional Flows - QB Starter;Term Annual,0iOal00000001U8EAI,false,Additional Flows - QB Starter,01tal000000Vw2AAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
-Additional Messages - QB Starter;Term Annual,0iOal00000001U9EAI,false,Additional Messages - QB Starter,01tal000000Vw2CAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
-Additional Data Throughput (TB);Term Annual,0iOal00000001UAEAY,false,Additional Data Throughput (TB),01tal000000Vw2EAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
-QB API Management Solution;Term Annual,0iOal00000001UCEAY,false,QB API Management Solution,01tal000000Vw1YAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
+API Access Requests (AEH);Term Annual,0iOal00000001U7EAI,true,API Access Requests (AEH),01tal000000Vw2MAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
+Additional Flows - QB Starter;Term Annual,0iOal00000001U8EAI,true,Additional Flows - QB Starter,01tal000000Vw2AAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
+Additional Messages - QB Starter;Term Annual,0iOal00000001U9EAI,true,Additional Messages - QB Starter,01tal000000Vw2CAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
+Additional Data Throughput (TB);Term Annual,0iOal00000001UAEAY,true,Additional Data Throughput (TB),01tal000000Vw2EAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
+QB API Management Solution;Term Annual,0iOal00000001UCEAY,true,QB API Management Solution,01tal000000Vw1YAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
 QuantumBit Starter;One-Time,0iOal00000001UEEAY,true,QuantumBit Starter,01tal000000Vw1UAAS,One-Time;OneTime,0jPal00000001PBEAY,,
 Gold Hardware Maintenance;Term Annual,0iOal00000001UFEAY,true,Gold Hardware Maintenance,01tal000000Vw23AAC,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
-Additional API;Term Annual,0iOal00000001UGEAY,false,Additional API,01tal000000Vw1gAAC,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
+Additional API;Term Annual,0iOal00000001UGEAY,true,Additional API,01tal000000Vw1gAAC,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
 QuantumBit Complete Solution;Term Annual,0iOal00000001UHEAY,true,QuantumBit Complete Solution,01tal000000Vw1hAAC,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
-Additional API;Term Monthly,0iOal00000001UIEAY,true,Additional API,01tal000000Vw1gAAC,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
+Additional API;Term Monthly,0iOal00000001UIEAY,false,Additional API,01tal000000Vw1gAAC,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
 Additional API;Evergreen Monthly,0iOal00000001UJEAY,false,Additional API,01tal000000Vw1gAAC,Evergreen Monthly;Evergreen,0jPal00000001P7EAI,Default Proration Policy,0mual000000054XAAQ
 16GB RDIMM;One-Time,0iOal00000001UKEAY,true,16GB RDIMM,01tal000000Vw1MAAS,One-Time;OneTime,0jPal00000001PBEAY,,
 4TB 7.2k RPM NLSAS;One-Time,0iOal00000001ULEAY,true,4TB 7.2k RPM NLSAS,01tal000000Vw1iAAC,One-Time;OneTime,0jPal00000001PBEAY,,
@@ -42,7 +42,7 @@ Intel X710 Dual Port 10Gb SFP;One-Time,0iOal00000001UcEAI,true,Intel X710 Dual P
 Integration Specialist Engineer;One-Time,0iOal00000001UdEAI,true,Integration Specialist Engineer,01tal000000Vw1cAAC,One-Time;OneTime,0jPal00000001PBEAY,,
 Solutions Architect;One-Time,0iOal00000001UeEAI,true,Solutions Architect,01tal000000Vw2lAAC,One-Time;OneTime,0jPal00000001PBEAY,,
 Configured Power Cable;One-Time,0iOal00000001UfEAI,true,Configured Power Cable,01tal000000Vw1TAAS,One-Time;OneTime,0jPal00000001PBEAY,,
-Subscription;Evergreen Monthly,0iOal00000001UgEAI,true,Subscription,01tal000000Vw1JAAS,Evergreen Monthly;Evergreen,0jPal00000001P7EAI,Default Proration Policy,0mual000000054XAAQ
+Subscription;Evergreen Monthly,0iOal00000001UgEAI,false,Subscription,01tal000000Vw1JAAS,Evergreen Monthly;Evergreen,0jPal00000001P7EAI,Default Proration Policy,0mual000000054XAAQ
 Professional Services Daily Rate;One-Time,0iOal00000001UhEAI,true,Professional Services Daily Rate,01tal000000Vw2eAAC,One-Time;OneTime,0jPal00000001PBEAY,,
 Professional Services Scope of Work;One-Time,0iOal00000001UiEAI,true,Professional Services Scope of Work,01tal000000Vw2iAAC,One-Time;OneTime,0jPal00000001PBEAY,,
 Subscription;Term Monthly,0iOal00000001UjEAI,false,Subscription,01tal000000Vw1JAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
@@ -50,18 +50,18 @@ Intel Xeon E5-2667 v4 3.2GHz;One-Time,0iOal00000001UkEAI,true,Intel Xeon E5-2667
 Project Manager;One-Time,0iOal00000001UlEAI,true,Project Manager,01tal000000Vw2mAAC,One-Time;OneTime,0jPal00000001PBEAY,,
 QB API Management Solution;Evergreen Monthly,0iOal00000003p7EAA,false,QB API Management Solution,01tal000000Vw1YAAS,Evergreen Monthly;Evergreen,0jPal00000001P7EAI,Default Proration Policy,0mual000000054XAAQ
 QuantumBit Complete Solution;Evergreen Monthly,0iOal00000003p8EAA,false,QuantumBit Complete Solution,01tal000000Vw1hAAC,Evergreen Monthly;Evergreen,0jPal00000001P7EAI,Default Proration Policy,0mual000000054XAAQ
-API Access Requests (AEH);Term Monthly,0iOal00000003p9EAA,true,API Access Requests (AEH),01tal000000Vw2MAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
+API Access Requests (AEH);Term Monthly,0iOal00000003p9EAA,false,API Access Requests (AEH),01tal000000Vw2MAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
 QuantumBit Complete Solution;One-Time,0iOal00000003pAEAQ,false,QuantumBit Complete Solution,01tal000000Vw1hAAC,One-Time;OneTime,0jPal00000001PBEAY,,
 Additional Messages - QB Starter;Evergreen Monthly,0iOal00000003pCEAQ,false,Additional Messages - QB Starter,01tal000000Vw2CAAS,Evergreen Monthly;Evergreen,0jPal00000001P7EAI,Default Proration Policy,0mual000000054XAAQ
 Additional Data Throughput (TB);Evergreen Monthly,0iOal00000003pDEAQ,false,Additional Data Throughput (TB),01tal000000Vw2EAAS,Evergreen Monthly;Evergreen,0jPal00000001P7EAI,Default Proration Policy,0mual000000054XAAQ
 Additional Flows - QB Starter;Evergreen Monthly,0iOal00000003pEEAQ,false,Additional Flows - QB Starter,01tal000000Vw2AAAS,Evergreen Monthly;Evergreen,0jPal00000001P7EAI,Default Proration Policy,0mual000000054XAAQ
 API Access Requests (AEH);Evergreen Monthly,0iOal00000003pFEAQ,false,API Access Requests (AEH),01tal000000Vw2MAAS,Evergreen Monthly;Evergreen,0jPal00000001P7EAI,Default Proration Policy,0mual000000054XAAQ
 Additional Automation QB Credits;Evergreen Monthly,0iOal00000003pGEAQ,false,Additional Automation QB Credits,01tal000000Vw2FAAS,Evergreen Monthly;Evergreen,0jPal00000001P7EAI,Default Proration Policy,0mual000000054XAAQ
-Additional Flows - QB Starter;Term Monthly,0iOal00000003pHEAQ,true,Additional Flows - QB Starter,01tal000000Vw2AAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
-Additional Data Throughput (TB);Term Monthly,0iOal00000003pIEAQ,true,Additional Data Throughput (TB),01tal000000Vw2EAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
-QB API Management Solution;Term Monthly,0iOal00000004urEAA,true,QB API Management Solution,01tal000000Vw1YAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
+Additional Flows - QB Starter;Term Monthly,0iOal00000003pHEAQ,false,Additional Flows - QB Starter,01tal000000Vw2AAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
+Additional Data Throughput (TB);Term Monthly,0iOal00000003pIEAQ,false,Additional Data Throughput (TB),01tal000000Vw2EAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
+QB API Management Solution;Term Monthly,0iOal00000004urEAA,false,QB API Management Solution,01tal000000Vw1YAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
 QuantumBit Complete Solution;Term Monthly,0iOal00000004usEAA,false,QuantumBit Complete Solution,01tal000000Vw1hAAC,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
-Additional Messages - QB Starter;Term Monthly,0iOal00000004utEAA,true,Additional Messages - QB Starter,01tal000000Vw2CAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
-Additional Automation QB Credits;Term Monthly,0iOal00000004uuEAA,true,Additional Automation QB Credits,01tal000000Vw2FAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
-Subscription;Term Annual,0iOal0000000CIvEAM,false,Subscription,01tal000000Vw1JAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
+Additional Messages - QB Starter;Term Monthly,0iOal00000004utEAA,false,Additional Messages - QB Starter,01tal000000Vw2CAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
+Additional Automation QB Credits;Term Monthly,0iOal00000004uuEAA,false,Additional Automation QB Credits,01tal000000Vw2FAAS,Term Monthly;TermDefined,0jPal00000001P9EAI,Default Proration Policy,0mual000000054XAAQ
+Subscription;Term Annual,0iOal0000000CIvEAM,true,Subscription,01tal000000Vw1JAAS,Term Annual;TermDefined,0jPal00000001P8EAI,Default Proration Policy,0mual000000054XAAQ
 Subscription;Evergreen Annual,0iOal0000000CIwEAM,false,Subscription,01tal000000Vw1JAAS,Evergreen Annual;Evergreen,0jPal00000001PAEAY,Default Proration Policy,0mual000000054XAAQ
