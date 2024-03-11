@@ -64,3 +64,7 @@ flows:
                 task: deploy
                 options:
                     path: force-app/main/default
+            7:
+                task: dx
+                options:
+                    command: 'sfdmu run -s csvfile -p datasets/sfdmu'
