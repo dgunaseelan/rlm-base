@@ -1,10 +1,10 @@
 DataType,Description,Id,Name,Status,Code
 Text,,0v5al0000001MT7AAM,Length,Active,Length
-Text,,0v5al0000001MT8AAM,Connector Type,Active,Connector_Type
-Number,,0v5al0000001MT9AAM,Base Core Count,Active,Base_Core_Count
-Text,,0v5al0000001MTAAA2,API Type,Active,API_Type
-Text,,0v5al0000001MTBAA2,Operating System,Active,Operating_System
-Text,,0v5al0000001MTCAA2,Server Configuration,Active,Server_Configuration
+Text,,0v5al0000001MT8AAM,Connector_Type,Active,Connector_Type
+Number,,0v5al0000001MT9AAM,Base_Core_Count,Active,Base_Core_Count
+Text,,0v5al0000001MTAAA2,API_Type,Active,API_Type
+Text,,0v5al0000001MTBAA2,Operating_System,Active,Operating_System
+Text,,0v5al0000001MTCAA2,Server_Configuration,Active,Server_Configuration
 Text,,0v5al0000001MTDAA2,Resource_Location,Active,Resource_Location
 Text,,0v5al0000001MTEAA2,NIC_Type,Active,NIC_Type
 Text,,0v5al0000001MTFAA2,Processor_Frequency,Active,Processor_Frequency

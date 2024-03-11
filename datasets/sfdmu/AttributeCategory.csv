@@ -1,7 +1,7 @@
 Code,Id,Name
-APISpec,0v3al00000007azAAA,API Specification
-OS,0v3al00000007b0AAA,Operating System
-TS,0v3al00000007b1AAA,Tech Specs
+APISpec,0v3al00000007azAAA,API_Specification
+OS,0v3al00000007b0AAA,Operating_System
+TS,0v3al00000007b1AAA,Tech_Specs
 Server,0v3al00000007b2AAA,Server
 Processor,0v3al00000007b3AAA,Processor
 Network_Adapter,0v3al00000007b4AAA,Network_Adapter

@@ -1,39 +1,39 @@
 $$Name$Picklist.Name,Code,DisplayValue,Id,IsDefault,Name,Picklist.Name,PicklistId,Sequence,Value
-L5-20;Connector Type,L5-20,L5-20,0v6al00000018jVAAQ,false,L5-20,Connector Type,0v5al0000001MT8AAM,,L5-20
-C13 to C14;Connector Type,C13toC14,C13 to C14,0v6al00000018jWAAQ,true,C13 to C14,Connector Type,0v5al0000001MT8AAM,,C13 to C14
+L5-20;Connector_Type,L5-20,L5-20,0v6al00000018jVAAQ,false,L5-20,Connector_Type,0v5al0000001MT8AAM,,L5-20
+C13 to C14;Connector_Type,C13toC14,C13 to C14,0v6al00000018jWAAQ,true,C13 to C14,Connector_Type,0v5al0000001MT8AAM,,C13 to C14
 ThreeFeet;Length,3ft,3',0v6al00000018jXAAQ,true,ThreeFeet,Length,0v5al0000001MT7AAM,,3
 FiveFeet;Length,5ft,5',0v6al00000018jYAAQ,false,FiveFeet,Length,0v5al0000001MT7AAM,,5
 EightFeet;Length,8ft,8',0v6al00000018jZAAQ,false,EightFeet,Length,0v5al0000001MT7AAM,,8
-C19 to C20;Connector Type,C19toC20,C19 to C20,0v6al00000018jaAAA,false,C19 to C20,Connector Type,0v5al0000001MT8AAM,,C19 to C20
+C19 to C20;Connector_Type,C19toC20,C19 to C20,0v6al00000018jaAAA,false,C19 to C20,Connector_Type,0v5al0000001MT8AAM,,C19 to C20
 TwelveFeet;Length,12ft,12',0v6al00000018jbAAA,false,TwelveFeet,Length,0v5al0000001MT7AAM,,12
-Amazon Linux 2;Operating System,AL2,Amazon Linux 2,0v6al00000018jcAAA,true,Amazon Linux 2,Operating System,0v5al0000001MTBAA2,1,Amazon Linux 2
-Four;Base Core Count,4,4,0v6al00000018jdAAA,false,Four,Base Core Count,0v5al0000001MT9AAM,2,4
-Six;Base Core Count,6,6,0v6al00000018jeAAA,false,Six,Base Core Count,0v5al0000001MT9AAM,3,6
-Eight;Base Core Count,8,8,0v6al00000018jfAAA,true,Eight,Base Core Count,0v5al0000001MT9AAM,4,8
-Flex;API Type,Flex,Flex,0v6al00000018jgAAA,true,Flex,API Type,0v5al0000001MTAAA2,1,Flex
-Pre-Prod;API Type,Pre-Prod,Pre-Prod,0v6al00000018jhAAA,false,Pre-Prod,API Type,0v5al0000001MTAAA2,3,Pre-Prod
-Gov;API Type,Gov,Gov,0v6al00000018jiAAA,false,Gov,API Type,0v5al0000001MTAAA2,2,Gov
-Redhat Enterprise Linux;Operating System,REL,Redhat Enterprise Linux,0v6al00000018jjAAA,false,Redhat Enterprise Linux,Operating System,0v5al0000001MTBAA2,2,Redhat Enterprise Linux
-Two;Base Core Count,2,2,0v6al00000018jkAAA,false,Two,Base Core Count,0v5al0000001MT9AAM,1,2
-Prod;API Type,Prod,Prod,0v6al00000018jlAAA,false,Prod,API Type,0v5al0000001MTAAA2,4,Prod
+Amazon Linux 2;Operating_System,AL2,Amazon Linux 2,0v6al00000018jcAAA,true,Amazon Linux 2,Operating_System,0v5al0000001MTBAA2,1,Amazon Linux 2
+Four;Base_Core_Count,4,4,0v6al00000018jdAAA,false,Four,Base_Core_Count,0v5al0000001MT9AAM,2,4
+Six;Base_Core_Count,6,6,0v6al00000018jeAAA,false,Six,Base_Core_Count,0v5al0000001MT9AAM,3,6
+Eight;Base_Core_Count,8,8,0v6al00000018jfAAA,true,Eight,Base_Core_Count,0v5al0000001MT9AAM,4,8
+Flex;API_Type,Flex,Flex,0v6al00000018jgAAA,true,Flex,API_Type,0v5al0000001MTAAA2,1,Flex
+Pre-Prod;API_Type,Pre-Prod,Pre-Prod,0v6al00000018jhAAA,false,Pre-Prod,API_Type,0v5al0000001MTAAA2,3,Pre-Prod
+Gov;API_Type,Gov,Gov,0v6al00000018jiAAA,false,Gov,API_Type,0v5al0000001MTAAA2,2,Gov
+Redhat Enterprise Linux;Operating_System,REL,Redhat Enterprise Linux,0v6al00000018jjAAA,false,Redhat Enterprise Linux,Operating_System,0v5al0000001MTBAA2,2,Redhat Enterprise Linux
+Two;Base_Core_Count,2,2,0v6al00000018jkAAA,false,Two,Base_Core_Count,0v5al0000001MT9AAM,1,2
+Prod;API_Type,Prod,Prod,0v6al00000018jlAAA,false,Prod,API_Type,0v5al0000001MTAAA2,4,Prod
 Onsite;Resource_Location,Onsite,Onsite,0v6al00000018jmAAA,true,Onsite,Resource_Location,0v5al0000001MTDAA2,1,Onsite
 2.0GHz;Processor_Frequency,2.0GHz,2.0GHz,0v6al00000018jnAAA,false,2.0GHz,Processor_Frequency,0v5al0000001MTFAA2,3,2.0GHz
 1.7GHz;Processor_Frequency,1.7GHz,1.7GHz,0v6al00000018joAAA,false,1.7GHz,Processor_Frequency,0v5al0000001MTFAA2,2,1.7GHz
 Performance_Optimized_with_Sparing;Memory_Config,Performance_Optimized_with_Sparing,Performance_Optimized_with_Sparing,0v6al00000018jpAAA,false,Performance_Optimized_with_Sparing,Memory_Config,0v5al0000001MTIAA2,2,Performance_Optimized_with_Sparing
-Security;Server Configuration,Security,Security,0v6al00000018jqAAA,true,Security,Server Configuration,0v5al0000001MTCAA2,1,Security
+Security;Server_Configuration,Security,Security,0v6al00000018jqAAA,true,Security,Server_Configuration,0v5al0000001MTCAA2,1,Security
 2.1GHz;Processor_Frequency,2.1GHz,2.1GHz,0v6al00000018jrAAA,false,2.1GHz,Processor_Frequency,0v5al0000001MTFAA2,4,2.1GHz
 8GB;Memory,8GB,8GB,0v6al00000018jsAAA,true,8GB,Memory,0v5al0000001MTJAA2,1,8GB
 32GB;Memory,32GB,32GB,0v6al00000018jtAAA,false,32GB,Memory,0v5al0000001MTJAA2,3,32GB
 Basic;Engineering_Options,Basic,Basic,0v6al00000018juAAA,false,Basic,Engineering_Options,0v5al0000001MTHAA2,2,Basic
-Value;Server Configuration,Value,Value,0v6al00000018jvAAA,false,Value,Server Configuration,0v5al0000001MTCAA2,3,Value
-Custom;Server Configuration,Custom,Custom,0v6al00000018jwAAA,false,Custom,Server Configuration,0v5al0000001MTCAA2,4,Custom
+Value;Server_Configuration,Value,Value,0v6al00000018jvAAA,false,Value,Server_Configuration,0v5al0000001MTCAA2,3,Value
+Custom;Server_Configuration,Custom,Custom,0v6al00000018jwAAA,false,Custom,Server_Configuration,0v5al0000001MTCAA2,4,Custom
 16GB;Memory,16GB,16GB,0v6al00000018jxAAA,false,16GB,Memory,0v5al0000001MTJAA2,2,16GB
 Memory_Mirroring;Memory_Config,Memory_Mirroring,Memory_Mirroring,0v6al00000018jyAAA,false,Memory_Mirroring,Memory_Config,0v5al0000001MTIAA2,3,Memory_Mirroring
 SFP;NIC_Type,SFP,SFP,0v6al00000018jzAAA,false,SFP,NIC_Type,0v5al0000001MTEAA2,2,SFP
 Evergreen;SubscriptionType,Evergreen,Evergreen,0v6al00000018k0AAA,true,Evergreen,SubscriptionType,0v5al0000001MTGAA2,1,Evergreen
 TermBased;SubscriptionType,TermBased,TermBased,0v6al00000018k1AAA,false,TermBased,SubscriptionType,0v5al0000001MTGAA2,2,TermBased
 3.2GHz;Processor_Frequency,3.2GHz,3.2GHz,0v6al00000018k2AAA,true,3.2GHz,Processor_Frequency,0v5al0000001MTFAA2,1,3.2GHz
-Performance;Server Configuration,Performance,Performance,0v6al00000018k3AAA,false,Performance,Server Configuration,0v5al0000001MTCAA2,2,Performance
+Performance;Server_Configuration,Performance,Performance,0v6al00000018k3AAA,false,Performance,Server_Configuration,0v5al0000001MTCAA2,2,Performance
 Extended_Care;Engineering_Options,Extended_Care,Extended_Care,0v6al00000018k4AAA,true,Extended_Care,Engineering_Options,0v5al0000001MTHAA2,1,Extended_Care
 Remote;Resource_Location,Remote,Remote,0v6al00000018k5AAA,false,Remote,Resource_Location,0v5al0000001MTDAA2,2,Remote
 Performance_Optimized;Memory_Config,Performance_Optimized,Performance_Optimized,0v6al00000018k6AAA,true,Performance_Optimized,Memory_Config,0v5al0000001MTIAA2,1,Performance_Optimized
