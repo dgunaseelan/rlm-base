@@ -53,11 +53,11 @@ flows:
                 options:
                     api_names: CodeBuilderUserPsl,SubscriptionManagementPsl,RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
             3:
+                task: deploy_decision_tables
+            4:
                 task: assign_permission_set_groups
                 options:
                     api_names: RLM_Base
-            4:
-                task: deploy_decision_tables
             5:
                 task: extend_stdctx
             6:
