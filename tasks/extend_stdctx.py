@@ -1,4 +1,3 @@
-import json
 import requests
 from cumulusci.tasks.sfdx import SFDXBaseTask
 from cumulusci.core.keychain import BaseProjectKeychain
@@ -10,6 +9,15 @@ class ExtendStandardContext(SFDXBaseTask):
             'description': 'The access token for the org. Defaults to the project default',
         }
     }
+
+    def __init__(self):
+        self.keychain = None
+        self.env = None
+        self.access_token = None
+        self.instance_url = None
+        self.context_id = None
+        self.sales_transaction_mapping_id = None
+        super().__init__()
 
     def _init_options(self, kwargs):
         super()._init_options(kwargs)
