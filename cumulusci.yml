@@ -42,3 +42,25 @@ tasks:
         group: Revenue Lifecycle Management
         options:
             path: force-app/main/default/decisionTables
+
+flows:
+    prepare_rlm_org:
+        steps:
+            1:
+                task: deploy_permissions
+            2:
+                task: assign_permission_set_licenses
+                options:
+                    api_names: CodeBuilderUserPsl,SubscriptionManagementPsl,RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
+            3:
+                task: assign_permission_set_groups
+                options:
+                    api_names: RLM_Base
+            4:
+                task: deploy_decision_tables
+            5:
+                task: extend_stdctx
+            6:
+                task: deploy
+                options:
+                    path: force-app/main/default
