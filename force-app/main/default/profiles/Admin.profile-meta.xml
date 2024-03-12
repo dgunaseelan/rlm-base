@@ -20,6 +20,9 @@
         <layout>Asset-RLM Asset Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>AssetAction-RLM Asset Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>AttributePicklist-RLM Attribute Picklist Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
