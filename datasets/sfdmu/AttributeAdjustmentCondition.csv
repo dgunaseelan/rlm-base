@@ -1,11 +1,11 @@
-AttributeBasedAdjRule.Name,AttributeBasedAdjRuleId,AttributeDefinition.Name,AttributeDefinitionId,BooleanValue,DateTimeValue,DateValue,DoubleValue,Id,IntegerValue,Name,Operator,Product.Name,ProductId,StringValue
-Rule_1707506403313,12Hal0000003HpDEAU,API_Type,0tjal00000019KeAAI,,,,,12Fal0000001umXEAQ,,00000020,equals,Additional API,01tal000000Vw1gAAC,Gov
-Rule_1707507247714,12Hal0000003HpCEAU,API_Type,0tjal00000019KeAAI,,,,,12Fal0000001umYEAQ,,00000021,equals,Additional API,01tal000000Vw1gAAC,Gov
-Rule_1707507197535,12Hal0000003HpBEAU,API_Type,0tjal00000019KeAAI,,,,,12Fal0000001umZEAQ,,00000022,equals,Additional API,01tal000000Vw1gAAC,Flex
-Rule_1707507229633,12Hal0000003HpAEAU,API_Type,0tjal00000019KeAAI,,,,,12Fal0000001umaEAA,,00000023,equals,Additional API,01tal000000Vw1gAAC,Pre-Prod
-Rule_1707507269131,12Hal0000003Hp9EAE,API_Type,0tjal00000019KeAAI,,,,,12Fal0000001umbEAA,,00000024,equals,Additional API,01tal000000Vw1gAAC,Prod
-Rule_1707506330919,12Hal0000003HpEEAU,API_Type,0tjal00000019KeAAI,,,,,12Fal0000001umcEAA,,00000025,equals,Additional API,01tal000000Vw1gAAC,Flex
-Rule_1707506369900,12Hal0000003HpFEAU,API_Type,0tjal00000019KeAAI,,,,,12Fal0000001umdEAA,,00000026,equals,Additional API,01tal000000Vw1gAAC,Pre-Prod
-Rule_1707506456305,12Hal0000003HpGEAU,API_Type,0tjal00000019KeAAI,,,,,12Fal0000001umeEAA,,00000027,equals,Additional API,01tal000000Vw1gAAC,Prod
-Rule_1708046267454,12Hal0000003Hp8EAE,API_Type,0tjal00000019KeAAI,,,,,12Fal0000001umfEAA,,00000028,equals,Additional API,01tal000000Vw1gAAC,Prod
-Rule_1708250068983,12Hal0000003Hp7EAE,API_Type,0tjal00000019KeAAI,,,,,12Fal0000001umgEAA,,00000029,equals,Additional API,01tal000000Vw1gAAC,Prod
+AttributeBasedAdjRule.Name,AttributeDefinition.Name,BooleanValue,DateTimeValue,DateValue,DoubleValue,IntegerValue,Name,Operator,Product.Name,StringValue
+Rule_1707506403313,API_Type,,,,,,00000001,equals,Additional API,Gov
+Rule_1707507247714,API_Type,,,,,,00000002,equals,Additional API,Gov
+Rule_1707507197535,API_Type,,,,,,00000003,equals,Additional API,Flex
+Rule_1707507229633,API_Type,,,,,,00000004,equals,Additional API,Pre-Prod
+Rule_1707507269131,API_Type,,,,,,00000005,equals,Additional API,Prod
+Rule_1707506330919,API_Type,,,,,,00000006,equals,Additional API,Flex
+Rule_1707506369900,API_Type,,,,,,00000007,equals,Additional API,Pre-Prod
+Rule_1707506456305,API_Type,,,,,,00000008,equals,Additional API,Prod
+Rule_1708046267454,API_Type,,,,,,00000009,equals,Additional API,Prod
+Rule_1708250068983,API_Type,,,,,,00000010,equals,Additional API,Prod

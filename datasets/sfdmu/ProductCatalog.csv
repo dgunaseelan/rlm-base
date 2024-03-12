@@ -1,4 +1,4 @@
-CatalogType,Code,Description,Id,Name
-,,,0ZSal0000002YATGA2,Software
-,,,0ZSal0000002YAUGA2,Hardware
-,,,0ZSal0000002YAVGA2,Services
+CatalogType,Code,Description,Name
+,,,Software
+,,,Hardware
+,,,Services

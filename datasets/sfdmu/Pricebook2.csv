@@ -1,3 +1,3 @@
-$$Name$IsStandard,Id,IsActive,IsStandard,Name
-Standard Price Book;true,01sal000000LKpRAAW,true,true,Standard Price Book
-Global Price Book,01sal000000LNfxAAG,true,false,Global Price Book
+$$Name$IsStandard,IsActive,IsStandard,Name
+Global Price Book,true,false,Global Price Book
+Standard Price Book;true,true,true,Standard Price Book

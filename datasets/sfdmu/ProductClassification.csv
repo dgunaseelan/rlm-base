@@ -1,14 +1,14 @@
-Code,Id,Name,Status
-Cables,11Bal000001aUevEAE,Cables,Active
-Software,11Bal000001aUewEAE,Software,Draft
-APIType,11Bal000001aUexEAE,API Type,Active
-QB2,11Bal000001aUeyEAE,QuantumBit2,Active
-Server,11Bal000001aUezEAE,Server,Active
-Hard_Drive,11Bal000001aUf0EAE,Hard_Drive,Active
-Memory,11Bal000001aUf1EAE,Memory,Active
-Network_Adapter,11Bal000001aUf2EAE,Network_Adapter,Active
-Processor,11Bal000001aUf3EAE,Processor,Active
-Professional_Services_Bundle,11Bal000001aUf4EAE,Professional_Services_Bundle,Active
-Engineering_Resources,11Bal000001aUf5EAE,Engineering_Resources,Active
-Subscription,11Bal000001aUf6EAE,Subscription,Active
-QB,11Bal000001aUf7EAE,QuantumBit,Active
+Code,Name,Status
+Cables,Cables,Active
+Software,Software,Draft
+APIType,API Type,Active
+QB2,QuantumBit2,Active
+Server,Server,Active
+Hard_Drive,Hard_Drive,Active
+Memory,Memory,Active
+Network_Adapter,Network_Adapter,Active
+Processor,Processor,Active
+Professional_Services_Bundle,Professional_Services_Bundle,Active
+Engineering_Resources,Engineering_Resources,Active
+Subscription,Subscription,Active
+QB,QuantumBit,Active

@@ -1,15 +1,15 @@
-$$Name$Catalog.Name$ParentCategory.Name,Catalog.Name,CatalogId,Code,Description,Id,Name,ParentCategory.$$Name$Catalog.Name$ParentCategory.Name,ParentCategoryId,SortOrder
-API;Software,Software,0ZSal0000002YATGA2,,,0ZGal0000002WTdGAM,API,,,20
-Bundle;Software,Software,0ZSal0000002YATGA2,,,0ZGal0000002WTeGAM,Bundle,,,10
-Accessories;Hardware,Hardware,0ZSal0000002YAUGA2,,,0ZGal0000002WTfGAM,Accessories,,,
-Licenses;Software,Software,0ZSal0000002YATGA2,,,0ZGal0000002WTgGAM,Licenses,,,30
-Training;Software,Software,0ZSal0000002YATGA2,,,0ZGal0000002WThGAM,Training,,,40
-Maintenance;Software,Software,0ZSal0000002YATGA2,,,0ZGal0000002WTiGAM,Maintenance,,,50
-Hardware Maintenance;Hardware,Hardware,0ZSal0000002YAUGA2,,,0ZGal0000002WTjGAM,Hardware Maintenance,,,
-Memory;Hardware,Hardware,0ZSal0000002YAUGA2,,,0ZGal0000002WTkGAM,Memory,,,
-Network Adapter;Hardware,Hardware,0ZSal0000002YAUGA2,,,0ZGal0000002WTlGAM,Network Adapter,,,
-Processor;Hardware,Hardware,0ZSal0000002YAUGA2,,,0ZGal0000002WTmGAM,Processor,,,
-Hard Drive;Hardware,Hardware,0ZSal0000002YAUGA2,,,0ZGal0000002WTnGAM,Hard Drive,,,
-Subscription;Software,Software,0ZSal0000002YATGA2,,,0ZGal0000002WToGAM,Subscription,,,100
-Services;Services,Services,0ZSal0000002YAVGA2,,,0ZGal0000002WTpGAM,Services,,,
-Server;Hardware,Hardware,0ZSal0000002YAUGA2,,,0ZGal0000002WTqGAM,Server,,,
+$$Name$Catalog.Name$ParentCategory.Name,Catalog.Name,Code,Description,Name,ParentCategory.$$Name$Catalog.Name$ParentCategory.Name,SortOrder
+Bundle;Software,Software,,,Bundle,,10
+Accessories;Hardware,Hardware,,,Accessories,,
+Licenses;Software,Software,,,Licenses,,30
+Training;Software,Software,,,Training,,40
+Maintenance;Software,Software,,,Maintenance,,50
+Hardware Maintenance;Hardware,Hardware,,,Hardware Maintenance,,
+Memory;Hardware,Hardware,,,Memory,,
+Network Adapter;Hardware,Hardware,,,Network Adapter,,
+Processor;Hardware,Hardware,,,Processor,,
+Hard Drive;Hardware,Hardware,,,Hard Drive,,
+Subscription;Software,Software,,,Subscription,,100
+Services;Services,Services,,,Services,,
+Server;Hardware,Hardware,,,Server,,
+API;Software,Software,,,API,,20

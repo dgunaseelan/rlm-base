@@ -1,5 +1,6 @@
 {
     "apiVersion": "60.0",
+    "excludeIdsFromCSVFiles": "true",
     "objectSets": [
         {
             "objects": [
@@ -27,33 +28,28 @@
                     "query": "SELECT Name, Code FROM AttributeCategory",
                     "operation": "Upsert",
                     "externalId": "Name",
-                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
                     "query": "SELECT Name, Code, Description, DataType, Status FROM AttributePicklist",
                     "operation": "Upsert",
-                    "externalId": "Name",
-                    "deleteOldData": true
+                    "externalId": "Name"
                 },
                 {
                     "query": "SELECT Name, Code, IsDefault, DisplayValue, PicklistId, Sequence, Value, DisplayValue  FROM AttributePicklistValue",
                     "operation": "Upsert",
-                    "externalId": "Name;Picklist.Name",
-                    "deleteOldData": true
+                    "externalId": "Name;Picklist.Name"
                 },
                 {
                     "query": "SELECT Name, DeveloperName, DataType, IsActive, DefaultValue, Description, Required, Code, Label, PicklistId FROM AttributeDefinition",
                     "operation": "Upsert",
                     "externalId": "Name",
-                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
                     "query": "SELECT AttributeCategoryId, AttributeDefinitionId FROM AttributeCategoryAttribute",
                     "operation": "Upsert",
                     "externalId": "AttributeCategory.Name;AttributeDefinition.Name",
-                    "deleteOldData": true,
                     "excluded": false
                 },
                 {
@@ -84,8 +80,7 @@
                 {
                     "query": "SELECT IsDefault, Product2Id, ProductSellingModelId, ProrationPolicyId FROM ProductSellingModelOption",
                     "operation": "Upsert",
-                    "externalId": "Product2.Name;ProductSellingModel.Name",
-                    "deleteOldData": true
+                    "externalId": "Product2.Name;ProductSellingModel.Name"
                 },
                 {
                     "query": "SELECT Name, Code, ParentProductId, Sequence, MinBundleComponents, MaxBundleComponents, Description, CurrencyIsoCode FROM ProductComponentGroup",

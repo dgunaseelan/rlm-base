@@ -1,20 +1,19 @@
-Code,DataType,DefaultValue,Description,DeveloperName,Id,IsActive,Label,Name,Picklist.Name,PicklistId
-,Picklist,,,Length,0tjal00000019KbAAI,true,Length,Length,Length,0v5al0000001MT7AAM
-,Picklist,,,Connector_Type,0tjal00000019KcAAI,true,Connector Type,Connector_Type,Connector Type,0v5al0000001MT8AAM
-,Picklist,4,,Base_Core_Count,0tjal00000019KdAAI,true,Base Core Count,Base_Core_Count,Base Core Count,0v5al0000001MT9AAM
-,Picklist,Flex,,API_Type,0tjal00000019KeAAI,true,API Type,API_Type,API Type,0v5al0000001MTAAA2
-,Picklist,Amazon Linux 2,,Operating_System,0tjal00000019KfAAI,true,Operating System,Operating_System,Operating System,0v5al0000001MTBAA2
-,Picklist,Security,,Server_Configuration,0tjal00000019KgAAI,true,Server_Configuration,Server_Configuration,Server Configuration,0v5al0000001MTCAA2
-,Picklist,Onsite,,Resource_Location,0tjal00000019KhAAI,true,Resource_Location,Resource_Location,Resource_Location,0v5al0000001MTDAA2
-,Picklist,Direct_Attach,,NIC_Type,0tjal00000019KiAAI,true,NIC_Type,NIC_Type,NIC_Type,0v5al0000001MTEAA2
-,Picklist,3.2GHz,,Processor_Frequency,0tjal00000019KjAAI,true,Processor_Frequency,Processor_Frequency,Processor_Frequency,0v5al0000001MTFAA2
-,Picklist,,,SubscriptionType,0tjal00000019KkAAI,true,SubscriptionType,SubscriptionType,SubscriptionType,0v5al0000001MTGAA2
-,Picklist,Extended_Care,,Engineering_Options,0tjal00000019KlAAI,true,Engineering_Options,Engineering_Options,Engineering_Options,0v5al0000001MTHAA2
-,Picklist,Performance_Optimized,,Memory_Config,0tjal00000019KmAAI,true,Memory_Config,Memory_Config,Memory_Config,0v5al0000001MTIAA2
-,Picklist,8GB,,Memory_Capacity,0tjal00000019KnAAI,true,Memory_Capacity,Memory_Capacity,Memory,0v5al0000001MTJAA2
-,Picklist,1TB,,HDD_Storage,0tjal00000019KoAAI,true,HDD_Storage,HDD_Storage,HDD_Storage,0v5al0000001MTKAA2
-,Number,1000,,Flows,0tjal00000019KpAAI,true,Flows,Flows,,
-,Number,60,,Messages_Million,0tjal00000019KqAAI,true,Messages (Million),Messages_Million,,
-,Number,0,,Data_Throughput_TB,0tjal00000019KrAAI,true,Data Throughput (TB),Data_Throughput_TB,,
-,Text,,,Notes_and_Assumptions,0tjal00000019KsAAI,true,Notes_and_Assumptions,Notes_and_Assumptions,,
-,Text,,,SampleTextDefinition,0tjal00000019KtAAI,false,SampleTextDefinition,SampleTextDefinition,,
+Code,DataType,DefaultValue,Description,DeveloperName,IsActive,Label,Name,Picklist.Name
+,Picklist,,,Connector_Type,true,Connector Type,Connector_Type,Connector_Type
+,Picklist,4,,Base_Core_Count,true,Base Core Count,Base_Core_Count,Base_Core_Count
+,Picklist,Flex,,API_Type,true,API Type,API_Type,API_Type
+,Picklist,,,Length,true,Length,Length,Length
+,Picklist,Amazon Linux 2,,Operating_System,true,Operating System,Operating_System,Operating_System
+,Picklist,Security,,Server_Configuration,true,Server_Configuration,Server_Configuration,Server_Configuration
+,Picklist,Onsite,,Resource_Location,true,Resource_Location,Resource_Location,Resource_Location
+,Picklist,3.2GHz,,Processor_Frequency,true,Processor_Frequency,Processor_Frequency,Processor_Frequency
+,Picklist,,,SubscriptionType,true,SubscriptionType,SubscriptionType,SubscriptionType
+,Picklist,Extended_Care,,Engineering_Options,true,Engineering_Options,Engineering_Options,Engineering_Options
+,Picklist,Performance_Optimized,,Memory_Config,true,Memory_Config,Memory_Config,Memory_Config
+,Picklist,8GB,,Memory_Capacity,true,Memory_Capacity,Memory_Capacity,Memory
+,Picklist,Direct_Attach,,NIC_Type,true,NIC_Type,NIC_Type,NIC_Type
+,Picklist,1TB,,HDD_Storage,true,HDD_Storage,HDD_Storage,HDD_Storage
+,Number,1000,,Flows,true,Flows,Flows,
+,Number,60,,Messages_Million,true,Messages (Million),Messages_Million,
+,Number,0,,Data_Throughput_TB,true,Data Throughput (TB),Data_Throughput_TB,
+,Text,,,Notes_and_Assumptions,true,Notes_and_Assumptions,Notes_and_Assumptions,
