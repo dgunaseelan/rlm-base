@@ -60,7 +60,7 @@ public with sharing class RLM_AssetInfoUtility{
     }
 
     private static void setRenewalInfoForNewAsset(OrderItem oi, Asset assetToUpdate){
-        if (oi.ProductSellingModel.SellingModelType == 'TermDefined'){
+        if (oi.ProductSellingModel.SellingModelType == 'TermDefined' && oi.ProductSellingModel.PricingTermUnit == 'Months'){
             Integer monthsBetween = oi.ServiceDate.monthsBetween(oi.EndDate) + ((oi.EndDate.day() > oi.ServiceDate.day()) ? 1 : 0);
             assetToUpdate.RenewalTerm = (oi.ProductSellingModel.PricingTermUnit == 'Months') ? monthsBetween : monthsBetween / 12;
             assetToUpdate.RenewalTermUnit = oi.ProductSellingModel.PricingTermUnit;
