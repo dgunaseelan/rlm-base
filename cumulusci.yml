@@ -54,6 +54,12 @@ flows:
                     api_names: CodeBuilderUserPsl,SubscriptionManagementPsl,RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
             3:
                 task: deploy_decision_tables
+            3.5:
+                task: util_sleep
+                options:
+                    seconds: 10
+                ui_options:
+                    name: Wait for Permission Set Groups to Update
             4:
                 task: assign_permission_set_groups
                 options:
