@@ -1,14 +1,14 @@
 Code,Name,Status
 Cables,Cables,Active
-Software,Software,Draft
 APIType,API Type,Active
 QB2,QuantumBit2,Active
 Server,Server,Active
+Processor,Processor,Active
+Network_Adapter,Network_Adapter,Active
 Hard_Drive,Hard_Drive,Active
 Memory,Memory,Active
-Network_Adapter,Network_Adapter,Active
-Processor,Processor,Active
+QB,QuantumBit,Active
+Subscription,Subscription,Active
 Professional_Services_Bundle,Professional_Services_Bundle,Active
 Engineering_Resources,Engineering_Resources,Active
-Subscription,Subscription,Active
-QB,QuantumBit,Active
+Software,Software,Draft

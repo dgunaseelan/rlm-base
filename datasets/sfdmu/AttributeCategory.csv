@@ -1,14 +1,14 @@
 Code,Name
-APISpec,API_Specification
-OS,Operating_System
-TS,Tech_Specs
+APISpec,API Specification
+OS,Operating System
+TS,Tech Specs
 Server,Server
 Processor,Processor
-Network_Adapter,Network_Adapter
-Hard_Drive,Hard_Drive
+Network_Adapter,Network Adapter
+Hard_Drive,Hard Drive
 Memory,Memory
 QB,QuantumBit
-SubscriptionType,SubscriptionType
-Professional_Services_Bundle,Professional_Services_Bundle
-Engineering_Resources,Engineering_Resources
+SubscriptionType,Subscription Type
+Professional_Services_Bundle,Professional Services Bundle
+Engineering_Resources,Engineering Resources
 Cables,Cables
