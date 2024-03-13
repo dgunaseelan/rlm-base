@@ -43,34 +43,70 @@ tasks:
         options:
             path: force-app/main/default/decisionTables
 
+    deploy_context_definitions:
+        description: Context Definitions need to be deployed and activated before other metadata -- this prioritizes this deployment first
+        class_path: cumulusci.tasks.salesforce.Deploy
+        group: Revenue Lifecycle Management
+        options:
+            path: force-app/main/default/contextDefinitions
+
+    deploy_expression_sets:
+        description: Expression Sets need to be deployed and activated before other metadata -- this prioritizes this deployment first
+        class_path: cumulusci.tasks.salesforce.Deploy
+        group: Revenue Lifecycle Management
+        options:
+            path: force-app/main/default/expressionSetDefinition
+
+    deploy_relationship_graphs:
+        description: Relationship Graphs need to be deployed and activated before other metadata -- this prioritizes this deployment first
+        class_path: cumulusci.tasks.salesforce.Deploy
+        group: Revenue Lifecycle Management
+        options:
+            path: force-app/main/default/relationshipGraphDefinitions
+    deploy_org_settings:
+        description: Org Settings need to be deployed and activated before other metadata -- this prioritizes this deployment first
+        class_path: cumulusci.tasks.salesforce.Deploy
+        group: Revenue Lifecycle Management
+        options:
+            path: force-app/main/default/settings
+
 flows:
     prepare_rlm_org:
+        group: Revenue Lifecycle Management
         steps:
             1:
-                task: deploy_permissions
-            2:
                 task: assign_permission_set_licenses
                 options:
                     api_names: CodeBuilderUserPsl,SubscriptionManagementPsl,RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
+            2:
+                task: deploy_org_settings
             3:
                 task: deploy_decision_tables
             3.5:
+                task: deploy_permissions
+            4:
                 task: util_sleep
                 options:
                     seconds: 10
                 ui_options:
                     name: Wait for Permission Set Groups to Update
-            4:
+            5:
                 task: assign_permission_set_groups
                 options:
                     api_names: RLM_Base
-            5:
-                task: extend_stdctx
             6:
+                task: extend_stdctx
+            7:
+                task: deploy_context_definitions
+            8:
+                task: deploy_expression_sets
+            9:
+                task: deploy_relationship_graphs
+            10:
                 task: deploy
                 options:
                     path: force-app/main/default
-            7:
+            11:
                 task: dx
                 options:
                     command: 'sfdmu run -s csvfile -p datasets/sfdmu'
