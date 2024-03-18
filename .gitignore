@@ -60,9 +60,17 @@ temp_folder
 **/.eslintrc.json
 sfdmu/logs
 package-lock.json
+
+#sfdmu
+datasets/sfdmu/CSVIssuesReport.csv
 datasets/sfdmu/reports
 datasets/sfdmu/source
 datasets/sfdmu/target
+datasets/sfdmu/quantumbit/source
+datasets/sfdmu/quantumbit/target
+datasets/sfdmu/sdo/source
+datasets/sfdmu/sdo/target
+
 
 # QBranch
 .qbrix
@@ -77,3 +85,5 @@ playwright*
 #dev
 scripts/permsets.txt
 scripts/psl.csv
+
+force-app/main/default/connectedApps
