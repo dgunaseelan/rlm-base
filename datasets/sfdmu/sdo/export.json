@@ -65,7 +65,8 @@
                 {
                     "query": "SELECT Name, IsActive, AvailabilityDate, BasedOnId, ConfigureDuringSale, IsAssetizable, ProductCode, Description, Family, StockKeepingUnit, Type, QuantityUnitOfMeasure, IsSoldOnlyWithOtherProds, CurrencyIsoCode FROM Product2",
                     "operation": "Upsert",
-                    "externalId": "Name"
+                    "externalId": "Name",
+                    "excluded": false
                 },
                 {
                     "query": "SELECT ProductCategoryId, ProductId, CatalogId, CurrencyIsoCode FROM ProductCategoryProduct",
@@ -94,6 +95,12 @@
                     "query": "SELECT Name, ParentProductId, ProductComponentGroupId, ChildProductId, ProductRelationshipTypeId, IsQuantityEditable, IsDefaultComponent, MaxQuantity, MinQuantity, DoesBundlePriceIncludeChild, Quantity, QuantityScaleMethod, IsComponentRequired, Sequence, ParentSellingModelId, ChildSellingModelId, ParentProductRole, ChildProductRole FROM ProductRelatedComponent",
                     "operation": "Upsert",
                     "externalId": "ChildProduct.Name;ParentProduct.Name;ProductComponentGroup.Name;ProductRelationshipType.Name",
+                    "excluded": false
+                },
+                {
+                    "query": "SELECT AttributeCategoryId, AttributeDefinitionId, AttributeNameOverride, DefaultValue, Description, DisplayType, ExcludedPicklistValues, HelpText, IsHidden, IsPriceImpacting, IsReadOnly, IsRequired, MaximumCharacterCount, MaximumValue, MinimumCharacterCount, MinimumValue, Name, OverrideContextId, OverriddenProductAttributeDefinitionId, ProductClassificationAttributeId, Product2Id, Sequence, Status FROM ProductAttributeDefinition",
+                    "operation": "Upsert",
+                    "externalId": "Name;AttributeCategory.Name;AttributeDefinition.Name;ProductClassificationAttribute.Name;Product2.Name",
                     "excluded": false
                 },
                 {
