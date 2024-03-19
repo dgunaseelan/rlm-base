@@ -1,0 +1,50 @@
+$$ProductCategory.Name$Product.Name$Catalog.Name,Catalog.Name,Product.Name,ProductCategory.$$Name$Catalog.Name$ParentCategory.Name,CurrencyIsoCode
+API;API Access Requests (AEH);Software,Software,API Access Requests (AEH),API;Software,USD
+Accessories;Cable Management Rings (Qty 10);Hardware,Hardware,Cable Management Rings (Qty 10),Accessories;Hardware,USD
+"Accessories;Vertical Cable Organizer, 8 Cable Rings;Hardware",Hardware,"Vertical Cable Organizer, 8 Cable Rings",Accessories;Hardware,USD
+Accessories;Cable Containment Brackets;Hardware,Hardware,Cable Containment Brackets,Accessories;Hardware,USD
+Accessories;QuantumShell 6U 600mmx870mm;Hardware,Hardware,QuantumShell 6U 600mmx870mm,Accessories;Hardware,USD
+Accessories;QuantumShell 8U 600mmx1070mm;Hardware,Hardware,QuantumShell 8U 600mmx1070mm,Accessories;Hardware,USD
+Accessories;QuantumShell 10U 600mmx1200mm;Hardware,Hardware,QuantumShell 10U 600mmx1200mm,Accessories;Hardware,USD
+Bundle;QuantumBit Enterprise;Software,Software,QuantumBit Enterprise,Bundle;Software,USD
+Bundle;QuantumBit Business Critical;Software,Software,QuantumBit Business Critical,Bundle;Software,USD
+Training;QuantumBit Fundamentals Training;Software,Software,QuantumBit Fundamentals Training,Training;Software,USD
+Training;QuantumBit Essentials Training;Software,Software,QuantumBit Essentials Training,Training;Software,USD
+Services;Professional Services Daily Rate;Services,Services,Professional Services Daily Rate,Services;Services,USD
+Services;Professional Services Scope of Work;Services,Services,Professional Services Scope of Work,Services;Services,USD
+Processor;Intel Xeon E5-2609 v4 1.7GHz;Hardware,Hardware,Intel Xeon E5-2609 v4 1.7GHz,Processor;Hardware,USD
+Server;PowerSwerve R750 Rack Server;Hardware,Hardware,PowerSwerve R750 Rack Server,Server;Hardware,USD
+Subscription;Subscription;Software,Software,Subscription,Subscription;Software,USD
+Memory;16GB RDIMM;Hardware,Hardware,16GB RDIMM,Memory;Hardware,USD
+Hard Drive;8TB 7.2k RPM NLSAS;Hardware,Hardware,8TB 7.2k RPM NLSAS,Hard Drive;Hardware,USD
+Hard Drive;8TB 7.2k RPM Self-Encrypting NLSAS;Hardware,Hardware,8TB 7.2k RPM Self-Encrypting NLSAS,Hard Drive;Hardware,USD
+Network Adapter;Intel X710 Dual Port 10Gb SFP;Hardware,Hardware,Intel X710 Dual Port 10Gb SFP,Network Adapter;Hardware,USD
+Services;QuantumBit Services Project;Services,Services,QuantumBit Services Project,Services;Services,USD
+Accessories;Configured Power Cable;Hardware,Hardware,Configured Power Cable,Accessories;Hardware,USD
+Bundle;QuantumBit Starter;Software,Software,QuantumBit Starter,Bundle;Software,USD
+Processor;Intel Xeon E5-2660 v4 2.0GHz;Hardware,Hardware,Intel Xeon E5-2660 v4 2.0GHz,Processor;Hardware,USD
+Processor;Intel Xeon E5-2667 v4 3.2GHz;Hardware,Hardware,Intel Xeon E5-2667 v4 3.2GHz,Processor;Hardware,USD
+Processor;Intel Xeon E5-2683 v4 2.1GHz;Hardware,Hardware,Intel Xeon E5-2683 v4 2.1GHz,Processor;Hardware,USD
+Memory;32GB RDIMM;Hardware,Hardware,32GB RDIMM,Memory;Hardware,USD
+Hard Drive;1TB 7.2k RPM NLSAS;Hardware,Hardware,1TB 7.2k RPM NLSAS,Hard Drive;Hardware,USD
+API;Additional API;Software,Software,Additional API,API;Software,USD
+Bundle;QuantumBit Complete Solution;Software,Software,QuantumBit Complete Solution,Bundle;Software,USD
+Hard Drive;4TB 7.2k RPM NLSAS;Hardware,Hardware,4TB 7.2k RPM NLSAS,Hard Drive;Hardware,USD
+Memory;8GB RDIMM;Hardware,Hardware,8GB RDIMM,Memory;Hardware,USD
+Network Adapter;Intel X710 Dual Port 10Gb Direct Attach;Hardware,Hardware,Intel X710 Dual Port 10Gb Direct Attach,Network Adapter;Hardware,USD
+Accessories;C13 to C14 Power Cable 3';Hardware,Hardware,C13 to C14 Power Cable 3',Accessories;Hardware,USD
+Accessories;C13 to C14 Power Cable 5';Hardware,Hardware,C13 to C14 Power Cable 5',Accessories;Hardware,USD
+Accessories;C19 to C20 Power Cable 3';Hardware,Hardware,C19 to C20 Power Cable 3',Accessories;Hardware,USD
+Accessories;C19 to C20 Power Cable 5';Hardware,Hardware,C19 to C20 Power Cable 5',Accessories;Hardware,USD
+Accessories;L5-20 Input Power Cable 12';Hardware,Hardware,L5-20 Input Power Cable 12',Accessories;Hardware,USD
+Accessories;L5-20 Input Power Cable 8';Hardware,Hardware,L5-20 Input Power Cable 8',Accessories;Hardware,USD
+Maintenance;Gold Hardware Maintenance;Software,Software,Gold Hardware Maintenance,Maintenance;Software,USD
+Hardware Maintenance;Gold Hardware Maintenance;Hardware,Hardware,Gold Hardware Maintenance,Hardware Maintenance;Hardware,USD
+Maintenance;Silver Hardware Maintenance;Software,Software,Silver Hardware Maintenance,Maintenance;Software,USD
+Hardware Maintenance;Silver Hardware Maintenance;Hardware,Hardware,Silver Hardware Maintenance,Hardware Maintenance;Hardware,USD
+API;Additional Automation QB Credits;Software,Software,Additional Automation QB Credits,API;Software,USD
+API;Additional API Prod;Software,Software,Additional API Prod,API;Software,USD
+API;Additional API Pre-Prod;Software,Software,Additional API Pre-Prod,API;Software,USD
+API;Additional API Gov;Software,Software,Additional API Gov,API;Software,USD
+API;Additional API Flex (100M);Software,Software,Additional API Flex (100M),API;Software,USD
+API;Additional QB DataGraph (500M);Software,Software,Additional QB DataGraph (500M),API;Software,USD

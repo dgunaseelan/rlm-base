@@ -9,6 +9,11 @@
                     <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/Account/AccountId</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/Account/CurrencyIsoCode/hydrationInfo-1</inheritedFrom>
+                        <objectName>Account</objectName>
+                        <queryAttribute>CurrencyIsoCode</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>CurrencyIsoCode</contextAttribute>
                     <contextInputAttributeName>CurrencyIsoCode</contextInputAttributeName>
                     <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/Account/CurrencyIsoCode</inheritedFrom>
@@ -190,6 +195,27 @@
         <contextNodes>
             <contextAttributes>
                 <contextTags>
+                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId/CatalogId</inheritedFrom>
+                    <title>CatalogId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId</inheritedFrom>
+                <key>false</key>
+                <title>CatalogId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/Catalog</inheritedFrom>
+                <title>Catalog</title>
+            </contextTags>
+            <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog</inheritedFrom>
+            <title>Catalog</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
                     <inheritedFrom>ProductDiscoveryContext__stdctx/version/Account/id/id</inheritedFrom>
                     <title>id</title>
                 </contextTags>
@@ -242,27 +268,6 @@
             </contextTags>
             <inheritedFrom>ProductDiscoveryContext__stdctx/version/Account</inheritedFrom>
             <title>Account</title>
-            <transposable>false</transposable>
-        </contextNodes>
-        <contextNodes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId/CatalogId</inheritedFrom>
-                    <title>CatalogId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>input</fieldType>
-                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId</inheritedFrom>
-                <key>false</key>
-                <title>CatalogId</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextTags>
-                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/Catalog</inheritedFrom>
-                <title>Catalog</title>
-            </contextTags>
-            <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog</inheritedFrom>
-            <title>Catalog</title>
             <transposable>false</transposable>
         </contextNodes>
         <contextNodes>
