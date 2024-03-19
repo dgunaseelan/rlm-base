@@ -98,7 +98,7 @@ flows:
             1:
                 task: assign_permission_set_licenses
                 options:
-                    api_names: CodeBuilderUserPsl,SubscriptionManagementPsl,RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
+                    api_names: RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
             2:
                 task: deploy_org_settings
             3:
@@ -130,4 +130,4 @@ flows:
             11:
                 task: dx
                 options:
-                    command: 'sfdmu run -s csvfile -p datasets/sfdmu/sdo -u storm.82bb05f7c4911b@salesforce.com -c storm-82bb05f7c4911b.my.salesforce.com'
+                    command: 'sfdmu run -s csvfile -p datasets/sfdmu/sdo'
