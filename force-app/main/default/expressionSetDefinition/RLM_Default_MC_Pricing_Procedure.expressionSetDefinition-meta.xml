@@ -339,10 +339,10 @@
                     <value>AdjustmentType</value>
                 </parameters>
             </customElement>
-            <label>AttributeDiscountEntries</label>
-            <name>AttributeDiscountEntries</name>
+            <label>AttributeAdjustment</label>
+            <name>AttributeAdjustment</name>
             <parentStep>ListContainer6</parentStep>
-            <resultIncluded>false</resultIncluded>
+            <resultIncluded>true</resultIncluded>
             <sequenceNumber>4</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
@@ -493,10 +493,10 @@
                     <value>AdjustmentType</value>
                 </parameters>
             </customElement>
-            <label>BundleBasedAdjustmentEntries</label>
-            <name>BundleBasedAdjustmentEntries</name>
+            <label>BundleAdjustment</label>
+            <name>BundleAdjustment</name>
             <parentStep>ListContainer6</parentStep>
-            <resultIncluded>false</resultIncluded>
+            <resultIncluded>true</resultIncluded>
             <sequenceNumber>5</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
@@ -566,7 +566,7 @@
             <label>FormulaBasedPricing17</label>
             <name>FormulaBasedPricing17</name>
             <parentStep>ListContainer15</parentStep>
-            <resultIncluded>false</resultIncluded>
+            <resultIncluded>true</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
@@ -1230,10 +1230,10 @@
                     <value>ItemNetTotalPrice</value>
                 </parameters>
             </customElement>
-            <label>ManualDiscount</label>
-            <name>ManualDiscount</name>
+            <label>ManualDiscountAmt</label>
+            <name>ManualDiscountAmt</name>
             <parentStep>ListContainer6</parentStep>
-            <resultIncluded>false</resultIncluded>
+            <resultIncluded>true</resultIncluded>
             <sequenceNumber>7</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
@@ -1286,10 +1286,10 @@
                     <value>ItemNetTotalPrice</value>
                 </parameters>
             </customElement>
-            <label>ManualDiscount14</label>
-            <name>ManualDiscount14</name>
+            <label>ManualDiscountPct</label>
+            <name>ManualDiscountPct</name>
             <parentStep>ListContainer6</parentStep>
-            <resultIncluded>false</resultIncluded>
+            <resultIncluded>true</resultIncluded>
             <sequenceNumber>8</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
@@ -1511,7 +1511,7 @@
             <label>Proration</label>
             <name>Proration</name>
             <parentStep>ListContainer18</parentStep>
-            <resultIncluded>false</resultIncluded>
+            <resultIncluded>true</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
@@ -1690,8 +1690,8 @@
                     <value>ItemNetTotalPrice</value>
                 </parameters>
             </customElement>
-            <label>VolumeDiscountEntries</label>
-            <name>VolumeDiscountEntries</name>
+            <label>VolumeDiscount</label>
+            <name>VolumeDiscount</name>
             <parentStep>ListContainer6</parentStep>
             <resultIncluded>true</resultIncluded>
             <sequenceNumber>6</sequenceNumber>
