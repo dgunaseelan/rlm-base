@@ -1,0 +1,4 @@
+AdjustmentMethod,EffectiveFrom,EffectiveTo,Id,IsActive,Name,Pricebook2.$$Name$IsStandard,Pricebook2.Id,Pricebook2Id,ScheduleType
+Range,2024-01-19T12:35:40.000+0000,,CQYA0JUZ07KURMCINY,false,Standard Price Adjustment Tier,Standard Price Book;true,UZGMLSEQAKOLSLW9OF,UZGMLSEQAKOLSLW9OF,Volume
+Range,2024-01-19T12:35:40.000+0000,,WMCCZKPPLKIRPYUD0G,true,Standard Attribute Based Adjustment,Standard Price Book;true,UZGMLSEQAKOLSLW9OF,UZGMLSEQAKOLSLW9OF,Attribute
+Range,2024-01-19T12:35:40.000+0000,,R5IYZDEJX8HNCCMXOU,true,Standard Bundle Based Adjustment,Standard Price Book;true,UZGMLSEQAKOLSLW9OF,UZGMLSEQAKOLSLW9OF,Bundle

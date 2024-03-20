@@ -1,0 +1,4 @@
+AttributeCategoryId,AttributeDefinitionId,AttributeNameOverride,DefaultValue,Description,DisplayType,Errors,ExcludedPicklistValues,HelpText,Id,IsHidden,IsPriceImpacting,IsReadOnly,IsRequired,MaximumCharacterCount,MaximumValue,MinimumCharacterCount,MinimumValue,Name,OverrideContextId,Product2Id,ProductClassificationAttributeId,Sequence,Status
+0v38N0000000001QAA,0tj8N0000008QM9QAM,Operating System,Amazon Linux 2,,RadioButton,,,,0v78N0000000001QAA,false,false,false,false,,,,,Operating System,,01t8N000004chIMQAY,11C8N0000000004UAA,,Active
+0v38N0000000002QAA,0tj8N0000008QM6QAM,Base Core Count,4,,RadioButton,,,,0v78N0000000002QAA,false,false,false,false,,,,,Base Core Count,,01t8N000004chIMQAY,11C8N0000000005UAA,,Active
+0v38N0000000004QAA,0tj8N0000008QM7QAM,API Type,Flex,,,,,,0v78N0000000003QAA,false,true,false,false,,,,,API Type,,01t8N000004chILQAY,11C8N0000000003UAA,,Active

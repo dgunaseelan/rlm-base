@@ -1,0 +1,15 @@
+Code,DataType,Description,Id,Name,Status
+Base_Core_Count,Number,,UWLENKCLJNVKSRC6MJ,Base_Core_Count,Active
+API_Type,Text,,FIJA9PXEYPEATPBF4F,API_Type,Active
+Connector_Type,Text,,JEIFIPH4TI0X1ESB7Q,Connector_Type,Active
+Length,Text,,4WJLE8CBGU2BIQERFK,Length,Active
+Operating_System,Text,,YW0TFXR2CUGZJQGR5Y,Operating_System,Active
+Server_Configuration,Text,,MIN5JEEZERKDIJQ0BZ,Server_Configuration,Active
+Resource_Location,Text,,FPCIBKDCT2JXCU1S7T,Resource_Location,Active
+Processor_Frequency,Text,,EKPSDYQATNFS4E4TAI,Processor_Frequency,Active
+SubscriptionType,Text,,TXQNXE96URP5F7NPXQ,SubscriptionType,Active
+Engineering_Options,Text,,MXBADI0NOGGS58SB7P,Engineering_Options,Active
+Memory_Config,Text,,6IZRMCGLYEFCH6AYWY,Memory_Config,Active
+Memory,Text,,B2FKBZIMMLHAWMG3BN,Memory,Active
+NIC_Type,Text,,6YFXMHTE5KZS003LT2,NIC_Type,Active
+HDD_Storage,Text,,M28RH1N6T0H0OQSW9G,HDD_Storage,Active

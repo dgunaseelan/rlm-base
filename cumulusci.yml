@@ -130,4 +130,4 @@ flows:
             11:
                 task: dx
                 options:
-                    command: 'sfdmu run -s csvfile -p datasets/sfdmu/sdo'
+                    command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency'
