@@ -50,6 +50,9 @@
     },
     "languageSettings": {
       "enableTranslationWorkbench": true
+    },
+    "currencySettings": {
+      "enableMultiCurrency": true
     }
   }
 }
