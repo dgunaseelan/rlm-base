@@ -2,14 +2,14 @@
 <ExpressionSetDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
     <contextDefinitions>RLM_ProductDiscoveryContext</contextDefinitions>
     <interfaceSourceType>PricingProcedure</interfaceSourceType>
-    <label>RLM CustomPricingProcedure</label>
+    <label>CustomPricingProcedure</label>
     <processType>DefaultPricing</processType>
     <template>false</template>
     <versions>
-        <fullName>RLM_CustomPricingProcedure_V1</fullName>
-        <expressionSetDefinition>RLM_CustomPricingProcedure</expressionSetDefinition>
+        <fullName>CustomPricingProcedure_V1</fullName>
+        <expressionSetDefinition>CustomPricingProcedure</expressionSetDefinition>
         <interfaceSourceType>PricingProcedure</interfaceSourceType>
-        <label>RLM CustomPricingProcedure V1</label>
+        <label>CustomPricingProcedure V1</label>
         <processType>DefaultPricing</processType>
         <shouldShowExplExternally>false</shouldShowExplExternally>
         <startDate>2024-02-01T00:00:00.000Z</startDate>
@@ -44,6 +44,13 @@
                     <output>false</output>
                     <type>Parameter</type>
                     <value>ProductQuantity</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>CurrencyIsoCode</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>PricingCurrencyCode</value>
                 </parameters>
                 <parameters>
                     <input>true</input>
@@ -106,6 +113,13 @@
                     <output>false</output>
                     <type>Parameter</type>
                     <value>PricingId</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>CurrencyIsoCode</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>PricingCurrencyCode</value>
                 </parameters>
                 <parameters>
                     <input>true</input>

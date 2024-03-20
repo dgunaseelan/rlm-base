@@ -1505,6 +1505,11 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/Pricebook</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/CurrencyIsoCode/hydrationInfo-1</inheritedFrom>
+                        <objectName>Quote</objectName>
+                        <queryAttribute>CurrencyIsoCode</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>CurrencyIsoCode</contextAttribute>
                     <contextInputAttributeName>CurrencyIsoCode</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/CurrencyIsoCode</inheritedFrom>
@@ -3197,6 +3202,11 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/Account</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/Opportunity/hydrationInfo-1</inheritedFrom>
+                        <objectName>Order</objectName>
+                        <queryAttribute>OpportunityId</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>Opportunity</contextAttribute>
                     <contextInputAttributeName>Opportunity</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/Opportunity</inheritedFrom>
@@ -3222,11 +3232,21 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/EffectiveDate</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/CurrencyIsoCode/hydrationInfo-1</inheritedFrom>
+                        <objectName>Order</objectName>
+                        <queryAttribute>CurrencyIsoCode</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>CurrencyIsoCode</contextAttribute>
                     <contextInputAttributeName>CurrencyIsoCode</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/CurrencyIsoCode</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/BillToContact/hydrationInfo-1</inheritedFrom>
+                        <objectName>Order</objectName>
+                        <queryAttribute>BillToContactId</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>BillToContact</contextAttribute>
                     <contextInputAttributeName>BillToContact</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/BillToContact</inheritedFrom>
@@ -3842,6 +3862,11 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/PricingTermUnit</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/STICurrencyIsoCode/hydrationInfo-1</inheritedFrom>
+                        <objectName>OrderItem</objectName>
+                        <queryAttribute>CurrencyIsoCode</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>STICurrencyIsoCode</contextAttribute>
                     <contextInputAttributeName>STICurrencyIsoCode</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/STICurrencyIsoCode</inheritedFrom>
@@ -4362,26 +4387,51 @@
             </contextNodeMappings>
             <contextNodeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfillmentAccountId/hydrationInfo-1</inheritedFrom>
+                        <objectName>FulfillmentOrder</objectName>
+                        <queryAttribute>AccountId</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentAccountId</contextAttribute>
                     <contextInputAttributeName>FulfillmentAccountId</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfillmentAccountId</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfilledToName/hydrationInfo-1</inheritedFrom>
+                        <objectName>FulfillmentOrder</objectName>
+                        <queryAttribute>FulfilledToName</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfilledToName</contextAttribute>
                     <contextInputAttributeName>FulfilledToName</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfilledToName</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfillmentTransactionStatus/hydrationInfo-1</inheritedFrom>
+                        <objectName>FulfillmentOrder</objectName>
+                        <queryAttribute>Status</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentTransactionStatus</contextAttribute>
                     <contextInputAttributeName>FulfillmentTransactionStatus</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfillmentTransactionStatus</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/StatusCategory/hydrationInfo-1</inheritedFrom>
+                        <objectName>FulfillmentOrder</objectName>
+                        <queryAttribute>StatusCategory</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>StatusCategory</contextAttribute>
                     <contextInputAttributeName>StatusCategory</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/StatusCategory</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/OrderId/hydrationInfo-1</inheritedFrom>
+                        <objectName>FulfillmentOrder</objectName>
+                        <queryAttribute>OrderId</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>OrderId</contextAttribute>
                     <contextInputAttributeName>OrderId</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/OrderId</inheritedFrom>
@@ -4392,31 +4442,61 @@
             </contextNodeMappings>
             <contextNodeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentOrderId/hydrationInfo-1</inheritedFrom>
+                        <objectName>FulfillmentOrderLineItem</objectName>
+                        <queryAttribute>FulfillmentOrderId</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentOrderId</contextAttribute>
                     <contextInputAttributeName>FulfillmentOrderId</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentOrderId</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/OriginalQuantity/hydrationInfo-1</inheritedFrom>
+                        <objectName>FulfillmentOrderLineItem</objectName>
+                        <queryAttribute>OriginalQuantity</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>OriginalQuantity</contextAttribute>
                     <contextInputAttributeName>OriginalQuantity</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/OriginalQuantity</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentOrderItemQuantity/hydrationInfo-1</inheritedFrom>
+                        <objectName>FulfillmentOrderLineItem</objectName>
+                        <queryAttribute>Quantity</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentOrderItemQuantity</contextAttribute>
                     <contextInputAttributeName>FulfillmentOrderItemQuantity</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentOrderItemQuantity</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemProductId/hydrationInfo-1</inheritedFrom>
+                        <objectName>FulfillmentOrderLineItem</objectName>
+                        <queryAttribute>Product2Id</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentItemProductId</contextAttribute>
                     <contextInputAttributeName>FulfillmentItemProductId</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemProductId</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemType/hydrationInfo-1</inheritedFrom>
+                        <objectName>FulfillmentOrderLineItem</objectName>
+                        <queryAttribute>Type</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentItemType</contextAttribute>
                     <contextInputAttributeName>FulfillmentItemType</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemType</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemTypeCode/hydrationInfo-1</inheritedFrom>
+                        <objectName>FulfillmentOrderLineItem</objectName>
+                        <queryAttribute>TypeCode</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentItemTypeCode</contextAttribute>
                     <contextInputAttributeName>FulfillmentItemTypeCode</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemTypeCode</inheritedFrom>
@@ -4523,6 +4603,11 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/ContractSalesTxnMapping/SalesTransaction/Pricebook</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractSalesTxnMapping/SalesTransaction/CurrencyIsoCode/hydrationInfo-1</inheritedFrom>
+                        <objectName>Contract</objectName>
+                        <queryAttribute>CurrencyIsoCode</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>CurrencyIsoCode</contextAttribute>
                     <contextInputAttributeName>CurrencyIsoCode</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/ContractSalesTxnMapping/SalesTransaction/CurrencyIsoCode</inheritedFrom>
@@ -4660,6 +4745,11 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/AssetEntitiesMapping/Asset/AssetProduct</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/AssetEntitiesMapping/Asset/AssetCurrencyIsoCode/hydrationInfo-1</inheritedFrom>
+                        <objectName>Asset</objectName>
+                        <queryAttribute>CurrencyIsoCode</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>AssetCurrencyIsoCode</contextAttribute>
                     <contextInputAttributeName>AssetCurrencyIsoCode</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/AssetEntitiesMapping/Asset/AssetCurrencyIsoCode</inheritedFrom>
@@ -5541,6 +5631,75 @@
         <contextNodes>
             <contextAttributes>
                 <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractSource/ContractSource</inheritedFrom>
+                    <title>ContractSource</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractSource</inheritedFrom>
+                <key>false</key>
+                <title>ContractSource</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractStatusCode/ContractStatusCode</inheritedFrom>
+                    <title>ContractStatusCode</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractStatusCode</inheritedFrom>
+                <key>false</key>
+                <title>ContractStatusCode</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractRenewalTerm/ContractRenewalTerm</inheritedFrom>
+                    <title>ContractRenewalTerm</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractRenewalTerm</inheritedFrom>
+                <key>false</key>
+                <title>ContractRenewalTerm</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractRenewalTermUnit/ContractRenewalTermUnit</inheritedFrom>
+                    <title>ContractRenewalTermUnit</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractRenewalTermUnit</inheritedFrom>
+                <key>false</key>
+                <title>ContractRenewalTermUnit</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPricingSource/ContractPricingSource</inheritedFrom>
+                    <title>ContractPricingSource</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPricingSource</inheritedFrom>
+                <key>false</key>
+                <title>ContractPricingSource</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractTag</inheritedFrom>
+                <title>ContractTag</title>
+            </contextTags>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/Contract</inheritedFrom>
+            <title>Contract</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionSource/SalesTransactionSource</inheritedFrom>
                     <title>SalesTransactionSource</title>
                 </contextTags>
@@ -6087,70 +6246,43 @@
         <contextNodes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractSource/ContractSource</inheritedFrom>
-                    <title>ContractSource</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ContractAUARecord/ContractAUARecord</inheritedFrom>
+                    <title>ContractAUARecord</title>
                 </contextTags>
                 <dataType>string</dataType>
                 <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractSource</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ContractAUARecord</inheritedFrom>
                 <key>false</key>
-                <title>ContractSource</title>
+                <title>ContractAUARecord</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractStatusCode/ContractStatusCode</inheritedFrom>
-                    <title>ContractStatusCode</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ContractAUAAppUsageType/ContractAUAAppUsageType</inheritedFrom>
+                    <title>ContractAUAAppUsageType</title>
                 </contextTags>
                 <dataType>string</dataType>
                 <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractStatusCode</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ContractAUAAppUsageType</inheritedFrom>
                 <key>false</key>
-                <title>ContractStatusCode</title>
+                <title>ContractAUAAppUsageType</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractRenewalTerm/ContractRenewalTerm</inheritedFrom>
-                    <title>ContractRenewalTerm</title>
-                </contextTags>
-                <dataType>number</dataType>
+                <dataType>reference</dataType>
+                <domainSet>Contract</domainSet>
                 <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractRenewalTerm</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ParentReference</inheritedFrom>
                 <key>false</key>
-                <title>ContractRenewalTerm</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractRenewalTermUnit/ContractRenewalTermUnit</inheritedFrom>
-                    <title>ContractRenewalTermUnit</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractRenewalTermUnit</inheritedFrom>
-                <key>false</key>
-                <title>ContractRenewalTermUnit</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPricingSource/ContractPricingSource</inheritedFrom>
-                    <title>ContractPricingSource</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPricingSource</inheritedFrom>
-                <key>false</key>
-                <title>ContractPricingSource</title>
+                <title>ParentReference</title>
                 <value>false</value>
             </contextAttributes>
             <contextTags>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractTag</inheritedFrom>
-                <title>ContractTag</title>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ContractAUA</inheritedFrom>
+                <title>ContractAUA</title>
             </contextTags>
-            <inheritedFrom>SalesTransactionContext__stdctx/version/Contract</inheritedFrom>
-            <title>Contract</title>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA</inheritedFrom>
+            <title>ContractAUA</title>
             <transposable>false</transposable>
         </contextNodes>
         <contextNodes>
@@ -7531,48 +7663,6 @@
             </contextTags>
             <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship</inheritedFrom>
             <title>AssetContractRelationship</title>
-            <transposable>false</transposable>
-        </contextNodes>
-        <contextNodes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ContractAUARecord/ContractAUARecord</inheritedFrom>
-                    <title>ContractAUARecord</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ContractAUARecord</inheritedFrom>
-                <key>false</key>
-                <title>ContractAUARecord</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ContractAUAAppUsageType/ContractAUAAppUsageType</inheritedFrom>
-                    <title>ContractAUAAppUsageType</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ContractAUAAppUsageType</inheritedFrom>
-                <key>false</key>
-                <title>ContractAUAAppUsageType</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <dataType>reference</dataType>
-                <domainSet>Contract</domainSet>
-                <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ParentReference</inheritedFrom>
-                <key>false</key>
-                <title>ParentReference</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextTags>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ContractAUA</inheritedFrom>
-                <title>ContractAUA</title>
-            </contextTags>
-            <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA</inheritedFrom>
-            <title>ContractAUA</title>
             <transposable>false</transposable>
         </contextNodes>
         <contextNodes>

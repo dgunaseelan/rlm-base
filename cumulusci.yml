@@ -71,13 +71,34 @@ tasks:
             path: force-app/main/default/settings
 
 flows:
-    prepare_rlm_org:
+    prepare_core:
         group: Revenue Lifecycle Management
         steps:
             1:
                 task: assign_permission_set_licenses
                 options:
                     api_names: CodeBuilderUserPsl,SubscriptionManagementPsl,RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
+            2:
+                task: deploy_decision_tables
+            3:
+                task: deploy_permissions
+            4:
+                task: util_sleep
+                options:
+                    seconds: 10
+                ui_options:
+                    name: Wait for Permission Set Groups to Update
+            5:
+                task: assign_permission_set_groups
+                options:
+                    api_names: RLM_Base
+    prepare_rlm_org:
+        group: Revenue Lifecycle Management
+        steps:
+            1:
+                task: assign_permission_set_licenses
+                options:
+                    api_names: RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
             2:
                 task: deploy_org_settings
             3:
@@ -87,7 +108,7 @@ flows:
             4:
                 task: util_sleep
                 options:
-                    seconds: 10
+                    seconds: 20
                 ui_options:
                     name: Wait for Permission Set Groups to Update
             5:
@@ -109,4 +130,4 @@ flows:
             11:
                 task: dx
                 options:
-                    command: 'sfdmu run -s csvfile -p datasets/sfdmu'
+                    command: 'sfdmu run -s csvfile -p datasets/sfdmu/sdo'

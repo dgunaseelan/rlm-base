@@ -10,3 +10,6 @@ package.xml
 
 # LWC Jest
 **/__tests__/**
+
+force-app/main/default/expressionSetDefinition/RLM_Default_Pricing_Procedure.expressionSetDefinition-meta.xml
+force-app/main/default/expressionSetDefinition/RLM_CustomPricingProcedure.expressionSetDefinition-meta.xml
