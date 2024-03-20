@@ -256,6 +256,16 @@
                 <identifier>RecordIsSyncingField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.CurrencyIsoCode</fieldItem>
+                <identifier>RecordCurrencyIsoCodeField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-c9141212-f773-4904-af60-53cb9861f9e0</name>
         <type>Facet</type>
     </flexiPageRegions>
