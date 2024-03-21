@@ -1,4 +1,0 @@
-AdjustmentMethod,EffectiveFrom,EffectiveTo,Errors,Id,IsActive,Name,Pricebook2Id,ScheduleType
-Range,2024-01-19T12:35:40.000+0000,,,84X8N00000002ClUAI,false,Standard Price Adjustment Tier,01s8N000003hfYqQAI,Volume
-Range,2024-01-19T12:35:40.000+0000,,,84X8N00000002CmUAI,true,Standard Attribute Based Adjustment,01s8N000003hfYqQAI,Attribute
-Range,2024-01-19T12:35:40.000+0000,,,84X8N00000002CnUAI,true,Standard Bundle Based Adjustment,01s8N000003hfYqQAI,Bundle

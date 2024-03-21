@@ -1,8 +1,0 @@
-ConversionRate,DecimalPlaces,Errors,Id,IsActive,IsCorporate,IsoCode
-1.53,2,,01L8N000000H92dUAC,true,false,AUD
-1.36,2,,01L8N000000H92eUAC,true,false,CAD
-0.89,2,,01L8N000000H92fUAC,true,false,CHF
-0.92,2,,01L8N000000H92gUAC,true,false,EUR
-0.79,2,,01L8N000000H92hUAC,true,false,GBP
-150.84,0,,01L8N000000H92iUAC,true,false,JPY
-1,2,,01L8N000000H92YUAS,true,true,USD

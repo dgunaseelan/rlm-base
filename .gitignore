@@ -68,8 +68,8 @@ datasets/sfdmu/source
 datasets/sfdmu/target
 datasets/sfdmu/quantumbit/source
 datasets/sfdmu/quantumbit/target
-datasets/sfdmu/sdo/source
-datasets/sfdmu/sdo/target
+datasets/sfdmu/multicurrency/source
+datasets/sfdmu/multicurrency/target
 
 
 # QBranch
