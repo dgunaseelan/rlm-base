@@ -92,6 +92,13 @@
                 <stringValue>Draft</stringValue>
             </value>
         </assignmentItems>
+<assignmentItems>
+            <assignToReference>ContractToCreate.CurrencyIsoCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.CurrencyIsoCode</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Create_Contract_with_Opp</targetReference>
         </connector>
@@ -141,6 +148,13 @@
             <operator>Assign</operator>
             <value>
                 <stringValue>Draft</stringValue>
+            </value>
+        </assignmentItems>
+<assignmentItems>
+            <assignToReference>ContractToCreate.CurrencyIsoCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.CurrencyIsoCode</elementReference>
             </value>
         </assignmentItems>
         <connector>

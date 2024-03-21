@@ -129,6 +129,16 @@
                 <identifier>RecordTypeField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.CurrencyIsoCode</fieldItem>
+                <identifier>RecordCurrencyIsoCodeField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-5059326c-95fe-4e18-bbd9-90caeab2576b</name>
         <type>Facet</type>
     </flexiPageRegions>

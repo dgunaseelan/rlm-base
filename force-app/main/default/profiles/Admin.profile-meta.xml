@@ -28,6 +28,9 @@
     <layoutAssignments>
         <layout>Contract-RLM Contract Layout</layout>
     </layoutAssignments>
+     <layoutAssignments>
+        <layout>Opportunity-RLM Opportunity Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>PricebookEntry-RLM Price Book Entry</layout>
     </layoutAssignments>
