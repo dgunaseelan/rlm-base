@@ -25,8 +25,13 @@ tasks:
             required_org_code_coverage_percent: 75
     
     extend_stdctx:
-        description: Extend Standard Context Definition
+        description: Extend Standard Sales Transaction Context Definition
         class_path: tasks.extend_stdctx.ExtendStandardContext
+        group: Revenue Lifecycle Management
+
+    extend_stdctx_pd:
+        description: Extend Standard Product Discovery Context Definition
+        class_path: tasks.extend_stdctx_pd.ExtendStandardContextPd
         group: Revenue Lifecycle Management
 
     deploy_permissions:
@@ -103,31 +108,33 @@ flows:
                 task: deploy_org_settings
             3:
                 task: deploy_decision_tables
-            3.5:
-                task: deploy_permissions
             4:
+                task: deploy_permissions
+            5:
                 task: util_sleep
                 options:
                     seconds: 20
                 ui_options:
                     name: Wait for Permission Set Groups to Update
-            5:
+            6:
                 task: assign_permission_set_groups
                 options:
                     api_names: RLM_Base
-            6:
-                task: extend_stdctx
             7:
-                task: deploy_context_definitions
+                task: extend_stdctx
+            7.5:
+                task: extend_stdctx_pd
             8:
-                task: deploy_expression_sets
+                task: deploy_context_definitions
             9:
-                task: deploy_relationship_graphs
+                task: deploy_expression_sets
             10:
+                task: deploy_relationship_graphs
+            11:
                 task: deploy
                 options:
                     path: force-app/main/default
-            11:
+            12:
                 task: dx
                 options:
                     command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency'
