@@ -3,15 +3,15 @@
     <actionCalls>
         <name>O2A</name>
         <label>O2A</label>
-        <locationX>176</locationX>
-        <locationY>323</locationY>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
         <actionName>createOrUpdateAssetFromOrder</actionName>
         <actionType>createOrUpdateAssetFromOrder</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>orderId</name>
             <value>
-                <elementReference>$Record.Id</elementReference>
+                <elementReference>$Record__Prior.Id</elementReference>
             </value>
         </inputParameters>
         <nameSegment>createOrUpdateAssetFromOrder</nameSegment>
@@ -19,6 +19,28 @@
         <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>Is_Revenue_Lifecycle_Management_Record</name>
+        <label>Is Revenue Lifecycle Management Record?</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Revenue_Lifecycle_Management_Record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ApplicationUsageAssignmentRecord.Id</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>O2A</targetReference>
+            </connector>
+            <label>Revenue Lifecycle Management Record</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
     <interviewLabel>Order - O2A on Activation {!$Flow.CurrentDateTime}</interviewLabel>
     <label>RLM Order - O2A on Activation</label>
@@ -41,11 +63,39 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Application_Usage_Type</name>
+        <label>Get Application Usage Type</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Revenue_Lifecycle_Management_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record__Prior.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AppUsageType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>RevenueLifecycleManagement</stringValue>
+            </value>
+        </filters>
+        <object>AppUsageAssignment</object>
+        <outputReference>ApplicationUsageAssignmentRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
     <start>
-        <locationX>50</locationX>
+        <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>O2A</targetReference>
+            <targetReference>Get_Application_Usage_Type</targetReference>
         </connector>
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>and</filterLogic>
@@ -61,4 +111,12 @@
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
+    <variables>
+        <name>ApplicationUsageAssignmentRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>AppUsageAssignment</objectType>
+    </variables>
 </Flow>
