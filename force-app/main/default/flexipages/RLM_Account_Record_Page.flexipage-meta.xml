@@ -7,6 +7,12 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
+                            <value>Global.NewOpportunity</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Edit</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>CallHighlightAction</value>
                         </valueListItems>
                         <valueListItems>
@@ -17,9 +23,6 @@
                         </valueListItems>
                         <valueListItems>
                             <value>FeedItem.TextPost</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
                             <value>FeedItem.ContentPost</value>
@@ -35,9 +38,6 @@
                         </valueListItems>
                         <valueListItems>
                             <value>Global.NewNote</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Global.NewOpportunity</value>
                         </valueListItems>
                         <valueListItems>
                             <value>FeedItem.RypplePost</value>
@@ -189,6 +189,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.NumberOfEmployees</fieldItem>
                 <identifier>RecordNumberOfEmployeesField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.CurrencyIsoCode</fieldItem>
+                <identifier>RecordCurrencyIsoCodeField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-339cc1ea-682a-4d35-a7b5-7a7988d00184</name>
