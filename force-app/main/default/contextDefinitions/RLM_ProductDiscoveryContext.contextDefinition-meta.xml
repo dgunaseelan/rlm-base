@@ -636,7 +636,7 @@
         <startDate>2024-01-01 08:00:00</startDate>
         <versionNumber>3</versionNumber>
     </contextDefinitionVersions>
-    <contextTtl>10</contextTtl>
+    <contextTtl>20</contextTtl>
     <inheritedFrom>ProductDiscoveryContext__stdctx</inheritedFrom>
     <isProtected>false</isProtected>
     <masterLabel>RLM_ProductDiscoveryContext</masterLabel>

@@ -8975,7 +8975,7 @@
         <startDate>2024-01-01 00:00:00</startDate>
         <versionNumber>3</versionNumber>
     </contextDefinitionVersions>
-    <contextTtl>10</contextTtl>
+    <contextTtl>20</contextTtl>
     <description>Extension of Standard Sales Transaction Context</description>
     <inheritedFrom>SalesTransactionContext__stdctx</inheritedFrom>
     <isProtected>false</isProtected>
