@@ -122,10 +122,8 @@ flows:
                     api_names: RLM_Base
             7:
                 task: extend_stdctx
-            7.5:
-                task: extend_stdctx_pd
             8:
-                task: deploy_context_definitions
+                task: extend_stdctx_pd
             9:
                 task: deploy_expression_sets
             10:
