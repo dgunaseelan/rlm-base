@@ -3202,11 +3202,6 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/Account</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/Opportunity/hydrationInfo-1</inheritedFrom>
-                        <objectName>Order</objectName>
-                        <queryAttribute>OpportunityId</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>Opportunity</contextAttribute>
                     <contextInputAttributeName>Opportunity</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/Opportunity</inheritedFrom>
@@ -3242,11 +3237,6 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/CurrencyIsoCode</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/BillToContact/hydrationInfo-1</inheritedFrom>
-                        <objectName>Order</objectName>
-                        <queryAttribute>BillToContactId</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>BillToContact</contextAttribute>
                     <contextInputAttributeName>BillToContact</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/BillToContact</inheritedFrom>
@@ -4387,51 +4377,26 @@
             </contextNodeMappings>
             <contextNodeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfillmentAccountId/hydrationInfo-1</inheritedFrom>
-                        <objectName>FulfillmentOrder</objectName>
-                        <queryAttribute>AccountId</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentAccountId</contextAttribute>
                     <contextInputAttributeName>FulfillmentAccountId</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfillmentAccountId</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfilledToName/hydrationInfo-1</inheritedFrom>
-                        <objectName>FulfillmentOrder</objectName>
-                        <queryAttribute>FulfilledToName</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfilledToName</contextAttribute>
                     <contextInputAttributeName>FulfilledToName</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfilledToName</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfillmentTransactionStatus/hydrationInfo-1</inheritedFrom>
-                        <objectName>FulfillmentOrder</objectName>
-                        <queryAttribute>Status</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentTransactionStatus</contextAttribute>
                     <contextInputAttributeName>FulfillmentTransactionStatus</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfillmentTransactionStatus</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/StatusCategory/hydrationInfo-1</inheritedFrom>
-                        <objectName>FulfillmentOrder</objectName>
-                        <queryAttribute>StatusCategory</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>StatusCategory</contextAttribute>
                     <contextInputAttributeName>StatusCategory</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/StatusCategory</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/OrderId/hydrationInfo-1</inheritedFrom>
-                        <objectName>FulfillmentOrder</objectName>
-                        <queryAttribute>OrderId</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>OrderId</contextAttribute>
                     <contextInputAttributeName>OrderId</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/OrderId</inheritedFrom>
@@ -4442,61 +4407,31 @@
             </contextNodeMappings>
             <contextNodeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentOrderId/hydrationInfo-1</inheritedFrom>
-                        <objectName>FulfillmentOrderLineItem</objectName>
-                        <queryAttribute>FulfillmentOrderId</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentOrderId</contextAttribute>
                     <contextInputAttributeName>FulfillmentOrderId</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentOrderId</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/OriginalQuantity/hydrationInfo-1</inheritedFrom>
-                        <objectName>FulfillmentOrderLineItem</objectName>
-                        <queryAttribute>OriginalQuantity</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>OriginalQuantity</contextAttribute>
                     <contextInputAttributeName>OriginalQuantity</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/OriginalQuantity</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentOrderItemQuantity/hydrationInfo-1</inheritedFrom>
-                        <objectName>FulfillmentOrderLineItem</objectName>
-                        <queryAttribute>Quantity</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentOrderItemQuantity</contextAttribute>
                     <contextInputAttributeName>FulfillmentOrderItemQuantity</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentOrderItemQuantity</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemProductId/hydrationInfo-1</inheritedFrom>
-                        <objectName>FulfillmentOrderLineItem</objectName>
-                        <queryAttribute>Product2Id</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentItemProductId</contextAttribute>
                     <contextInputAttributeName>FulfillmentItemProductId</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemProductId</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemType/hydrationInfo-1</inheritedFrom>
-                        <objectName>FulfillmentOrderLineItem</objectName>
-                        <queryAttribute>Type</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentItemType</contextAttribute>
                     <contextInputAttributeName>FulfillmentItemType</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemType</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttrHydrationDetails>
-                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemTypeCode/hydrationInfo-1</inheritedFrom>
-                        <objectName>FulfillmentOrderLineItem</objectName>
-                        <queryAttribute>TypeCode</queryAttribute>
-                    </contextAttrHydrationDetails>
                     <contextAttribute>FulfillmentItemTypeCode</contextAttribute>
                     <contextInputAttributeName>FulfillmentItemTypeCode</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemTypeCode</inheritedFrom>
@@ -5700,6 +5635,195 @@
         <contextNodes>
             <contextAttributes>
                 <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAccount/AssetAccount</inheritedFrom>
+                    <title>AssetAccount</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAccount</inheritedFrom>
+                <key>false</key>
+                <title>AssetAccount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetProduct/AssetProduct</inheritedFrom>
+                    <title>AssetProduct</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetProduct</inheritedFrom>
+                <key>false</key>
+                <title>AssetProduct</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetCurrencyIsoCode/AssetCurrencyIsoCode</inheritedFrom>
+                    <title>AssetCurrencyIsoCode</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetCurrencyIsoCode</inheritedFrom>
+                <key>false</key>
+                <title>AssetCurrencyIsoCode</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetName/AssetName</inheritedFrom>
+                    <title>AssetName</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetName</inheritedFrom>
+                <key>false</key>
+                <title>AssetName</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentAmount/CurrentAmount</inheritedFrom>
+                    <title>CurrentAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentAmount</inheritedFrom>
+                <key>false</key>
+                <title>CurrentAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentLifecycleEndDate/CurrentLifecycleEndDate</inheritedFrom>
+                    <title>CurrentLifecycleEndDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentLifecycleEndDate</inheritedFrom>
+                <key>false</key>
+                <title>CurrentLifecycleEndDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentMrr/CurrentMrr</inheritedFrom>
+                    <title>CurrentMrr</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentMrr</inheritedFrom>
+                <key>false</key>
+                <title>CurrentMrr</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentQuantity/CurrentQuantity</inheritedFrom>
+                    <title>CurrentQuantity</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentQuantity</inheritedFrom>
+                <key>false</key>
+                <title>CurrentQuantity</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/HasLifecycleManagement/HasLifecycleManagement</inheritedFrom>
+                    <title>HasLifecycleManagement</title>
+                </contextTags>
+                <dataType>boolean</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/HasLifecycleManagement</inheritedFrom>
+                <key>false</key>
+                <title>HasLifecycleManagement</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/LifecycleEndDate/LifecycleEndDate</inheritedFrom>
+                    <title>LifecycleEndDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/LifecycleEndDate</inheritedFrom>
+                <key>false</key>
+                <title>LifecycleEndDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/LifecycleStartDate/LifecycleStartDate</inheritedFrom>
+                    <title>LifecycleStartDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/LifecycleStartDate</inheritedFrom>
+                <key>false</key>
+                <title>LifecycleStartDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/TotalLifecycleAmount/TotalLifecycleAmount</inheritedFrom>
+                    <title>TotalLifecycleAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/TotalLifecycleAmount</inheritedFrom>
+                <key>false</key>
+                <title>TotalLifecycleAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/RenewalTerm/RenewalTerm</inheritedFrom>
+                    <title>RenewalTerm</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/RenewalTerm</inheritedFrom>
+                <key>false</key>
+                <title>RenewalTerm</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/RenewalTermUnit/RenewalTermUnit</inheritedFrom>
+                    <title>RenewalTermUnit</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/RenewalTermUnit</inheritedFrom>
+                <key>false</key>
+                <title>RenewalTermUnit</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/PricingSource/PricingSource</inheritedFrom>
+                    <title>PricingSource</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/PricingSource</inheritedFrom>
+                <key>false</key>
+                <title>PricingSource</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetTag</inheritedFrom>
+                <title>AssetTag</title>
+            </contextTags>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset</inheritedFrom>
+            <title>Asset</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionSource/SalesTransactionSource</inheritedFrom>
                     <title>SalesTransactionSource</title>
                 </contextTags>
@@ -6057,195 +6181,6 @@
         <contextNodes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAccount/AssetAccount</inheritedFrom>
-                    <title>AssetAccount</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAccount</inheritedFrom>
-                <key>false</key>
-                <title>AssetAccount</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetProduct/AssetProduct</inheritedFrom>
-                    <title>AssetProduct</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetProduct</inheritedFrom>
-                <key>false</key>
-                <title>AssetProduct</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetCurrencyIsoCode/AssetCurrencyIsoCode</inheritedFrom>
-                    <title>AssetCurrencyIsoCode</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetCurrencyIsoCode</inheritedFrom>
-                <key>false</key>
-                <title>AssetCurrencyIsoCode</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetName/AssetName</inheritedFrom>
-                    <title>AssetName</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetName</inheritedFrom>
-                <key>false</key>
-                <title>AssetName</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentAmount/CurrentAmount</inheritedFrom>
-                    <title>CurrentAmount</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentAmount</inheritedFrom>
-                <key>false</key>
-                <title>CurrentAmount</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentLifecycleEndDate/CurrentLifecycleEndDate</inheritedFrom>
-                    <title>CurrentLifecycleEndDate</title>
-                </contextTags>
-                <dataType>datetime</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentLifecycleEndDate</inheritedFrom>
-                <key>false</key>
-                <title>CurrentLifecycleEndDate</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentMrr/CurrentMrr</inheritedFrom>
-                    <title>CurrentMrr</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentMrr</inheritedFrom>
-                <key>false</key>
-                <title>CurrentMrr</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentQuantity/CurrentQuantity</inheritedFrom>
-                    <title>CurrentQuantity</title>
-                </contextTags>
-                <dataType>number</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/CurrentQuantity</inheritedFrom>
-                <key>false</key>
-                <title>CurrentQuantity</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/HasLifecycleManagement/HasLifecycleManagement</inheritedFrom>
-                    <title>HasLifecycleManagement</title>
-                </contextTags>
-                <dataType>boolean</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/HasLifecycleManagement</inheritedFrom>
-                <key>false</key>
-                <title>HasLifecycleManagement</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/LifecycleEndDate/LifecycleEndDate</inheritedFrom>
-                    <title>LifecycleEndDate</title>
-                </contextTags>
-                <dataType>datetime</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/LifecycleEndDate</inheritedFrom>
-                <key>false</key>
-                <title>LifecycleEndDate</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/LifecycleStartDate/LifecycleStartDate</inheritedFrom>
-                    <title>LifecycleStartDate</title>
-                </contextTags>
-                <dataType>datetime</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/LifecycleStartDate</inheritedFrom>
-                <key>false</key>
-                <title>LifecycleStartDate</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/TotalLifecycleAmount/TotalLifecycleAmount</inheritedFrom>
-                    <title>TotalLifecycleAmount</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/TotalLifecycleAmount</inheritedFrom>
-                <key>false</key>
-                <title>TotalLifecycleAmount</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/RenewalTerm/RenewalTerm</inheritedFrom>
-                    <title>RenewalTerm</title>
-                </contextTags>
-                <dataType>number</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/RenewalTerm</inheritedFrom>
-                <key>false</key>
-                <title>RenewalTerm</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/RenewalTermUnit/RenewalTermUnit</inheritedFrom>
-                    <title>RenewalTermUnit</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/RenewalTermUnit</inheritedFrom>
-                <key>false</key>
-                <title>RenewalTermUnit</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/PricingSource/PricingSource</inheritedFrom>
-                    <title>PricingSource</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/PricingSource</inheritedFrom>
-                <key>false</key>
-                <title>PricingSource</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextTags>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetTag</inheritedFrom>
-                <title>AssetTag</title>
-            </contextTags>
-            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset</inheritedFrom>
-            <title>Asset</title>
-            <transposable>false</transposable>
-        </contextNodes>
-        <contextNodes>
-            <contextAttributes>
-                <contextTags>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA/ContractAUARecord/ContractAUARecord</inheritedFrom>
                     <title>ContractAUARecord</title>
                 </contextTags>
@@ -6283,6 +6218,582 @@
             </contextTags>
             <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA</inheritedFrom>
             <title>ContractAUA</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodQuantity/AssetStatePeriodQuantity</inheritedFrom>
+                    <title>AssetStatePeriodQuantity</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodQuantity</inheritedFrom>
+                <key>false</key>
+                <title>AssetStatePeriodQuantity</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodAmount/AssetStatePeriodAmount</inheritedFrom>
+                    <title>AssetStatePeriodAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodAmount</inheritedFrom>
+                <key>false</key>
+                <title>AssetStatePeriodAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodAsset/AssetStatePeriodAssetId</inheritedFrom>
+                    <title>AssetStatePeriodAssetId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodAsset</inheritedFrom>
+                <key>false</key>
+                <title>AssetStatePeriodAsset</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodEndDate/AssetStatePeriodEndDate</inheritedFrom>
+                    <title>AssetStatePeriodEndDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodEndDate</inheritedFrom>
+                <key>false</key>
+                <title>AssetStatePeriodEndDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodStartDate/AssetStatePeriodStartDate</inheritedFrom>
+                    <title>AssetStatePeriodStartDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodStartDate</inheritedFrom>
+                <key>false</key>
+                <title>AssetStatePeriodStartDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodMrr/AssetStatePeriodMrr</inheritedFrom>
+                    <title>AssetStatePeriodMrr</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodMrr</inheritedFrom>
+                <key>false</key>
+                <title>AssetStatePeriodMrr</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <dataType>reference</dataType>
+                <domainSet>Asset</domainSet>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ParentReference</inheritedFrom>
+                <key>false</key>
+                <title>ParentReference</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodTag</inheritedFrom>
+                <title>AssetStatePeriodTag</title>
+            </contextTags>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod</inheritedFrom>
+            <title>AssetStatePeriod</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipAsset/AssetRelationshipAssetId</inheritedFrom>
+                    <title>AssetRelationshipAssetId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipAsset</inheritedFrom>
+                <key>false</key>
+                <title>AssetRelationshipAsset</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRole/AssetRole</inheritedFrom>
+                    <title>AssetRole</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRole</inheritedFrom>
+                <key>false</key>
+                <title>AssetRole</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipFromDate/AssetRelationshipFromDate</inheritedFrom>
+                    <title>AssetRelationshipFromDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipFromDate</inheritedFrom>
+                <key>false</key>
+                <title>AssetRelationshipFromDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipToDate/AssetRelationshipToDate</inheritedFrom>
+                    <title>AssetRelationshipToDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipToDate</inheritedFrom>
+                <key>false</key>
+                <title>AssetRelationshipToDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipGroupingKey/AssetRelationshipGroupingKey</inheritedFrom>
+                    <title>AssetRelationshipGroupingKey</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipGroupingKey</inheritedFrom>
+                <key>false</key>
+                <title>AssetRelationshipGroupingKey</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/ProductRelationshipTypeId/ProductRelationshipTypeId</inheritedFrom>
+                    <title>ProductRelationshipTypeId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/ProductRelationshipTypeId</inheritedFrom>
+                <key>false</key>
+                <title>ProductRelationshipTypeId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/ProductRelatedComponentId/ProductRelatedComponentId</inheritedFrom>
+                    <title>ProductRelatedComponentId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/ProductRelatedComponentId</inheritedFrom>
+                <key>false</key>
+                <title>ProductRelatedComponentId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetId/RelatedAssetId</inheritedFrom>
+                    <title>RelatedAssetId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetId</inheritedFrom>
+                <key>false</key>
+                <title>RelatedAssetId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetRole/RelatedAssetRole</inheritedFrom>
+                    <title>RelatedAssetRole</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetRole</inheritedFrom>
+                <key>false</key>
+                <title>RelatedAssetRole</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelationshipType/RelationshipType</inheritedFrom>
+                    <title>RelationshipType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelationshipType</inheritedFrom>
+                <key>false</key>
+                <title>RelationshipType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetPricing/RelatedAssetPricing</inheritedFrom>
+                    <title>RelatedAssetPricing</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetPricing</inheritedFrom>
+                <key>false</key>
+                <title>RelatedAssetPricing</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetQtyScaleMethod/RelatedAssetQtyScaleMethod</inheritedFrom>
+                    <title>RelatedAssetQtyScaleMethod</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetQtyScaleMethod</inheritedFrom>
+                <key>false</key>
+                <title>RelatedAssetQtyScaleMethod</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <dataType>reference</dataType>
+                <domainSet>Asset</domainSet>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/ParentReference</inheritedFrom>
+                <key>false</key>
+                <title>ParentReference</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipTag</inheritedFrom>
+                <title>AssetRelationshipTag</title>
+            </contextTags>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship</inheritedFrom>
+            <title>AssetRelationship</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/CategoryEnum/AssetActionCategoryEnum</inheritedFrom>
+                    <title>AssetActionCategoryEnum</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/CategoryEnum</inheritedFrom>
+                <key>false</key>
+                <title>CategoryEnum</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/Category/AssetActionCategory</inheritedFrom>
+                    <title>AssetActionCategory</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/Category</inheritedFrom>
+                <key>false</key>
+                <title>Category</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/ActionDate/AssetActionDate</inheritedFrom>
+                    <title>AssetActionDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/ActionDate</inheritedFrom>
+                <key>false</key>
+                <title>ActionDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/MrrChange/MrrChange</inheritedFrom>
+                    <title>MrrChange</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/MrrChange</inheritedFrom>
+                <key>false</key>
+                <title>MrrChange</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/QuantityChange/QuantityChange</inheritedFrom>
+                    <title>QuantityChange</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/QuantityChange</inheritedFrom>
+                <key>false</key>
+                <title>QuantityChange</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionAmount/AssetActionAmount</inheritedFrom>
+                    <title>AssetActionAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionAmount</inheritedFrom>
+                <key>false</key>
+                <title>AssetActionAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionAsset/AssetActionAssetId</inheritedFrom>
+                    <title>AssetActionAssetId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionAsset</inheritedFrom>
+                <key>false</key>
+                <title>AssetActionAsset</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionTotalAmount/AssetActionTotalAmount</inheritedFrom>
+                    <title>AssetActionTotalAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionTotalAmount</inheritedFrom>
+                <key>false</key>
+                <title>AssetActionTotalAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalCancellationsAmount/TotalCancellationsAmount</inheritedFrom>
+                    <title>TotalCancellationsAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalCancellationsAmount</inheritedFrom>
+                <key>false</key>
+                <title>TotalCancellationsAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalCrossSellsAmount/TotalCrossSellsAmount</inheritedFrom>
+                    <title>TotalCrossSellsAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalCrossSellsAmount</inheritedFrom>
+                <key>false</key>
+                <title>TotalCrossSellsAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalDownsellsAmount/TotalDownsellsAmount</inheritedFrom>
+                    <title>TotalDownsellsAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalDownsellsAmount</inheritedFrom>
+                <key>false</key>
+                <title>TotalDownsellsAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalInitialSaleAmount/TotalInitialSaleAmount</inheritedFrom>
+                    <title>TotalInitialSaleAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalInitialSaleAmount</inheritedFrom>
+                <key>false</key>
+                <title>TotalInitialSaleAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalMrr/TotalMrr</inheritedFrom>
+                    <title>TotalMrr</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalMrr</inheritedFrom>
+                <key>false</key>
+                <title>TotalMrr</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalOtherAmount/TotalOtherAmount</inheritedFrom>
+                    <title>TotalOtherAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalOtherAmount</inheritedFrom>
+                <key>false</key>
+                <title>TotalOtherAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalQuantity/TotalQuantity</inheritedFrom>
+                    <title>TotalQuantity</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalQuantity</inheritedFrom>
+                <key>false</key>
+                <title>TotalQuantity</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalRenewalsAmount/TotalRenewalsAmount</inheritedFrom>
+                    <title>TotalRenewalsAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalRenewalsAmount</inheritedFrom>
+                <key>false</key>
+                <title>TotalRenewalsAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalTermsAndConditionsAmount/TotalTermsAndConditionsAmount</inheritedFrom>
+                    <title>TotalTermsAndConditionsAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalTermsAndConditionsAmount</inheritedFrom>
+                <key>false</key>
+                <title>TotalTermsAndConditionsAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalTransfersAmount/TotalTransfersAmount</inheritedFrom>
+                    <title>TotalTransfersAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalTransfersAmount</inheritedFrom>
+                <key>false</key>
+                <title>TotalTransfersAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalUpsellsAmount/TotalUpsellsAmount</inheritedFrom>
+                    <title>TotalUpsellsAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalUpsellsAmount</inheritedFrom>
+                <key>false</key>
+                <title>TotalUpsellsAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionType/AssetActionType</inheritedFrom>
+                    <title>AssetActionType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionType</inheritedFrom>
+                <key>false</key>
+                <title>AssetActionType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <dataType>reference</dataType>
+                <domainSet>Asset</domainSet>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/ParentReference</inheritedFrom>
+                <key>false</key>
+                <title>ParentReference</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionTag</inheritedFrom>
+                <title>AssetActionTag</title>
+            </contextTags>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction</inheritedFrom>
+            <title>AssetAction</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRAsset/ACRAssetId</inheritedFrom>
+                    <title>ACRAssetId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRAsset</inheritedFrom>
+                <key>false</key>
+                <title>ACRAsset</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRContract/ACRContractId</inheritedFrom>
+                    <title>ACRContractId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRContract</inheritedFrom>
+                <key>false</key>
+                <title>ACRContract</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACREndDate/ACREndDate</inheritedFrom>
+                    <title>ACREndDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACREndDate</inheritedFrom>
+                <key>false</key>
+                <title>ACREndDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRStartDate/ACRStartDate</inheritedFrom>
+                    <title>ACRStartDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRStartDate</inheritedFrom>
+                <key>false</key>
+                <title>ACRStartDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <dataType>reference</dataType>
+                <domainSet>Asset</domainSet>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ParentReference</inheritedFrom>
+                <key>false</key>
+                <title>ParentReference</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/AssetContractRelationshipTag</inheritedFrom>
+                <title>AssetContractRelationshipTag</title>
+            </contextTags>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship</inheritedFrom>
+            <title>AssetContractRelationship</title>
             <transposable>false</transposable>
         </contextNodes>
         <contextNodes>
@@ -7092,577 +7603,409 @@
         <contextNodes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodQuantity/AssetStatePeriodQuantity</inheritedFrom>
-                    <title>AssetStatePeriodQuantity</title>
-                </contextTags>
-                <dataType>number</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodQuantity</inheritedFrom>
-                <key>false</key>
-                <title>AssetStatePeriodQuantity</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodAmount/AssetStatePeriodAmount</inheritedFrom>
-                    <title>AssetStatePeriodAmount</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodAmount</inheritedFrom>
-                <key>false</key>
-                <title>AssetStatePeriodAmount</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodAsset/AssetStatePeriodAssetId</inheritedFrom>
-                    <title>AssetStatePeriodAssetId</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeValue/ASPAttributeValue</inheritedFrom>
+                    <title>ASPAttributeValue</title>
                 </contextTags>
                 <dataType>string</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodAsset</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeValue</inheritedFrom>
                 <key>false</key>
-                <title>AssetStatePeriodAsset</title>
+                <title>ASPAttributeValue</title>
+                <value>true</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeName/ASPAttributeName</inheritedFrom>
+                    <title>ASPAttributeName</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeName</inheritedFrom>
+                <key>false</key>
+                <title>ASPAttributeName</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodEndDate/AssetStatePeriodEndDate</inheritedFrom>
-                    <title>AssetStatePeriodEndDate</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeKey/ASPAttributeKey</inheritedFrom>
+                    <title>ASPAttributeKey</title>
                 </contextTags>
-                <dataType>datetime</dataType>
+                <dataType>string</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodEndDate</inheritedFrom>
-                <key>false</key>
-                <title>AssetStatePeriodEndDate</title>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeKey</inheritedFrom>
+                <key>true</key>
+                <title>ASPAttributeKey</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodStartDate/AssetStatePeriodStartDate</inheritedFrom>
-                    <title>AssetStatePeriodStartDate</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributePicklistValue/ASPAttributePicklistValue</inheritedFrom>
+                    <title>ASPAttributePicklistValue</title>
                 </contextTags>
-                <dataType>datetime</dataType>
+                <dataType>string</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodStartDate</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributePicklistValue</inheritedFrom>
                 <key>false</key>
-                <title>AssetStatePeriodStartDate</title>
+                <title>ASPAttributePicklistValue</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodMrr/AssetStatePeriodMrr</inheritedFrom>
-                    <title>AssetStatePeriodMrr</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeParentId/ASPAttributeParentId</inheritedFrom>
+                    <title>ASPAttributeParentId</title>
                 </contextTags>
-                <dataType>currency</dataType>
+                <dataType>string</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodMrr</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeParentId</inheritedFrom>
                 <key>false</key>
-                <title>AssetStatePeriodMrr</title>
+                <title>ASPAttributeParentId</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <dataType>reference</dataType>
-                <domainSet>Asset</domainSet>
+                <domainSet>AssetStatePeriod</domainSet>
                 <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ParentReference</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ParentReference</inheritedFrom>
                 <key>false</key>
                 <title>ParentReference</title>
                 <value>false</value>
             </contextAttributes>
             <contextTags>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/AssetStatePeriodTag</inheritedFrom>
-                <title>AssetStatePeriodTag</title>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeTag</inheritedFrom>
+                <title>ASPAttributeTag</title>
             </contextTags>
-            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod</inheritedFrom>
-            <title>AssetStatePeriod</title>
-            <transposable>false</transposable>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute</inheritedFrom>
+            <title>ASPAttribute</title>
+            <transposable>true</transposable>
         </contextNodes>
         <contextNodes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipAsset/AssetRelationshipAssetId</inheritedFrom>
-                    <title>AssetRelationshipAssetId</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceAssetAction/AssetActionSourceAssetAction</inheritedFrom>
+                    <title>AssetActionSourceAssetAction</title>
                 </contextTags>
                 <dataType>string</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipAsset</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceAssetAction</inheritedFrom>
                 <key>false</key>
-                <title>AssetRelationshipAsset</title>
+                <title>AssetActionSourceAssetAction</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRole/AssetRole</inheritedFrom>
-                    <title>AssetRole</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRole</inheritedFrom>
-                <key>false</key>
-                <title>AssetRole</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipFromDate/AssetRelationshipFromDate</inheritedFrom>
-                    <title>AssetRelationshipFromDate</title>
-                </contextTags>
-                <dataType>datetime</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipFromDate</inheritedFrom>
-                <key>false</key>
-                <title>AssetRelationshipFromDate</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipToDate/AssetRelationshipToDate</inheritedFrom>
-                    <title>AssetRelationshipToDate</title>
-                </contextTags>
-                <dataType>datetime</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipToDate</inheritedFrom>
-                <key>false</key>
-                <title>AssetRelationshipToDate</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipGroupingKey/AssetRelationshipGroupingKey</inheritedFrom>
-                    <title>AssetRelationshipGroupingKey</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipGroupingKey</inheritedFrom>
-                <key>false</key>
-                <title>AssetRelationshipGroupingKey</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/ProductRelationshipTypeId/ProductRelationshipTypeId</inheritedFrom>
-                    <title>ProductRelationshipTypeId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/ProductRelationshipTypeId</inheritedFrom>
-                <key>false</key>
-                <title>ProductRelationshipTypeId</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/ProductRelatedComponentId/ProductRelatedComponentId</inheritedFrom>
-                    <title>ProductRelatedComponentId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/ProductRelatedComponentId</inheritedFrom>
-                <key>false</key>
-                <title>ProductRelatedComponentId</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetId/RelatedAssetId</inheritedFrom>
-                    <title>RelatedAssetId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetId</inheritedFrom>
-                <key>false</key>
-                <title>RelatedAssetId</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetRole/RelatedAssetRole</inheritedFrom>
-                    <title>RelatedAssetRole</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetRole</inheritedFrom>
-                <key>false</key>
-                <title>RelatedAssetRole</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelationshipType/RelationshipType</inheritedFrom>
-                    <title>RelationshipType</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelationshipType</inheritedFrom>
-                <key>false</key>
-                <title>RelationshipType</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetPricing/RelatedAssetPricing</inheritedFrom>
-                    <title>RelatedAssetPricing</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetPricing</inheritedFrom>
-                <key>false</key>
-                <title>RelatedAssetPricing</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetQtyScaleMethod/RelatedAssetQtyScaleMethod</inheritedFrom>
-                    <title>RelatedAssetQtyScaleMethod</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/RelatedAssetQtyScaleMethod</inheritedFrom>
-                <key>false</key>
-                <title>RelatedAssetQtyScaleMethod</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <dataType>reference</dataType>
-                <domainSet>Asset</domainSet>
-                <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/ParentReference</inheritedFrom>
-                <key>false</key>
-                <title>ParentReference</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextTags>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship/AssetRelationshipTag</inheritedFrom>
-                <title>AssetRelationshipTag</title>
-            </contextTags>
-            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetRelationship</inheritedFrom>
-            <title>AssetRelationship</title>
-            <transposable>false</transposable>
-        </contextNodes>
-        <contextNodes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/CategoryEnum/AssetActionCategoryEnum</inheritedFrom>
-                    <title>AssetActionCategoryEnum</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/CategoryEnum</inheritedFrom>
-                <key>false</key>
-                <title>CategoryEnum</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/Category/AssetActionCategory</inheritedFrom>
-                    <title>AssetActionCategory</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/Category</inheritedFrom>
-                <key>false</key>
-                <title>Category</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/ActionDate/AssetActionDate</inheritedFrom>
-                    <title>AssetActionDate</title>
-                </contextTags>
-                <dataType>datetime</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/ActionDate</inheritedFrom>
-                <key>false</key>
-                <title>ActionDate</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/MrrChange/MrrChange</inheritedFrom>
-                    <title>MrrChange</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceActualTax/AssetActionSourceActualTax</inheritedFrom>
+                    <title>AssetActionSourceActualTax</title>
                 </contextTags>
                 <dataType>currency</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/MrrChange</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceActualTax</inheritedFrom>
                 <key>false</key>
-                <title>MrrChange</title>
+                <title>AssetActionSourceActualTax</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/QuantityChange/QuantityChange</inheritedFrom>
-                    <title>QuantityChange</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AdjustmentAmount/AdjustmentAmount</inheritedFrom>
+                    <title>AdjustmentAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AdjustmentAmount</inheritedFrom>
+                <key>false</key>
+                <title>AdjustmentAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceEndDate/AssetActionSourceEndDate</inheritedFrom>
+                    <title>AssetActionSourceEndDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceEndDate</inheritedFrom>
+                <key>false</key>
+                <title>AssetActionSourceEndDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceStartDate/AssetActionSourceStartDate</inheritedFrom>
+                    <title>AssetActionSourceStartDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceStartDate</inheritedFrom>
+                <key>false</key>
+                <title>AssetActionSourceStartDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTxDate/AssetActionSourceTxDate</inheritedFrom>
+                    <title>AssetActionSourceTxDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTxDate</inheritedFrom>
+                <key>false</key>
+                <title>AssetActionSourceTxDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceEstimatedTax/AssetActionSourceEstimatedTax</inheritedFrom>
+                    <title>AssetActionSourceEstimatedTax</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceEstimatedTax</inheritedFrom>
+                <key>false</key>
+                <title>AssetActionSourceEstimatedTax</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceExtRef/AssetActionSourceExtRef</inheritedFrom>
+                    <title>AssetActionSourceExtRef</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceExtRef</inheritedFrom>
+                <key>false</key>
+                <title>AssetActionSourceExtRef</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceExtRefDataSrc/AssetActionSourceExtRefDataSrc</inheritedFrom>
+                    <title>AssetActionSourceExtRefDataSrc</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceExtRefDataSrc</inheritedFrom>
+                <key>false</key>
+                <title>AssetActionSourceExtRefDataSrc</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/ProductAmount/ProductAmount</inheritedFrom>
+                    <title>ProductAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/ProductAmount</inheritedFrom>
+                <key>false</key>
+                <title>ProductAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceQuantity/AssetActionSourceQuantity</inheritedFrom>
+                    <title>AssetActionSourceQuantity</title>
                 </contextTags>
                 <dataType>number</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/QuantityChange</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceQuantity</inheritedFrom>
                 <key>false</key>
-                <title>QuantityChange</title>
+                <title>AssetActionSourceQuantity</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionAmount/AssetActionAmount</inheritedFrom>
-                    <title>AssetActionAmount</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionAmount</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionAmount</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionAsset/AssetActionAssetId</inheritedFrom>
-                    <title>AssetActionAssetId</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/ReferenceEntityItem/RefEntityItemId</inheritedFrom>
+                    <title>RefEntityItemId</title>
                 </contextTags>
                 <dataType>string</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionAsset</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/ReferenceEntityItem</inheritedFrom>
                 <key>false</key>
-                <title>AssetActionAsset</title>
+                <title>ReferenceEntityItem</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionTotalAmount/AssetActionTotalAmount</inheritedFrom>
-                    <title>AssetActionTotalAmount</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTotalPrice/AssetActionSourceTotalPrice</inheritedFrom>
+                    <title>AssetActionSourceTotalPrice</title>
                 </contextTags>
                 <dataType>currency</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionTotalAmount</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTotalPrice</inheritedFrom>
                 <key>false</key>
-                <title>AssetActionTotalAmount</title>
+                <title>AssetActionSourceTotalPrice</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalCancellationsAmount/TotalCancellationsAmount</inheritedFrom>
-                    <title>TotalCancellationsAmount</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceUnitPrice/AssetActionSourceUnitPrice</inheritedFrom>
+                    <title>AssetActionSourceUnitPrice</title>
                 </contextTags>
                 <dataType>currency</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalCancellationsAmount</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceUnitPrice</inheritedFrom>
                 <key>false</key>
-                <title>TotalCancellationsAmount</title>
+                <title>AssetActionSourceUnitPrice</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalCrossSellsAmount/TotalCrossSellsAmount</inheritedFrom>
-                    <title>TotalCrossSellsAmount</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceListPrice/AssetActionSourceListPrice</inheritedFrom>
+                    <title>AssetActionSourceListPrice</title>
                 </contextTags>
                 <dataType>currency</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalCrossSellsAmount</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceListPrice</inheritedFrom>
                 <key>false</key>
-                <title>TotalCrossSellsAmount</title>
+                <title>AssetActionSourceListPrice</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalDownsellsAmount/TotalDownsellsAmount</inheritedFrom>
-                    <title>TotalDownsellsAmount</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceNetUnitPrice/AssetActionSourceNetUnitPrice</inheritedFrom>
+                    <title>AssetActionSourceNetUnitPrice</title>
                 </contextTags>
                 <dataType>currency</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalDownsellsAmount</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceNetUnitPrice</inheritedFrom>
                 <key>false</key>
-                <title>TotalDownsellsAmount</title>
+                <title>AssetActionSourceNetUnitPrice</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalInitialSaleAmount/TotalInitialSaleAmount</inheritedFrom>
-                    <title>TotalInitialSaleAmount</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTotalLineAmt/AssetActionSourceTotalLineAmt</inheritedFrom>
+                    <title>AssetActionSourceTotalLineAmt</title>
                 </contextTags>
                 <dataType>currency</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalInitialSaleAmount</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTotalLineAmt</inheritedFrom>
                 <key>false</key>
-                <title>TotalInitialSaleAmount</title>
+                <title>AssetActionSourceTotalLineAmt</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalMrr/TotalMrr</inheritedFrom>
-                    <title>TotalMrr</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceObligatedAmt/AssetActionSourceObligatedAmt</inheritedFrom>
+                    <title>AssetActionSourceObligatedAmt</title>
                 </contextTags>
                 <dataType>currency</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalMrr</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceObligatedAmt</inheritedFrom>
                 <key>false</key>
-                <title>TotalMrr</title>
+                <title>AssetActionSourceObligatedAmt</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalOtherAmount/TotalOtherAmount</inheritedFrom>
-                    <title>TotalOtherAmount</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTaxTrtmtId/AssetActionSourceTaxTrtmtId</inheritedFrom>
+                    <title>AssetActionSourceTaxTrtmtId</title>
                 </contextTags>
-                <dataType>currency</dataType>
+                <dataType>string</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalOtherAmount</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTaxTrtmtId</inheritedFrom>
                 <key>false</key>
-                <title>TotalOtherAmount</title>
+                <title>AssetActionSourceTaxTrtmtId</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalQuantity/TotalQuantity</inheritedFrom>
-                    <title>TotalQuantity</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASPricebookEntryId/AASPricebookEntryId</inheritedFrom>
+                    <title>AASPricebookEntryId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASPricebookEntryId</inheritedFrom>
+                <key>false</key>
+                <title>AASPricebookEntryId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePricingTermCt/AssetActionSourcePricingTermCt</inheritedFrom>
+                    <title>AssetActionSourcePricingTermCt</title>
                 </contextTags>
                 <dataType>number</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalQuantity</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePricingTermCt</inheritedFrom>
                 <key>false</key>
-                <title>TotalQuantity</title>
+                <title>AssetActionSourcePricingTermCt</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalRenewalsAmount/TotalRenewalsAmount</inheritedFrom>
-                    <title>TotalRenewalsAmount</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalRenewalsAmount</inheritedFrom>
-                <key>false</key>
-                <title>TotalRenewalsAmount</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalTermsAndConditionsAmount/TotalTermsAndConditionsAmount</inheritedFrom>
-                    <title>TotalTermsAndConditionsAmount</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalTermsAndConditionsAmount</inheritedFrom>
-                <key>false</key>
-                <title>TotalTermsAndConditionsAmount</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalTransfersAmount/TotalTransfersAmount</inheritedFrom>
-                    <title>TotalTransfersAmount</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalTransfersAmount</inheritedFrom>
-                <key>false</key>
-                <title>TotalTransfersAmount</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalUpsellsAmount/TotalUpsellsAmount</inheritedFrom>
-                    <title>TotalUpsellsAmount</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/TotalUpsellsAmount</inheritedFrom>
-                <key>false</key>
-                <title>TotalUpsellsAmount</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionType/AssetActionType</inheritedFrom>
-                    <title>AssetActionType</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePeriodBdry/AssetActionSourcePeriodBdry</inheritedFrom>
+                    <title>AssetActionSourcePeriodBdry</title>
                 </contextTags>
                 <dataType>string</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionType</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePeriodBdry</inheritedFrom>
                 <key>false</key>
-                <title>AssetActionType</title>
+                <title>AssetActionSourcePeriodBdry</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePeriodBdryDay/AssetActionSourcePeriodBdryDay</inheritedFrom>
+                    <title>AssetActionSourcePeriodBdryDay</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePeriodBdryDay</inheritedFrom>
+                <key>false</key>
+                <title>AssetActionSourcePeriodBdryDay</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASPeriodBdryStartMonth/AASPeriodBdryStartMonth</inheritedFrom>
+                    <title>AASPeriodBdryStartMonth</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASPeriodBdryStartMonth</inheritedFrom>
+                <key>false</key>
+                <title>AASPeriodBdryStartMonth</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASProductSellingModelId/AASProductSellingModelId</inheritedFrom>
+                    <title>AASProductSellingModelId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASProductSellingModelId</inheritedFrom>
+                <key>false</key>
+                <title>AASProductSellingModelId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASProrationPolicyId/AASProrationPolicyId</inheritedFrom>
+                    <title>AASProrationPolicyId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASProrationPolicyId</inheritedFrom>
+                <key>false</key>
+                <title>AASProrationPolicyId</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <dataType>reference</dataType>
-                <domainSet>Asset</domainSet>
+                <domainSet>AssetAction</domainSet>
                 <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/ParentReference</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/ParentReference</inheritedFrom>
                 <key>false</key>
                 <title>ParentReference</title>
                 <value>false</value>
             </contextAttributes>
             <contextTags>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionTag</inheritedFrom>
-                <title>AssetActionTag</title>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTag</inheritedFrom>
+                <title>AssetActionSourceTag</title>
             </contextTags>
-            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction</inheritedFrom>
-            <title>AssetAction</title>
-            <transposable>false</transposable>
-        </contextNodes>
-        <contextNodes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRAsset/ACRAssetId</inheritedFrom>
-                    <title>ACRAssetId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRAsset</inheritedFrom>
-                <key>false</key>
-                <title>ACRAsset</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRContract/ACRContractId</inheritedFrom>
-                    <title>ACRContractId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRContract</inheritedFrom>
-                <key>false</key>
-                <title>ACRContract</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACREndDate/ACREndDate</inheritedFrom>
-                    <title>ACREndDate</title>
-                </contextTags>
-                <dataType>datetime</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACREndDate</inheritedFrom>
-                <key>false</key>
-                <title>ACREndDate</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRStartDate/ACRStartDate</inheritedFrom>
-                    <title>ACRStartDate</title>
-                </contextTags>
-                <dataType>datetime</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ACRStartDate</inheritedFrom>
-                <key>false</key>
-                <title>ACRStartDate</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <dataType>reference</dataType>
-                <domainSet>Asset</domainSet>
-                <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/ParentReference</inheritedFrom>
-                <key>false</key>
-                <title>ParentReference</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextTags>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship/AssetContractRelationshipTag</inheritedFrom>
-                <title>AssetContractRelationshipTag</title>
-            </contextTags>
-            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetContractRelationship</inheritedFrom>
-            <title>AssetContractRelationship</title>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource</inheritedFrom>
+            <title>AssetActionSource</title>
             <transposable>false</transposable>
         </contextNodes>
         <contextNodes>
@@ -8375,414 +8718,6 @@
             </contextTags>
             <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem</inheritedFrom>
             <title>FulfillmentTransactionItem</title>
-            <transposable>false</transposable>
-        </contextNodes>
-        <contextNodes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeValue/ASPAttributeValue</inheritedFrom>
-                    <title>ASPAttributeValue</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeValue</inheritedFrom>
-                <key>false</key>
-                <title>ASPAttributeValue</title>
-                <value>true</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeName/ASPAttributeName</inheritedFrom>
-                    <title>ASPAttributeName</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeName</inheritedFrom>
-                <key>false</key>
-                <title>ASPAttributeName</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeKey/ASPAttributeKey</inheritedFrom>
-                    <title>ASPAttributeKey</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeKey</inheritedFrom>
-                <key>true</key>
-                <title>ASPAttributeKey</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributePicklistValue/ASPAttributePicklistValue</inheritedFrom>
-                    <title>ASPAttributePicklistValue</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributePicklistValue</inheritedFrom>
-                <key>false</key>
-                <title>ASPAttributePicklistValue</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeParentId/ASPAttributeParentId</inheritedFrom>
-                    <title>ASPAttributeParentId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeParentId</inheritedFrom>
-                <key>false</key>
-                <title>ASPAttributeParentId</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <dataType>reference</dataType>
-                <domainSet>AssetStatePeriod</domainSet>
-                <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ParentReference</inheritedFrom>
-                <key>false</key>
-                <title>ParentReference</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextTags>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute/ASPAttributeTag</inheritedFrom>
-                <title>ASPAttributeTag</title>
-            </contextTags>
-            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetStatePeriod/ASPAttribute</inheritedFrom>
-            <title>ASPAttribute</title>
-            <transposable>true</transposable>
-        </contextNodes>
-        <contextNodes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceAssetAction/AssetActionSourceAssetAction</inheritedFrom>
-                    <title>AssetActionSourceAssetAction</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceAssetAction</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceAssetAction</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceActualTax/AssetActionSourceActualTax</inheritedFrom>
-                    <title>AssetActionSourceActualTax</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceActualTax</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceActualTax</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AdjustmentAmount/AdjustmentAmount</inheritedFrom>
-                    <title>AdjustmentAmount</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AdjustmentAmount</inheritedFrom>
-                <key>false</key>
-                <title>AdjustmentAmount</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceEndDate/AssetActionSourceEndDate</inheritedFrom>
-                    <title>AssetActionSourceEndDate</title>
-                </contextTags>
-                <dataType>datetime</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceEndDate</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceEndDate</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceStartDate/AssetActionSourceStartDate</inheritedFrom>
-                    <title>AssetActionSourceStartDate</title>
-                </contextTags>
-                <dataType>datetime</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceStartDate</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceStartDate</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTxDate/AssetActionSourceTxDate</inheritedFrom>
-                    <title>AssetActionSourceTxDate</title>
-                </contextTags>
-                <dataType>datetime</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTxDate</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceTxDate</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceEstimatedTax/AssetActionSourceEstimatedTax</inheritedFrom>
-                    <title>AssetActionSourceEstimatedTax</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceEstimatedTax</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceEstimatedTax</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceExtRef/AssetActionSourceExtRef</inheritedFrom>
-                    <title>AssetActionSourceExtRef</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceExtRef</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceExtRef</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceExtRefDataSrc/AssetActionSourceExtRefDataSrc</inheritedFrom>
-                    <title>AssetActionSourceExtRefDataSrc</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceExtRefDataSrc</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceExtRefDataSrc</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/ProductAmount/ProductAmount</inheritedFrom>
-                    <title>ProductAmount</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/ProductAmount</inheritedFrom>
-                <key>false</key>
-                <title>ProductAmount</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceQuantity/AssetActionSourceQuantity</inheritedFrom>
-                    <title>AssetActionSourceQuantity</title>
-                </contextTags>
-                <dataType>number</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceQuantity</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceQuantity</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/ReferenceEntityItem/RefEntityItemId</inheritedFrom>
-                    <title>RefEntityItemId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/ReferenceEntityItem</inheritedFrom>
-                <key>false</key>
-                <title>ReferenceEntityItem</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTotalPrice/AssetActionSourceTotalPrice</inheritedFrom>
-                    <title>AssetActionSourceTotalPrice</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTotalPrice</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceTotalPrice</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceUnitPrice/AssetActionSourceUnitPrice</inheritedFrom>
-                    <title>AssetActionSourceUnitPrice</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceUnitPrice</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceUnitPrice</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceListPrice/AssetActionSourceListPrice</inheritedFrom>
-                    <title>AssetActionSourceListPrice</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceListPrice</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceListPrice</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceNetUnitPrice/AssetActionSourceNetUnitPrice</inheritedFrom>
-                    <title>AssetActionSourceNetUnitPrice</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceNetUnitPrice</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceNetUnitPrice</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTotalLineAmt/AssetActionSourceTotalLineAmt</inheritedFrom>
-                    <title>AssetActionSourceTotalLineAmt</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTotalLineAmt</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceTotalLineAmt</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceObligatedAmt/AssetActionSourceObligatedAmt</inheritedFrom>
-                    <title>AssetActionSourceObligatedAmt</title>
-                </contextTags>
-                <dataType>currency</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceObligatedAmt</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceObligatedAmt</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTaxTrtmtId/AssetActionSourceTaxTrtmtId</inheritedFrom>
-                    <title>AssetActionSourceTaxTrtmtId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTaxTrtmtId</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourceTaxTrtmtId</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASPricebookEntryId/AASPricebookEntryId</inheritedFrom>
-                    <title>AASPricebookEntryId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASPricebookEntryId</inheritedFrom>
-                <key>false</key>
-                <title>AASPricebookEntryId</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePricingTermCt/AssetActionSourcePricingTermCt</inheritedFrom>
-                    <title>AssetActionSourcePricingTermCt</title>
-                </contextTags>
-                <dataType>number</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePricingTermCt</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourcePricingTermCt</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePeriodBdry/AssetActionSourcePeriodBdry</inheritedFrom>
-                    <title>AssetActionSourcePeriodBdry</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePeriodBdry</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourcePeriodBdry</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePeriodBdryDay/AssetActionSourcePeriodBdryDay</inheritedFrom>
-                    <title>AssetActionSourcePeriodBdryDay</title>
-                </contextTags>
-                <dataType>number</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourcePeriodBdryDay</inheritedFrom>
-                <key>false</key>
-                <title>AssetActionSourcePeriodBdryDay</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASPeriodBdryStartMonth/AASPeriodBdryStartMonth</inheritedFrom>
-                    <title>AASPeriodBdryStartMonth</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASPeriodBdryStartMonth</inheritedFrom>
-                <key>false</key>
-                <title>AASPeriodBdryStartMonth</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASProductSellingModelId/AASProductSellingModelId</inheritedFrom>
-                    <title>AASProductSellingModelId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASProductSellingModelId</inheritedFrom>
-                <key>false</key>
-                <title>AASProductSellingModelId</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASProrationPolicyId/AASProrationPolicyId</inheritedFrom>
-                    <title>AASProrationPolicyId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASProrationPolicyId</inheritedFrom>
-                <key>false</key>
-                <title>AASProrationPolicyId</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextAttributes>
-                <dataType>reference</dataType>
-                <domainSet>AssetAction</domainSet>
-                <fieldType>input</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/ParentReference</inheritedFrom>
-                <key>false</key>
-                <title>ParentReference</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextTags>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AssetActionSourceTag</inheritedFrom>
-                <title>AssetActionSourceTag</title>
-            </contextTags>
-            <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource</inheritedFrom>
-            <title>AssetActionSource</title>
             <transposable>false</transposable>
         </contextNodes>
         <contextNodes>

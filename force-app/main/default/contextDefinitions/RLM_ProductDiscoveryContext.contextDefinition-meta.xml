@@ -637,6 +637,7 @@
         <versionNumber>3</versionNumber>
     </contextDefinitionVersions>
     <contextTtl>20</contextTtl>
+    <description>Extension of Standard Product Discovery Context</description>
     <inheritedFrom>ProductDiscoveryContext__stdctx</inheritedFrom>
     <isProtected>false</isProtected>
     <masterLabel>RLM_ProductDiscoveryContext</masterLabel>
