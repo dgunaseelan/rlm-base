@@ -37,7 +37,9 @@
     },
     "industriesPricingSettings": {
       "enableSalesforcePricing": true,
-      "enablePricingWaterfall": true
+      "enablePricingWaterfall": true,
+      "enablePricingWaterfallPersistence": true,
+      "enableHighAvailability": true
     },
     "productConfiguratorSettings": {
       "enableProductConfigurator": true
