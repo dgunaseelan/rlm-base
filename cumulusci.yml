@@ -125,7 +125,22 @@ flows:
             8:
                 task: extend_stdctx_pd
             9:
-                task: deploy_expression_sets
+                task: deploy
+                options:
+                    path: force-app/main/default/expressionSetDefinition
+                    transforms:
+                        - transform: find_replace
+                          options:
+                            patterns:
+                            - find: __ATTRIBUTEPasID__
+                              replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Attribute Based Adjustment' LIMIT 1
+                              api: rest
+                            - find: __VOLUMEPasID__
+                              replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Price Adjustment Tier' LIMIT 1
+                              api: rest
+                            - find: __BUNDLEPasID__
+                              replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Bundle Based Adjustment' LIMIT 1
+                              api: rest
             10:
                 task: deploy_relationship_graphs
             11:
