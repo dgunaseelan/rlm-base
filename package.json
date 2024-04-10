@@ -18,6 +18,7 @@
     "@babel/core": "^7.24.4",
     "@babel/eslint-parser": "^7.24.1",
     "@lwc/eslint-plugin-lwc": "^1.7.2",
+    "@playwright/test": "^1.43.0",
     "eslint": ">=8.0.0",
     "prettier": "^3.2.5",
     "prettier-plugin-apex": "^2.1.0"
