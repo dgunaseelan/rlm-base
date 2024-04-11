@@ -1357,6 +1357,13 @@
                 </parameters>
                 <parameters>
                     <input>false</input>
+                    <name>Id</name>
+                    <output>true</output>
+                    <type>Parameter</type>
+                    <value>ItemPricebookEntry</value>
+                </parameters>
+                <parameters>
+                    <input>false</input>
                     <name>ListPrice</name>
                     <output>true</output>
                     <type>Parameter</type>
@@ -1365,7 +1372,7 @@
             </customElement>
             <label>PriceBookEntries</label>
             <name>PriceBookEntries</name>
-            <resultIncluded>false</resultIncluded>
+            <resultIncluded>true</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
