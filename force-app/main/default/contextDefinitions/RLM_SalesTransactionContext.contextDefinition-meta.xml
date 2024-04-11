@@ -2,6 +2,18 @@
 <ContextDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
     <contextDefinitionVersions>
         <contextMappings>
+            <contextMappingIntents>
+                <contextMappingIntentType>hydration</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>persistence</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>association</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>translation</contextMappingIntentType>
+            </contextMappingIntents>
             <contextNodeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>SalesTransactionSource</contextAttribute>
@@ -17,6 +29,11 @@
                     <contextAttribute>Account</contextAttribute>
                     <contextInputAttributeName>Account</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/Account</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>QuoteAccount</contextAttribute>
+                    <contextInputAttributeName>QuoteAccount</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/QuoteAccount</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>Opportunity</contextAttribute>
@@ -148,6 +165,56 @@
                     <contextInputAttributeName>PriceAdjustmentSchedule</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/PriceAdjustmentSchedule</inheritedFrom>
                 </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>OriginalActionType</contextAttribute>
+                    <contextInputAttributeName>OriginalActionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/OriginalActionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>StartDate</contextAttribute>
+                    <contextInputAttributeName>StartDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/StartDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDiscountType</contextAttribute>
+                    <contextInputAttributeName>HeaderDiscountType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/HeaderDiscountType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDiscountValue</contextAttribute>
+                    <contextInputAttributeName>HeaderDiscountValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/HeaderDiscountValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDistributionLogic</contextAttribute>
+                    <contextInputAttributeName>HeaderDistributionLogic</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/HeaderDistributionLogic</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDistributionType</contextAttribute>
+                    <contextInputAttributeName>HeaderDistributionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/HeaderDistributionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LegalEntity</contextAttribute>
+                    <contextInputAttributeName>LegalEntity</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/LegalEntity</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTransactionType</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/SalesTransactionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CalculationStatus</contextAttribute>
+                    <contextInputAttributeName>CalculationStatus</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/CalculationStatus</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>OrchestrationSbmsStatus</contextAttribute>
+                    <contextInputAttributeName>OrchestrationSbmsStatus</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction/OrchestrationSbmsStatus</inheritedFrom>
+                </contextAttributeMappings>
                 <contextNode>SalesTransaction</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction</inheritedFrom>
                 <object>SalesTransaction</object>
@@ -258,6 +325,21 @@
                     <contextInputAttributeName>ContractPricingSource</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/Contract/ContractPricingSource</inheritedFrom>
                 </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractStartDate</contextAttribute>
+                    <contextInputAttributeName>ContractStartDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/Contract/ContractStartDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractEndDate</contextAttribute>
+                    <contextInputAttributeName>ContractEndDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/Contract/ContractEndDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractTerm</contextAttribute>
+                    <contextInputAttributeName>ContractTerm</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/Contract/ContractTerm</inheritedFrom>
+                </contextAttributeMappings>
                 <contextNode>Contract</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/Contract</inheritedFrom>
                 <object>Contract</object>
@@ -297,6 +379,11 @@
                     <contextAttribute>SalesTransactionItemSource</contextAttribute>
                     <contextInputAttributeName>SalesTransactionItemSource</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>DerivedPricingAttribute</contextAttribute>
+                    <contextInputAttributeName>DerivedPricingAttribute</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/DerivedPricingAttribute</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>PricebookEntry</contextAttribute>
@@ -424,6 +511,16 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/TaxTreatment</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>BillingTreatment</contextAttribute>
+                    <contextInputAttributeName>BillingTreatment</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/BillingTreatment</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LegalEntity</contextAttribute>
+                    <contextInputAttributeName>LegalEntity</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LegalEntity</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>Product</contextAttribute>
                     <contextInputAttributeName>Product</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/Product</inheritedFrom>
@@ -542,6 +639,66 @@
                     <contextAttribute>ParentSalesTransactionItem</contextAttribute>
                     <contextInputAttributeName>ParentSalesTransactionItem</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ParentSalesTransactionItem</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractId</contextAttribute>
+                    <contextInputAttributeName>ContractId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>IsContracted</contextAttribute>
+                    <contextInputAttributeName>IsContracted</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/IsContracted</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractVolumePasId</contextAttribute>
+                    <contextInputAttributeName>ContractVolumePasId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractVolumePasId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractAttributePasId</contextAttribute>
+                    <contextInputAttributeName>ContractAttributePasId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractAttributePasId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractDiscountType</contextAttribute>
+                    <contextInputAttributeName>ContractDiscountType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractDiscountType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractDiscountValue</contextAttribute>
+                    <contextInputAttributeName>ContractDiscountValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractDiscountValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTransactionSourceAsset</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionSourceAsset</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionSourceAsset</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTransactionActionType</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionActionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionActionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineItemDiscountValue</contextAttribute>
+                    <contextInputAttributeName>LineItemDiscountValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LineItemDiscountValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineItemDistributionType</contextAttribute>
+                    <contextInputAttributeName>LineItemDistributionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LineItemDistributionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineItemDiscountType</contextAttribute>
+                    <contextInputAttributeName>LineItemDiscountType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LineItemDiscountType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>BillingReference</contextAttribute>
+                    <contextInputAttributeName>BillingReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/BillingReference</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>ParentReference</contextAttribute>
@@ -879,6 +1036,101 @@
             </contextNodeMappings>
             <contextNodeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>ContractPASId</contextAttribute>
+                    <contextInputAttributeName>ContractPASId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractPAS/ContractPASId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractPASScheduleType</contextAttribute>
+                    <contextInputAttributeName>ContractPASScheduleType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractPAS/ContractPASScheduleType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractPASEffectiveFrom</contextAttribute>
+                    <contextInputAttributeName>ContractPASEffectiveFrom</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractPAS/ContractPASEffectiveFrom</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractPASEffectiveTo</contextAttribute>
+                    <contextInputAttributeName>ContractPASEffectiveTo</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractPAS/ContractPASEffectiveTo</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractPASIsActive</contextAttribute>
+                    <contextInputAttributeName>ContractPASIsActive</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractPAS/ContractPASIsActive</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>PASContract</contextAttribute>
+                    <contextInputAttributeName>PASContract</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractPAS/PASContract</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ParentReference</contextAttribute>
+                    <contextInputAttributeName>ParentReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractPAS/ParentReference</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>ContractPAS</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractPAS</inheritedFrom>
+                <object>ContractPAS</object>
+            </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CIPContract</contextAttribute>
+                    <contextInputAttributeName>CIPContract</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractItemPrice/CIPContract</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CIPItem</contextAttribute>
+                    <contextInputAttributeName>CIPItem</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractItemPrice/CIPItem</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CIPProductSellingModel</contextAttribute>
+                    <contextInputAttributeName>CIPProductSellingModel</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractItemPrice/CIPProductSellingModel</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CIPSellingModelType</contextAttribute>
+                    <contextInputAttributeName>CIPSellingModelType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractItemPrice/CIPSellingModelType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CIPPrice</contextAttribute>
+                    <contextInputAttributeName>CIPPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractItemPrice/CIPPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CIPDiscountType</contextAttribute>
+                    <contextInputAttributeName>CIPDiscountType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractItemPrice/CIPDiscountType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CIPDiscountValue</contextAttribute>
+                    <contextInputAttributeName>CIPDiscountValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractItemPrice/CIPDiscountValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CIPStartDate</contextAttribute>
+                    <contextInputAttributeName>CIPStartDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractItemPrice/CIPStartDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CIPEndDate</contextAttribute>
+                    <contextInputAttributeName>CIPEndDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractItemPrice/CIPEndDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ParentReference</contextAttribute>
+                    <contextInputAttributeName>ParentReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractItemPrice/ParentReference</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>ContractItemPrice</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContractItemPrice</inheritedFrom>
+                <object>ContractItemPrice</object>
+            </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>AdjustmentType</contextAttribute>
                     <contextInputAttributeName>AdjustmentType</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTrxnAdjustmentGroup/AdjustmentType</inheritedFrom>
@@ -962,6 +1214,11 @@
                     <contextAttribute>PriceWaterfallIdentifier</contextAttribute>
                     <contextInputAttributeName>PriceWaterfallIdentifier</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemDetail/PriceWaterfallIdentifier</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>BillingReference</contextAttribute>
+                    <contextInputAttributeName>BillingReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemDetail/BillingReference</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>ParentReference</contextAttribute>
@@ -1104,6 +1361,51 @@
             </contextNodeMappings>
             <contextNodeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>SalesTransactionItemTaxParent</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionItemTaxParent</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemTax/SalesTransactionItemTaxParent</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTransactionItemTaxName</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionItemTaxName</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemTax/SalesTransactionItemTaxName</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTranxItemTaxType</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemTax/SalesTranxItemTaxType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>TaxEffectiveDate</contextAttribute>
+                    <contextInputAttributeName>TaxEffectiveDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemTax/TaxEffectiveDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTranxItemTaxAmount</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxAmount</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemTax/SalesTranxItemTaxAmount</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTranxItemTaxRate</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxRate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemTax/SalesTranxItemTaxRate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTranxItemTaxDescription</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxDescription</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemTax/SalesTranxItemTaxDescription</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ParentReference</contextAttribute>
+                    <contextInputAttributeName>ParentReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemTax/ParentReference</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>SalesTransactionItemTax</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemTax</inheritedFrom>
+                <object>SalesTransactionItemTax</object>
+            </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>SalesTransactionItemAttrParent</contextAttribute>
                     <contextInputAttributeName>SalesTransactionItemAttrParent</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItemAttribute/SalesTransactionItemAttrParent</inheritedFrom>
@@ -1149,9 +1451,69 @@
             </contextNodeMappings>
             <contextNodeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>ContributorPriceDetailParent</contextAttribute>
+                    <contextInputAttributeName>ContributorPriceDetailParent</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContributorPriceDetail/ContributorPriceDetailParent</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>Contributor</contextAttribute>
+                    <contextInputAttributeName>Contributor</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContributorPriceDetail/Contributor</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorProduct</contextAttribute>
+                    <contextInputAttributeName>ContributorProduct</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContributorPriceDetail/ContributorProduct</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorUnitPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorUnitPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContributorPriceDetail/ContributorUnitPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorTotalPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorTotalPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContributorPriceDetail/ContributorTotalPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorListPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorListPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContributorPriceDetail/ContributorListPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorScope</contextAttribute>
+                    <contextInputAttributeName>ContributorScope</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContributorPriceDetail/ContributorScope</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorSource</contextAttribute>
+                    <contextInputAttributeName>ContributorSource</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContributorPriceDetail/ContributorSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorFormulaInput</contextAttribute>
+                    <contextInputAttributeName>ContributorFormulaInput</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContributorPriceDetail/ContributorFormulaInput</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ParentReference</contextAttribute>
+                    <contextInputAttributeName>ParentReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContributorPriceDetail/ParentReference</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>ContributorPriceDetail</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/ContributorPriceDetail</inheritedFrom>
+                <object>ContributorPriceDetail</object>
+            </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>FulfillmentOrderId</contextAttribute>
                     <contextInputAttributeName>FulfillmentOrderId</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransactionItem/FulfillmentOrderId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>FulfillmentItemSource</contextAttribute>
+                    <contextInputAttributeName>FulfillmentItemSource</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransactionItem/FulfillmentItemSource</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>OriginalQuantity</contextAttribute>
@@ -1177,6 +1539,11 @@
                     <contextAttribute>FulfillmentItemTypeCode</contextAttribute>
                     <contextInputAttributeName>FulfillmentItemTypeCode</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransactionItem/FulfillmentItemTypeCode</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>FulfillmentItemAction</contextAttribute>
+                    <contextInputAttributeName>FulfillmentItemAction</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransactionItem/FulfillmentItemAction</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>ParentReference</contextAttribute>
@@ -1354,6 +1721,11 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/AssetActionSource/AASProrationPolicyId</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>AASBillingReference</contextAttribute>
+                    <contextInputAttributeName>AASBillingReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/AssetActionSource/AASBillingReference</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>ParentReference</contextAttribute>
                     <contextInputAttributeName>ParentReference</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/AssetActionSource/ParentReference</inheritedFrom>
@@ -1369,14 +1741,29 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentLineAttribute/FulfillmentOrderLineId</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>LineAttributeKey</contextAttribute>
+                    <contextInputAttributeName>LineAttributeKey</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentLineAttribute/LineAttributeKey</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>LineAttributeValue</contextAttribute>
                     <contextInputAttributeName>LineAttributeValue</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentLineAttribute/LineAttributeValue</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
-                    <contextAttribute>LineAttributeDefinition</contextAttribute>
-                    <contextInputAttributeName>LineAttributeDefinition</contextInputAttributeName>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentLineAttribute/LineAttributeDefinition</inheritedFrom>
+                    <contextAttribute>LineAttributeName</contextAttribute>
+                    <contextInputAttributeName>LineAttributeName</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentLineAttribute/LineAttributeName</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineAttributePicklistValue</contextAttribute>
+                    <contextInputAttributeName>LineAttributePicklistValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentLineAttribute/LineAttributePicklistValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineAttributeDefinitionCode</contextAttribute>
+                    <contextInputAttributeName>LineAttributeDefinitionCode</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentLineAttribute/LineAttributeDefinitionCode</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>ParentReference</contextAttribute>
@@ -1453,6 +1840,18 @@
             <title>SalesTransaction</title>
         </contextMappings>
         <contextMappings>
+            <contextMappingIntents>
+                <contextMappingIntentType>hydration</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>persistence</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>association</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>translation</contextMappingIntentType>
+            </contextMappingIntents>
             <contextNodeMappings>
                 <contextAttributeMappings>
                     <contextAttrHydrationDetails>
@@ -1486,6 +1885,16 @@
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/QuoteAccount/hydrationInfo-1</inheritedFrom>
+                        <objectName>Quote</objectName>
+                        <queryAttribute>QuoteAccountId</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>QuoteAccount</contextAttribute>
+                    <contextInputAttributeName>QuoteAccount</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/QuoteAccount</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
                         <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/Opportunity/hydrationInfo-1</inheritedFrom>
                         <objectName>Quote</objectName>
                         <queryAttribute>OpportunityId</queryAttribute>
@@ -1493,6 +1902,11 @@
                     <contextAttribute>Opportunity</contextAttribute>
                     <contextInputAttributeName>Opportunity</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/Opportunity</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LegalEntity</contextAttribute>
+                    <contextInputAttributeName>LegalEntity</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/LegalEntity</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttrHydrationDetails>
@@ -1675,9 +2089,64 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/Contract</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>SalesTransactionType</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/SalesTransactionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>EffectiveDate</contextAttribute>
                     <contextInputAttributeName>EffectiveDate</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/EffectiveDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/OriginalActionType/hydrationInfo-1</inheritedFrom>
+                        <objectName>Quote</objectName>
+                        <queryAttribute>OriginalActionType</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>OriginalActionType</contextAttribute>
+                    <contextInputAttributeName>OriginalActionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/OriginalActionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/StartDate/hydrationInfo-1</inheritedFrom>
+                        <objectName>Quote</objectName>
+                        <queryAttribute>StartDate</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>StartDate</contextAttribute>
+                    <contextInputAttributeName>StartDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/StartDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/CalculationStatus/hydrationInfo-1</inheritedFrom>
+                        <objectName>Quote</objectName>
+                        <queryAttribute>CalculationStatus</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>CalculationStatus</contextAttribute>
+                    <contextInputAttributeName>CalculationStatus</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/CalculationStatus</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDiscountType</contextAttribute>
+                    <contextInputAttributeName>HeaderDiscountType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/HeaderDiscountType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDiscountValue</contextAttribute>
+                    <contextInputAttributeName>HeaderDiscountValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/HeaderDiscountValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDistributionLogic</contextAttribute>
+                    <contextInputAttributeName>HeaderDistributionLogic</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/HeaderDistributionLogic</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDistributionType</contextAttribute>
+                    <contextInputAttributeName>HeaderDistributionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction/HeaderDistributionType</inheritedFrom>
                 </contextAttributeMappings>
                 <contextNode>SalesTransaction</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransaction</inheritedFrom>
@@ -1738,6 +2207,11 @@
                     <contextAttribute>SalesTransactionItemSource</contextAttribute>
                     <contextInputAttributeName>SalesTransactionItemSource</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/SalesTransactionItemSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>DerivedPricingAttribute</contextAttribute>
+                    <contextInputAttributeName>DerivedPricingAttribute</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/DerivedPricingAttribute</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttrHydrationDetails>
@@ -1985,6 +2459,16 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/TaxTreatment</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>BillingTreatment</contextAttribute>
+                    <contextInputAttributeName>BillingTreatment</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/BillingTreatment</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LegalEntity</contextAttribute>
+                    <contextInputAttributeName>LegalEntity</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/LegalEntity</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttrHydrationDetails>
                         <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/Product/hydrationInfo-1</inheritedFrom>
                         <objectName>QuoteLineItem</objectName>
@@ -2140,6 +2624,56 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/ProductBasedOn</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <contextAttrHydrationDetails>
+                            <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/SalesTransactionSourceAsset/hydrationInfo-2</inheritedFrom>
+                            <objectName>QuoteAction</objectName>
+                            <queryAttribute>SourceAssetId</queryAttribute>
+                        </contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/SalesTransactionSourceAsset/hydrationInfo-1</inheritedFrom>
+                        <objectName>QuoteLineItem</objectName>
+                        <queryAttribute>QuoteAction</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>SalesTransactionSourceAsset</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionSourceAsset</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/SalesTransactionSourceAsset</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <contextAttrHydrationDetails>
+                            <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/SalesTransactionActionType/hydrationInfo-2</inheritedFrom>
+                            <objectName>QuoteAction</objectName>
+                            <queryAttribute>Type</queryAttribute>
+                        </contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/SalesTransactionActionType/hydrationInfo-1</inheritedFrom>
+                        <objectName>QuoteLineItem</objectName>
+                        <queryAttribute>QuoteAction</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>SalesTransactionActionType</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionActionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/SalesTransactionActionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>BillingReference</contextAttribute>
+                    <contextInputAttributeName>BillingReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/BillingReference</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineItemDiscountValue</contextAttribute>
+                    <contextInputAttributeName>LineItemDiscountValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/LineItemDiscountValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineItemDistributionType</contextAttribute>
+                    <contextInputAttributeName>LineItemDistributionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/LineItemDistributionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineItemDiscountType</contextAttribute>
+                    <contextInputAttributeName>LineItemDiscountType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/LineItemDiscountType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>Deleted</contextAttribute>
                     <contextInputAttributeName>Deleted</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/Deleted</inheritedFrom>
@@ -2153,6 +2687,36 @@
                     <contextAttribute>PricingSource</contextAttribute>
                     <contextInputAttributeName>PricingSource</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/PricingSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractId</contextAttribute>
+                    <contextInputAttributeName>ContractId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/ContractId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>IsContracted</contextAttribute>
+                    <contextInputAttributeName>IsContracted</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/IsContracted</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractVolumePasId</contextAttribute>
+                    <contextInputAttributeName>ContractVolumePasId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/ContractVolumePasId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractAttributePasId</contextAttribute>
+                    <contextInputAttributeName>ContractAttributePasId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/ContractAttributePasId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractDiscountType</contextAttribute>
+                    <contextInputAttributeName>ContractDiscountType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/ContractDiscountType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractDiscountValue</contextAttribute>
+                    <contextInputAttributeName>ContractDiscountValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem/ContractDiscountValue</inheritedFrom>
                 </contextAttributeMappings>
                 <contextNode>SalesTransactionItem</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItem</inheritedFrom>
@@ -2298,6 +2862,11 @@
                     <contextAttribute>PriceWaterfallIdentifier</contextAttribute>
                     <contextInputAttributeName>PriceWaterfallIdentifier</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemDetail/PriceWaterfallIdentifier</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>BillingReference</contextAttribute>
+                    <contextInputAttributeName>BillingReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemDetail/BillingReference</inheritedFrom>
                 </contextAttributeMappings>
                 <contextNode>SalesTransactionItemDetail</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemDetail</inheritedFrom>
@@ -2490,6 +3059,46 @@
             </contextNodeMappings>
             <contextNodeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>SalesTransactionItemTaxParent</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionItemTaxParent</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemTax/SalesTransactionItemTaxParent</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTransactionItemTaxName</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionItemTaxName</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemTax/SalesTransactionItemTaxName</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTranxItemTaxType</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>TaxEffectiveDate</contextAttribute>
+                    <contextInputAttributeName>TaxEffectiveDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemTax/TaxEffectiveDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTranxItemTaxAmount</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxAmount</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxAmount</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTranxItemTaxRate</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxRate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxRate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>SalesTranxItemTaxDescription</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxDescription</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxDescription</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>SalesTransactionItemTax</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemTax</inheritedFrom>
+                <object>QuoteItemTaxItem</object>
+            </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
                     <contextAttrHydrationDetails>
                         <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemAttribute/SalesTransactionItemAttrParent/hydrationInfo-1</inheritedFrom>
                         <objectName>QuoteLineItemAttribute</objectName>
@@ -2563,12 +3172,74 @@
                 <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/SalesTransactionItemAttribute</inheritedFrom>
                 <object>QuoteLineItemAttribute</object>
             </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorPriceDetailParent</contextAttribute>
+                    <contextInputAttributeName>ContributorPriceDetailParent</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/ContributorPriceDetail/ContributorPriceDetailParent</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>Contributor</contextAttribute>
+                    <contextInputAttributeName>Contributor</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/ContributorPriceDetail/Contributor</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorProduct</contextAttribute>
+                    <contextInputAttributeName>ContributorProduct</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/ContributorPriceDetail/ContributorProduct</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorUnitPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorUnitPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/ContributorPriceDetail/ContributorUnitPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorTotalPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorTotalPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/ContributorPriceDetail/ContributorTotalPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorListPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorListPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/ContributorPriceDetail/ContributorListPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorScope</contextAttribute>
+                    <contextInputAttributeName>ContributorScope</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/ContributorPriceDetail/ContributorScope</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorSource</contextAttribute>
+                    <contextInputAttributeName>ContributorSource</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/ContributorPriceDetail/ContributorSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorFormulaInput</contextAttribute>
+                    <contextInputAttributeName>ContributorFormulaInput</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/ContributorPriceDetail/ContributorFormulaInput</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>ContributorPriceDetail</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping/ContributorPriceDetail</inheritedFrom>
+                <object>ContributorPriceDetail</object>
+            </contextNodeMappings>
             <default>false</default>
             <description>Mapping to map quote and related entities with SalesTransaction context</description>
             <inheritedFrom>SalesTransactionContext__stdctx/version/QuoteEntitiesMapping</inheritedFrom>
             <title>QuoteEntitiesMapping</title>
         </contextMappings>
         <contextMappings>
+            <contextMappingIntents>
+                <contextMappingIntentType>hydration</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>persistence</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>association</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>translation</contextMappingIntentType>
+            </contextMappingIntents>
             <contextNodeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>SalesTransactionSource</contextAttribute>
@@ -2629,6 +3300,11 @@
                     <contextAttribute>Opportunity</contextAttribute>
                     <contextInputAttributeName>Opportunity</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransaction/Opportunity</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LegalEntity</contextAttribute>
+                    <contextInputAttributeName>LegalEntity</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransaction/LegalEntity</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>BillToContact</contextAttribute>
@@ -2714,6 +3390,11 @@
                     <contextAttribute>SalesTransactionItemSource</contextAttribute>
                     <contextInputAttributeName>SalesTransactionItemSource</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransactionItem/SalesTransactionItemSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>DerivedPricingAttribute</contextAttribute>
+                    <contextInputAttributeName>DerivedPricingAttribute</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransactionItem/DerivedPricingAttribute</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>PricebookEntry</contextAttribute>
@@ -2856,6 +3537,16 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransactionItem/TaxTreatment</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>BillingTreatment</contextAttribute>
+                    <contextInputAttributeName>BillingTreatment</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransactionItem/BillingTreatment</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LegalEntity</contextAttribute>
+                    <contextInputAttributeName>LegalEntity</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransactionItem/LegalEntity</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>ItemTotalAdjustmentAmount</contextAttribute>
                     <contextInputAttributeName>ItemTotalAdjustmentAmount</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransactionItem/ItemTotalAdjustmentAmount</inheritedFrom>
@@ -2914,6 +3605,11 @@
                     <contextAttribute>PricingSource</contextAttribute>
                     <contextInputAttributeName>PricingSource</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransactionItem/PricingSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>IsContracted</contextAttribute>
+                    <contextInputAttributeName>IsContracted</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransactionItem/IsContracted</inheritedFrom>
                 </contextAttributeMappings>
                 <contextNode>SalesTransactionItem</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransactionItem</inheritedFrom>
@@ -2978,6 +3674,56 @@
                 <contextNode>SalesTransactionItemAttribute</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/SalesTransactionItemAttribute</inheritedFrom>
                 <object>SalesAgreeProductAttribute</object>
+            </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorPriceDetailParent</contextAttribute>
+                    <contextInputAttributeName>ContributorPriceDetailParent</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/ContributorPriceDetail/ContributorPriceDetailParent</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>Contributor</contextAttribute>
+                    <contextInputAttributeName>Contributor</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/ContributorPriceDetail/Contributor</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorProduct</contextAttribute>
+                    <contextInputAttributeName>ContributorProduct</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/ContributorPriceDetail/ContributorProduct</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorUnitPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorUnitPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/ContributorPriceDetail/ContributorUnitPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorTotalPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorTotalPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/ContributorPriceDetail/ContributorTotalPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorListPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorListPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/ContributorPriceDetail/ContributorListPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorScope</contextAttribute>
+                    <contextInputAttributeName>ContributorScope</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/ContributorPriceDetail/ContributorScope</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorSource</contextAttribute>
+                    <contextInputAttributeName>ContributorSource</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/ContributorPriceDetail/ContributorSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorFormulaInput</contextAttribute>
+                    <contextInputAttributeName>ContributorFormulaInput</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/ContributorPriceDetail/ContributorFormulaInput</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>ContributorPriceDetail</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesAgreementEntitiesMapping/ContributorPriceDetail</inheritedFrom>
+                <object>ContributorPriceDetail</object>
             </contextNodeMappings>
             <contextNodeMappings>
                 <contextAttributeMappings>
@@ -3170,6 +3916,18 @@
             <title>SalesAgreementEntitiesMapping</title>
         </contextMappings>
         <contextMappings>
+            <contextMappingIntents>
+                <contextMappingIntentType>hydration</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>persistence</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>association</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>translation</contextMappingIntentType>
+            </contextMappingIntents>
             <contextNodeMappings>
                 <contextAttributeMappings>
                     <contextAttrHydrationDetails>
@@ -3207,6 +3965,11 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/Opportunity</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>LegalEntity</contextAttribute>
+                    <contextInputAttributeName>LegalEntity</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/LegalEntity</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttrHydrationDetails>
                         <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/Pricebook/hydrationInfo-1</inheritedFrom>
                         <objectName>Order</objectName>
@@ -3237,6 +4000,11 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/CurrencyIsoCode</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/BillToContact/hydrationInfo-1</inheritedFrom>
+                        <objectName>Order</objectName>
+                        <queryAttribute>BillToContactId</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>BillToContact</contextAttribute>
                     <contextInputAttributeName>BillToContact</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/BillToContact</inheritedFrom>
@@ -3411,6 +4179,61 @@
                     <contextInputAttributeName>StatusCode</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/StatusCode</inheritedFrom>
                 </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/OriginalActionType/hydrationInfo-1</inheritedFrom>
+                        <objectName>Order</objectName>
+                        <queryAttribute>OriginalActionType</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>OriginalActionType</contextAttribute>
+                    <contextInputAttributeName>OriginalActionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/OriginalActionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/CalculationStatus/hydrationInfo-1</inheritedFrom>
+                        <objectName>Order</objectName>
+                        <queryAttribute>CalculationStatus</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>CalculationStatus</contextAttribute>
+                    <contextInputAttributeName>CalculationStatus</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/CalculationStatus</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/SalesTransactionType/hydrationInfo-1</inheritedFrom>
+                        <objectName>Order</objectName>
+                        <queryAttribute>SalesTransactionTypeId</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>SalesTransactionType</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/SalesTransactionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>OrchestrationSbmsStatus</contextAttribute>
+                    <contextInputAttributeName>OrchestrationSbmsStatus</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/OrchestrationSbmsStatus</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDiscountType</contextAttribute>
+                    <contextInputAttributeName>HeaderDiscountType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/HeaderDiscountType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDiscountValue</contextAttribute>
+                    <contextInputAttributeName>HeaderDiscountValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/HeaderDiscountValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDistributionLogic</contextAttribute>
+                    <contextInputAttributeName>HeaderDistributionLogic</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/HeaderDistributionLogic</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>HeaderDistributionType</contextAttribute>
+                    <contextInputAttributeName>HeaderDistributionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction/HeaderDistributionType</inheritedFrom>
+                </contextAttributeMappings>
                 <contextNode>SalesTransaction</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransaction</inheritedFrom>
                 <object>Order</object>
@@ -3470,6 +4293,11 @@
                     <contextAttribute>SalesTransactionItemSource</contextAttribute>
                     <contextInputAttributeName>SalesTransactionItemSource</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/SalesTransactionItemSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>DerivedPricingAttribute</contextAttribute>
+                    <contextInputAttributeName>DerivedPricingAttribute</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/DerivedPricingAttribute</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttrHydrationDetails>
@@ -3657,6 +4485,16 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/TaxTreatment</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>BillingTreatment</contextAttribute>
+                    <contextInputAttributeName>BillingTreatment</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/BillingTreatment</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LegalEntity</contextAttribute>
+                    <contextInputAttributeName>LegalEntity</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/LegalEntity</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttrHydrationDetails>
                         <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/Product/hydrationInfo-1</inheritedFrom>
                         <objectName>OrderItem</objectName>
@@ -3722,6 +4560,11 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/TotalPrice</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/SubscriptionTerm/hydrationInfo-1</inheritedFrom>
+                        <objectName>OrderItem</objectName>
+                        <queryAttribute>SubscriptionTerm</queryAttribute>
+                    </contextAttrHydrationDetails>
                     <contextAttribute>SubscriptionTerm</contextAttribute>
                     <contextInputAttributeName>SubscriptionTerm</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/SubscriptionTerm</inheritedFrom>
@@ -3947,6 +4790,56 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/ParentSalesTransactionItem</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <contextAttrHydrationDetails>
+                            <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/SalesTransactionSourceAsset/hydrationInfo-2</inheritedFrom>
+                            <objectName>OrderAction</objectName>
+                            <queryAttribute>SourceAssetId</queryAttribute>
+                        </contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/SalesTransactionSourceAsset/hydrationInfo-1</inheritedFrom>
+                        <objectName>OrderItem</objectName>
+                        <queryAttribute>OrderAction</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>SalesTransactionSourceAsset</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionSourceAsset</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/SalesTransactionSourceAsset</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <contextAttrHydrationDetails>
+                            <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/SalesTransactionActionType/hydrationInfo-2</inheritedFrom>
+                            <objectName>OrderAction</objectName>
+                            <queryAttribute>Type</queryAttribute>
+                        </contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/SalesTransactionActionType/hydrationInfo-1</inheritedFrom>
+                        <objectName>OrderItem</objectName>
+                        <queryAttribute>OrderAction</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>SalesTransactionActionType</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionActionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/SalesTransactionActionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>BillingReference</contextAttribute>
+                    <contextInputAttributeName>BillingReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/BillingReference</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineItemDiscountValue</contextAttribute>
+                    <contextInputAttributeName>LineItemDiscountValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/LineItemDiscountValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineItemDistributionType</contextAttribute>
+                    <contextInputAttributeName>LineItemDistributionType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/LineItemDistributionType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineItemDiscountType</contextAttribute>
+                    <contextInputAttributeName>LineItemDiscountType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/LineItemDiscountType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>Subtotal</contextAttribute>
                     <contextInputAttributeName>Subtotal</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/Subtotal</inheritedFrom>
@@ -3965,6 +4858,36 @@
                     <contextAttribute>PricingSource</contextAttribute>
                     <contextInputAttributeName>PricingSource</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/PricingSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractId</contextAttribute>
+                    <contextInputAttributeName>ContractId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/ContractId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>IsContracted</contextAttribute>
+                    <contextInputAttributeName>IsContracted</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/IsContracted</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractVolumePasId</contextAttribute>
+                    <contextInputAttributeName>ContractVolumePasId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/ContractVolumePasId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractAttributePasId</contextAttribute>
+                    <contextInputAttributeName>ContractAttributePasId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/ContractAttributePasId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractDiscountType</contextAttribute>
+                    <contextInputAttributeName>ContractDiscountType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/ContractDiscountType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContractDiscountValue</contextAttribute>
+                    <contextInputAttributeName>ContractDiscountValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem/ContractDiscountValue</inheritedFrom>
                 </contextAttributeMappings>
                 <contextNode>SalesTransactionItem</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItem</inheritedFrom>
@@ -4110,6 +5033,11 @@
                     <contextAttribute>PriceWaterfallIdentifier</contextAttribute>
                     <contextInputAttributeName>PriceWaterfallIdentifier</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemDetail/PriceWaterfallIdentifier</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>BillingReference</contextAttribute>
+                    <contextInputAttributeName>BillingReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemDetail/BillingReference</inheritedFrom>
                 </contextAttributeMappings>
                 <contextNode>SalesTransactionItemDetail</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemDetail</inheritedFrom>
@@ -4303,6 +5231,81 @@
             <contextNodeMappings>
                 <contextAttributeMappings>
                     <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTransactionItemTaxParent/hydrationInfo-1</inheritedFrom>
+                        <objectName>OrderItemTaxLineItem</objectName>
+                        <queryAttribute>OrderItemId</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>SalesTransactionItemTaxParent</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionItemTaxParent</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTransactionItemTaxParent</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTransactionItemTaxName/hydrationInfo-1</inheritedFrom>
+                        <objectName>OrderItemTaxLineItem</objectName>
+                        <queryAttribute>Name</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>SalesTransactionItemTaxName</contextAttribute>
+                    <contextInputAttributeName>SalesTransactionItemTaxName</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTransactionItemTaxName</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxType/hydrationInfo-1</inheritedFrom>
+                        <objectName>OrderItemTaxLineItem</objectName>
+                        <queryAttribute>Type</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>SalesTranxItemTaxType</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/TaxEffectiveDate/hydrationInfo-1</inheritedFrom>
+                        <objectName>OrderItemTaxLineItem</objectName>
+                        <queryAttribute>TaxEffectiveDate</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>TaxEffectiveDate</contextAttribute>
+                    <contextInputAttributeName>TaxEffectiveDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/TaxEffectiveDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxAmount/hydrationInfo-1</inheritedFrom>
+                        <objectName>OrderItemTaxLineItem</objectName>
+                        <queryAttribute>Amount</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>SalesTranxItemTaxAmount</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxAmount</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxAmount</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxRate/hydrationInfo-1</inheritedFrom>
+                        <objectName>OrderItemTaxLineItem</objectName>
+                        <queryAttribute>Rate</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>SalesTranxItemTaxRate</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxRate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxRate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxDescription/hydrationInfo-1</inheritedFrom>
+                        <objectName>OrderItemTaxLineItem</objectName>
+                        <queryAttribute>Description</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>SalesTranxItemTaxDescription</contextAttribute>
+                    <contextInputAttributeName>SalesTranxItemTaxDescription</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax/SalesTranxItemTaxDescription</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>SalesTransactionItemTax</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemTax</inheritedFrom>
+                <object>OrderItemTaxLineItem</object>
+            </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
                         <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/SalesTransactionItemAttribute/SalesTransactionItemAttrParent/hydrationInfo-1</inheritedFrom>
                         <objectName>OrderItemAttribute</objectName>
                         <queryAttribute>OrderItemId</queryAttribute>
@@ -4377,6 +5380,56 @@
             </contextNodeMappings>
             <contextNodeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>ContributorPriceDetailParent</contextAttribute>
+                    <contextInputAttributeName>ContributorPriceDetailParent</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/ContributorPriceDetail/ContributorPriceDetailParent</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>Contributor</contextAttribute>
+                    <contextInputAttributeName>Contributor</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/ContributorPriceDetail/Contributor</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorProduct</contextAttribute>
+                    <contextInputAttributeName>ContributorProduct</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/ContributorPriceDetail/ContributorProduct</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorUnitPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorUnitPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/ContributorPriceDetail/ContributorUnitPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorTotalPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorTotalPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/ContributorPriceDetail/ContributorTotalPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorListPrice</contextAttribute>
+                    <contextInputAttributeName>ContributorListPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/ContributorPriceDetail/ContributorListPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorScope</contextAttribute>
+                    <contextInputAttributeName>ContributorScope</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/ContributorPriceDetail/ContributorScope</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorSource</contextAttribute>
+                    <contextInputAttributeName>ContributorSource</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/ContributorPriceDetail/ContributorSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>ContributorFormulaInput</contextAttribute>
+                    <contextInputAttributeName>ContributorFormulaInput</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/ContributorPriceDetail/ContributorFormulaInput</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>ContributorPriceDetail</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/ContributorPriceDetail</inheritedFrom>
+                <object>ContributorPriceDetail</object>
+            </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>FulfillmentAccountId</contextAttribute>
                     <contextInputAttributeName>FulfillmentAccountId</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransaction/FulfillmentAccountId</inheritedFrom>
@@ -4412,6 +5465,11 @@
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentOrderId</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>FulfillmentItemSource</contextAttribute>
+                    <contextInputAttributeName>FulfillmentItemSource</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemSource</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>OriginalQuantity</contextAttribute>
                     <contextInputAttributeName>OriginalQuantity</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/OriginalQuantity</inheritedFrom>
@@ -4436,9 +5494,49 @@
                     <contextInputAttributeName>FulfillmentItemTypeCode</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemTypeCode</inheritedFrom>
                 </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>FulfillmentItemAction</contextAttribute>
+                    <contextInputAttributeName>FulfillmentItemAction</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem/FulfillmentItemAction</inheritedFrom>
+                </contextAttributeMappings>
                 <contextNode>FulfillmentTransactionItem</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentTransactionItem</inheritedFrom>
                 <object>FulfillmentOrderLineItem</object>
+            </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>FulfillmentOrderLineId</contextAttribute>
+                    <contextInputAttributeName>FulfillmentOrderLineId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentLineAttribute/FulfillmentOrderLineId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineAttributeKey</contextAttribute>
+                    <contextInputAttributeName>LineAttributeKey</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentLineAttribute/LineAttributeKey</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineAttributeValue</contextAttribute>
+                    <contextInputAttributeName>LineAttributeValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentLineAttribute/LineAttributeValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineAttributeName</contextAttribute>
+                    <contextInputAttributeName>LineAttributeName</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentLineAttribute/LineAttributeName</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineAttributePicklistValue</contextAttribute>
+                    <contextInputAttributeName>LineAttributePicklistValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentLineAttribute/LineAttributePicklistValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>LineAttributeDefinitionCode</contextAttribute>
+                    <contextInputAttributeName>LineAttributeDefinitionCode</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentLineAttribute/LineAttributeDefinitionCode</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>FulfillmentLineAttribute</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/OrderEntitiesMapping/FulfillmentLineAttribute</inheritedFrom>
+                <object>FulfillmentLineAttribute</object>
             </contextNodeMappings>
             <contextNodeMappings>
                 <contextAttributeMappings>
@@ -4496,6 +5594,18 @@
             <title>OrderEntitiesMapping</title>
         </contextMappings>
         <contextMappings>
+            <contextMappingIntents>
+                <contextMappingIntentType>hydration</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>persistence</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>association</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>translation</contextMappingIntentType>
+            </contextMappingIntents>
             <contextNodeMappings>
                 <contextAttributeMappings>
                     <contextAttrHydrationDetails>
@@ -4582,6 +5692,18 @@
             <title>ContractSalesTxnMapping</title>
         </contextMappings>
         <contextMappings>
+            <contextMappingIntents>
+                <contextMappingIntentType>hydration</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>persistence</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>association</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>translation</contextMappingIntentType>
+            </contextMappingIntents>
             <contextNodeMappings>
                 <contextAttributeMappings>
                     <contextAttrHydrationDetails>
@@ -4623,6 +5745,36 @@
                     <contextInputAttributeName>ContractPricingSource</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/Contract/ContractPricingSource</inheritedFrom>
                 </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/Contract/ContractStartDate/hydrationInfo-1</inheritedFrom>
+                        <objectName>Contract</objectName>
+                        <queryAttribute>StartDate</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>ContractStartDate</contextAttribute>
+                    <contextInputAttributeName>ContractStartDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/Contract/ContractStartDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/Contract/ContractEndDate/hydrationInfo-1</inheritedFrom>
+                        <objectName>Contract</objectName>
+                        <queryAttribute>EndDate</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>ContractEndDate</contextAttribute>
+                    <contextInputAttributeName>ContractEndDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/Contract/ContractEndDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/Contract/ContractTerm/hydrationInfo-1</inheritedFrom>
+                        <objectName>Contract</objectName>
+                        <queryAttribute>ContractTerm</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>ContractTerm</contextAttribute>
+                    <contextInputAttributeName>ContractTerm</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/Contract/ContractTerm</inheritedFrom>
+                </contextAttributeMappings>
                 <contextNode>Contract</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/Contract</inheritedFrom>
                 <object>Contract</object>
@@ -4652,12 +5804,184 @@
                 <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractAUA</inheritedFrom>
                 <object>AppUsageAssignment</object>
             </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/ContractPASId/hydrationInfo-1</inheritedFrom>
+                        <objectName>PriceAdjustmentSchedule</objectName>
+                        <queryAttribute>Id</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>ContractPASId</contextAttribute>
+                    <contextInputAttributeName>ContractPASId</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/ContractPASId</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/ContractPASScheduleType/hydrationInfo-1</inheritedFrom>
+                        <objectName>PriceAdjustmentSchedule</objectName>
+                        <queryAttribute>ScheduleType</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>ContractPASScheduleType</contextAttribute>
+                    <contextInputAttributeName>ContractPASScheduleType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/ContractPASScheduleType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/ContractPASEffectiveFrom/hydrationInfo-1</inheritedFrom>
+                        <objectName>PriceAdjustmentSchedule</objectName>
+                        <queryAttribute>EffectiveFrom</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>ContractPASEffectiveFrom</contextAttribute>
+                    <contextInputAttributeName>ContractPASEffectiveFrom</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/ContractPASEffectiveFrom</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/ContractPASEffectiveTo/hydrationInfo-1</inheritedFrom>
+                        <objectName>PriceAdjustmentSchedule</objectName>
+                        <queryAttribute>EffectiveTo</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>ContractPASEffectiveTo</contextAttribute>
+                    <contextInputAttributeName>ContractPASEffectiveTo</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/ContractPASEffectiveTo</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/ContractPASIsActive/hydrationInfo-1</inheritedFrom>
+                        <objectName>PriceAdjustmentSchedule</objectName>
+                        <queryAttribute>IsActive</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>ContractPASIsActive</contextAttribute>
+                    <contextInputAttributeName>ContractPASIsActive</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/ContractPASIsActive</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/PASContract/hydrationInfo-1</inheritedFrom>
+                        <objectName>PriceAdjustmentSchedule</objectName>
+                        <queryAttribute>ContractId</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>PASContract</contextAttribute>
+                    <contextInputAttributeName>PASContract</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS/PASContract</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>ContractPAS</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractPAS</inheritedFrom>
+                <object>PriceAdjustmentSchedule</object>
+            </contextNodeMappings>
+            <contextNodeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPContract/hydrationInfo-1</inheritedFrom>
+                        <objectName>ContractItemPrice</objectName>
+                        <queryAttribute>Id</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>CIPContract</contextAttribute>
+                    <contextInputAttributeName>CIPContract</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPContract</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPItem/hydrationInfo-1</inheritedFrom>
+                        <objectName>ContractItemPrice</objectName>
+                        <queryAttribute>ItemId</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>CIPItem</contextAttribute>
+                    <contextInputAttributeName>CIPItem</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPItem</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPProductSellingModel/hydrationInfo-1</inheritedFrom>
+                        <objectName>ContractItemPrice</objectName>
+                        <queryAttribute>ProductSellingModelId</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>CIPProductSellingModel</contextAttribute>
+                    <contextInputAttributeName>CIPProductSellingModel</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPProductSellingModel</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPSellingModelType/hydrationInfo-1</inheritedFrom>
+                        <objectName>ContractItemPrice</objectName>
+                        <queryAttribute>SellingModelType</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>CIPSellingModelType</contextAttribute>
+                    <contextInputAttributeName>CIPSellingModelType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPSellingModelType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPPrice/hydrationInfo-1</inheritedFrom>
+                        <objectName>ContractItemPrice</objectName>
+                        <queryAttribute>Price</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>CIPPrice</contextAttribute>
+                    <contextInputAttributeName>CIPPrice</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPPrice</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPDiscountType/hydrationInfo-1</inheritedFrom>
+                        <objectName>ContractItemPrice</objectName>
+                        <queryAttribute>DiscountType</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>CIPDiscountType</contextAttribute>
+                    <contextInputAttributeName>CIPDiscountType</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPDiscountType</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPDiscountValue/hydrationInfo-1</inheritedFrom>
+                        <objectName>ContractItemPrice</objectName>
+                        <queryAttribute>DiscountValue</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>CIPDiscountValue</contextAttribute>
+                    <contextInputAttributeName>CIPDiscountValue</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPDiscountValue</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPStartDate/hydrationInfo-1</inheritedFrom>
+                        <objectName>ContractItemPrice</objectName>
+                        <queryAttribute>StartDate</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>CIPStartDate</contextAttribute>
+                    <contextInputAttributeName>CIPStartDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPStartDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPEndDate/hydrationInfo-1</inheritedFrom>
+                        <objectName>ContractItemPrice</objectName>
+                        <queryAttribute>EndDate</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>CIPEndDate</contextAttribute>
+                    <contextInputAttributeName>CIPEndDate</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice/CIPEndDate</inheritedFrom>
+                </contextAttributeMappings>
+                <contextNode>ContractItemPrice</contextNode>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping/ContractItemPrice</inheritedFrom>
+                <object>ContractItemPrice</object>
+            </contextNodeMappings>
             <default>false</default>
             <description>Mapping to map Contract and related entities with Contract context node</description>
             <inheritedFrom>SalesTransactionContext__stdctx/version/ContractNodeMapping</inheritedFrom>
             <title>ContractNodeMapping</title>
         </contextMappings>
         <contextMappings>
+            <contextMappingIntents>
+                <contextMappingIntentType>hydration</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>persistence</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>association</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>translation</contextMappingIntentType>
+            </contextMappingIntents>
             <contextNodeMappings>
                 <contextAttributeMappings>
                     <contextAttrHydrationDetails>
@@ -4788,6 +6112,16 @@
                     <contextAttribute>RenewalTerm</contextAttribute>
                     <contextInputAttributeName>RenewalTerm</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/AssetEntitiesMapping/Asset/RenewalTerm</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttrHydrationDetails>
+                        <inheritedFrom>SalesTransactionContext__stdctx/version/AssetEntitiesMapping/Asset/RenewalTermUnit/hydrationInfo-1</inheritedFrom>
+                        <objectName>Asset</objectName>
+                        <queryAttribute>RenewalTermUnit</queryAttribute>
+                    </contextAttrHydrationDetails>
+                    <contextAttribute>RenewalTermUnit</contextAttribute>
+                    <contextInputAttributeName>RenewalTermUnit</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/AssetEntitiesMapping/Asset/RenewalTermUnit</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttrHydrationDetails>
@@ -5334,6 +6668,11 @@
                     <contextInputAttributeName>AASProrationPolicyId</contextInputAttributeName>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/AssetEntitiesMapping/AssetActionSource/AASProrationPolicyId</inheritedFrom>
                 </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>AASBillingReference</contextAttribute>
+                    <contextInputAttributeName>AASBillingReference</contextInputAttributeName>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/AssetEntitiesMapping/AssetActionSource/AASBillingReference</inheritedFrom>
+                </contextAttributeMappings>
                 <contextNode>AssetActionSource</contextNode>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/AssetEntitiesMapping/AssetActionSource</inheritedFrom>
                 <object>AssetActionSource</object>
@@ -5563,6 +6902,30 @@
             <inheritedFrom>SalesTransactionContext__stdctx/version/AssetEntitiesMapping</inheritedFrom>
             <title>AssetEntitiesMapping</title>
         </contextMappings>
+        <contextMappings>
+            <default>false</default>
+            <description>Mapping to map Sales Transaction context with Product Discovery context</description>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/ProductDiscoveryContextMapping</inheritedFrom>
+            <title>ProductDiscoveryContextMapping</title>
+        </contextMappings>
+        <contextMappings>
+            <default>false</default>
+            <description>Mapping to map Sales Transaction Context Node To Asset Context Node in SalesTransactionContext</description>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransactionToAssetMapping</inheritedFrom>
+            <title>SalesTransactionToAssetMapping</title>
+        </contextMappings>
+        <contextMappings>
+            <default>false</default>
+            <description>Mapping to map Asset Context Node To Sales Transaction Context Node in SalesTransactionContext</description>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/AssetToSalesTransactionMapping</inheritedFrom>
+            <title>AssetToSalesTransactionMapping</title>
+        </contextMappings>
+        <contextMappings>
+            <default>false</default>
+            <description>Mapping to map Contract Context Node To Sales Transaction Context Node in SalesTransactionContext</description>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/ContractToSalesTxnMapping</inheritedFrom>
+            <title>ContractToSalesTxnMapping</title>
+        </contextMappings>
         <contextNodes>
             <contextAttributes>
                 <contextTags>
@@ -5622,6 +6985,42 @@
                 <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPricingSource</inheritedFrom>
                 <key>false</key>
                 <title>ContractPricingSource</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractStartDate/ContractStartDate</inheritedFrom>
+                    <title>ContractStartDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractStartDate</inheritedFrom>
+                <key>false</key>
+                <title>ContractStartDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractEndDate/ContractEndDate</inheritedFrom>
+                    <title>ContractEndDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractEndDate</inheritedFrom>
+                <key>false</key>
+                <title>ContractEndDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractTerm/ContractTerm</inheritedFrom>
+                    <title>ContractTerm</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractTerm</inheritedFrom>
+                <key>false</key>
+                <title>ContractTerm</title>
                 <value>false</value>
             </contextAttributes>
             <contextTags>
@@ -5856,6 +7255,18 @@
                 <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/Account</inheritedFrom>
                 <key>false</key>
                 <title>Account</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/QuoteAccount/QuoteAccount</inheritedFrom>
+                    <title>QuoteAccount</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/QuoteAccount</inheritedFrom>
+                <key>false</key>
+                <title>QuoteAccount</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
@@ -6170,6 +7581,126 @@
                 <title>PriceAdjustmentSchedule</title>
                 <value>false</value>
             </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/OriginalActionType/OriginalActionType</inheritedFrom>
+                    <title>OriginalActionType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/OriginalActionType</inheritedFrom>
+                <key>false</key>
+                <title>OriginalActionType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/StartDate/StartDate</inheritedFrom>
+                    <title>StartDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/StartDate</inheritedFrom>
+                <key>false</key>
+                <title>StartDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/HeaderDiscountType/HeaderDiscountType</inheritedFrom>
+                    <title>HeaderDiscountType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/HeaderDiscountType</inheritedFrom>
+                <key>false</key>
+                <title>HeaderDiscountType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/HeaderDiscountValue/HeaderDiscountValue</inheritedFrom>
+                    <title>HeaderDiscountValue</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/HeaderDiscountValue</inheritedFrom>
+                <key>false</key>
+                <title>HeaderDiscountValue</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/HeaderDistributionLogic/HeaderDistributionLogic</inheritedFrom>
+                    <title>HeaderDistributionLogic</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/HeaderDistributionLogic</inheritedFrom>
+                <key>false</key>
+                <title>HeaderDistributionLogic</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/HeaderDistributionType/HeaderDistributionType</inheritedFrom>
+                    <title>HeaderDistributionType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/HeaderDistributionType</inheritedFrom>
+                <key>false</key>
+                <title>HeaderDistributionType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/LegalEntity/LegalEntity</inheritedFrom>
+                    <title>LegalEntity</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/LegalEntity</inheritedFrom>
+                <key>false</key>
+                <title>LegalEntity</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionType/SalesTransactionType</inheritedFrom>
+                    <title>SalesTransactionType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionType</inheritedFrom>
+                <key>false</key>
+                <title>SalesTransactionType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/CalculationStatus/CalculationStatus</inheritedFrom>
+                    <title>CalculationStatus</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/CalculationStatus</inheritedFrom>
+                <key>false</key>
+                <title>CalculationStatus</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/OrchestrationSbmsStatus/OrchestrationSbmsStatus</inheritedFrom>
+                    <title>OrchestrationSbmsStatus</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/OrchestrationSbmsStatus</inheritedFrom>
+                <key>false</key>
+                <title>OrchestrationSbmsStatus</title>
+                <value>false</value>
+            </contextAttributes>
             <contextTags>
                 <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransaction</inheritedFrom>
                 <title>SalesTransaction</title>
@@ -6218,6 +7749,222 @@
             </contextTags>
             <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractAUA</inheritedFrom>
             <title>ContractAUA</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ContractPASId/ContractPASId</inheritedFrom>
+                    <title>ContractPASId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ContractPASId</inheritedFrom>
+                <key>false</key>
+                <title>ContractPASId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ContractPASScheduleType/ContractPASScheduleType</inheritedFrom>
+                    <title>ContractPASScheduleType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ContractPASScheduleType</inheritedFrom>
+                <key>false</key>
+                <title>ContractPASScheduleType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ContractPASEffectiveFrom/ContractPASEffectiveFrom</inheritedFrom>
+                    <title>ContractPASEffectiveFrom</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ContractPASEffectiveFrom</inheritedFrom>
+                <key>false</key>
+                <title>ContractPASEffectiveFrom</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ContractPASEffectiveTo/ContractPASEffectiveTo</inheritedFrom>
+                    <title>ContractPASEffectiveTo</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ContractPASEffectiveTo</inheritedFrom>
+                <key>false</key>
+                <title>ContractPASEffectiveTo</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ContractPASIsActive/ContractPASIsActive</inheritedFrom>
+                    <title>ContractPASIsActive</title>
+                </contextTags>
+                <dataType>boolean</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ContractPASIsActive</inheritedFrom>
+                <key>false</key>
+                <title>ContractPASIsActive</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/PASContract/PASContract</inheritedFrom>
+                    <title>PASContract</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/PASContract</inheritedFrom>
+                <key>false</key>
+                <title>PASContract</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <dataType>reference</dataType>
+                <domainSet>Contract</domainSet>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ParentReference</inheritedFrom>
+                <key>false</key>
+                <title>ParentReference</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS/ContractPAS</inheritedFrom>
+                <title>ContractPAS</title>
+            </contextTags>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractPAS</inheritedFrom>
+            <title>ContractPAS</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPContract/CIPContractId</inheritedFrom>
+                    <title>CIPContractId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPContract</inheritedFrom>
+                <key>false</key>
+                <title>CIPContract</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPItem/CIPItemId</inheritedFrom>
+                    <title>CIPItemId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPItem</inheritedFrom>
+                <key>false</key>
+                <title>CIPItem</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPProductSellingModel/CIPProductSellingModelId</inheritedFrom>
+                    <title>CIPProductSellingModelId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPProductSellingModel</inheritedFrom>
+                <key>false</key>
+                <title>CIPProductSellingModel</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPSellingModelType/CIPSellingModelType</inheritedFrom>
+                    <title>CIPSellingModelType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPSellingModelType</inheritedFrom>
+                <key>false</key>
+                <title>CIPSellingModelType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPPrice/CIPPrice</inheritedFrom>
+                    <title>CIPPrice</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPPrice</inheritedFrom>
+                <key>false</key>
+                <title>CIPPrice</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPDiscountType/CIPDiscountType</inheritedFrom>
+                    <title>CIPDiscountType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPDiscountType</inheritedFrom>
+                <key>false</key>
+                <title>CIPDiscountType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPDiscountValue/CIPDiscountValue</inheritedFrom>
+                    <title>CIPDiscountValue</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPDiscountValue</inheritedFrom>
+                <key>false</key>
+                <title>CIPDiscountValue</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPStartDate/CIPStartDate</inheritedFrom>
+                    <title>CIPStartDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPStartDate</inheritedFrom>
+                <key>false</key>
+                <title>CIPStartDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPEndDate/CIPEndDate</inheritedFrom>
+                    <title>CIPEndDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/CIPEndDate</inheritedFrom>
+                <key>false</key>
+                <title>CIPEndDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <dataType>reference</dataType>
+                <domainSet>Contract</domainSet>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/ParentReference</inheritedFrom>
+                <key>false</key>
+                <title>ParentReference</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice/ContractCIP</inheritedFrom>
+                <title>ContractCIP</title>
+            </contextTags>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/Contract/ContractItemPrice</inheritedFrom>
+            <title>ContractItemPrice</title>
             <transposable>false</transposable>
         </contextNodes>
         <contextNodes>
@@ -6877,6 +8624,18 @@
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/DerivedPricingAttribute/DerivedPricingAttribute</inheritedFrom>
+                    <title>DerivedPricingAttribute</title>
+                </contextTags>
+                <dataType>boolean</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/DerivedPricingAttribute</inheritedFrom>
+                <key>false</key>
+                <title>DerivedPricingAttribute</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/PricebookEntry/ItemPricebookEntry</inheritedFrom>
                     <title>ItemPricebookEntry</title>
                 </contextTags>
@@ -7177,6 +8936,30 @@
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/BillingTreatment/ItemBillingTreatment</inheritedFrom>
+                    <title>ItemBillingTreatment</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/BillingTreatment</inheritedFrom>
+                <key>false</key>
+                <title>BillingTreatment</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LegalEntity/ItemLegalEntity</inheritedFrom>
+                    <title>ItemLegalEntity</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LegalEntity</inheritedFrom>
+                <key>false</key>
+                <title>LegalEntity</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/Product/Product</inheritedFrom>
                     <title>Product</title>
                 </contextTags>
@@ -7461,6 +9244,150 @@
                 <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ParentSalesTransactionItem</inheritedFrom>
                 <key>false</key>
                 <title>ParentSalesTransactionItem</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractId/ItemContract</inheritedFrom>
+                    <title>ItemContract</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractId</inheritedFrom>
+                <key>false</key>
+                <title>ContractId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/IsContracted/IsContracted</inheritedFrom>
+                    <title>IsContracted</title>
+                </contextTags>
+                <dataType>boolean</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/IsContracted</inheritedFrom>
+                <key>false</key>
+                <title>IsContracted</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractVolumePasId/ItemContractVolumePasId</inheritedFrom>
+                    <title>ItemContractVolumePasId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractVolumePasId</inheritedFrom>
+                <key>false</key>
+                <title>ContractVolumePasId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractAttributePasId/ItemContractAttributePasId</inheritedFrom>
+                    <title>ItemContractAttributePasId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractAttributePasId</inheritedFrom>
+                <key>false</key>
+                <title>ContractAttributePasId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractDiscountType/ItemContractDiscountType</inheritedFrom>
+                    <title>ItemContractDiscountType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>output</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractDiscountType</inheritedFrom>
+                <key>false</key>
+                <title>ContractDiscountType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractDiscountValue/ItemContractDiscountValue</inheritedFrom>
+                    <title>ItemContractDiscountValue</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>output</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContractDiscountValue</inheritedFrom>
+                <key>false</key>
+                <title>ContractDiscountValue</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionSourceAsset/SalesTransactionSourceAsset</inheritedFrom>
+                    <title>SalesTransactionSourceAsset</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionSourceAsset</inheritedFrom>
+                <key>false</key>
+                <title>SalesTransactionSourceAsset</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionActionType/SalesTransactionActionType</inheritedFrom>
+                    <title>SalesTransactionActionType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionActionType</inheritedFrom>
+                <key>false</key>
+                <title>SalesTransactionActionType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LineItemDiscountValue/LineItemDiscountValue</inheritedFrom>
+                    <title>LineItemDiscountValue</title>
+                </contextTags>
+                <dataType>number</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LineItemDiscountValue</inheritedFrom>
+                <key>false</key>
+                <title>LineItemDiscountValue</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LineItemDistributionType/LineItemDistributionType</inheritedFrom>
+                    <title>LineItemDistributionType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LineItemDistributionType</inheritedFrom>
+                <key>false</key>
+                <title>LineItemDistributionType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LineItemDiscountType/LineItemDiscountType</inheritedFrom>
+                    <title>LineItemDiscountType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/LineItemDiscountType</inheritedFrom>
+                <key>false</key>
+                <title>LineItemDiscountType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/BillingReference/ItemBillingReference</inheritedFrom>
+                    <title>ItemBillingReference</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/BillingReference</inheritedFrom>
+                <key>false</key>
+                <title>BillingReference</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
@@ -7992,6 +9919,18 @@
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASBillingReference/AASBillingReference</inheritedFrom>
+                    <title>AASBillingReference</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/Asset/AssetAction/AssetActionSource/AASBillingReference</inheritedFrom>
+                <key>false</key>
+                <title>AASBillingReference</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
                 <dataType>reference</dataType>
                 <domainSet>AssetAction</domainSet>
                 <fieldType>input</fieldType>
@@ -8205,6 +10144,18 @@
                 <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemDetail/PriceWaterfallIdentifier</inheritedFrom>
                 <key>false</key>
                 <title>PriceWaterfallIdentifier</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemDetail/BillingReference/ItemDetailBillingReference</inheritedFrom>
+                    <title>ItemDetailBillingReference</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemDetail/BillingReference</inheritedFrom>
+                <key>false</key>
+                <title>BillingReference</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
@@ -8531,6 +10482,108 @@
         <contextNodes>
             <contextAttributes>
                 <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTransactionItemTaxParent/SalesTransactionItemTaxParent</inheritedFrom>
+                    <title>SalesTransactionItemTaxParent</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTransactionItemTaxParent</inheritedFrom>
+                <key>false</key>
+                <title>SalesTransactionItemTaxParent</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTransactionItemTaxName/SalesTransactionItemTaxName</inheritedFrom>
+                    <title>SalesTransactionItemTaxName</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTransactionItemTaxName</inheritedFrom>
+                <key>false</key>
+                <title>SalesTransactionItemTaxName</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTranxItemTaxType/SalesTranxItemTaxType</inheritedFrom>
+                    <title>SalesTranxItemTaxType</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTranxItemTaxType</inheritedFrom>
+                <key>false</key>
+                <title>SalesTranxItemTaxType</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/TaxEffectiveDate/TaxEffectiveDate</inheritedFrom>
+                    <title>TaxEffectiveDate</title>
+                </contextTags>
+                <dataType>datetime</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/TaxEffectiveDate</inheritedFrom>
+                <key>false</key>
+                <title>TaxEffectiveDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTranxItemTaxAmount/SalesTranxItemTaxAmount</inheritedFrom>
+                    <title>SalesTranxItemTaxAmount</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTranxItemTaxAmount</inheritedFrom>
+                <key>false</key>
+                <title>SalesTranxItemTaxAmount</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTranxItemTaxRate/SalesTranxItemTaxRate</inheritedFrom>
+                    <title>SalesTranxItemTaxRate</title>
+                </contextTags>
+                <dataType>percent</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTranxItemTaxRate</inheritedFrom>
+                <key>false</key>
+                <title>SalesTranxItemTaxRate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTranxItemTaxDescription/SalesTranxItemTaxDescription</inheritedFrom>
+                    <title>SalesTranxItemTaxDescription</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTranxItemTaxDescription</inheritedFrom>
+                <key>false</key>
+                <title>SalesTranxItemTaxDescription</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <dataType>reference</dataType>
+                <domainSet>SalesTransactionItem</domainSet>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/ParentReference</inheritedFrom>
+                <key>false</key>
+                <title>ParentReference</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax/SalesTransactionItemTax</inheritedFrom>
+                <title>SalesTransactionItemTax</title>
+            </contextTags>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemTax</inheritedFrom>
+            <title>SalesTransactionItemTax</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/SalesTransactionItemAttribute/SalesTransactionItemAttrParent/SalesTransactionItemAttrParent</inheritedFrom>
                     <title>SalesTransactionItemAttrParent</title>
                 </contextTags>
@@ -8633,6 +10686,132 @@
         <contextNodes>
             <contextAttributes>
                 <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorPriceDetailParent/ContributorPriceDetailParent</inheritedFrom>
+                    <title>ContributorPriceDetailParent</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorPriceDetailParent</inheritedFrom>
+                <key>false</key>
+                <title>ContributorPriceDetailParent</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/Contributor/Contributor</inheritedFrom>
+                    <title>Contributor</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/Contributor</inheritedFrom>
+                <key>false</key>
+                <title>Contributor</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorProduct/ContributorProduct</inheritedFrom>
+                    <title>ContributorProduct</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorProduct</inheritedFrom>
+                <key>false</key>
+                <title>ContributorProduct</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorUnitPrice/ContributorUnitPrice</inheritedFrom>
+                    <title>ContributorUnitPrice</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorUnitPrice</inheritedFrom>
+                <key>false</key>
+                <title>ContributorUnitPrice</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorTotalPrice/ContributorTotalPrice</inheritedFrom>
+                    <title>ContributorTotalPrice</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorTotalPrice</inheritedFrom>
+                <key>false</key>
+                <title>ContributorTotalPrice</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorListPrice/ContributorListPrice</inheritedFrom>
+                    <title>ContributorListPrice</title>
+                </contextTags>
+                <dataType>currency</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorListPrice</inheritedFrom>
+                <key>false</key>
+                <title>ContributorListPrice</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorScope/ContributorScope</inheritedFrom>
+                    <title>ContributorScope</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorScope</inheritedFrom>
+                <key>false</key>
+                <title>ContributorScope</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorSource/ContributorSource</inheritedFrom>
+                    <title>ContributorSource</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorSource</inheritedFrom>
+                <key>false</key>
+                <title>ContributorSource</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorFormulaInput/ContributorFormulaInput</inheritedFrom>
+                    <title>ContributorFormulaInput</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorFormulaInput</inheritedFrom>
+                <key>false</key>
+                <title>ContributorFormulaInput</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <dataType>reference</dataType>
+                <domainSet>SalesTransactionItem</domainSet>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ParentReference</inheritedFrom>
+                <key>false</key>
+                <title>ParentReference</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail/ContributorPriceDetail</inheritedFrom>
+                <title>ContributorPriceDetail</title>
+            </contextTags>
+            <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/SalesTransactionItem/ContributorPriceDetail</inheritedFrom>
+            <title>ContributorPriceDetail</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentOrderId/FulfillmentOrderId</inheritedFrom>
                     <title>FulfillmentOrderId</title>
                 </contextTags>
@@ -8641,6 +10820,18 @@
                 <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentOrderId</inheritedFrom>
                 <key>false</key>
                 <title>FulfillmentOrderId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentItemSource/FulfillmentLineItem</inheritedFrom>
+                    <title>FulfillmentLineItem</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentItemSource</inheritedFrom>
+                <key>false</key>
+                <title>FulfillmentItemSource</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
@@ -8704,6 +10895,18 @@
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentItemAction/FulfillmentItemAction</inheritedFrom>
+                    <title>FulfillmentItemAction</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentItemAction</inheritedFrom>
+                <key>false</key>
+                <title>FulfillmentItemAction</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
                 <dataType>reference</dataType>
                 <domainSet>FulfillmentTransaction</domainSet>
                 <fieldType>input</fieldType>
@@ -8735,6 +10938,18 @@
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributeKey/LineAttributeKey</inheritedFrom>
+                    <title>LineAttributeKey</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributeKey</inheritedFrom>
+                <key>true</key>
+                <title>LineAttributeKey</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
                     <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributeValue/LineAttributeValue</inheritedFrom>
                     <title>LineAttributeValue</title>
                 </contextTags>
@@ -8743,18 +10958,42 @@
                 <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributeValue</inheritedFrom>
                 <key>false</key>
                 <title>LineAttributeValue</title>
+                <value>true</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributeName/LineAttributeName</inheritedFrom>
+                    <title>LineAttributeName</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributeName</inheritedFrom>
+                <key>false</key>
+                <title>LineAttributeName</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributeDefinition/LineAttributeDefinition</inheritedFrom>
-                    <title>LineAttributeDefinition</title>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributePicklistValue/LineAttributePicklistValue</inheritedFrom>
+                    <title>LineAttributePicklistValue</title>
                 </contextTags>
                 <dataType>string</dataType>
                 <fieldType>inputoutput</fieldType>
-                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributeDefinition</inheritedFrom>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributePicklistValue</inheritedFrom>
                 <key>false</key>
-                <title>LineAttributeDefinition</title>
+                <title>LineAttributePicklistValue</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributeDefinitionCode/LineAttributeDefinitionCode</inheritedFrom>
+                    <title>LineAttributeDefinitionCode</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>inputoutput</fieldType>
+                <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute/LineAttributeDefinitionCode</inheritedFrom>
+                <key>false</key>
+                <title>LineAttributeDefinitionCode</title>
                 <value>false</value>
             </contextAttributes>
             <contextAttributes>
@@ -8772,7 +11011,7 @@
             </contextTags>
             <inheritedFrom>SalesTransactionContext__stdctx/version/SalesTransaction/FulfillmentTransaction/FulfillmentTransactionItem/FulfillmentLineAttribute</inheritedFrom>
             <title>FulfillmentLineAttribute</title>
-            <transposable>false</transposable>
+            <transposable>true</transposable>
         </contextNodes>
         <contextNodes>
             <contextAttributes>
@@ -8907,11 +11146,10 @@
             <transposable>false</transposable>
         </contextNodes>
         <isActive>true</isActive>
-        <startDate>2024-01-01 00:00:00</startDate>
+        <startDate>2024-01-01 08:00:00</startDate>
         <versionNumber>3</versionNumber>
     </contextDefinitionVersions>
     <contextTtl>20</contextTtl>
-    <description>Extension of Standard Sales Transaction Context</description>
     <inheritedFrom>SalesTransactionContext__stdctx</inheritedFrom>
     <isProtected>false</isProtected>
     <masterLabel>RLM_SalesTransactionContext</masterLabel>

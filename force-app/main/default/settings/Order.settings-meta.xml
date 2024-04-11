@@ -3,6 +3,7 @@
     <enableEnhancedCommerceOrders>true</enableEnhancedCommerceOrders>
     <enableNegativeQuantity>true</enableNegativeQuantity>
     <enableOrderEvents>true</enableOrderEvents>
+    <enableOrderWithMultiplePriceBooks>false</enableOrderWithMultiplePriceBooks>
     <enableOrders>true</enableOrders>
     <enableReductionOrders>true</enableReductionOrders>
     <enableZeroQuantity>true</enableZeroQuantity>
