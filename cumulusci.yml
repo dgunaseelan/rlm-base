@@ -68,6 +68,7 @@ tasks:
         group: Revenue Lifecycle Management
         options:
             path: force-app/main/default/relationshipGraphDefinitions
+
     deploy_org_settings:
         description: Org Settings need to be deployed and activated before other metadata -- this prioritizes this deployment first
         class_path: cumulusci.tasks.salesforce.Deploy
@@ -75,6 +76,22 @@ tasks:
         options:
             path: force-app/main/default/settings
 
+    extendSalesContext:
+        description: Extend Sales Transaction Context
+        class_path: tasks.rlm_extend_stdctx.ExtendStandardContext
+        options:
+            name: "RLM_SalesTransactionContext"
+            description: "Extension of Standard Sales Transaction Context"
+            developerName: "RLM_SalesTransactionContext"
+            baseReference: "SalesTransactionContext__stdctx"
+            startDate: "2024-01-01T00:00:00.000Z"
+            contextTtl: 20
+
+    createPartnerCentral:
+        description: Create Partner Central Digital Experience
+        class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+        options:
+            command: "community create --name 'rlm' --template-name 'Build Your Own'"
 flows:
     insert_data:
         group: Revenue Lifecycle Management
@@ -89,7 +106,7 @@ flows:
             1:
                 task: assign_permission_set_licenses
                 options:
-                    api_names: CodeBuilderUserPsl,SubscriptionManagementPsl,RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
+                    api_names: RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,CorePricingRunTime,BREDesigner,DocGenDesignerPsl,DocumentBuilderUserPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
             2:
                 task: deploy_decision_tables
             3:
@@ -97,20 +114,20 @@ flows:
             4:
                 task: util_sleep
                 options:
-                    seconds: 10
+                    seconds: 30
                 ui_options:
                     name: Wait for Permission Set Groups to Update
             5:
                 task: assign_permission_set_groups
                 options:
-                    api_names: RLM_Base
+                    api_names: RLM_PSL,RLM_NGP,RLM_CLM
     prepare_rlm_org:
         group: Revenue Lifecycle Management
         steps:
             1:
                 task: assign_permission_set_licenses
                 options:
-                    api_names: RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
+                    api_names: RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,CorePricingRunTime,BREDesigner,DocGenDesignerPsl,DocumentBuilderUserPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
             2:
                 task: deploy_org_settings
             3:
@@ -120,13 +137,13 @@ flows:
             5:
                 task: util_sleep
                 options:
-                    seconds: 20
+                    seconds: 30
                 ui_options:
                     name: Wait for Permission Set Groups to Update
             6:
                 task: assign_permission_set_groups
                 options:
-                    api_names: RLM_Base
+                    api_names: RLM_PSL,RLM_NGP,RLM_CLM
             7:
                 task: extend_stdctx
             8:

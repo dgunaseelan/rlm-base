@@ -4,15 +4,15 @@
         <description>Calls the Order-to-Asset API when an order is activated.</description>
         <name>Call_OrderToAsset</name>
         <label>Call OrderToAsset</label>
-        <locationX>50</locationX>
-        <locationY>539</locationY>
+        <locationX>242</locationX>
+        <locationY>492</locationY>
         <actionName>createOrUpdateAssetFromOrder</actionName>
         <actionType>createOrUpdateAssetFromOrder</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>orderId</name>
             <value>
-                <elementReference>$Record__Prior.Id</elementReference>
+                <elementReference>$Record.Id</elementReference>
             </value>
         </inputParameters>
         <nameSegment>createOrUpdateAssetFromOrder</nameSegment>
@@ -24,8 +24,8 @@
         <description>Check if the order has an AppUsageType of RevenueLifecycleManagement before calling Order-to-Asset. Otherwise do nothing.</description>
         <name>IsRevenueLifecycleManagement</name>
         <label>Is RevenueLifecycleManagement</label>
-        <locationX>182</locationX>
-        <locationY>431</locationY>
+        <locationX>374</locationX>
+        <locationY>384</locationY>
         <defaultConnectorLabel>Record is not RevenueLifecycleManagement</defaultConnectorLabel>
         <rules>
             <name>RecordIsRevenueLifecycleManagement</name>
@@ -64,9 +64,9 @@
         <description>Get ApplicationUsageAssignment from the updated order.</description>
         <name>Get_ApplicationUsageAssignment</name>
         <label>Get ApplicationUsageAssignment</label>
-        <locationX>182</locationX>
-        <locationY>323</locationY>
-        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <locationX>374</locationX>
+        <locationY>276</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>IsRevenueLifecycleManagement</targetReference>
         </connector>
@@ -75,7 +75,7 @@
             <field>RecordId</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$Record__Prior.Id</elementReference>
+                <elementReference>$Record.Id</elementReference>
             </value>
         </filters>
         <filters>
@@ -85,16 +85,13 @@
                 <stringValue>RevenueLifecycleManagement</stringValue>
             </value>
         </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>AppUsageAssignment</object>
-        <outputReference>AppUsageAssignmentRecord</outputReference>
-        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
-        <locationX>56</locationX>
+        <locationX>50</locationX>
         <locationY>0</locationY>
-        <connector>
-            <targetReference>Get_ApplicationUsageAssignment</targetReference>
-        </connector>
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>and</filterLogic>
         <filters>
@@ -106,6 +103,12 @@
         </filters>
         <object>Order</object>
         <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>Get_ApplicationUsageAssignment</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExpressionSetDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
     <contextDefinitions>RLM_ProductDiscoveryContext</contextDefinitions>
-    <executionScale>Low</executionScale>
     <interfaceSourceType>PricingProcedure</interfaceSourceType>
     <label>RLM_ProductDiscoveryPricingProcedure</label>
     <processType>DefaultPricing</processType>
@@ -13,8 +12,8 @@
         <label>RLM_ProductDiscoveryPricingProcedure V1</label>
         <processType>DefaultPricing</processType>
         <shouldShowExplExternally>false</shouldShowExplExternally>
-        <startDate>2024-02-01T00:00:00.000Z</startDate>
-        <status>Active</status>
+        <startDate>2024-01-01T00:00:00.000Z</startDate>
+        <status>Draft</status>
         <steps>
             <actionType>ListPrice</actionType>
             <customElement>
@@ -58,28 +57,21 @@
                     <name>ListPriceField</name>
                     <output>false</output>
                     <type>Parameter</type>
-                    <value>Constant_UnitPrice_Price_Book_Entry_Decision_Table_LP</value>
+                    <value>Constant_UnitPrice_Price_Book_Entry_Decision_Table_v2_LP</value>
                 </parameters>
                 <parameters>
                     <input>true</input>
                     <name>LookUpName</name>
                     <output>false</output>
                     <type>Literal</type>
-                    <value>Price Book Entries</value>
-                </parameters>
-                <parameters>
-                    <input>true</input>
-                    <name>LookUpId</name>
-                    <output>false</output>
-                    <type>Literal</type>
-                    <value>0lDEE00000002Ur2AI</value>
+                    <value>Price Book Entries V2</value>
                 </parameters>
                 <parameters>
                     <input>true</input>
                     <name>LookUpApiName</name>
                     <output>false</output>
                     <type>Literal</type>
-                    <value>Price_Book_Entry_Decision_Table</value>
+                    <value>Price_Book_Entry_Decision_Table_v2</value>
                 </parameters>
                 <parameters>
                     <input>true</input>
@@ -104,6 +96,13 @@
                 </parameters>
                 <parameters>
                     <input>false</input>
+                    <name>IsDerived</name>
+                    <output>true</output>
+                    <type>Parameter</type>
+                    <value>IsDerived</value>
+                </parameters>
+                <parameters>
+                    <input>false</input>
                     <name>ListPrice</name>
                     <output>true</output>
                     <type>Parameter</type>
@@ -117,8 +116,8 @@
                     <value>SubTotal</value>
                 </parameters>
             </customElement>
-            <label>ListPrice</label>
-            <name>ListPrice</name>
+            <label>Price Book Entries</label>
+            <name>PriceBookEntries</name>
             <resultIncluded>true</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -145,10 +144,10 @@
                 </parameters>
                 <parameters>
                     <input>true</input>
-                    <name>IsDerived</name>
+                    <name>ContractId</name>
                     <output>false</output>
                     <type>Parameter</type>
-                    <value>IsDerived</value>
+                    <value>ContactId</value>
                 </parameters>
                 <parameters>
                     <input>true</input>
@@ -179,7 +178,7 @@
                     <value>SubTotal</value>
                 </parameters>
             </customElement>
-            <label>PricingSetting</label>
+            <label>Pricing Setting</label>
             <name>PricingSetting</name>
             <resultIncluded>true</resultIncluded>
             <sequenceNumber>1</sequenceNumber>
@@ -192,9 +191,9 @@
             <collection>false</collection>
             <dataType>Text</dataType>
             <decimalPlaces>2</decimalPlaces>
-            <description>Constant_UnitPrice_Price_Book_Entry_Decision_Table_LP</description>
+            <description>Constant_UnitPrice_Price_Book_Entry_Decision_Table_v2_LP</description>
             <input>false</input>
-            <name>Constant_UnitPrice_Price_Book_Entry_Decision_Table_LP</name>
+            <name>Constant_UnitPrice_Price_Book_Entry_Decision_Table_v2_LP</name>
             <output>false</output>
             <type>Constant</type>
             <value>UnitPrice</value>
