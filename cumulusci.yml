@@ -221,6 +221,7 @@ flows:
                           api: rest
             8:
                 task: publish_community
+                when: project_config.custom.create_partner_community == "true"
                 options:
                     name: rlm
             9:
