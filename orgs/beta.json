@@ -2,7 +2,7 @@
   "orgName": "Salesforce Revenue Lifecycle Management",
   "country": "US",
   "edition": "Enterprise",
-  "features": ["EnableSetPasswordInApi","OrderSaveLogicEnabled","CoreCPQ", "Communities", "EnablePRM", "PartnerCommunity","DynamicFulfillOrchestrator","OrderDecomposition","DFOCommonOrchestrator"],
+  "features": ["EnableSetPasswordInApi","OrderSaveLogicEnabled","CoreCPQ", "Communities", "EnablePRM", "PartnerCommunity","DynamicFulfillOrchestrator","OrderManagement"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true

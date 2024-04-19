@@ -87,8 +87,8 @@ tasks:
             startDate: "2024-01-01T00:00:00.000Z"
             contextTtl: 20
 
-    createPartnerCentral:
-        description: Create Partner Central Digital Experience
+    createPartnerCommunity:
+        description: Create Partner Digital Experience
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
             command: "community create --name 'rlm' --template-name 'Build Your Own'"
@@ -166,7 +166,7 @@ flows:
                               replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Bundle Based Adjustment' LIMIT 1
                               api: rest
             10:
-                task: deploy_relationship_graphs
+                task: deploy_relationship_graphs            
             11:
                 task: deploy
                 options:
