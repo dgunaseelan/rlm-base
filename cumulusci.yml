@@ -8,6 +8,30 @@ project:
         default_branch: 'main'
     source_format: sfdx
 
+    custom:
+        rlm_psl_api_names: &rlm_psl_api_names
+            - RevenueLifecycleManagementUserPsl
+            - OmniStudioDesigner
+            - CorePricingDesignTime
+            - BREDesigner
+            - DocGenDesignerPsl
+            - ClauseManagementUser
+            - ProductCatalogManagementAdministratorPsl
+            - ContractManagementUser
+            - ProductDiscoveryUserPsl
+            - BRERuntime
+            - IndustriesConfiguratorPsl
+            - ObligationManagementUser
+            - Microsoft365WordPsl
+
+        sales_transaction_context_name: &sales_transaction_context_name
+            RLM_SalesTransactionContext
+
+        product_discovery_context_name: &product_discovery_context_name
+            RLM_ProductDiscoveryContext
+
+        create_partner_community: false
+
 tasks:
     robot:
         options:
@@ -61,6 +85,19 @@ tasks:
         group: Revenue Lifecycle Management
         options:
             path: force-app/main/default/expressionSetDefinition
+            transforms:
+            - transform: find_replace
+              options:
+                patterns:
+                - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__ATTRIBUTEPasID__"]
+                  replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Attribute Based Adjustment' LIMIT 1
+                  api: rest
+                - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__VOLUMEPasID__"]
+                  replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Price Adjustment Tier' LIMIT 1
+                  api: rest
+                - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__BUNDLEPasID__"]
+                  replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Bundle Based Adjustment' LIMIT 1
+                  api: rest
 
     deploy_relationship_graphs:
         description: Relationship Graphs need to be deployed and activated before other metadata -- this prioritizes this deployment first
@@ -77,15 +114,34 @@ tasks:
             path: force-app/main/default/settings
 
     extendSalesContext:
-        description: Extend Sales Transaction Context
+        description: Extend Standard Sales Transaction Context
         class_path: tasks.rlm_extend_stdctx.ExtendStandardContext
         options:
-            name: "RLM_SalesTransactionContext"
-            description: "Extension of Standard Sales Transaction Context"
-            developerName: "RLM_SalesTransactionContext"
+            name: *sales_transaction_context_name
+            description: "Extension of Standard Sales Transaction Context Definition"
+            developerName: *sales_transaction_context_name
             baseReference: "SalesTransactionContext__stdctx"
             startDate: "2024-01-01T00:00:00.000Z"
             contextTtl: 20
+
+    extendProductDiscoveryContext:
+        description: Extend Standard Product Discovery Context
+        class_path: tasks.rlm_extend_stdctx.ExtendStandardContext
+        options:
+            name: *product_discovery_context_name
+            description: "Extension of Standard Product Discovery Context Definition"
+            developerName: *product_discovery_context_name
+            baseReference: "ProductDiscoveryContext__stdctx"
+            startDate: "2024-01-01T00:00:00.000Z"
+            contextTtl: 20
+
+    createPartnerCentral:
+        class_path: cumulusci.tasks.salesforce.CreateCommunity
+        options:
+            name: "rlm"
+            description: "Partner Central Digital Experience"
+            template: "Build Your Own"
+            skip_existing: true
 
 flows:
     insert_data:
@@ -95,34 +151,14 @@ flows:
                 task: dx
                 options:
                     command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency'
+
     prepare_core:
         group: Revenue Lifecycle Management
         steps:
             1:
                 task: assign_permission_set_licenses
                 options:
-                    api_names: CodeBuilderUserPsl,SubscriptionManagementPsl,RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
-            2:
-                task: deploy_decision_tables
-            3:
-                task: deploy_permissions
-            4:
-                task: util_sleep
-                options:
-                    seconds: 10
-                ui_options:
-                    name: Wait for Permission Set Groups to Update
-            5:
-                task: assign_permission_set_groups
-                options:
-                    api_names: RLM_Base
-    prepare_rlm_org:
-        group: Revenue Lifecycle Management
-        steps:
-            1:
-                task: assign_permission_set_licenses
-                options:
-                    api_names: RevenueLifecycleManagementUserPsl,OmniStudioDesigner,CorePricingDesignTime,BREDesigner,DocGenDesignerPsl,ClauseManagementUser,ProductCatalogManagementAdministratorPsl,ContractManagementUser,ProductDiscoveryUserPsl,BRERuntime,IndustriesConfiguratorPsl,ObligationManagementUser,Microsoft365WordPsl
+                    api_names: *rlm_psl_api_names
             2:
                 task: deploy_org_settings
             3:
@@ -139,34 +175,53 @@ flows:
                 task: assign_permission_set_groups
                 options:
                     api_names: RLM_Base
-            7:
+
+    extend_context_definitions:
+        group: Revenue Lifecycle Management
+        steps:
+            1:
                 task: extend_stdctx
-            8:
+            2:
                 task: extend_stdctx_pd
-            9:
-                task: deploy
+
+    prepare_rlm_org:
+        group: Revenue Lifecycle Management
+        steps:
+            1:
+                flow: prepare_core
+            2:
+                task: createPartnerCentral
+                when: project_config.custom.create_partner_community == "true"
+            3:
+                flow: extend_context_definitions
+            4:
+                task: deploy_expression_sets
+            5:
+                task: util_sleep
                 options:
-                    path: force-app/main/default/expressionSetDefinition
-                    transforms:
-                        - transform: find_replace
-                          options:
-                            patterns:
-                            - find: __ATTRIBUTEPasID__
-                              replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Attribute Based Adjustment' LIMIT 1
-                              api: rest
-                            - find: __VOLUMEPasID__
-                              replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Price Adjustment Tier' LIMIT 1
-                              api: rest
-                            - find: __BUNDLEPasID__
-                              replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Bundle Based Adjustment' LIMIT 1
-                              api: rest
-            10:
+                    seconds: 30
+            6:
                 task: deploy_relationship_graphs
-            11:
+            7:
                 task: deploy
                 options:
                     path: force-app/main/default
-            12:
-                task: dx
+                    transforms:
+                    - transform: find_replace
+                      options:
+                        patterns:
+                        - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__ATTRIBUTEPasID__"]
+                          replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Attribute Based Adjustment' LIMIT 1
+                          api: rest
+                        - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__VOLUMEPasID__"]
+                          replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Price Adjustment Tier' LIMIT 1
+                          api: rest
+                        - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__BUNDLEPasID__"]
+                          replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Bundle Based Adjustment' LIMIT 1
+                          api: rest
+            8:
+                task: publish_community
                 options:
-                    command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency'
+                    name: rlm
+            9:
+                flow: insert_data
