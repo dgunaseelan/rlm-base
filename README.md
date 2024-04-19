@@ -1,18 +1,13 @@
-# Salesforce DX Project: Next Steps
+# Revenue Lifecycle Management Base Foundations
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This content of this repository is aimed at automating the creation and/or configuration of environments that require Revenue Lifecycle Management (RLM) functionality
 
-## How Do You Plan to Deploy Your Changes?
+The main branch is for the generally available (GA) release of Salesforce, currently 248, however other branches exist for other scenarios.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Primary branches:
+* main: GA standalone without Experience Cloud
+* 248_partner: GA configured Experience Cloud site with RLM support
+* qb_250: Preview (250) standalone without Experience Cloud
+* 250_expcloud: Preview (250) with Experience Cloud site with RLM support
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Documentation is currently being written and will be part of this README. 
