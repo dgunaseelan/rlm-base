@@ -191,7 +191,7 @@ flows:
                 flow: prepare_core
             2:
                 task: createPartnerCentral
-                when: project_config.custom.create_partner_community == "true"
+                when: project_config.project__custom__create_partner_community == true
             3:
                 flow: extend_context_definitions
             4:
@@ -199,7 +199,7 @@ flows:
             5:
                 task: util_sleep
                 options:
-                    seconds: 30
+                    seconds: 40
             6:
                 task: deploy_relationship_graphs
             7:
@@ -221,7 +221,7 @@ flows:
                           api: rest
             8:
                 task: publish_community
-                when: project_config.custom.create_partner_community == "true"
+                when: project_config.project__custom__create_partner_community == true
                 options:
                     name: rlm
             9:
