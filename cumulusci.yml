@@ -23,6 +23,8 @@ project:
             - IndustriesConfiguratorPsl
             - ObligationManagementUser
             - Microsoft365WordPsl
+            - DynamicRevenueOrchestratorUserPsl
+            - DocumentBuilderUserPsl
 
         sales_transaction_context_name: &sales_transaction_context_name
             RLM_SalesTransactionContext
@@ -174,7 +176,7 @@ flows:
             6:
                 task: assign_permission_set_groups
                 options:
-                    api_names: RLM_PSL,RLM_NGP,RLM_CLM
+                    api_names: RLM_PSL,RLM_NGP,RLM_CLM,RLM_DRO
 
     extend_context_definitions:
         group: Revenue Lifecycle Management

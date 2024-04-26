@@ -70,6 +70,8 @@ datasets/sfdmu/quantumbit/source
 datasets/sfdmu/quantumbit/target
 datasets/sfdmu/multicurrency/source
 datasets/sfdmu/multicurrency/target
+datasets/sfdmu/pas/source
+datasets/sfdmu/pas/target
 
 
 # QBranch
@@ -87,3 +89,4 @@ scripts/permsets.txt
 scripts/psl.csv
 
 force-app/main/default/connectedApps
+temp
