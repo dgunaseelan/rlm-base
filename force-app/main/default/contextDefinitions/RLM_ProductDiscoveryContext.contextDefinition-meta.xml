@@ -45,6 +45,11 @@
                     <contextInputAttributeName>CatalogId</contextInputAttributeName>
                     <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/Catalog/CatalogId</inheritedFrom>
                 </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CurrentDate</contextAttribute>
+                    <contextInputAttributeName>CurrentDate</contextInputAttributeName>
+                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/Catalog/CurrentDate</inheritedFrom>
+                </contextAttributeMappings>
                 <contextNode>Catalog</contextNode>
                 <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/Catalog</inheritedFrom>
                 <object>Catalog</object>
@@ -217,27 +222,6 @@
         <contextNodes>
             <contextAttributes>
                 <contextTags>
-                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId/CatalogId</inheritedFrom>
-                    <title>CatalogId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>input</fieldType>
-                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId</inheritedFrom>
-                <key>false</key>
-                <title>CatalogId</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextTags>
-                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/Catalog</inheritedFrom>
-                <title>Catalog</title>
-            </contextTags>
-            <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog</inheritedFrom>
-            <title>Catalog</title>
-            <transposable>false</transposable>
-        </contextNodes>
-        <contextNodes>
-            <contextAttributes>
-                <contextTags>
                     <inheritedFrom>ProductDiscoveryContext__stdctx/version/Account/id/id</inheritedFrom>
                     <title>id</title>
                 </contextTags>
@@ -290,6 +274,39 @@
             </contextTags>
             <inheritedFrom>ProductDiscoveryContext__stdctx/version/Account</inheritedFrom>
             <title>Account</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId/CatalogId</inheritedFrom>
+                    <title>CatalogId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId</inheritedFrom>
+                <key>false</key>
+                <title>CatalogId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CurrentDate/CurrentDate</inheritedFrom>
+                    <title>CurrentDate</title>
+                </contextTags>
+                <dataType>date</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CurrentDate</inheritedFrom>
+                <key>false</key>
+                <title>CurrentDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/Catalog</inheritedFrom>
+                <title>Catalog</title>
+            </contextTags>
+            <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog</inheritedFrom>
+            <title>Catalog</title>
             <transposable>false</transposable>
         </contextNodes>
         <contextNodes>
@@ -667,10 +684,11 @@
             <transposable>false</transposable>
         </contextNodes>
         <isActive>true</isActive>
-        <startDate>2024-01-01 08:00:00</startDate>
+        <startDate>2024-01-01 00:00:00</startDate>
         <versionNumber>3</versionNumber>
     </contextDefinitionVersions>
     <contextTtl>20</contextTtl>
+    <description>Extension of Standard Product Discovery Context</description>
     <inheritedFrom>ProductDiscoveryContext__stdctx</inheritedFrom>
     <isProtected>false</isProtected>
     <masterLabel>RLM_ProductDiscoveryContext</masterLabel>

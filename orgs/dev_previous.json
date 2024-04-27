@@ -2,6 +2,7 @@
   "orgName": "Salesforce Revenue Lifecycle Management",
   "country": "US",
   "edition": "Enterprise",
+  "release": "previous",
   "features": ["EnableSetPasswordInApi","OrderSaveLogicEnabled","CoreCPQ", "Communities", "EnablePRM", "PartnerCommunity"],
   "settings": {
     "lightningExperienceSettings": {

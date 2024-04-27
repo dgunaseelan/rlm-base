@@ -1,4 +1,10 @@
 minimum_cumulusci_version: '3.84.3'
+orgs:
+    scratch:
+        dev_preview:
+            config_file: orgs/dev_preview.json
+            days: 30
+
 project:
     name: rlm-base
     package:
@@ -25,6 +31,19 @@ project:
             - Microsoft365WordPsl
             - DynamicRevenueOrchestratorUserPsl
             - DocumentBuilderUserPsl
+
+        rlm_pcm_ps_api_names: &rlm_pcm_ps_api_names
+            - IndustriesConfiguratorPlatformApi
+            - ProductConfigurationRulesDesigner
+            - ProductCatalogManagementAdministrator
+            - ProductCatalogManagementViewer
+
+        rlm_psg_api_names: &rlm_psg_api_names
+            - RLM_PSL
+            - RLM_NGP
+            - RLM_PD
+            - RLM_CLM
+            - RLM_DRO
 
         sales_transaction_context_name: &sales_transaction_context_name
             RLM_SalesTransactionContext
@@ -95,10 +114,13 @@ tasks:
                   replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Attribute Based Adjustment' LIMIT 1
                   api: rest
                 - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__VOLUMEPasID__"]
-                  replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Price Adjustment Tier' LIMIT 1
+                  replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Volume Based Adjustment' LIMIT 1
                   api: rest
                 - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__BUNDLEPasID__"]
                   replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Bundle Based Adjustment' LIMIT 1
+                  api: rest
+                - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__TIERPasID__"]
+                  replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Tier Based Adjustment' LIMIT 1
                   api: rest
 
     deploy_relationship_graphs:
@@ -145,6 +167,16 @@ tasks:
             template: "Build Your Own"
             skip_existing: true
 
+    create_price_adjustment_schedules:
+        class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+        options:
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/pas'
+
+    insert_quantumbit_data:
+        class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+        options:
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency'
+
 flows:
     insert_data:
         group: Revenue Lifecycle Management
@@ -170,13 +202,19 @@ flows:
             5:
                 task: util_sleep
                 options:
-                    seconds: 20
+                    seconds: 30
                 ui_options:
                     name: Wait for Permission Set Groups to Update
             6:
                 task: assign_permission_set_groups
                 options:
-                    api_names: RLM_PSL,RLM_NGP,RLM_CLM,RLM_DRO
+                    api_names: *rlm_psg_api_names
+            7:
+                task: assign_permission_sets
+                options:
+                    api_names: *rlm_pcm_ps_api_names
+            8:
+                task: create_price_adjustment_schedules
 
     extend_context_definitions:
         group: Revenue Lifecycle Management
@@ -197,17 +235,17 @@ flows:
             3:
                 flow: extend_context_definitions
             4:
-                task: deploy_expression_sets
-            5:
                 task: util_sleep
                 options:
-                    seconds: 40
+                    seconds: 60
+            5:
+                task: deploy_expression_sets
             6:
                 task: deploy_relationship_graphs
             7:
                 task: deploy
                 options:
-                    path: force-app/main/default
+                    path: force-app/main/default/expressionSetDefinition
                     transforms:
                     - transform: find_replace
                       options:
@@ -216,10 +254,13 @@ flows:
                           replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Attribute Based Adjustment' LIMIT 1
                           api: rest
                         - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__VOLUMEPasID__"]
-                          replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Price Adjustment Tier' LIMIT 1
+                          replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Volume Based Adjustment' LIMIT 1
                           api: rest
                         - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__BUNDLEPasID__"]
                           replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Bundle Based Adjustment' LIMIT 1
+                          api: rest
+                        - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__TIERPasID__"]
+                          replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Tier Based Adjustment' LIMIT 1
                           api: rest
             8:
                 task: publish_community
@@ -227,4 +268,4 @@ flows:
                 options:
                     name: rlm
             9:
-                flow: insert_data
+                task: insert_quantumbit_data

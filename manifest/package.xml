@@ -12,5 +12,13 @@
         <members>*</members>
         <name>Network</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>PricingActionParameters</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Settings</name>
+    </types>
     <version>61.0</version>
 </Package>

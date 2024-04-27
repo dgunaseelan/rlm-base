@@ -93,7 +93,7 @@
                     <name>condition-1-operator</name>
                     <output>false</output>
                     <type>Literal</type>
-                    <value>isFalse</value>
+                    <value>isNotNull</value>
                 </parameters>
                 <parameters>
                     <input>true</input>
@@ -114,7 +114,28 @@
                     <name>where-condition-count</name>
                     <output>false</output>
                     <type>Literal</type>
-                    <value>2</value>
+                    <value>3</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>condition-2-operator</name>
+                    <output>false</output>
+                    <type>Literal</type>
+                    <value>isFalse</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>condition-2-input-data-type</name>
+                    <output>false</output>
+                    <type>Literal</type>
+                    <value>Boolean</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>condition-2-input</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>DerivedPricingAttribute</value>
                 </parameters>
                 <parameters>
                     <input>false</input>
@@ -127,7 +148,7 @@
             <label>Aggregate Price</label>
             <name>AggregatePrice</name>
             <resultIncluded>false</resultIncluded>
-            <sequenceNumber>22</sequenceNumber>
+            <sequenceNumber>23</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
             <shouldShowExplExternally>false</shouldShowExplExternally>
@@ -211,7 +232,7 @@
                     <name>condition-1-operator</name>
                     <output>false</output>
                     <type>Literal</type>
-                    <value>isFalse</value>
+                    <value>isNotNull</value>
                 </parameters>
                 <parameters>
                     <input>true</input>
@@ -232,7 +253,28 @@
                     <name>where-condition-count</name>
                     <output>false</output>
                     <type>Literal</type>
-                    <value>2</value>
+                    <value>3</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>condition-2-operator</name>
+                    <output>false</output>
+                    <type>Literal</type>
+                    <value>isFalse</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>condition-2-input-data-type</name>
+                    <output>false</output>
+                    <type>Literal</type>
+                    <value>Boolean</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>condition-2-input</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>DerivedPricingAttribute</value>
                 </parameters>
                 <parameters>
                     <input>false</input>
@@ -243,9 +285,9 @@
                 </parameters>
             </customElement>
             <label>Aggregate Price</label>
-            <name>AggregatePrice63</name>
+            <name>AggregatePrice66</name>
             <resultIncluded>false</resultIncluded>
-            <sequenceNumber>23</sequenceNumber>
+            <sequenceNumber>24</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
             <shouldShowExplExternally>false</shouldShowExplExternally>
@@ -422,8 +464,8 @@
             </customElement>
             <description>Assignment</description>
             <label>Assignment</label>
-            <name>Assignment51</name>
-            <parentStep>ListContainer49</parentStep>
+            <name>Assignment54</name>
+            <parentStep>ListContainer52</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -458,8 +500,8 @@
             </customElement>
             <description>Assignment</description>
             <label>Assignment</label>
-            <name>Assignment55</name>
-            <parentStep>ListContainer53</parentStep>
+            <name>Assignment58</name>
+            <parentStep>ListContainer56</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -494,8 +536,8 @@
             </customElement>
             <description>Assignment</description>
             <label>Assignment</label>
-            <name>Assignment61</name>
-            <parentStep>ListContainer59</parentStep>
+            <name>Assignment64</name>
+            <parentStep>ListContainer62</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -544,9 +586,9 @@
             </customElement>
             <description>Assignment</description>
             <label>Assignment</label>
-            <name>Assignment64</name>
+            <name>Assignment67</name>
             <resultIncluded>false</resultIncluded>
-            <sequenceNumber>24</sequenceNumber>
+            <sequenceNumber>25</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
             <shouldShowExplExternally>false</shouldShowExplExternally>
@@ -698,13 +740,6 @@
             <customElement>
                 <parameters>
                     <input>true</input>
-                    <name>EffectiveTo</name>
-                    <output>false</output>
-                    <type>Parameter</type>
-                    <value>EffectiveDate</value>
-                </parameters>
-                <parameters>
-                    <input>true</input>
                     <name>PriceAdjustmentScheduleId</name>
                     <output>false</output>
                     <type>Parameter</type>
@@ -727,6 +762,13 @@
                 <parameters>
                     <input>true</input>
                     <name>EffectiveFrom</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>EffectiveDate</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>EffectiveTo</name>
                     <output>false</output>
                     <type>Parameter</type>
                     <value>EffectiveDate</value>
@@ -816,8 +858,8 @@
                     <value>ItemNetTotalPrice</value>
                 </parameters>
             </customElement>
-            <label>Attribute Discount Entries</label>
-            <name>AttributeDiscountEntries</name>
+            <label>Attribute Discount</label>
+            <name>AttributeDiscount</name>
             <parentStep>ListContainer23</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
@@ -963,8 +1005,8 @@
                     <value>ItemNetTotalPrice</value>
                 </parameters>
             </customElement>
-            <label>Bundle Based Adjustment Entries</label>
-            <name>BundleBasedAdjustmentEntries</name>
+            <label>Bundle Discount</label>
+            <name>BundleDiscount</name>
             <parentStep>ListContainer26</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
@@ -1072,7 +1114,7 @@
             <label>Derived Price</label>
             <name>DerivedPrice</name>
             <resultIncluded>false</resultIncluded>
-            <sequenceNumber>2</sequenceNumber>
+            <sequenceNumber>3</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
             <shouldShowExplExternally>false</shouldShowExplExternally>
@@ -1139,8 +1181,8 @@
                 </parameters>
             </customElement>
             <label>Formula Based Pricing</label>
-            <name>FormulaBasedPricing44</name>
-            <parentStep>ListContainer42</parentStep>
+            <name>FormulaBasedPricing47</name>
+            <parentStep>ListContainer45</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1152,7 +1194,7 @@
             <label>List Container</label>
             <name>ListContainer</name>
             <resultIncluded>false</resultIncluded>
-            <sequenceNumber>3</sequenceNumber>
+            <sequenceNumber>4</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
             <shouldShowExplExternally>false</shouldShowExplExternally>
@@ -1260,7 +1302,7 @@
         </steps>
         <steps>
             <label>List Container</label>
-            <name>ListContainer42</name>
+            <name>ListContainer41</name>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>16</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1280,7 +1322,7 @@
         </steps>
         <steps>
             <label>List Container</label>
-            <name>ListContainer49</name>
+            <name>ListContainer48</name>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>18</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1290,7 +1332,7 @@
         </steps>
         <steps>
             <label>List Container</label>
-            <name>ListContainer53</name>
+            <name>ListContainer52</name>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>19</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1313,6 +1355,16 @@
             <name>ListContainer59</name>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>21</sequenceNumber>
+            <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
+            <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
+            <shouldShowExplExternally>false</shouldShowExplExternally>
+            <stepType>ListGroup</stepType>
+        </steps>
+        <steps>
+            <label>List Container</label>
+            <name>ListContainer62</name>
+            <resultIncluded>false</resultIncluded>
+            <sequenceNumber>22</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
             <shouldShowExplExternally>false</shouldShowExplExternally>
@@ -1392,7 +1444,7 @@
         </steps>
         <steps>
             <advancedCondition>
-                <conditionLogic>1 AND 2</conditionLogic>
+                <conditionLogic>1 AND 2 AND 3 AND 4</conditionLogic>
                 <criteria>
                     <operator>IsNull</operator>
                     <sequenceNumber>1</sequenceNumber>
@@ -1403,6 +1455,18 @@
                     <sequenceNumber>2</sequenceNumber>
                     <sourceFieldName>ItemPricingSource</sourceFieldName>
                     <value>&apos;LastTransaction&apos;</value>
+                    <valueType>Literal</valueType>
+                </criteria>
+                <criteria>
+                    <operator>IsNotNull</operator>
+                    <sequenceNumber>3</sequenceNumber>
+                    <sourceFieldName>DerivedPricingAttribute</sourceFieldName>
+                </criteria>
+                <criteria>
+                    <operator>Equals</operator>
+                    <sequenceNumber>4</sequenceNumber>
+                    <sourceFieldName>DerivedPricingAttribute</sourceFieldName>
+                    <value>false</value>
                     <valueType>Literal</valueType>
                 </criteria>
             </advancedCondition>
@@ -1418,12 +1482,24 @@
         </steps>
         <steps>
             <advancedCondition>
-                <conditionLogic>1</conditionLogic>
+                <conditionLogic>1 AND 2 AND 3</conditionLogic>
                 <criteria>
                     <operator>NotEquals</operator>
                     <sequenceNumber>1</sequenceNumber>
                     <sourceFieldName>ItemPricingSource</sourceFieldName>
                     <value>&apos;LastTransaction&apos;</value>
+                    <valueType>Literal</valueType>
+                </criteria>
+                <criteria>
+                    <operator>IsNotNull</operator>
+                    <sequenceNumber>2</sequenceNumber>
+                    <sourceFieldName>DerivedPricingAttribute</sourceFieldName>
+                </criteria>
+                <criteria>
+                    <operator>Equals</operator>
+                    <sequenceNumber>3</sequenceNumber>
+                    <sourceFieldName>DerivedPricingAttribute</sourceFieldName>
+                    <value>false</value>
                     <valueType>Literal</valueType>
                 </criteria>
             </advancedCondition>
@@ -1439,7 +1515,7 @@
         </steps>
         <steps>
             <advancedCondition>
-                <conditionLogic>1 AND 2 AND 3</conditionLogic>
+                <conditionLogic>1 AND 2 AND 3 AND 4</conditionLogic>
                 <criteria>
                     <operator>IsNotNull</operator>
                     <sequenceNumber>1</sequenceNumber>
@@ -1453,8 +1529,13 @@
                     <valueType>Literal</valueType>
                 </criteria>
                 <criteria>
-                    <operator>Equals</operator>
+                    <operator>IsNotNull</operator>
                     <sequenceNumber>3</sequenceNumber>
+                    <sourceFieldName>DerivedPricingAttribute</sourceFieldName>
+                </criteria>
+                <criteria>
+                    <operator>Equals</operator>
+                    <sequenceNumber>4</sequenceNumber>
                     <sourceFieldName>DerivedPricingAttribute</sourceFieldName>
                     <value>false</value>
                     <valueType>Literal</valueType>
@@ -1521,7 +1602,7 @@
         </steps>
         <steps>
             <advancedCondition>
-                <conditionLogic>1 AND 2 AND 3</conditionLogic>
+                <conditionLogic>1 AND 2 AND 3 AND 4</conditionLogic>
                 <criteria>
                     <operator>IsNotNull</operator>
                     <sequenceNumber>1</sequenceNumber>
@@ -1535,8 +1616,13 @@
                     <valueType>Literal</valueType>
                 </criteria>
                 <criteria>
-                    <operator>Equals</operator>
+                    <operator>IsNotNull</operator>
                     <sequenceNumber>3</sequenceNumber>
+                    <sourceFieldName>DerivedPricingAttribute</sourceFieldName>
+                </criteria>
+                <criteria>
+                    <operator>Equals</operator>
+                    <sequenceNumber>4</sequenceNumber>
                     <sourceFieldName>DerivedPricingAttribute</sourceFieldName>
                     <value>false</value>
                     <valueType>Literal</valueType>
@@ -1586,19 +1672,52 @@
                 <criteria>
                     <operator>Equals</operator>
                     <sequenceNumber>1</sequenceNumber>
+                    <sourceFieldName>IsContracted</sourceFieldName>
+                    <value>false</value>
+                    <valueType>Literal</valueType>
+                </criteria>
+                <criteria>
+                    <operator>NotEquals</operator>
+                    <sequenceNumber>2</sequenceNumber>
+                    <sourceFieldName>ItemPricingSource</sourceFieldName>
+                    <value>&apos;LastTransaction&apos;</value>
+                    <valueType>Literal</valueType>
+                </criteria>
+            </advancedCondition>
+            <label>List Operation</label>
+            <name>ListOperation36</name>
+            <parentStep>ListContainer35</parentStep>
+            <resultIncluded>false</resultIncluded>
+            <sequenceNumber>1</sequenceNumber>
+            <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
+            <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
+            <shouldShowExplExternally>false</shouldShowExplExternally>
+            <stepType>AdvancedListFilter</stepType>
+        </steps>
+        <steps>
+            <advancedCondition>
+                <conditionLogic>1 AND 2 AND 3</conditionLogic>
+                <criteria>
+                    <operator>IsNotNull</operator>
+                    <sequenceNumber>1</sequenceNumber>
+                    <sourceFieldName>DerivedPricingAttribute</sourceFieldName>
+                </criteria>
+                <criteria>
+                    <operator>Equals</operator>
+                    <sequenceNumber>2</sequenceNumber>
                     <sourceFieldName>DerivedPricingAttribute</sourceFieldName>
                     <value>false</value>
                     <valueType>Literal</valueType>
                 </criteria>
                 <criteria>
                     <operator>IsNotNull</operator>
-                    <sequenceNumber>2</sequenceNumber>
+                    <sequenceNumber>3</sequenceNumber>
                     <sourceFieldName>ItemContractDiscountValue</sourceFieldName>
                 </criteria>
             </advancedCondition>
             <label>List Operation</label>
-            <name>ListOperation36</name>
-            <parentStep>ListContainer35</parentStep>
+            <name>ListOperation39</name>
+            <parentStep>ListContainer38</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>1</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1618,8 +1737,8 @@
                 </criteria>
             </advancedCondition>
             <label>List Operation</label>
-            <name>ListOperation39</name>
-            <parentStep>ListContainer38</parentStep>
+            <name>ListOperation42</name>
+            <parentStep>ListContainer41</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>1</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1639,8 +1758,8 @@
                 </criteria>
             </advancedCondition>
             <label>List Operation</label>
-            <name>ListOperation43</name>
-            <parentStep>ListContainer42</parentStep>
+            <name>ListOperation46</name>
+            <parentStep>ListContainer45</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>1</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1660,8 +1779,8 @@
                 </criteria>
             </advancedCondition>
             <label>List Operation</label>
-            <name>ListOperation46</name>
-            <parentStep>ListContainer45</parentStep>
+            <name>ListOperation49</name>
+            <parentStep>ListContainer48</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>1</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1688,8 +1807,8 @@
                 </criteria>
             </advancedCondition>
             <label>List Operation</label>
-            <name>ListOperation50</name>
-            <parentStep>ListContainer49</parentStep>
+            <name>ListOperation53</name>
+            <parentStep>ListContainer52</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>1</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1709,8 +1828,8 @@
                 </criteria>
             </advancedCondition>
             <label>List Operation</label>
-            <name>ListOperation54</name>
-            <parentStep>ListContainer53</parentStep>
+            <name>ListOperation57</name>
+            <parentStep>ListContainer56</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>1</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1737,8 +1856,8 @@
                 </criteria>
             </advancedCondition>
             <label>List Operation</label>
-            <name>ListOperation57</name>
-            <parentStep>ListContainer56</parentStep>
+            <name>ListOperation60</name>
+            <parentStep>ListContainer59</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>1</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1758,8 +1877,8 @@
                 </criteria>
             </advancedCondition>
             <label>List Operation</label>
-            <name>ListOperation60</name>
-            <parentStep>ListContainer59</parentStep>
+            <name>ListOperation63</name>
+            <parentStep>ListContainer62</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>1</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -1983,7 +2102,7 @@
             <description>Manual Discount</description>
             <label>Manual Discount</label>
             <name>ManualDiscount</name>
-            <parentStep>ListContainer35</parentStep>
+            <parentStep>ListContainer38</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -2045,8 +2164,8 @@
                 </parameters>
             </customElement>
             <label>Manual Discount</label>
-            <name>ManualDiscount40</name>
-            <parentStep>ListContainer38</parentStep>
+            <name>ManualDiscount43</name>
+            <parentStep>ListContainer41</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -2108,8 +2227,8 @@
                 </parameters>
             </customElement>
             <label>Manual Discount</label>
-            <name>ManualDiscount41</name>
-            <parentStep>ListContainer38</parentStep>
+            <name>ManualDiscount44</name>
+            <parentStep>ListContainer41</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>3</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -2201,7 +2320,7 @@
             <label>Price Book Entries</label>
             <name>PriceBookEntries</name>
             <resultIncluded>false</resultIncluded>
-            <sequenceNumber>4</sequenceNumber>
+            <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
             <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
             <shouldShowExplExternally>false</shouldShowExplExternally>
@@ -2366,7 +2485,7 @@
             </customElement>
             <label>Proration</label>
             <name>Proration</name>
-            <parentStep>ListContainer45</parentStep>
+            <parentStep>ListContainer48</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -2422,7 +2541,7 @@
             </customElement>
             <label>Subscription Pricing</label>
             <name>SubscriptionPricing</name>
-            <parentStep>ListContainer45</parentStep>
+            <parentStep>ListContainer48</parentStep>
             <resultIncluded>true</resultIncluded>
             <sequenceNumber>3</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -2478,8 +2597,8 @@
             </customElement>
             <description>Subscription Pricing</description>
             <label>Subscription Pricing</label>
-            <name>SubscriptionPricing52</name>
-            <parentStep>ListContainer49</parentStep>
+            <name>SubscriptionPricing55</name>
+            <parentStep>ListContainer52</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>3</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -2535,8 +2654,121 @@
             </customElement>
             <description>Subscription Pricing</description>
             <label>Subscription Pricing</label>
-            <name>SubscriptionPricing58</name>
-            <parentStep>ListContainer56</parentStep>
+            <name>SubscriptionPricing61</name>
+            <parentStep>ListContainer59</parentStep>
+            <resultIncluded>false</resultIncluded>
+            <sequenceNumber>2</sequenceNumber>
+            <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
+            <shouldExposeConditionDetails>false</shouldExposeConditionDetails>
+            <shouldShowExplExternally>false</shouldShowExplExternally>
+            <stepType>BusinessKnowledgeModel</stepType>
+        </steps>
+        <steps>
+            <actionType>VolumeTierDiscount</actionType>
+            <customElement>
+                <parameters>
+                    <input>true</input>
+                    <name>PriceAdjustmentScheduleId</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>TierPASIdConstant</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>Product2Id</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>Product</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>ProductSellingModelId</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>ProductSellingModel</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>EffectiveFrom</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>EffectiveFrom</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>EffectiveTo</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>EffectiveTo</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>CurrencyIsoCode</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>CurrencyIsoCode</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>Quantity</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>LineItemQuantity</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>InputUnitPrice</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>NetUnitPrice</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>LookUpName</name>
+                    <output>false</output>
+                    <type>Literal</type>
+                    <value>Tiered Adjustment Entries</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>LookUpApiName</name>
+                    <output>false</output>
+                    <type>Literal</type>
+                    <value>Tiered_Adjustment_Tier_Decision_Table</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>IsContractEnabled</name>
+                    <output>false</output>
+                    <type>Literal</type>
+                    <value>false</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>sectionCount</name>
+                    <output>false</output>
+                    <type>Literal</type>
+                    <value>0</value>
+                </parameters>
+                <parameters>
+                    <input>false</input>
+                    <name>NetUnitPrice</name>
+                    <output>true</output>
+                    <type>Parameter</type>
+                    <value>NetUnitPrice</value>
+                </parameters>
+                <parameters>
+                    <input>false</input>
+                    <name>Subtotal</name>
+                    <output>true</output>
+                    <type>Parameter</type>
+                    <value>ItemNetTotalPrice</value>
+                </parameters>
+            </customElement>
+            <description>Tier Discount</description>
+            <label>Tier Discount</label>
+            <name>TierDiscount</name>
+            <parentStep>ListContainer35</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
             <shouldExposExecPathMsgOnly>true</shouldExposExecPathMsgOnly>
@@ -2794,8 +3026,8 @@
                     <value>ItemNetTotalPrice</value>
                 </parameters>
             </customElement>
-            <label>Volume Discount Entries</label>
-            <name>VolumeDiscountEntries</name>
+            <label>Volume Discount</label>
+            <name>VolumeDiscount34</name>
             <parentStep>ListContainer32</parentStep>
             <resultIncluded>false</resultIncluded>
             <sequenceNumber>2</sequenceNumber>
@@ -2913,6 +3145,17 @@
             <output>false</output>
             <type>Constant</type>
             <value>1</value>
+        </variables>
+        <variables>
+            <collection>false</collection>
+            <dataType>Text</dataType>
+            <decimalPlaces>2</decimalPlaces>
+            <description>TierPASIdConstant</description>
+            <input>false</input>
+            <name>TierPASIdConstant</name>
+            <output>false</output>
+            <type>Constant</type>
+            <value>__TIERPasID__</value>
         </variables>
         <variables>
             <collection>false</collection>

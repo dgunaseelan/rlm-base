@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PricingActionParameters xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextDefinition>RLM_SalesTransactionContext</contextDefinition>
+    <contextMapping>QuoteEntitiesMapping</contextMapping>
+    <developerName>Quote_1714167469566</developerName>
+    <effectiveFrom>2024-01-01T08:00:00.000Z</effectiveFrom>
+    <masterLabel>Quote_1714167469566</masterLabel>
+    <objectName>QUOTE</objectName>
+    <pricingProcedure>RLM_Default_MC_Pricing_Procedure</pricingProcedure>
+</PricingActionParameters>
