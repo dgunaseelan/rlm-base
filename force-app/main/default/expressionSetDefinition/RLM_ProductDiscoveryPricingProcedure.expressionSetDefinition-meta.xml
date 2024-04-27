@@ -6,14 +6,15 @@
     <processType>DefaultPricing</processType>
     <template>false</template>
     <versions>
-        <fullName>RLM_ProductDiscoveryPricingProcedure_V1</fullName>
+        <fullName>RLM_ProductDiscoveryPricingProcedure</fullName>
+        <description>RLM Default Product Discovery Pricing Procedure</description>
         <expressionSetDefinition>RLM_ProductDiscoveryPricingProcedure</expressionSetDefinition>
         <interfaceSourceType>PricingProcedure</interfaceSourceType>
-        <label>RLM_ProductDiscoveryPricingProcedure V1</label>
+        <label>RLM_ProductDiscoveryPricingProcedure</label>
         <processType>DefaultPricing</processType>
         <shouldShowExplExternally>false</shouldShowExplExternally>
         <startDate>2024-01-01T00:00:00.000Z</startDate>
-        <status>Draft</status>
+        <status>Inactive</status>
         <steps>
             <actionType>ListPrice</actionType>
             <customElement>

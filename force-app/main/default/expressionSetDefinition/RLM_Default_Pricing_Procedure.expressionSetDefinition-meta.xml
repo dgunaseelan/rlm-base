@@ -2,19 +2,19 @@
 <ExpressionSetDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
     <contextDefinitions>RLM_SalesTransactionContext</contextDefinitions>
     <interfaceSourceType>PricingProcedure</interfaceSourceType>
-    <label>RLM Default MC Pricing Procedure</label>
+    <label>RLM Default Pricing Procedure</label>
     <processType>DefaultPricing</processType>
     <template>false</template>
     <versions>
-        <fullName>RLM_Default_MC_Pricing_Procedure_V1</fullName>
+        <fullName>RLM_Default_Pricing_Procedure</fullName>
         <description>RLM Default Pricing Procedure</description>
-        <expressionSetDefinition>RLM_Default_MC_Pricing_Procedure</expressionSetDefinition>
+        <expressionSetDefinition>RLM_Default_Pricing_Procedure</expressionSetDefinition>
         <interfaceSourceType>PricingProcedure</interfaceSourceType>
         <label>RLM Default Pricing Procedure</label>
         <processType>DefaultPricing</processType>
         <shouldShowExplExternally>false</shouldShowExplExternally>
         <startDate>2024-01-01T08:00:00.000Z</startDate>
-        <status>Draft</status>
+        <status>Inactive</status>
         <steps>
             <actionType>GroupingAndAggregatePricing</actionType>
             <customElement>

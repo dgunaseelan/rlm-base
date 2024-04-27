@@ -6,10 +6,11 @@
     <processType>ProductQualification</processType>
     <template>false</template>
     <versions>
-        <fullName>RLM_Qualification_Procedure_V1</fullName>
+        <fullName>RLM_Qualification_Procedure</fullName>
+        <description>RLM Default Qualification Procedure</description>
         <expressionSetDefinition>RLM_Qualification_Procedure</expressionSetDefinition>
         <interfaceSourceType>QualificationProcedure</interfaceSourceType>
-        <label>RLM_Qualification_Procedure V1</label>
+        <label>RLM_Qualification_Procedure</label>
         <processType>ProductQualification</processType>
         <shouldShowExplExternally>false</shouldShowExplExternally>
         <startDate>2024-02-01T00:00:00.000Z</startDate>

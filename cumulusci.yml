@@ -177,6 +177,16 @@ tasks:
         options:
             command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency'
 
+    activate_expression_sets:
+        class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+        options:
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/expressionsets_active'
+
+    deactivate_expression_sets:
+        class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+        options:
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/expressionsets_inactive'
+
 flows:
     insert_data:
         group: Revenue Lifecycle Management
@@ -215,6 +225,12 @@ flows:
                     api_names: *rlm_pcm_ps_api_names
             8:
                 task: create_price_adjustment_schedules
+            9:
+                flow: extend_context_definitions
+            10:
+                task: util_sleep
+                options:
+                    seconds: 60
 
     extend_context_definitions:
         group: Revenue Lifecycle Management
@@ -233,19 +249,15 @@ flows:
                 task: createPartnerCentral
                 when: project_config.project__custom__create_partner_community == true
             3:
-                flow: extend_context_definitions
+                task: deactivate_expression_sets
             4:
-                task: util_sleep
-                options:
-                    seconds: 60
-            5:
                 task: deploy_expression_sets
-            6:
+            5:
                 task: deploy_relationship_graphs
-            7:
+            6:
                 task: deploy
                 options:
-                    path: force-app/main/default/expressionSetDefinition
+                    path: force-app/main/default
                     transforms:
                     - transform: find_replace
                       options:
@@ -262,10 +274,12 @@ flows:
                         - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__TIERPasID__"]
                           replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Tier Based Adjustment' LIMIT 1
                           api: rest
-            8:
+            7:
                 task: publish_community
                 when: project_config.project__custom__create_partner_community == true
                 options:
                     name: rlm
+            8:
+                task: activate_expression_sets
             9:
                 task: insert_quantumbit_data

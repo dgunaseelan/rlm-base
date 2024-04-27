@@ -90,3 +90,7 @@ scripts/psl.csv
 
 force-app/main/default/connectedApps
 temp
+datasets/sfdmu/expressionsets_inactive/target
+datasets/sfdmu/expressionsets_inactive/source
+datasets/sfdmu/expressionsets_active/source
+datasets/sfdmu/expressionsets_active/target

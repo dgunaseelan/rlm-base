@@ -6,5 +6,5 @@
     <effectiveFrom>2024-01-01T08:00:00.000Z</effectiveFrom>
     <masterLabel>Order_1714167488364</masterLabel>
     <objectName>ORDER</objectName>
-    <pricingProcedure>RLM_Default_MC_Pricing_Procedure</pricingProcedure>
+    <pricingProcedure>RLM_Default_Pricing_Procedure</pricingProcedure>
 </PricingActionParameters>
