@@ -4,6 +4,9 @@ orgs:
         dev_preview:
             config_file: orgs/dev_preview.json
             days: 30
+        dev_previous:
+            config_file: orgs/dev_previous.json
+            days: 30
 
 project:
     name: rlm-base
@@ -185,7 +188,7 @@ tasks:
     deactivate_expression_sets:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/expressionsets_inactive'
+            command: 'sfdmu run -n -s csvfile -p datasets/sfdmu/expressionsets_inactive'
 
 flows:
     insert_data:
@@ -213,8 +216,6 @@ flows:
                 task: util_sleep
                 options:
                     seconds: 30
-                ui_options:
-                    name: Wait for Permission Set Groups to Update
             6:
                 task: assign_permission_set_groups
                 options:
@@ -230,7 +231,7 @@ flows:
             10:
                 task: util_sleep
                 options:
-                    seconds: 60
+                    seconds: 120
 
     extend_context_definitions:
         group: Revenue Lifecycle Management
@@ -248,6 +249,10 @@ flows:
             2:
                 task: createPartnerCentral
                 when: project_config.project__custom__create_partner_community == true
+            2.5:
+                task: util_sleep
+                options:
+                    seconds: 30
             3:
                 task: deactivate_expression_sets
             4:
@@ -275,11 +280,13 @@ flows:
                           replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Tier Based Adjustment' LIMIT 1
                           api: rest
             7:
+                task: activate_expression_sets
+            8:
+                task: insert_quantumbit_data
+            9:
+                task: deploy_post
+            10:
                 task: publish_community
                 when: project_config.project__custom__create_partner_community == true
                 options:
                     name: rlm
-            8:
-                task: activate_expression_sets
-            9:
-                task: insert_quantumbit_data

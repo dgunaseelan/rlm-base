@@ -15,3 +15,10 @@ package.xml
 #force-app/main/default/expressionSetDefinition/RLM_ProductDiscoveryPricingProcedure.expressionSetDefinition-meta.xml
 force-app/main/default/contextDefinitions
 force-app/main/default/permissionsetgroups/RLM_PCM.permissionsetgroup-meta.xml
+force-app/main/default/objects/AttributeBasedAdjRule/AttributeBasedAdjRule.object-meta.xml
+force-app/main/default/objects/AttrPicklistExcludedValue/AttrPicklistExcludedValue.object-meta.xml
+force-app/main/default/objects/PriceAdjustmentSchedule/PriceAdjustmentSchedule.object-meta.xml
+force-app/main/default/objects/PriceBookEntryDerivedPrice/PriceBookEntryDerivedPrice.object-meta.xml
+force-app/main/default/objects/ProductComponentGrpOverride/ProductComponentGrpOverride.object-meta.xml
+force-app/main/default/objects/ProductConfigurationRule/ProductConfigurationRule.object-meta.xml
+force-app/main/default/objects/SalesTransactionType/SalesTransactionType.object-meta.xml

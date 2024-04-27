@@ -564,6 +564,50 @@
                     <name>enableSidepanel</name>
                     <value>true</value>
                 </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sidepanelDetailFields</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Asset.Name</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentAmount</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentLifecycleEndDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentMrr</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentQuantity</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.LifecycleEndDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.LifecycleStartDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.Price</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.PricingSource</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.Product2.Name[Product2]</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.RenewalTerm</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.RenewalTermUnit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.TotalLifecycleAmount</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
                 <componentName>runtime_revenue_foundation:assetViewer</componentName>
                 <identifier>runtime_revenue_foundation_assetViewer</identifier>
             </componentInstance>

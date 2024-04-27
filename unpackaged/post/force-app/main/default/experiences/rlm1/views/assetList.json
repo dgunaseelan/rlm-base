@@ -12,10 +12,10 @@
     "components" : [ {
       "componentAttributes" : {
         "enableInlineEdit" : true,
-        "filterName" : "{!filterId}",
+        "filterName" : "All_Assets",
         "layout" : "FULL",
         "pageSize" : 25,
-        "scope" : "{!objectName}",
+        "scope" : "Asset",
         "showActionBar" : true,
         "showChartsPanel" : true,
         "showDisplay" : "showall",
@@ -27,7 +27,7 @@
         "showSearchBar" : true
       },
       "componentName" : "forceCommunity:objectHome",
-      "id" : "114f6f4b-dbcb-4629-a5a9-0d234a649a42",
+      "id" : "1118513f-0aa6-4f5a-b81d-e6fe9c2b1790",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"

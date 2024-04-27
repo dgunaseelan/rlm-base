@@ -37,6 +37,13 @@
             "seedComponents" : [ ],
             "tabKey" : "2",
             "tabName" : "Related"
+          }, {
+            "UUID" : "6506bf5a-3afd-4f85-a842-584eb7ca90c5",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "aa367",
+            "tabName" : "Assets"
           } ],
           "useOverflowMenu" : true
         }
@@ -74,6 +81,25 @@
         "id" : "a68f1e0b-bfbb-47b7-9b80-d1c8d757c4bf",
         "regionLabel" : "Related",
         "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableSidepanel" : true,
+            "objectApiName" : "Contract",
+            "recordId" : "{!recordId}",
+            "sidepanelDetailFields" : "[Asset.Account.Name[Account],Asset.CurrencyIsoCode,Asset.AssetLevel,Asset.Name,Asset.AssetProvidedBy.Name[Account],Asset.AssetServicedBy.Name[Account],Asset.City,Asset.IsCompetitorProduct,Asset.ConsequenceOfFailure,Asset.Contact.Name[Contact],Asset.Country,Asset.CreatedBy.Name[User],Asset.CreatedDate,Asset.CurrentAmount,Asset.CurrentLifecycleEndDate,Asset.CurrentMrr,Asset.CurrentQuantity,Asset.IsDeleted,Asset.Description,Asset.DigitalAssetStatus,Asset.ExternalIdentifier,Asset.GeocodeAccuracy,Asset.InstallDate,Asset.IsInternal,Asset.LastModifiedBy.Name[User],Asset.LastModifiedDate,Asset.LastReferencedDate,Asset.LastViewedDate,Asset.Latitude,Asset.LifecycleEndDate,Asset.LifecycleStartDate,Asset.HasLifecycleManagement,Asset.Location.Name[Location],Asset.Longitude,Asset.ManufactureDate,Asset.Parent.Name[Asset],Asset.PostalCode,Asset.Price,Asset.PricingSource,Asset.Product2.Name[Product2],Asset.ProductCode,Asset.ProductDescription,Asset.ProductFamily,Asset.StockKeepingUnit,Asset.PurchaseDate,Asset.Quantity,Asset.RenewalTerm,Asset.RenewalTermUnit,Asset.RootAsset.Name[Asset],Asset.SerialNumber,Asset.State,Asset.Status,Asset.StatusReason,Asset.Street,Asset.SystemModstamp,Asset.TotalLifecycleAmount,Asset.Uuid,Asset.UsageEndDate]"
+          },
+          "componentName" : "runtime_revenue_foundation:assetViewer",
+          "id" : "fcf56d13-87f6-4dc1-809d-d6681e1f12f8",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6506bf5a-3afd-4f85-a842-584eb7ca90c5",
+        "regionLabel" : "Assets",
+        "regionName" : "aa367",
         "renditionMap" : { },
         "type" : "region"
       } ],

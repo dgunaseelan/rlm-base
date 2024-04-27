@@ -86,11 +86,13 @@
       }, {
         "components" : [ {
           "componentAttributes" : {
+            "enableSidepanel" : true,
             "objectApiName" : "Account",
-            "recordId" : "{!recordId}"
+            "recordId" : "{!recordId}",
+            "sidepanelDetailFields" : "[Asset.Account.Name[Account],Asset.CurrencyIsoCode,Asset.AssetLevel,Asset.Name,Asset.AssetProvidedBy.Name[Account],Asset.AssetServicedBy.Name[Account],Asset.City,Asset.IsCompetitorProduct,Asset.ConsequenceOfFailure,Asset.Contact.Name[Contact],Asset.Country,Asset.CreatedBy.Name[User],Asset.CreatedDate,Asset.CurrentAmount,Asset.CurrentLifecycleEndDate,Asset.CurrentMrr,Asset.CurrentQuantity,Asset.IsDeleted,Asset.Description,Asset.DigitalAssetStatus,Asset.ExternalIdentifier,Asset.GeocodeAccuracy,Asset.InstallDate,Asset.IsInternal,Asset.LastModifiedBy.Name[User],Asset.LastModifiedDate,Asset.LastReferencedDate,Asset.LastViewedDate,Asset.Latitude,Asset.LifecycleEndDate,Asset.LifecycleStartDate,Asset.HasLifecycleManagement,Asset.Location.Name[Location],Asset.Longitude,Asset.ManufactureDate,Asset.Parent.Name[Asset],Asset.PostalCode,Asset.Price,Asset.PricingSource,Asset.Product2.Name[Product2],Asset.ProductCode,Asset.ProductDescription,Asset.ProductFamily,Asset.StockKeepingUnit,Asset.PurchaseDate,Asset.Quantity,Asset.RenewalTerm,Asset.RenewalTermUnit,Asset.RootAsset.Name[Asset],Asset.SerialNumber,Asset.State,Asset.Status,Asset.StatusReason,Asset.Street,Asset.SystemModstamp,Asset.TotalLifecycleAmount,Asset.Uuid,Asset.UsageEndDate]"
           },
-          "componentName" : "runtime_revenue_foundation:transactionLineTable",
-          "id" : "243afbbf-7eb1-4ae0-8f27-12d501e61571",
+          "componentName" : "runtime_revenue_foundation:assetViewer",
+          "id" : "aeee66eb-6a74-4fe1-b747-07864595e009",
           "renderPriority" : "NEUTRAL",
           "renditionMap" : { },
           "type" : "component"
