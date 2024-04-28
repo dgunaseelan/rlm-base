@@ -279,10 +279,11 @@ flows:
                         - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__TIERPasID__"]
                           replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Tier Based Adjustment' LIMIT 1
                           api: rest
+            
             7:
-                task: activate_expression_sets
-            8:
                 task: insert_quantumbit_data
+            8:
+                task: activate_expression_sets
             9:
                 task: deploy_post
             10:
