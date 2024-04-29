@@ -1,4 +1,4 @@
-public with sharing class RLM_AssetInfoUtility{
+public without sharing class RLM_AssetInfoUtility{
     @InvocableMethod(label = 'Calculate Asset Info'description = 'Returns Asset Renewal Info')
     public static void calculateAssetRenewInfo(List<CreateAssetOrderEvent> assetOrderCreationEvents){
         if (assetOrderCreationEvents.isEmpty()){
