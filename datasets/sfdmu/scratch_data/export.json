@@ -1,0 +1,31 @@
+{
+    "apiVersion": "61.0",
+    "excludeIdsFromCSVFiles": "true",
+    "objectSets": [
+        {
+            "objects": [
+                {
+                    "query": "SELECT Name, Id, AccountNumber, AccountSource, AnnualRevenue, BillingAddress, CurrencyIsoCode, Description, Industry, NumberOfEmployees, Ownership, ParentId, ShippingAddress, Type, Website FROM Account",
+                    "operation": "Upsert",
+                    "externalId": "Name;CurrencyIsoCode",
+                    "useFieldsMapping": true,
+                    "fieldMapping": [
+                        {
+                            "targetObject": "Contact"
+                        },
+                        {
+                            "sourceField": "Id",
+                            "targetField": "AccountId"
+                        }
+                    ]
+                },
+                {
+                    "query": "SELECT AccountId, AssistantName, AssistantPhone, Birthdate, CurrencyIsoCode, Department, Description, Email, Fax, FirstName, HomePhone, Id, LastName, LeadSource, MailingCity, MailingCountry, MailingCountryCode, MailingPostalCode, MailingState, MailingStateCode, MailingStreet, MobilePhone, Name, OtherCity, OtherCountry, OtherCountryCode, OtherPostalCode, OtherState, OtherStateCode, OtherStreet, OtherPhone, Phone, PhotoUrl, ReportsToId, Salutation, Title FROM Contact",
+                    "operation": "Upsert",
+                    "externalId": "Name;CurrencyIsoCode"
+                }
+            ]
+        }
+    ],
+    "orgs": []
+}
