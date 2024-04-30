@@ -10,6 +10,9 @@ orgs:
         tfid:
             config_file: orgs/tfid.json
             days: 30
+        tfid-dev:
+            config_file: orgs/tfid-dev.json
+            days: 30
 
 project:
     name: rlm-base

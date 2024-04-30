@@ -8,4 +8,6 @@
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
     </actionOverrides>
+    <sharingModel>Read</sharingModel>
+    <externalSharingModel>Read</externalSharingModel>
 </CustomObject>
