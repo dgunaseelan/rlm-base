@@ -7,6 +7,9 @@ orgs:
         dev_previous:
             config_file: orgs/dev_previous.json
             days: 30
+        tfid:
+            config_file: orgs/tfid.json
+            days: 30
 
 project:
     name: rlm-base
