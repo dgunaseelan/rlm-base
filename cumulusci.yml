@@ -77,6 +77,11 @@ tasks:
     run_tests:
         options:
             required_org_code_coverage_percent: 75
+
+    sync_pricing_data:
+        description: Sync Pricing Data
+        class_path: tasks.rlm_sync_pricing_data.SyncPricingData
+        group: Revenue Lifecycle Management
     
     extend_stdctx:
         description: Extend Standard Sales Transaction Context Definition
@@ -297,3 +302,5 @@ flows:
                 when: project_config.project__custom__create_partner_community == true
                 options:
                     name: rlm
+            11:
+                task: sync_pricing_data
