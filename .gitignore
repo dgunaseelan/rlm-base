@@ -62,17 +62,10 @@ sfdmu/logs
 package-lock.json
 
 #sfdmu
-datasets/sfdmu/CSVIssuesReport.csv
-datasets/sfdmu/reports
-datasets/sfdmu/source
-datasets/sfdmu/target
-datasets/sfdmu/quantumbit/source
-datasets/sfdmu/quantumbit/target
-datasets/sfdmu/multicurrency/source
-datasets/sfdmu/multicurrency/target
-datasets/sfdmu/pas/source
-datasets/sfdmu/pas/target
-
+datasets/**/source/**
+datasets/**/target/**
+datasets/**/CSVIssuesReport.csv
+datasets/**/MissingParentRecordsReport.csv
 
 # QBranch
 .qbrix
@@ -90,8 +83,4 @@ scripts/psl.csv
 
 force-app/main/default/connectedApps
 temp
-datasets/sfdmu/expressionsets_inactive/target
-datasets/sfdmu/expressionsets_inactive/source
-datasets/sfdmu/expressionsets_active/source
-datasets/sfdmu/expressionsets_active/target
-datasets/sfdmu/expressionsets_inactive/MissingParentRecordsReport.csv
+
