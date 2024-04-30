@@ -201,6 +201,16 @@ tasks:
         options:
             command: 'sfdmu run -n -s csvfile -p datasets/sfdmu/expressionsets_inactive'
 
+    insert_scratch_data:
+        class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+        options:
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/scratch_data'
+
+    activate_decision_tables:
+        class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+        options:
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/decision_tables_active'
+
 flows:
     insert_data:
         group: Revenue Lifecycle Management
@@ -303,4 +313,10 @@ flows:
                 options:
                     name: rlm
             11:
+                task: activate_decision_tables
+                when: org_config.scratch
+            12:
                 task: sync_pricing_data
+            13:
+                task: insert_scratch_data
+                when: org_config.scratch

@@ -2,7 +2,15 @@
   "orgName": "Salesforce Revenue Lifecycle Management",
   "country": "US",
   "edition": "Enterprise",
-  "features": ["EnableSetPasswordInApi","OrderSaveLogicEnabled","CoreCPQ", "Communities", "EnablePRM", "PartnerCommunity"],
+  "features": [
+    "EnableSetPasswordInApi",
+    "OrderSaveLogicEnabled",
+    "CoreCPQ",
+    "Communities",
+    "EnablePRM",
+    "PartnerCommunity",
+    "StateAndCountryPicklist"
+  ],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
@@ -18,7 +26,7 @@
       "enableEnhancedPermsetMgmt": true,
       "enableNewProfileUI": true
     },
-    "orderSettings":{
+    "orderSettings": {
       "enableOrders": true,
       "enableEnhancedCommerceOrders": true,
       "enableOrderEvents": true,
@@ -60,10 +68,10 @@
       "enableMultiCurrency": true
     },
     "experienceBundleSettings": {
-        "enableExperienceBundleMetadata": true
+      "enableExperienceBundleMetadata": true
     },
     "communitiesSettings": {
-        "enableNetworksEnabled": true
+      "enableNetworksEnabled": true
     }
   }
 }

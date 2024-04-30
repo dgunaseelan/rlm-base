@@ -4,7 +4,8 @@
   "template": "0TTWs0000004ANN",
   "features": [
     "EnableSetPasswordInApi",
-    "OrderSaveLogicEnabled"
+    "OrderSaveLogicEnabled",
+    "StateAndCountryPicklist"
   ],
   "settings": {
     "lightningExperienceSettings": {
