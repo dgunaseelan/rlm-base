@@ -328,6 +328,16 @@
                 <identifier>RecordExternalDataSourceIdField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.DecompositionScope</fieldItem>
+                <identifier>RecordDecompositionScopeField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-5be0d440-f9e3-4efb-ac83-942a29cafc91</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -360,6 +370,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.IsAssetizable</fieldItem>
                 <identifier>RecordIsAssetizableField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.FulfillmentQtyCalcMethod</fieldItem>
+                <identifier>RecordFulfillmentQtyCalcMethodField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-cf84a789-2607-448c-a72d-4aa63ae399e3</name>
