@@ -56,11 +56,6 @@
                 <identifier>force_highlightsPanel</identifier>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
-        <name>header</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -75,8 +70,7 @@
                 <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
-        <name>subheader</name>
+        <name>header</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -251,6 +245,68 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-76c8de4d-8d0f-4ac6-b520-83619520e0d9</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.RenewalTerm2</fieldItem>
+                <identifier>RecordRenewalTerm2Field</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.RenewalTermUnit</fieldItem>
+                <identifier>RecordRenewalTermUnitField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-4be6606c-e5b1-4396-83cb-e2feba659c29</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.PricingSource</fieldItem>
+                <identifier>RecordPricingSourceField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-6939c682-2c01-4b44-8bc7-8549c0cf611c</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-4be6606c-e5b1-4396-83cb-e2feba659c29</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-6939c682-2c01-4b44-8bc7-8549c0cf611c</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-a4c57af3-da14-4d0f-910b-32cfe26a69f3</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -506,6 +562,24 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
+                    <value>Facet-a4c57af3-da14-4d0f-910b-32cfe26a69f3</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Renewal Information</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
                     <value>Facet-d96c4fad-d7c9-42b7-97ae-8136c8370d8c</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -556,7 +630,6 @@
                 <identifier>flexipage_fieldSection5</identifier>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
         <name>detailTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -579,7 +652,6 @@
                 <identifier>force_relatedListContainer</identifier>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
         <name>relatedTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -590,7 +662,6 @@
                 <identifier>runtime_industries_obligation_obligationView</identifier>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
         <name>obligationTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -615,17 +686,54 @@
                         <valueListItems>
                             <value>Asset.LifecycleEndDate</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>Asset.TotalLifecycleAmount</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableSidepanel</name>
                     <value>true</value>
                 </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sidepanelDetailFields</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Asset.CurrentAmount</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentLifecycleEndDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentMrr</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.CurrentQuantity</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.LifecycleEndDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.LifecycleStartDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.PricingSource</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.RenewalTerm</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.RenewalTermUnit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Asset.TotalLifecycleAmount</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
                 <componentName>runtime_revenue_foundation:assetViewer</componentName>
                 <identifier>runtime_revenue_foundation_assetViewer</identifier>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
         <name>assetTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -694,7 +802,6 @@
                 <identifier>assetTab</identifier>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
         <name>maintabs</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -713,72 +820,13 @@
                 <identifier>flexipage_tabset</identifier>
             </componentInstance>
         </itemInstances>
-        <mode>Replace</mode>
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>showLegacyActivityComposer</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentName>runtime_sales_activities:activityPanel</componentName>
-                <identifier>runtime_sales_activities_activityPanel</identifier>
-            </componentInstance>
-        </itemInstances>
-        <mode>Replace</mode>
-        <name>activityTabContent</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>active</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>activityTabContent</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Standard.Tab.activity</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>activityTab</identifier>
-            </componentInstance>
-        </itemInstances>
-        <mode>Replace</mode>
-        <name>sidebartabs</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Tabs</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>tabs</name>
-                    <value>sidebartabs</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tabset</componentName>
-                <identifier>flexipage_tabset2</identifier>
-            </componentInstance>
-        </itemInstances>
-        <mode>Replace</mode>
-        <name>sidebar</name>
-        <type>Region</type>
-    </flexiPageRegions>
     <masterLabel>RLM Contract Record Page</masterLabel>
-    <parentFlexiPage>commerce__Contract_rec_L_subheader</parentFlexiPage>
     <sobjectType>Contract</sobjectType>
     <template>
-        <name>flexipage:recordHomeWithSubheaderTemplateDesktop</name>
+        <name>flexipage:recordHomeSimpleViewTemplate</name>
     </template>
     <type>RecordPage</type>
 </FlexiPage>

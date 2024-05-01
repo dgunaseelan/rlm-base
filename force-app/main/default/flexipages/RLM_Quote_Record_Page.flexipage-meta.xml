@@ -16,6 +16,9 @@
                             <value>CreateOrder</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>Quote.RLM_CreateContract</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>CreatePdf</value>
                         </valueListItems>
                         <valueListItems>
@@ -153,6 +156,10 @@
                 <componentInstanceProperties>
                     <name>defaultState</name>
                     <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>displayTotalPriceBreakdown</name>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentName>runtime_revenue_foundation:transactionSummary</componentName>
                 <identifier>runtime_revenue_foundation_transactionSummary</identifier>
@@ -751,23 +758,6 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>graphName</name>
-                    <value>RLM_Quote_ARC</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                </componentInstanceProperties>
-                <componentName>runtime_industries_arcgraph:arcGraph</componentName>
-                <identifier>runtime_industries_arcgraph_arcGraph</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-6d8a4ca9-9197-4f7e-a5dc-04db08fe85bf</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
                     <name>active</name>
                     <value>true</value>
                 </componentInstanceProperties>
@@ -815,26 +805,16 @@
                 <identifier>relatedListsTab</identifier>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-6d8a4ca9-9197-4f7e-a5dc-04db08fe85bf</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Quote Structure</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab3</identifier>
-            </componentInstance>
-        </itemInstances>
         <name>maintabs</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Tabs</value>
+                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>maintabs</value>
