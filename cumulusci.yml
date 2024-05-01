@@ -62,6 +62,9 @@ project:
 
         create_partner_community: true
 
+        sleep_default: &sleep_default
+            20
+
 tasks:
     robot:
         options:
@@ -120,6 +123,40 @@ tasks:
         group: Revenue Lifecycle Management
         options:
             path: force-app/main/default/expressionSetDefinition
+            transforms:
+            - transform: find_replace
+              options:
+                patterns:
+                - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__ATTRIBUTEPasID__"]
+                  replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Attribute Based Adjustment' LIMIT 1
+                  api: rest
+                - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__VOLUMEPasID__"]
+                  replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Volume Based Adjustment' LIMIT 1
+                  api: rest
+                - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__BUNDLEPasID__"]
+                  replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Bundle Based Adjustment' LIMIT 1
+                  api: rest
+                - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__TIERPasID__"]
+                  replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Tier Based Adjustment' LIMIT 1
+                  api: rest
+
+    deploy_full:
+        description: Deploy all metadata
+        class_path: cumulusci.tasks.salesforce.Deploy
+        group: Revenue Lifecycle Management
+        options:
+            path: force-app/main/default
+            ignore: 
+                - contextDefinitions
+                - decisionTables
+                - experiences
+                - expressionSetDefinition
+                - navigationManus
+                - networks 
+                - permissionsetgroups
+                - permissionsets
+                - settings
+                - relationshipGraphDefinitions
             transforms:
             - transform: find_replace
               options:
@@ -228,31 +265,36 @@ flows:
                 options:
                     api_names: *rlm_psl_api_names
             2:
-                task: deploy_org_settings
+                task: deploy_pre
             3:
                 task: deploy_decision_tables
             4:
-                task: deploy_permissions
-            5:
                 task: util_sleep
                 options:
-                    seconds: 30
-            6:
+                    seconds: *sleep_default
+            5:
                 task: assign_permission_set_groups
                 options:
                     api_names: *rlm_psg_api_names
-            7:
+            6:
                 task: assign_permission_sets
                 options:
                     api_names: *rlm_pcm_ps_api_names
+            7:
+                task: activate_decision_tables
+                when: org_config.scratch
             8:
-                task: create_price_adjustment_schedules
-            9:
                 flow: extend_context_definitions
-            10:
+            9:
                 task: util_sleep
                 options:
-                    seconds: 120
+                    seconds: *sleep_default
+            10:
+                task: create_price_adjustment_schedules
+            11:
+                task: util_sleep
+                options:
+                    seconds: *sleep_default
 
     extend_context_definitions:
         group: Revenue Lifecycle Management
@@ -268,43 +310,20 @@ flows:
             1:
                 flow: prepare_core
             2:
+                task: deactivate_expression_sets
+            3:    
                 task: createPartnerCentral
                 when: project_config.project__custom__create_partner_community == true
-            2.5:
-                task: util_sleep
-                options:
-                    seconds: 30
-            3:
-                task: deactivate_expression_sets
             4:
                 task: deploy_expression_sets
             5:
-                task: deploy_relationship_graphs
+                task: deploy_full
             6:
-                task: deploy
-                options:
-                    path: force-app/main/default
-                    transforms:
-                    - transform: find_replace
-                      options:
-                        patterns:
-                        - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__ATTRIBUTEPasID__"]
-                          replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Attribute Based Adjustment' LIMIT 1
-                          api: rest
-                        - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__VOLUMEPasID__"]
-                          replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Volume Based Adjustment' LIMIT 1
-                          api: rest
-                        - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__BUNDLEPasID__"]
-                          replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Bundle Based Adjustment' LIMIT 1
-                          api: rest
-                        - xpath: //ExpressionSetDefinition/versions/variables/value[text()="__TIERPasID__"]
-                          replace_record_id_query: SELECT Id from PriceAdjustmentSchedule WHERE name = 'Standard Tier Based Adjustment' LIMIT 1
-                          api: rest
-            
-            7:
                 task: insert_quantumbit_data
-            8:
+            7:
                 task: activate_expression_sets
+            8:
+                task: sync_pricing_data
             9:
                 task: deploy_post
             10:
@@ -313,10 +332,5 @@ flows:
                 options:
                     name: rlm
             11:
-                task: activate_decision_tables
-                when: org_config.scratch
-            12:
-                task: sync_pricing_data
-            13:
                 task: insert_scratch_data
                 when: org_config.scratch

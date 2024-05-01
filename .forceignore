@@ -22,3 +22,4 @@ force-app/main/default/objects/PriceBookEntryDerivedPrice/PriceBookEntryDerivedP
 force-app/main/default/objects/ProductComponentGrpOverride/ProductComponentGrpOverride.object-meta.xml
 force-app/main/default/objects/ProductConfigurationRule/ProductConfigurationRule.object-meta.xml
 force-app/main/default/objects/SalesTransactionType/SalesTransactionType.object-meta.xml
+unpackaged/pre/force-app/main/default/permissionsetgroups/RLM_PCM.permissionsetgroup-meta.xml
