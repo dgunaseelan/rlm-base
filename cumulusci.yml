@@ -146,17 +146,6 @@ tasks:
         group: Revenue Lifecycle Management
         options:
             path: force-app/main/default
-            ignore: 
-                - contextDefinitions
-                - decisionTables
-                - experiences
-                - expressionSetDefinition
-                - navigationManus
-                - networks 
-                - permissionsetgroups
-                - permissionsets
-                - settings
-                - relationshipGraphDefinitions
             transforms:
             - transform: find_replace
               options:
@@ -315,22 +304,25 @@ flows:
                 task: createPartnerCentral
                 when: project_config.project__custom__create_partner_community == true
             4:
-                task: deploy_expression_sets
-            5:
                 task: deploy_full
-            6:
+            5:
                 task: insert_quantumbit_data
-            7:
+            6:
                 task: activate_expression_sets
-            8:
+            7:
                 task: sync_pricing_data
-            9:
+            8:
                 task: deploy_post
-            10:
+            9:
                 task: publish_community
                 when: project_config.project__custom__create_partner_community == true
                 options:
                     name: rlm
-            11:
+            10:
                 task: insert_scratch_data
                 when: org_config.scratch
+            11:
+                task: deploy_post
+                when: org_config.scratch
+                options:
+                    path: unpackaged/post_scratch
