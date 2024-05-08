@@ -96,6 +96,11 @@ tasks:
         class_path: tasks.extend_stdctx_pd.ExtendStandardContextPd
         group: Revenue Lifecycle Management
 
+    extend_stdctx_cart:
+        description: Extend Standard Cart Context Definition
+        class_path: tasks.extend_stdctx_cart.ExtendStandardContextCart
+        group: Revenue Lifecycle Management
+
     deploy_permissions:
         description: Runs deployment against the permission set group file for Revenue Cloud.
         class_path: cumulusci.tasks.salesforce.Deploy
@@ -210,32 +215,37 @@ tasks:
     create_price_adjustment_schedules:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/pas'
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/pas -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
 
     insert_quantumbit_data:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency'
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
 
     activate_expression_sets:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/expressionsets_active'
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/expressionsets_active -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
 
     deactivate_expression_sets:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -n -s csvfile -p datasets/sfdmu/expressionsets_inactive'
+            command: 'sfdmu run -n -s csvfile -p datasets/sfdmu/expressionsets_inactive -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
 
     insert_scratch_data:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/scratch_data'
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/scratch_data -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
 
     activate_decision_tables:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/decision_tables_active'
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/decision_tables_active -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
+
+    deploy_sharing_rules:
+        class_path: cumulusci.tasks.salesforce.DeployBundles
+        options:
+            path: unpackaged/post_sharing
 
 flows:
     insert_data:
@@ -244,7 +254,7 @@ flows:
             1:
                 task: dx
                 options:
-                    command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency'
+                    command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
 
     prepare_core:
         group: Revenue Lifecycle Management
@@ -292,6 +302,8 @@ flows:
                 task: extend_stdctx
             2:
                 task: extend_stdctx_pd
+            3:
+                task: extend_stdctx_cart
 
     prepare_rlm_org:
         group: Revenue Lifecycle Management
@@ -326,3 +338,6 @@ flows:
                 when: org_config.scratch
                 options:
                     path: unpackaged/post_scratch
+            12:
+                task: deploy_sharing_rules
+                when: project_config.project__custom__create_partner_community == true
