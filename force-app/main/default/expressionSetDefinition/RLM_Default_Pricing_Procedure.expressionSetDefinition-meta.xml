@@ -104,6 +104,20 @@
                 </parameters>
                 <parameters>
                     <input>true</input>
+                    <name>condition-2-input</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>DerivedPricingAttribute</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>condition-2-operator</name>
+                    <output>false</output>
+                    <type>Literal</type>
+                    <value>isFalse</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
                     <name>write-back-data-type</name>
                     <output>false</output>
                     <type>Literal</type>
@@ -118,24 +132,10 @@
                 </parameters>
                 <parameters>
                     <input>true</input>
-                    <name>condition-2-operator</name>
-                    <output>false</output>
-                    <type>Literal</type>
-                    <value>isFalse</value>
-                </parameters>
-                <parameters>
-                    <input>true</input>
                     <name>condition-2-input-data-type</name>
                     <output>false</output>
                     <type>Literal</type>
                     <value>Boolean</value>
-                </parameters>
-                <parameters>
-                    <input>true</input>
-                    <name>condition-2-input</name>
-                    <output>false</output>
-                    <type>Parameter</type>
-                    <value>DerivedPricingAttribute</value>
                 </parameters>
                 <parameters>
                     <input>false</input>
@@ -243,17 +243,10 @@
                 </parameters>
                 <parameters>
                     <input>true</input>
-                    <name>write-back-data-type</name>
+                    <name>condition-2-input</name>
                     <output>false</output>
-                    <type>Literal</type>
-                    <value>Text</value>
-                </parameters>
-                <parameters>
-                    <input>true</input>
-                    <name>where-condition-count</name>
-                    <output>false</output>
-                    <type>Literal</type>
-                    <value>3</value>
+                    <type>Parameter</type>
+                    <value>DerivedPricingAttribute</value>
                 </parameters>
                 <parameters>
                     <input>true</input>
@@ -271,10 +264,17 @@
                 </parameters>
                 <parameters>
                     <input>true</input>
-                    <name>condition-2-input</name>
+                    <name>write-back-data-type</name>
                     <output>false</output>
-                    <type>Parameter</type>
-                    <value>DerivedPricingAttribute</value>
+                    <type>Literal</type>
+                    <value>Text</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>where-condition-count</name>
+                    <output>false</output>
+                    <type>Literal</type>
+                    <value>3</value>
                 </parameters>
                 <parameters>
                     <input>false</input>
@@ -873,13 +873,6 @@
             <customElement>
                 <parameters>
                     <input>true</input>
-                    <name>PriceAdjustmentScheduleId</name>
-                    <output>false</output>
-                    <type>Parameter</type>
-                    <value>BundlePASIdConstant</value>
-                </parameters>
-                <parameters>
-                    <input>true</input>
                     <name>ProductSellingModelId</name>
                     <output>false</output>
                     <type>Parameter</type>
@@ -1003,6 +996,13 @@
                     <output>true</output>
                     <type>Parameter</type>
                     <value>ItemNetTotalPrice</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>PriceAdjustmentScheduleId</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>BundlePASIdConstant</value>
                 </parameters>
             </customElement>
             <label>Bundle Discount</label>
@@ -2058,13 +2058,6 @@
                 </parameters>
                 <parameters>
                     <input>true</input>
-                    <name>AdjustmentValue</name>
-                    <output>false</output>
-                    <type>Parameter</type>
-                    <value>ItemContractDiscountValue</value>
-                </parameters>
-                <parameters>
-                    <input>true</input>
                     <name>Quantity</name>
                     <output>false</output>
                     <type>Parameter</type>
@@ -2097,6 +2090,13 @@
                     <output>true</output>
                     <type>Parameter</type>
                     <value>ItemNetTotalPrice</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>AdjustmentValue</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>ItemContractDiscountValue</value>
                 </parameters>
             </customElement>
             <description>Manual Discount</description>
@@ -2308,6 +2308,13 @@
                     <output>false</output>
                     <type>Literal</type>
                     <value>0</value>
+                </parameters>
+                <parameters>
+                    <input>false</input>
+                    <name>Id</name>
+                    <output>true</output>
+                    <type>Parameter</type>
+                    <value>ItemPricebookEntry</value>
                 </parameters>
                 <parameters>
                     <input>false</input>
@@ -2526,17 +2533,17 @@
                 </parameters>
                 <parameters>
                     <input>false</input>
-                    <name>TotalSubscriptionPrice</name>
-                    <output>true</output>
-                    <type>Parameter</type>
-                    <value>ItemNetTotalPrice</value>
-                </parameters>
-                <parameters>
-                    <input>false</input>
                     <name>SubscriptionNetUnitPrice</name>
                     <output>true</output>
                     <type>Parameter</type>
                     <value>NetUnitPrice</value>
+                </parameters>
+                <parameters>
+                    <input>false</input>
+                    <name>TotalSubscriptionPrice</name>
+                    <output>true</output>
+                    <type>Parameter</type>
+                    <value>ItemNetTotalPrice</value>
                 </parameters>
             </customElement>
             <label>Subscription Pricing</label>

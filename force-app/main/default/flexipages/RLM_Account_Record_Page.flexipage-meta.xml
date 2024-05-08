@@ -7,7 +7,7 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Global.NewOpportunity</value>
+                            <value>Account.RLM_New_Opportunity</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Edit</value>
