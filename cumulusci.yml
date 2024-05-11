@@ -1,6 +1,9 @@
 minimum_cumulusci_version: '3.84.3'
 orgs:
     scratch:
+        beta:
+            config_file: orgs/beta.json
+            days: 30
         dev_preview:
             config_file: orgs/dev_preview.json
             days: 30
@@ -215,32 +218,32 @@ tasks:
     create_price_adjustment_schedules:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/pas -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/pas'
 
     insert_quantumbit_data:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency'
 
     activate_expression_sets:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/expressionsets_active -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/expressionsets_active'
 
     deactivate_expression_sets:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -n -s csvfile -p datasets/sfdmu/expressionsets_inactive -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
+            command: 'sfdmu run -n -s csvfile -p datasets/sfdmu/expressionsets_inactive'
 
     insert_scratch_data:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/scratch_data -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/scratch_data'
 
     activate_decision_tables:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/decision_tables_active -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
+            command: 'sfdmu run -s csvfile -p datasets/sfdmu/decision_tables_active'
 
     deploy_sharing_rules:
         class_path: cumulusci.tasks.salesforce.DeployBundles
@@ -254,7 +257,7 @@ flows:
             1:
                 task: dx
                 options:
-                    command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency -u bgaldino@na81.rlm2 -c na81rlm2.my.salesforce.com'
+                    command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency'
 
     prepare_core:
         group: Revenue Lifecycle Management

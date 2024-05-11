@@ -6,9 +6,9 @@
     <processType>DefaultPricing</processType>
     <template>false</template>
     <versions>
-        <fullName>RLM_Default_Pricing_Procedure</fullName>
+        <fullName>RLM_DefaultPricingProcedure</fullName>
         <description>RLM Default Pricing Procedure</description>
-        <expressionSetDefinition>RLM_Default_Pricing_Procedure</expressionSetDefinition>
+        <expressionSetDefinition>RLM_DefaultPricingProcedure</expressionSetDefinition>
         <interfaceSourceType>PricingProcedure</interfaceSourceType>
         <label>RLM Default Pricing Procedure</label>
         <processType>DefaultPricing</processType>

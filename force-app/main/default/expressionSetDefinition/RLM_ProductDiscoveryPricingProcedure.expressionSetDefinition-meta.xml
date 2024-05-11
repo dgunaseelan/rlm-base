@@ -13,7 +13,7 @@
         <label>RLM_ProductDiscoveryPricingProcedure</label>
         <processType>DefaultPricing</processType>
         <shouldShowExplExternally>false</shouldShowExplExternally>
-        <startDate>2024-01-01T00:00:00.000Z</startDate>
+        <startDate>2024-01-01T08:00:00.000Z</startDate>
         <status>Inactive</status>
         <steps>
             <actionType>ListPrice</actionType>
