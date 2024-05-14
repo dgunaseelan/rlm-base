@@ -34,3 +34,4 @@ unpackaged/post_sharing/force-app/main/default/objects/PriceBookEntryDerivedPric
 #unpackaged/post_sharing/force-app/main/default/objects/ProductComponentGrpOverride/ProductComponentGrpOverride.object-meta.xml
 unpackaged/post_sharing/force-app/main/default/objects/ProductConfigurationRule/ProductConfigurationRule.object-meta.xml
 unpackaged/post_sharing/force-app/main/default/objects/SalesTransactionType/SalesTransactionType.object-meta.xml
+unpackaged/post_sharing/force-app/main/default/objects
