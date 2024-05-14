@@ -65,13 +65,6 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>ContractToCreate.ContractTerm</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>ContractTerm</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
             <assignToReference>ContractToCreate.PricingSource</assignToReference>
             <operator>Assign</operator>
             <value>
@@ -120,13 +113,6 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>$Record.EffectiveDate</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>ContractToCreate.ContractTerm</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>ContractTerm</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
