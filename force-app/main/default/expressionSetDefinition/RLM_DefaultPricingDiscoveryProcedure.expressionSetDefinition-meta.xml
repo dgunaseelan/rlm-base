@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExpressionSetDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
     <contextDefinitions>RLM_SalesTransactionContext</contextDefinitions>
-    <interfaceSourceType>DiscoveryProcedure</interfaceSourceType>
-    <label>RLM Default Pricing Discovery Procedure</label>
+    <description>Default MultiCurrency Pricing Discovery Procedure</description>
+    <label>Default MultiCurrency Pricing Discovery Procedure</label>
     <processType>PricingDiscovery</processType>
     <template>false</template>
     <versions>
-        <fullName>RLM_DefaultPricingDiscoveryProcedure</fullName>
-        <description>RLM Default Pricing Discovery Procedure</description>
+        <fullName>RLM_DefaultPricingDiscoveryProcedure_V1</fullName>
+        <description>Default MultiCurrency Pricing Discovery Procedure</description>
         <expressionSetDefinition>RLM_DefaultPricingDiscoveryProcedure</expressionSetDefinition>
-        <interfaceSourceType>DiscoveryProcedure</interfaceSourceType>
-        <label>RLM Default Pricing Discovery Procedure</label>
+        <label>Default MultiCurrency Pricing Discovery Procedure</label>
         <processType>PricingDiscovery</processType>
         <shouldShowExplExternally>false</shouldShowExplExternally>
         <startDate>2024-01-01T08:00:00.000Z</startDate>
-        <status>Draft</status>
+        <status>Inactive</status>
         <steps>
             <actionType>AssetDiscovery</actionType>
             <customElement>
@@ -129,6 +128,13 @@
                     <output>false</output>
                     <type>Parameter</type>
                     <value>EffectiveFrom</value>
+                </parameters>
+                <parameters>
+                    <input>true</input>
+                    <name>CurrencyIsoCode</name>
+                    <output>false</output>
+                    <type>Parameter</type>
+                    <value>CurrencyIsoCode</value>
                 </parameters>
                 <parameters>
                     <input>true</input>
