@@ -5,7 +5,8 @@
   "features": [
     "EnableSetPasswordInApi",
     "OrderSaveLogicEnabled",
-    "StateAndCountryPicklist"
+    "StateAndCountryPicklist",
+    "AdvancedApproval"
   ],
   "settings": {
     "lightningExperienceSettings": {
@@ -49,7 +50,9 @@
       "enableProductConfigurator": true
     },
     "dynamicFulfillmentOrchestratorSettings": {
-      "enableDFOPref": true
+      "enableDFOPref": true,
+      "enableDFOFallout": true,
+      "enableDFOJeopardy": true
     },
     "securitySettings": {
       "enableAdminLoginAsAnyUser": true,

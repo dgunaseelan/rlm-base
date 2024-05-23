@@ -10,7 +10,8 @@
     "Communities",
     "EnablePRM",
     "PartnerCommunity",
-    "StateAndCountryPicklist"
+    "StateAndCountryPicklist",
+    "AdvancedApproval"
   ],
   "settings": {
     "lightningExperienceSettings": {
