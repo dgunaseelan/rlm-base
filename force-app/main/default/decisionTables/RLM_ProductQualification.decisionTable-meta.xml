@@ -43,5 +43,6 @@
     <setupName>RLM_ProductQualification</setupName>
     <sourceObject>ProductQualification</sourceObject>
     <status>Active</status>
+    <type>LowVolume</type>
     <usageType>ProductQualification</usageType>
 </DecisionTable>

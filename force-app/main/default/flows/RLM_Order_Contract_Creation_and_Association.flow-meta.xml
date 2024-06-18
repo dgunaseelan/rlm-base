@@ -44,7 +44,7 @@
         </outputParameters>
         <versionSegment>1</versionSegment>
     </actionCalls>
-    <apiVersion>60.0</apiVersion>
+    <apiVersion>61.0</apiVersion>
     <assignments>
         <name>Set_Values_of_Contract_with_Opp</name>
         <label>Set Values of Contract with Opp</label>
@@ -62,13 +62,6 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>$Record.EffectiveDate</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>ContractToCreate.ContractTerm</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>ContractTerm</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -120,13 +113,6 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>$Record.EffectiveDate</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>ContractToCreate.ContractTerm</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>ContractTerm</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>

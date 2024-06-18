@@ -2,6 +2,18 @@
 <ContextDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
     <contextDefinitionVersions>
         <contextMappings>
+            <contextMappingIntents>
+                <contextMappingIntentType>hydration</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>persistence</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>association</contextMappingIntentType>
+            </contextMappingIntents>
+            <contextMappingIntents>
+                <contextMappingIntentType>translation</contextMappingIntentType>
+            </contextMappingIntents>
             <contextNodeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>AccountId</contextAttribute>
@@ -33,6 +45,11 @@
                     <contextInputAttributeName>CatalogId</contextInputAttributeName>
                     <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/Catalog/CatalogId</inheritedFrom>
                 </contextAttributeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>CurrentDate</contextAttribute>
+                    <contextInputAttributeName>CurrentDate</contextInputAttributeName>
+                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/Catalog/CurrentDate</inheritedFrom>
+                </contextAttributeMappings>
                 <contextNode>Catalog</contextNode>
                 <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/Catalog</inheritedFrom>
                 <object>Catalog</object>
@@ -58,6 +75,11 @@
                 <object>Category</object>
             </contextNodeMappings>
             <contextNodeMappings>
+                <contextAttributeMappings>
+                    <contextAttribute>Id</contextAttribute>
+                    <contextInputAttributeName>Id</contextInputAttributeName>
+                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/CategoryProduct/Id</inheritedFrom>
+                </contextAttributeMappings>
                 <contextAttributeMappings>
                     <contextAttribute>ProductId</contextAttribute>
                     <contextInputAttributeName>ProductId</contextInputAttributeName>
@@ -159,6 +181,11 @@
                     <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/PricingProduct/UnitPrice</inheritedFrom>
                 </contextAttributeMappings>
                 <contextAttributeMappings>
+                    <contextAttribute>IsDerived</contextAttribute>
+                    <contextInputAttributeName>IsDerived</contextInputAttributeName>
+                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/PricingProduct/IsDerived</inheritedFrom>
+                </contextAttributeMappings>
+                <contextAttributeMappings>
                     <contextAttribute>NetUnitPrice</contextAttribute>
                     <contextInputAttributeName>NetUnitPrice</contextInputAttributeName>
                     <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping/PricingProduct/NetUnitPrice</inheritedFrom>
@@ -192,27 +219,6 @@
             <inheritedFrom>ProductDiscoveryContext__stdctx/version/ProductDiscoveryMapping</inheritedFrom>
             <title>ProductDiscoveryMapping</title>
         </contextMappings>
-        <contextNodes>
-            <contextAttributes>
-                <contextTags>
-                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId/CatalogId</inheritedFrom>
-                    <title>CatalogId</title>
-                </contextTags>
-                <dataType>string</dataType>
-                <fieldType>input</fieldType>
-                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId</inheritedFrom>
-                <key>false</key>
-                <title>CatalogId</title>
-                <value>false</value>
-            </contextAttributes>
-            <contextTags>
-                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/Catalog</inheritedFrom>
-                <title>Catalog</title>
-            </contextTags>
-            <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog</inheritedFrom>
-            <title>Catalog</title>
-            <transposable>false</transposable>
-        </contextNodes>
         <contextNodes>
             <contextAttributes>
                 <contextTags>
@@ -268,6 +274,39 @@
             </contextTags>
             <inheritedFrom>ProductDiscoveryContext__stdctx/version/Account</inheritedFrom>
             <title>Account</title>
+            <transposable>false</transposable>
+        </contextNodes>
+        <contextNodes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId/CatalogId</inheritedFrom>
+                    <title>CatalogId</title>
+                </contextTags>
+                <dataType>string</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CatalogId</inheritedFrom>
+                <key>false</key>
+                <title>CatalogId</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
+                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CurrentDate/CurrentDate</inheritedFrom>
+                    <title>CurrentDate</title>
+                </contextTags>
+                <dataType>date</dataType>
+                <fieldType>input</fieldType>
+                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/CurrentDate</inheritedFrom>
+                <key>false</key>
+                <title>CurrentDate</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextTags>
+                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/Catalog</inheritedFrom>
+                <title>Catalog</title>
+            </contextTags>
+            <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog</inheritedFrom>
+            <title>Catalog</title>
             <transposable>false</transposable>
         </contextNodes>
         <contextNodes>
@@ -557,6 +596,18 @@
             </contextAttributes>
             <contextAttributes>
                 <contextTags>
+                    <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/Category/PricingProduct/IsDerived/IsDerived</inheritedFrom>
+                    <title>IsDerived</title>
+                </contextTags>
+                <dataType>boolean</dataType>
+                <fieldType>output</fieldType>
+                <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/Category/PricingProduct/IsDerived</inheritedFrom>
+                <key>false</key>
+                <title>IsDerived</title>
+                <value>false</value>
+            </contextAttributes>
+            <contextAttributes>
+                <contextTags>
                     <inheritedFrom>ProductDiscoveryContext__stdctx/version/Catalog/Category/PricingProduct/NetUnitPrice/NetUnitPrice</inheritedFrom>
                     <title>NetUnitPrice</title>
                 </contextTags>
@@ -633,7 +684,7 @@
             <transposable>false</transposable>
         </contextNodes>
         <isActive>true</isActive>
-        <startDate>2024-01-01 08:00:00</startDate>
+        <startDate>2024-01-01 00:00:00</startDate>
         <versionNumber>3</versionNumber>
     </contextDefinitionVersions>
     <contextTtl>20</contextTtl>

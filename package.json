@@ -15,13 +15,13 @@
     "precommit": "lint-staged"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.4",
-    "@babel/eslint-parser": "^7.24.1",
-    "@lwc/eslint-plugin-lwc": "^1.7.2",
-    "@playwright/test": "^1.43.0",
-    "eslint": ">=8.0.0",
-    "prettier": "^3.2.5",
-    "prettier-plugin-apex": "^2.1.0"
+    "@babel/core": "^7.24.7",
+    "@babel/eslint-parser": "^7.24.7",
+    "@lwc/eslint-plugin-lwc": "^1.8.1",
+    "@playwright/test": "^1.44.1",
+    "eslint": "^9.5.0",
+    "prettier": "^3.3.2",
+    "prettier-plugin-apex": "^2.1.4"
   },
   "lint-staged": {
     "**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}": [

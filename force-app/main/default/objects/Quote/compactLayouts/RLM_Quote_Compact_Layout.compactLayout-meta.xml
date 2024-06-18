@@ -4,8 +4,8 @@
     <fields>Name</fields>
     <fields>QuoteNumber</fields>
     <fields>QuoteAccountId</fields>
-    <fields>IsSyncing</fields>
     <fields>OpportunityId</fields>
+    <fields>ContractId</fields>
     <fields>GrandTotal</fields>
     <label>RLM Quote Compact Layout</label>
 </CompactLayout>
