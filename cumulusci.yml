@@ -218,32 +218,32 @@ tasks:
     create_price_adjustment_schedules:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/pas'
+            command: 'sfdmu:run -s csvfile -u default -p datasets/sfdmu/pas'
 
     insert_quantumbit_data:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/multicurrency'
+            command: 'sfdmu run -s csvfile -u default -p datasets/sfdmu/multicurrency'
 
     activate_expression_sets:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/expressionsets_active'
+            command: 'sfdmu run -s csvfile -u default -p datasets/sfdmu/expressionsets_active'
 
     deactivate_expression_sets:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -n -s csvfile -p datasets/sfdmu/expressionsets_inactive'
+            command: 'sfdmu run -n -s csvfile -u default -p datasets/sfdmu/expressionsets_inactive'
 
     insert_scratch_data:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/scratch_data'
+            command: 'sfdmu run -s csvfile -u default -p datasets/sfdmu/scratch_data'
 
     activate_decision_tables:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu run -s csvfile -p datasets/sfdmu/decision_tables_active'
+            command: 'sfdmu run -s csvfile -u default -p datasets/sfdmu/decision_tables_active'
 
     deploy_sharing_rules:
         class_path: cumulusci.tasks.salesforce.DeployBundles
