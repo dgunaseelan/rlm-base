@@ -218,7 +218,7 @@ tasks:
     create_price_adjustment_schedules:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
         options:
-            command: 'sfdmu:run -s csvfile -u default -p datasets/sfdmu/pas'
+            command: 'sfdmu run -s csvfile -u default -p datasets/sfdmu/pas'
 
     insert_quantumbit_data:
         class_path: cumulusci.tasks.sfdx.SFDXOrgTask
